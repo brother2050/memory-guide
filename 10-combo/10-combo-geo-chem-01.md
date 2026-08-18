@@ -21,8 +21,7 @@
 | 铥 (Thulium) | Tm | Thule（古代北欧传说之地） | 北欧 |
 | 镓 (Gallium) | Ga | Gallia（法国旧称） | 法国 |
 | 钌 (Ruthenium) | Ru | Ruthenia（俄罗斯旧称） | 俄罗斯 |
-| 波兰 (Polonium) | Po | Poland（波兰） | 波兰 |
-| 钪 (Scandium) | Sc | Scandinavia | 北欧 |
+| 钋 (Polonium) | Po | Poland（波兰） | 波兰 |
 | 镅 (Americium) | Am | America（美洲） | 美洲 |
 | 钚 (Plutonium) | Pu | Pluto（冥王星） | — |
 | 硅 (Silicon) | Si | Silex（拉丁语：燧石） | — |
