@@ -102,6 +102,18 @@
   - novel → novelist
 
 ### 7. -ment（结果、产物）— 已在第2条详述
+- **含义**：表示动作的结果、产物或手段
+- **谐音**：-ment → "门特" → 一扇门特别产物
+- **图像**：一扇大门打开，里面掉出各种结果物品
+- **代表词**：
+  1. **achievement** (achieve + ment) = 成就 → 达成的结果
+  2. **development** (develop + ment) = 发展 → 开发的产物
+  3. **agreement** (agree + ment) = 协议 → 同意的结果
+  4. **movement** (move + ment) = 运动 → 移动的行为
+  5. **treatment** (treat + ment) = 治疗 → 对待的手段
+- **扩展词**：environment（环境）、equipment（设备）、statement（声明）、management（管理）、entertainment（娱乐）
+- **记忆技巧**：-ment 常跟在动词后面变成名词，表示"做了某事之后得到的东西"
+- **对比辨析**：-ment vs -tion：-ment 强调结果/产物，-tion 强调过程/状态。如 movement（移动的结果）vs motion（移动的过程）
 
 ### 8. -ance / -ence（性质、状态、行为）
 - **含义**：表示性质、状态或行为
