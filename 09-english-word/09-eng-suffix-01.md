@@ -101,21 +101,7 @@
   - physics → physicist
   - novel → novelist
 
-### 7. -ment（结果、产物）— 已在第2条详述
-- **含义**：表示动作的结果、产物或手段
-- **谐音**：-ment → "门特" → 一扇门特别产物
-- **图像**：一扇大门打开，里面掉出各种结果物品
-- **代表词**：
-  1. **achievement** (achieve + ment) = 成就 → 达成的结果
-  2. **development** (develop + ment) = 发展 → 开发的产物
-  3. **agreement** (agree + ment) = 协议 → 同意的结果
-  4. **movement** (move + ment) = 运动 → 移动的行为
-  5. **treatment** (treat + ment) = 治疗 → 对待的手段
-- **扩展词**：environment（环境）、equipment（设备）、statement（声明）、management（管理）、entertainment（娱乐）
-- **记忆技巧**：-ment 常跟在动词后面变成名词，表示"做了某事之后得到的东西"
-- **对比辨析**：-ment vs -tion：-ment 强调结果/产物，-tion 强调过程/状态。如 movement（移动的结果）vs motion（移动的过程）
-
-### 8. -ance / -ence（性质、状态、行为）
+### 7. -ance / -ence（性质、状态、行为）
 - **含义**：表示性质、状态或行为
 - **谐音**：-ance → "安思" → 安静地思考状态
 - **图像**：一个天平两端分别放着"-ance"和"-ence"
@@ -455,6 +441,64 @@
 
 ---
 
+## 四（补）、常用补充后缀（3个）
+
+### 29. -ant / -ent（做…的人；具有…性质的）
+- **含义**：表示做某事的人（名词）或具有某种性质的（形容词）
+- **谐音**：-ant → "安特" → 安特是个做事的人；-ent → "恩特" → 恩特有某种特质
+- **图像**：一个工人胸前别着"-ant/-ent"的工牌
+- **代表词**（名词）：
+  1. **applicant** (apply + ant) = 申请人 → 申请的人
+  2. **assistant** (assist + ant) = 助手 → 协助的人
+  3. **resident** (reside + ent) = 居民 → 居住的人
+  4. **student** (study + ent) = 学生 → 学习的人
+  5. **president** (preside + ent) = 主席 → 主持的人
+- **代表词**（形容词）：
+  1. **important** (import + ant) = 重要的 → 有重要性的
+  2. **different** (differ + ent) = 不同的 → 有差异的
+  3. **significant** (signify + cant) = 重要的 → 有意义的
+  4. **consistent** (consist + ent) = 一致的 → 保持一致的
+  5. **dominant** (domin + ant) = 主导的 → 占主导的
+- **词性规律**：
+  - 动词/词根 + -ant/-ent → 名词（人）或形容词
+  - assist → assistant (n.) | differ → different (adj.)
+- **对比记忆**：-ant/-ent 做名词 vs 做形容词
+  - **applic**ant**（申请人）= 名词（人）
+  - **import**ant**（重要的）= 形容词
+  - 规律：看语境判断词性，但 -ant/-ent 结尾的形容词通常加 -ance/-ence 变名词
+  - import**ant** → import**ance** | differ**ent** → differ**ence**
+
+### 30. -ism（主义；学说；行为）
+- **含义**：表示主义、学说、信仰或行为体系
+- **谐音**：-ism → "一思么" → 一种思想么
+- **图像**：一面旗帜上写着各种"-ism"
+- **代表词**：
+  1. **capitalism** (capital + ism) = 资本主义 → 资本的体系
+  2. **optimism** (optim + ism) = 乐观主义 → 乐观的思想
+  3. **pessimism** (pessim + ism) = 悲观主义 → 悲观的思想
+  4. **realism** (real + ism) = 现实主义 → 现实的学说
+  5. **feminism** (femin + ism) = 女权主义 → 女性的主张
+- **词性规律**：名词/词根 + -ism → 名词（主义/学说）
+  - hero → heroism
+  - terror → terrorism
+  - individual → individualism
+
+### 31. -ive 的扩展：-ative / -itive
+- **含义**：表示有…倾向的（复合形容词后缀）
+- **谐音**：-ative → "额提五" → 额外提出的特质
+- **图像**：一个附加标签上写着"-ative"
+- **代表词**：
+  1. **comparative** (compare + ative) = 比较的
+  2. **competitive** (compete + itive) = 竞争的
+  3. **authoritative** (authority + ative) = 权威的
+  4. **sensitive** (sense + itive) = 敏感的
+  5. **definitive** (define + itive) = 决定性的
+- **词性规律**：动词/名词 + -ative/-itive → 形容词
+  - compete → competitive
+  - compare → comparative
+
+---
+
 ## 五、同根不同后缀对比记忆（2组专题）
 
 ### 对比组1：act 家族 — 一个词根，五种词性
@@ -526,6 +570,8 @@
 | -ful | adj. | beautiful, powerful |
 | -less | adj. | homeless, careless |
 | -ous | adj. | dangerous, famous |
+| -ant/-ent | n./adj. | applicant, different |
+| -ism | n. | capitalism, optimism |
 | -ive | adj. | creative, active |
 | -ic | adj. | scientific, historic |
 | -y | adj. | rainy, sleepy |
@@ -541,7 +587,7 @@
 ---
 
 > **记忆口诀汇总**：
-> 名词看 -tion, -ment, -ness, -ity
-> 形容词找 -ful, -less, -ous, -ive, -able
+> 名词看 -tion, -ment, -ness, -ity, -ism
+> 形容词找 -ful, -less, -ous, -ive, -able, -ant/-ent
 > 副词加 -ly，动词用 -ize, -ify, -en, -ate
 > 后缀决定词性，词根决定含义！

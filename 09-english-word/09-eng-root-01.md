@@ -38,7 +38,7 @@
   5. **introvert** (intro- 向内 + vert) = 内向的人 → 向内转
 
 ### 4. ject = 投、掷
-- **谐音**：ject → "接个特" → 接住投来的东西
+- **谐音**：ject → "摘克特" → 摘下来扔出去特别远
 - **图像**：一个棒球手投掷（ject）球的画面
 - **衍生词**：
   1. **project** (pro- 向前 + ject) = 项目；投射 → 向前投
@@ -48,7 +48,7 @@
   5. **object** (ob- 对面 + ject) = 物体；反对 → 投到对面
 
 ### 5. spect/spec = 看
-- **谐音**：spect → "死白个特" → 死盯着白的地方特别仔细看
+- **谐音**：spect → "斯拜克特" → 斯拜克特先生特别爱看
 - **图像**：一个侦探用放大镜仔细看（spect）证据
 - **衍生词**：
   1. **inspect** (in- 进 + spect) = 检查 → 往里看
@@ -88,7 +88,7 @@
   5. **subtract** (sub- 下 + tract) = 减去 → 从下面拉走
 
 ### 9. ced/cess = 走、行进
-- **谐音**：ced → "赛的" → 比赛用走的
+- **谐音**：ced → "赛德" → 赛德带头走
 - **图像**：一列队伍行进（ced）在大道上
 - **衍生词**：
   1. **proceed** (pro- 向前 + ceed) = 继续 → 向前走
@@ -295,8 +295,9 @@
   5. **trident** (tri + dent) = 三叉戟 → 三个齿
 
 ### 29. cent = 百
-- **谐音**：cent → "三特" → 三个特别百（不太对但记住）
+- **谐音**：cent → "省特" → 省下特多的百分之一
 - **图像**：一枚一分钱硬币，百分之一（cent）
+- ⚠️ **中国学生常犯错误**：cent = 百（不是"分"），century = 一百年，percent = 每一百
 - **衍生词**：
   1. **century** (cent + ury) = 世纪 → 一百年
   2. **percent** (per + cent) = 百分比 → 每一百
@@ -305,8 +306,9 @@
   5. **centennial** (cent + ennial) = 百年纪念 → 百年一次
 
 ### 30. mill = 千
-- **谐音**：mill → "米哦" → 千米哦
+- **谐音**：mill → "米勒" → 米勒磨坊产千斤粮
 - **图像**：一个磨坊（mill）里有千（mill）斤粮食
+- ⚠️ **易混辨析**：mill（千分之一）vs kilo（千）：millimeter（毫米）vs kilometer（千米）
 - **衍生词**：
   1. **million** (mill + ion) = 百万 → 千个千
   2. **millennium** (mill + ennium) = 千年 → 一千年
@@ -335,7 +337,7 @@
   5. **semiconscious** (semi + conscious) = 半意识的 → 一半清醒
 
 ### 33. poly = 多
-- **谐音**：poly → "跑了" → 跑了好多地方
+- **谐音**：poly → "婆力" → 婆婆力气大多面手
 - **图像**：一个多边形（poly），很多条边
 - **衍生词**：
   1. **polygon** (poly + gon) = 多边形 → 多个角
@@ -429,7 +431,7 @@
   5. **morphology** (morph + ology) = 形态学 → 研究形态
 
 ### 42. therm = 热
-- **谐音**：therm → "热么" → 热么？很热！
+- **谐音**：therm → "瑟姆" → 瑟姆（therm）测温度
 - **图像**：温度计显示温度升高（therm）
 - **衍生词**：
   1. **thermometer** (therm + o + meter) = 温度计 → 测量热的
@@ -561,3 +563,132 @@
 ---
 
 > 💡 **复习建议**：每天记5个词根，10天完成基础词根。之后每周复习一次，一个月后可以流畅拆解大部分常见英语单词。
+
+---
+
+## 八、四六级高频补充词根（10个）
+
+### 51. spond/spons = 承诺、回应
+- **谐音**：spond → "斯邦德" → 斯邦德承诺做到
+- **图像**：一个人郑重地做出承诺（spond）
+- **衍生词**：
+  1. **respond** (re- 回 + spond) = 回应 → 回应承诺
+  2. **correspond** (cor- 一起 + respond) = 对应；通信 → 一起回应
+  3. **responsible** (re- 回 + spons + ible) = 负责的 → 能回应的
+  4. **sponsor** (spons + or) = 赞助者 → 做出承诺的人
+  5. **spontaneous** (spon + taneous) = 自发的 → 出自内心的承诺
+
+### 52. cept/ceiv = 拿、抓
+- **谐音**：cept → "赛普特" → 赛普特抓东西特别准
+- **图像**：一只手稳稳地接住（cept）飞来的东西
+- **衍生词**：
+  1. **accept** (ac- 向 + cept) = 接受 → 向…抓来
+  2. **receive** (re- 回 + ceive) = 收到 → 拿回来
+  3. **perceive** (per- 完全 + ceive) = 感知 → 完全抓住
+  4. **concept** (con- 一起 + cept) = 概念 → 一起抓住的想法
+  5. **deceive** (de- 向下 + ceive) = 欺骗 → 偷偷拿走
+
+### 53. cur/cours = 跑
+- **谐音**：cur → "柯" → 柯南跑得快
+- **图像**：一个人飞快地跑（cur）过终点线
+- **衍生词**：
+  1. **occur** (oc- 向 + cur) = 发生 → 跑到面前
+  2. **current** (cur + ent) = 当前的；水流 → 正在跑的
+  3. **course** (cours) = 课程；路线 → 跑的路线
+  4. **cursor** (cur + sor) = 光标 → 跑动的东西
+  5. **excursion** (ex- 出 + curs + ion) = 远足 → 跑出去
+
+### 54. mot/mov = 移动
+- **谐音**：mot → "摩托" → 摩托车会移动
+- **图像**：一辆摩托车在路上移动（mot）
+- **衍生词**：
+  1. **motion** (mot + ion) = 运动 → 移动的状态
+  2. **motive** (mot + ive) = 动机 → 移动的原因
+  3. **promote** (pro- 向前 + mote) = 促进 → 向前移动
+  4. **remote** (re- 回 + mote) = 遥远的 → 移开很远
+  5. **emotion** (e- 出 + motion) = 情感 → 内心的移动
+
+### 55. mun = 公共、服务
+- **谐音**：mun → "民" → 为民服务
+- **图像**：一个社区服务中心，为民（mun）办事
+- **衍生词**：
+  1. **community** (commun + ity) = 社区 → 公共的地方
+  2. **communicate** (commun + icate) = 交流 → 共享信息
+  3. **immune** (im- 不 + mune) = 免疫的 → 不受公共影响的
+  4. **municipal** (mun + icipal) = 市政的 → 公共管理的
+  5. **munition** (mun + ition) = 军火 → 公共防御物资
+
+### 56. ordin = 顺序
+- **谐音**：ordin → "奥丁" → 奥丁掌管秩序
+- **图像**：北欧神话的奥丁神维护世界秩序（ordin）
+- **衍生词**：
+  1. **order** (ord + er) = 顺序；命令 → 有秩序
+  2. **ordinary** (ordin + ary) = 普通的 → 按顺序的
+  3. **coordinate** (co- 一起 + ordin + ate) = 协调 → 一起排顺序
+  4. **extraordinary** (extra- 超出 + ordinary) = 非凡的 → 超出普通的
+  5. **subordinate** (sub- 下 + ordin + ate) = 从属的 → 排在下面的
+
+### 57. fin = 结束、界限（四六级高频补充）
+- **衍生词**：
+  1. **finance** (fin + ance) = 金融 → 结算的学问
+  2. **fine** (fin) = 罚款；好的 → 到了界限的
+  3. **finally** (fin + ally) = 最终 → 到了结束
+  4. **finish** (fin + ish) = 完成 → 到了界限
+  5. **refine** (re- 再 + fine) = 精炼 → 再次到界限
+
+### 58. ple/plen = 满、填充
+- **谐音**：ple → "普乐" → 普天同乐，满满幸福
+- **图像**：一个满杯（ple）的水
+- **衍生词**：
+  1. **complete** (com- 完全 + plete) = 完成 → 完全填满
+  2. **plenty** (plen + ty) = 充足 → 满的状态
+  3. **supplement** (sup- 下 + ple + ment) = 补充 → 从下面填满
+  4. **accomplish** (ac- 向 + compl + ish) = 完成 → 向满的方向
+  5. **complement** (com- 完全 + ple + ment) = 补充 → 完全填满
+
+### 59. proper/propri = 自己的、适当的
+- **谐音**：propri → "普若普瑞" → 普若普瑞有自己的东西
+- **图像**：一个人手里拿着属于自己的东西（propri）
+- **衍生词**：
+  1. **proper** (proper) = 适当的 → 合乎自身的
+  2. **property** (proper + ty) = 财产；属性 → 属于自己的
+  3. **appropriate** (ap- 向 + propri + ate) = 适当的 → 向自身靠拢
+  4. **improve** (im- 进 + prove) = 改善 → 向好的方向（注：improve非propri词根，但常混）
+  5. **proprietary** (propri + etary) = 专有的 → 自己的
+
+### 60. sist = 站立（四六级高频补充）
+- **衍生词**：
+  1. **assist** (as- 向 + sist) = 帮助 → 站在旁边
+  2. **consist** (con- 一起 + sist) = 由…组成 → 站在一起
+  3. **insist** (in- 上 + sist) = 坚持 → 站在上面不动
+  4. **persist** (per- 一直 + sist) = 坚持 → 一直站着
+  5. **resist** (re- 反 + sist) = 抵抗 → 反着站
+
+---
+
+## 九、中国学生常犯错误与易混词辨析
+
+### 易混词根辨析
+
+| 词根A | 词根B | 区别 | 易混词对 |
+|-------|-------|------|----------|
+| **spect**（看） | **spec/speci**（种类） | 看 vs 种类 | respect（尊敬）vs species（物种）|
+| **pos**（放置） | **pon**（放置） | 同源异形 | expose（暴露）vs opponent（对手）|
+| **mit**（送） | **miss**（送） | 同源异形 | commit（承诺）vs mission（使命）|
+| **ced**（走） | **ceed**（走） | 同源异形 | precede（先于）vs proceed（继续）|
+| **cap**（抓） | **cap**（头） | 不同词根！ | capture（捕获）vs capital（首都）|
+| **cur**（关心） | **cur**（跑） | 不同词根！ | cure（治愈）vs occur（发生）|
+| **sol**（溶解） | **sol**（太阳） | 不同词根！ | solve（解决）vs solar（太阳的）|
+| **val**（价值） | **vail**（强壮） | 同源 | value（价值）vs prevail（盛行）|
+
+### 中国学生常见错误
+
+| 错误 | 正确 | 说明 |
+|------|------|------|
+| 把 **bi**（二）理解为"生命" | bio = 生命，bi = 二 | bicycle = 两个轮子，biology = 生命学科 |
+| 把 **cent**（百）理解为"分" | cent = 百，penny = 分 | century = 一百年，percent = 每一百 |
+| 把 **dict**（说）理解为"听" | dict = 说，aud = 听 | dictate = 口述，audio = 音频 |
+| 把 **graph**（写）理解为"照片" | graph = 写/画，photo = 光 | photograph = 用光画 = 照片 |
+| 混淆 **-able** 和 **-ible** | -able 加在完整动词后，-ible 加在拉丁词根后 | readable vs visible |
+| 混淆 **affect** 和 **effect** | affect = v.影响，effect = n.效果 | A for Action, E for End result |
+| 混淆 **principal** 和 **principle** | principal = 校长/主要的，principle = 原则 | A = A person, E = Ethical rule |

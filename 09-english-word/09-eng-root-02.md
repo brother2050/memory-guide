@@ -10,7 +10,7 @@
 ### 第一组：学术高频词根（1-15）
 
 #### 1. cern/cris = 分辨、判断
-- **谐音**：cern → "生" → 生来就有分辨力
+- **谐音**：cern → "瑟恩" → 瑟恩天生有分辨力
 - **图像**：法官在仔细分辨（cern）证据
 - **衍生词**：
   1. **discern** (dis- 分开 + cern) = 辨别 → 分开判断
@@ -50,7 +50,7 @@
   5. **literalism** (liter + alism) = 字面主义
 
 #### 5. jur/jus = 法律、正义
-- **谐音**：jur → "居" → 居住在法律之下
+- **谐音**：jur → "朱尔" → 朱尔是大法官
 - **图像**：天平象征法律（jur）的公正
 - **衍生词**：
   1. **jury** (jur + y) = 陪审团 → 依据法律判断的人
@@ -90,7 +90,7 @@
   5. **accredit** (ac + credit) = 委任 → 给予信任
 
 #### 9. cur = 关心、跑
-- **谐音**：cur → "克" → 克制地关心
+- **谐音**：cur → "柯尔" → 柯尔护士关心病人
 - **图像**：一个护士细心关照（cur）病人
 - **衍生词**：
   1. **cure** (cur + e) = 治愈 → 关心病人使其好
@@ -204,7 +204,7 @@
   5. **injunction** (in + junct + ion) = 禁令 → 连接进去的命令
 
 #### 21. oper = 工作
-- **谐音**：oper → "哦破" → 哦，工作破了
+- **谐音**：oper → "奥珀" → 奥珀工作特别卖力
 - **图像**：一个工人在操作（oper）机器
 - **衍生词**：
   1. **operate** (oper + ate) = 操作 → 做工作
@@ -234,7 +234,7 @@
   5. **alma mater** = 母校 → 滋养的母亲
 
 #### 24. phan/phen = 显现
-- **谐音**：phan → "翻" → 翻出来显现
+- **谐音**：phan → "范" → 范进中举显现才华
 - **图像**：魔术师让东西显现（phan）
 - **衍生词**：
   1. **phenomenon** (phen + omenon) = 现象 → 显现出来的东西
@@ -330,8 +330,8 @@
   5. **millennium** (mill + ennium) = 千年 → 一千个年
 
 #### 34. bell = 战争
-- **谐音**：bell → "贝尔" → 贝尔是战争英雄
-- **图像**：战场上的号角响起
+- **谐音**：bell → "贝尔" → 贝尔号角响起开战
+- **图像**：战场上号角（bell）响起
 - **衍生词**：
   1. **bellicose** (bell + icose) = 好战的 → 喜欢战争的
   2. **rebel** (re + bel) = 叛乱 → 反对战争
@@ -456,7 +456,7 @@
   5. **dejected** (de + ject + ed) = 沮丧的 → 被投下
 
 #### 47. mand/mend = 命令、委托
-- **谐音**：mand → "慢的" → 命令慢慢下
+- **谐音**：mand → "曼德" → 曼德将军下命令
 - **图像**：一个指挥官在下达命令（mand）
 - **衍生词**：
   1. **command** (com + mand) = 命令 → 一起命令
@@ -710,3 +710,113 @@ dis + cour + age + ment = discouragement（沮丧）
 ---
 
 > 💡 **学习路径**：基础词根（01文件）→ 进阶词根（本文件）→ 前后缀编码 → 组合拆解练习。建议每天学5个词根+2个前缀+2个后缀，配合拆解练习，2周内可掌握大部分学术词汇的构词规律。
+
+---
+
+## 七、考研英语高频补充词根（10个）
+
+### 51. cept/cap = 拿、抓（考研高频）
+- **谐音**：cept → "赛普特" → 赛普特抓东西特别准
+- **图像**：一只手稳稳接住飞来的东西
+- **衍生词**：
+  1. **concept** (con- 一起 + cept) = 概念 → 一起抓住的想法
+  2. **perceive** (per- 完全 + ceive) = 感知 → 完全抓住
+  3. **exception** (ex- 出 + cept + ion) = 例外 → 拿出去的
+  4. **deceive** (de- 向下 + ceive) = 欺骗 → 偷偷拿走
+  5. **susceptible** (sus- 下 + cept + ible) = 易受影响的 → 从下面能被抓的
+
+### 52. hibit = 拿、持
+- **谐音**：hibit → "希比特" → 希比特拿着不放
+- **图像**：一个人双手紧紧拿着东西
+- **衍生词**：
+  1. **exhibit** (ex- 出 + hibit) = 展览 → 拿出来展示
+  2. **inhibit** (in- 进 + hibit) = 抑制 → 拿住不放
+  3. **prohibit** (pro- 前 + hibit) = 禁止 → 在前面挡住
+  4. **inhabitant** (in- 进 + habit + ant) = 居民 → 住在里面的人（注：非hibit词根，但常混）
+
+### 53. mot/mob = 移动（考研高频）
+- **谐音**：mot → "摩托" → 摩托车会移动
+- **图像**：一辆摩托车在路上移动
+- **衍生词**：
+  1. **promote** (pro- 向前 + mote) = 促进；晋升 → 向前移动
+  2. **remote** (re- 回 + mote) = 遥远的 → 移开很远
+  3. **emotion** (e- 出 + motion) = 情感 → 内心的移动
+  4. **motive** (mot + ive) = 动机 → 移动的原因
+  5. **demote** (de- 向下 + mote) = 降级 → 向下移动
+
+### 54. liber = 自由
+- **谐音**：liber → "力伯" → 力伯追求自由
+- **图像**：一只挣脱锁链的鸟飞向天空
+- **衍生词**：
+  1. **liberal** (liber + al) = 自由的 → 与自由有关的
+  2. **liberate** (liber + ate) = 解放 → 使自由
+  3. **liberty** (liber + ty) = 自由 → 自由的状态
+  4. **deliver** (de- 离开 + liver) = 递送 → 使脱离
+  5. **deliberate** (de- 完全 + liber + ate) = 故意的；深思熟虑的 → 完全自由思考
+
+### 55. serve = 保持、服务
+- **谐音**：serve → "瑟沃" → 瑟沃保持服务
+- **图像**：一个服务员端着盘子
+- **衍生词**：
+  1. **preserve** (pre- 预先 + serve) = 保存 → 提前保持
+  2. **conserve** (con- 一起 + serve) = 保护 → 一起保持
+  3. **reserve** (re- 回 + serve) = 保留；预订 → 留回来
+  4. **observe** (ob- 向 + serve) = 观察 → 注意保持
+  5. **deserve** (de- 完全 + serve) = 值得 → 完全服务
+
+### 56. struct = 建造（考研高频补充）
+- **衍生词**：
+  1. **infrastructure** (infra- 下 + structure) = 基础设施 → 下面的建造
+  2. **restructure** (re- 再 + structure) = 重组 → 再次建造
+  3. **instruct** (in- 内 + struct) = 指导 → 在内部建造
+  4. **obstruct** (ob- 对面 + struct) = 阻碍 → 对着建（挡路）
+  5. **destruction** (de- 坏 + struct + ion) = 破坏 → 拆掉建造
+
+### 57. vail/val = 价值（考研高频补充）
+- **衍生词**：
+  1. **available** (a- 向 + vail + able) = 可用的 → 可获取价值的
+  2. **prevail** (pre- 前 + vail) = 盛行 → 价值在前面
+  3. **evaluate** (e- 出 + val + uate) = 评估 → 估出价值
+  4. **valid** (val + id) = 有效的 → 有价值的
+  5. **invalid** (in- 不 + valid) = 无效的 → 没有价值的
+
+### 58. dict = 说（考研高频补充）
+- **衍生词**：
+  1. **indicate** (in- 内 + dic + ate) = 指示 → 向内说
+  2. **dedicate** (de- 向下 + dic + ate) = 奉献 → 宣告下去
+  3. **contradict** (contra- 反 + dict) = 反驳 → 反着说
+  4. **predict** (pre- 预先 + dict) = 预测 → 提前说
+  5. **verdict** (ver- 真实 + dict) = 判决 → 说出真相
+
+### 59. gen = 产生（考研高频补充）
+- **衍生词**：
+  1. **generate** (gen + erate) = 产生 → 制造出来
+  2. **generation** (gen + eration) = 一代人 → 产生的一批人
+  3. **genius** (gen + ius) = 天才 → 天生的
+  4. **gender** (gen + der) = 性别 → 天生的
+  5. **ingenious** (in- 内 + gen + ious) = 巧妙的 → 内在产生的
+
+### 60. rect = 正、直
+- **谐音**：rect → "瑞克特" → 瑞克特正直
+- **图像**：一把直尺代表正直（rect）
+- **衍生词**：
+  1. **correct** (cor- 完全 + rect) = 正确的 → 完全正的
+  2. **direct** (di- 分开 + rect) = 直接的 → 分开走直路
+  3. **erect** (e- 出 + rect) = 直立的 → 竖出来
+  4. **rectify** (rect + ify) = 纠正 → 使变正
+  5. **rectangle** (rect + angle) = 长方形 → 直角的形状
+
+---
+
+## 八、考研英语易混词根辨析
+
+| 词根A | 词根B | 区别 | 考研易混词 |
+|-------|-------|------|------------|
+| **sens/sent**（感觉） | **sens/sent**（感觉） | 同源异形 | sense（感觉）vs sentence（句子）|
+| **gen**（产生） | **gen**（种类） | 不同含义 | generate（产生）vs genre（类型）|
+| **miss/mit**（送） | **miss/mit**（送） | 同源异形 | mission（使命）vs commit（承诺）|
+| **fer**（带来） | **fer**（承受） | 不同含义 | transfer（转移）vs suffer（承受）|
+| **duct**（引导） | **duct**（管道） | 同源 | conduct（引导）vs aqueduct（水渠）|
+| **form**（形状） | **form**（形成） | 同源 | formula（公式）vs reform（改革）|
+| **part**（部分） | **part**（分开） | 同源 | partner（伙伴）vs depart（离开）|
+| **pose**（放置） | **pose**（姿势） | 同源 | expose（暴露）vs posture（姿态）|

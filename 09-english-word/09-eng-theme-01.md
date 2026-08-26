@@ -205,6 +205,64 @@
 
 ---
 
+## 五（补）、社会与环境主题（Society & Environment）🌍 — 考研/四六级高频
+
+### 定位法记忆路径
+**场景**：你走进一个社区治理中心
+
+| 位置 | 词汇 | 含义 | 词根拆解 | 联想画面 |
+|------|------|------|----------|----------|
+| 1. 大门 | **deteriorate** | 恶化 | de-（向下）+ terior（更差）| 环境不断变差 |
+| 2. 大厅 | **exacerbate** | 加剧 | ex-（出）+ acerb（尖锐）| 使更尖锐 |
+| 3. 公告栏 | **prevalent** | 盛行的 | pre-（前）+ val（力量）| 力量在前面 |
+| 4. 会议室 | **facilitate** | 促进 | fac-（做）+ -ilitate | 使容易做 |
+| 5. 数据中心 | **comprehensive** | 全面的 | com-（一起）+ prehens（抓住）| 全部抓住 |
+| 6. 环保部 | **sustainable** | 可持续的 | sus-（下）+ tain（持有）| 持续持有 |
+| 7. 基建部 | **infrastructure** | 基础设施 | infra-（下）+ structure（结构）| 下面的结构 |
+| 8. 统计室 | **phenomenon** | 现象 | pheno-（显示）| 显示出来的东西 |
+| 9. 评估部 | **substantial** | 大量的 | sub-（下）+ stant（站）| 站得住的 |
+| 10. 研究室 | **contemplate** | 沉思 | con-（一起）+ template（模板）| 一起思考模板 |
+| 11. 调解室 | **ambiguous** | 模糊的 | ambi-（两边）+ guous | 两边摇摆 |
+| 12. 资源部 | **indispensable** | 不可或缺的 | in-（不）+ dispensable（可分配的）| 不可分配掉 |
+| 13. 外联部 | **spontaneous** | 自发的 | spont-（自愿）| 自愿发生 |
+| 14. 会议室 | **paradigm** | 范式 | para-（旁边）+ digm（显示）| 在旁边显示 |
+| 15. 法规室 | **constraint** | 约束 | con-（一起）+ strain（拉紧）| 一起拉紧 |
+| 16. 执行部 | **implement** | 实施 | im-（进入）+ ple（填满）| 填满执行 |
+| 17. 监督部 | **scrutinize** | 仔细审查 | scrut-（检查）| 仔细检查 |
+| 18. 国际部 | **phenomenon** | 现象 | pheno-（显示）| 显示出来的东西 |
+| 19. 数据部 | **allocate** | 分配 | al-（向）+ loc（地方）| 分到各地方 |
+| 20. 出口 | **denote** | 表示 | de-（向下）+ note（标记）| 标记下来 |
+
+### 同义词/反义词关联
+
+| 词汇 | 同义词 | 反义词 |
+|------|--------|--------|
+| deteriorate（恶化） | worsen, decline | improve（改善） |
+| exacerbate（加剧） | aggravate, intensify | alleviate（缓解） |
+| prevalent（盛行的） | widespread, common | rare（罕见的） |
+| comprehensive（全面的） | thorough, complete | partial（部分的） |
+| sustainable（可持续的） | maintainable | unsustainable（不可持续的） |
+| ambiguous（模糊的） | vague, unclear | clear（清晰的） |
+| indispensable（不可或缺的） | essential, vital | dispensable（可有可无的） |
+| constraint（约束） | restriction, limitation | freedom（自由） |
+
+### 考研真题高频搭配
+
+| 词汇 | 常见搭配 | 真题语境 |
+|------|----------|----------|
+| deteriorate | deteriorate rapidly | The situation has deteriorated rapidly. |
+| exacerbate | exacerbate the problem | Pollution exacerbates health issues. |
+| comprehensive | comprehensive review | A comprehensive review of the policy. |
+| sustainable | sustainable development | Sustainable development is crucial. |
+| prevalent | increasingly prevalent | This trend is increasingly prevalent. |
+| ambiguous | ambiguous statement | The statement is deliberately ambiguous. |
+| indispensable | indispensable part | Education is an indispensable part. |
+| facilitate | facilitate communication | Technology facilitates communication. |
+| contemplate | contemplate the future | We must contemplate the consequences. |
+| implement | implement the plan | The government will implement the plan. |
+
+---
+
 ## 六、主题记忆的通用策略
 
 ### 策略1：定位法（Method of Loci）
@@ -263,7 +321,8 @@ path（感情/疾病）
 | 第3周 | 科技 | 20 | 40（医学+法律） |
 | 第4周 | 商业 | 20 | 60（前三个） |
 | 第5周 | 学术 | 20 | 80（前四个） |
-| 第6周 | 综合复习 | 0 | 100（全部） |
+| 第6周 | 社会与环境 | 20 | 100（前五个） |
+| 第7周 | 综合复习 | 0 | 120（全部） |
 
 ### 每日练习
 - 早上：学习5个新词（看词根+谐音+画面）
