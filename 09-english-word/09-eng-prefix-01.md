@@ -593,6 +593,23 @@
 
 ---
 
+---
+
+## ⚠️ 前缀编码冲突提醒
+
+以下前缀的编码容易混淆，请特别注意区分：
+
+| 易混淆前缀 | 编码A | 编码B | 区分要点 |
+|------------|-------|-------|----------|
+| un- vs in- | 不（日耳曼词根） | 不（拉丁词根） | un-加英语本族词，in-加拉丁词 |
+| dis- vs mis- | 否定/分开 | 错误 | dis=不同意，mis=犯错误 |
+| pre- vs pro- | 时间上前 | 方向前 | preview=提前看，progress=向前走 |
+| super- vs over- | 位置上面 | 超过/过度 | supervise=从上面看，overcome=克服过度 |
+| sub- vs under- | 位置下面 | 程度不足 | subway=地下路，underestimate=低估 |
+| inter- vs intra- | 两者之间 | 内部 | international=国际，intranet=内网 |
+
+---
+
 *编码完成。建议每天复习6个前缀，5天一个循环。*
 
 ---
