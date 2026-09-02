@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-记忆编码配图生成器
-使用Qwen-Image模型为00-99编码生成配图
+记忆编码配图生成器（Qwen-Image版，低显存优化）
+使用disk offload + float8减少显存占用
 
 依赖安装：
 pip install diffsynth torch safetensors
@@ -14,17 +14,29 @@ import os
 import torch
 from diffsynth.pipelines.qwen_image import QwenImagePipeline, ModelConfig
 
+# 低显存配置：disk offload + float8
+vram_config = {
+    "offload_dtype": "disk",
+    "offload_device": "disk",
+    "onload_dtype": torch.float8_e4m3fn,
+    "onload_device": "cpu",
+    "preparing_dtype": torch.float8_e4m3fn,
+    "preparing_device": "cuda",
+    "computation_dtype": torch.bfloat16,
+    "computation_device": "cuda",
+}
+
 # 图片输出目录
 IMG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 os.makedirs(IMG_DIR, exist_ok=True)
 
 # 00-99编码表：(数字, 英文关键词, 中文描述, 画面风格)
 ENCODINGS = [
-    ("00", "golden bell ringing", "金色铃铛叮当响", "cute cartoon"),
+    ("00", "old telephone ringing", "老式电话铃铃铃响", "cute cartoon"),
     ("01", "glowing magic pill elixir", "发光的仙丹灵药", "fantasy illustration"),
-    ("02", "small tinkling bell", "小铃铛叮当响", "cute cartoon"),
+    ("02", "wind chime tinkling", "风铃叮当响", "cute cartoon"),
     ("03", "giant Buddha on mountain", "灵山大佛", "Chinese landscape"),
-    ("04", "pile of snacks chips", "一堆零食零食", "colorful illustration"),
+    ("04", "pile of snacks chips", "一堆零食", "colorful illustration"),
     ("05", "magic talisman with symbols", "一道符咒", "Chinese fantasy"),
     ("06", "tourist guide leading way", "导游带路", "cute cartoon"),
     ("07", "general waving command flag", "将军挥令旗发令", "Chinese historical"),
@@ -127,88 +139,84 @@ STYLE_SUFFIX = "simple cute cartoon illustration, white background, clean lines,
 
 
 def load_pipeline():
-    """加载Qwen-Image管道"""
-    print("正在加载Qwen-Image模型...")
+    """加载Qwen-Image管道（低显存模式）"""
+    print("正在加载Qwen-Image模型（低显存模式）...")
     print("首次运行需要下载模型，请耐心等待...")
-    
+
     pipe = QwenImagePipeline.from_pretrained(
         torch_dtype=torch.bfloat16,
         device="cuda",
         model_configs=[
             ModelConfig(
                 model_id="Qwen/Qwen-Image",
-                origin_file_pattern="transformer/diffusion_pytorch_model*.safetensors"
+                origin_file_pattern="transformer/diffusion_pytorch_model*.safetensors",
+                **vram_config,
             ),
             ModelConfig(
                 model_id="Qwen/Qwen-Image",
-                origin_file_pattern="text_encoder/model*.safetensors"
+                origin_file_pattern="text_encoder/model*.safetensors",
+                **vram_config,
             ),
             ModelConfig(
                 model_id="Qwen/Qwen-Image",
-                origin_file_pattern="vae/diffusion_pytorch_model.safetensors"
+                origin_file_pattern="vae/diffusion_pytorch_model.safetensors",
+                **vram_config,
             ),
         ],
         tokenizer_config=ModelConfig(
             model_id="Qwen/Qwen-Image",
             origin_file_pattern="tokenizer/"
         ),
+        vram_limit=torch.cuda.mem_get_info("cuda")[1] / (1024 ** 3) - 0.5,
     )
+
     print("模型加载完成！")
     return pipe
 
 
 def generate_image(pipe, num, keyword_cn, style, seed):
     """生成单张图片"""
-    # 构建提示词：中文描述 + 风格
     prompt = f"{keyword_cn}，{style}，{STYLE_SUFFIX}"
-    
-    # 生成图片
     image = pipe(prompt, seed=seed, num_inference_steps=40)
-    
     return image
 
 
 def main():
     """主函数"""
     print("=" * 60)
-    print("记忆编码配图生成器（Qwen-Image版）")
+    print("记忆编码配图生成器（Qwen-Image版·低显存优化）")
     print("=" * 60)
     print(f"输出目录：{IMG_DIR}")
     print(f"待生成：{len(ENCODINGS)} 张图片")
+    print(f"显存优化：disk offload + float8")
     print()
-    
+
     # 加载模型
     pipe = load_pipeline()
     print()
-    
+
     # 统计
     success_count = 0
     skip_count = 0
     fail_count = 0
-    
+
     # 逐个生成
     for i, (num, keyword_en, keyword_cn, style) in enumerate(ENCODINGS, 1):
         outfile = os.path.join(IMG_DIR, f"{num}.jpg")
-        
+
         # 跳过已存在的文件
         if os.path.exists(outfile) and os.path.getsize(outfile) > 5000:
             print(f"[{i}/{len(ENCODINGS)}] {num} - 已存在，跳过")
             skip_count += 1
             continue
-        
+
         print(f"[{i}/{len(ENCODINGS)}] {num} - {keyword_cn} ...", end=" ", flush=True)
-        
+
         try:
-            # 使用数字作为种子，保证可复现
             seed = int(num) + 42
-            
-            # 生成图片
             image = generate_image(pipe, num, keyword_cn, style, seed)
-            
-            # 保存图片
             image.save(outfile)
-            
-            # 检查文件大小
+
             filesize = os.path.getsize(outfile)
             if filesize < 5000:
                 print(f"⚠️ 文件太小({filesize} bytes)，可能生成失败")
@@ -217,11 +225,11 @@ def main():
             else:
                 print(f"✅ 成功 ({filesize} bytes)")
                 success_count += 1
-                
+
         except Exception as e:
             print(f"❌ 失败: {e}")
             fail_count += 1
-    
+
     # 输出统计
     print()
     print("=" * 60)
@@ -231,7 +239,7 @@ def main():
     print(f"  失败：{fail_count}")
     print(f"  总计：{len(ENCODINGS)}")
     print("=" * 60)
-    
+
     # 列出失败的编码
     if fail_count > 0:
         print()
