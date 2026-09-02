@@ -32,7 +32,7 @@ os.makedirs(IMG_DIR, exist_ok=True)
 
 # 00-99编码表：(数字, 英文关键词, 中文描述, 画面风格)
 ENCODINGS = [
-    ("00", "telescope looking far", "望远镜看远方", "cute cartoon"),
+    ("00", "binoculars looking far", "双筒望远镜看远方", "cute cartoon"),
     ("01", "glowing magic pill elixir", "发光的仙丹灵药", "fantasy illustration"),
     ("02", "wind chime tinkling", "风铃叮当响", "cute cartoon"),
     ("03", "round three-legged stool", "圆形三条腿的凳子", "Chinese landscape"),
