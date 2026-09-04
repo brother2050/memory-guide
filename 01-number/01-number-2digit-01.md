@@ -22,106 +22,106 @@
 
 | 数字 | 谐音词 | 画面 | 配图 | 备选谐音 |
 |------|--------|------|----------|
-| 00 | 🔭双筒望远镜 | 双筒望远镜看远方 | ![img](../images/00.jpg) | 零零、蛋蛋 |
-| 01 | 🌳茂盛树木 | 茂盛的大树 | ![img](../images/01.jpg) | 零一、灵异 |
-| 02 | 🎐铃儿 | 铃儿响叮当 | ![img](../images/02.jpg) | 零二、灵鹅 |
-| 03 | 🔄三脚凳 | 圆形三条腿的凳子 | ![img](../images/03.jpg) | 零三、灵珊 |
-| 04 | 🍿零食 | 一堆零食 | ![img](../images/04.jpg) | 灵寺、灵死 |
-| 05 | ⬟五边形咒符 | 五边形的神秘咒符 | ![img](../images/05.jpg) | 零五、灵武 |
-| 06 | 🚶领路 | 导游带路 | ![img](../images/06.jpg) | 零六、灵鹿 |
-| 07 | 🚩令旗 | 将军发令挥旗 | ![img](../images/07.jpg) | 零七、灵器 |
-| 08 | 🛼溜溜鞋 | 穿溜溜鞋滑行 | ![img](../images/08.jpg) | 零八、临别 |
-| 09 | 🌰菱角 | 剥菱角吃 | ![img](../images/09.jpg) | 零九、灵酒 |
-| 10 | 👔衣领 | 衣服领子 | ![img](../images/10.jpg) | 一零、依令 |
-| 11 | 🥢筷子 | 两根筷子 | ![img](../images/11.jpg) | 一一、摇摇 |
-| 12 | 👶婴儿 | 婴儿学步 | ![img](../images/12.jpg) | 一二、一耳 |
-| 13 | 👨‍⚕️医生 | 白大褂听诊 | ![img](../images/13.jpg) | 一生、一山 |
-| 14 | 🔑钥匙 | 开锁的钥匙 | ![img](../images/14.jpg) | 一时、一寺 |
-| 15 | 🦜鹦鹉 | 会说话的鸟 | ![img](../images/15.jpg) | 一五、一壶 |
-| 16 | 🍎石榴 | 掰开红籽 | ![img](../images/16.jpg) | 一路、一楼 |
-| 17 | 🧪试管 | 试管里冒泡泡 | ![img](../images/17.jpg) | 一七、一起 |
-| 18 | 💰腰包 | 解开腰包掏钱 | ![img](../images/18.jpg) | 一八、要发 |
-| 19 | 🪝衣钩 | 挂衣服的钩子 | ![img](../images/19.jpg) | 一九、一狗 |
-| 20 | 💍耳环 | 金耳环闪闪发光 | ![img](../images/20.jpg) | 二零、爱您 |
-| 21 | 🐊鳄鱼 | 大嘴鳄鱼 | ![img](../images/21.jpg) | 二一、耳翼 |
-| 22 | 🦆鸭子 | 嘎嘎叫的鸭子拍翅膀 | ![img](../images/22.jpg) | 二二、鹅耳 |
-| 23 | 🧘和尚 | 和尚念经 | ![img](../images/23.jpg) | 二三、耳山 |
-| 24 | ⏰闹钟 | 闹钟叮铃铃响 | ![img](../images/24.jpg) | 二四、耳饰 |
-| 25 | 🎻二胡 | 拉二胡 | ![img](../images/25.jpg) | 二五、耳舞 |
-| 26 | 🌊河流 | 河水流淌 | ![img](../images/26.jpg) | 二六、耳溜 |
-| 27 | 🎧耳机 | 戴耳机听歌 | ![img](../images/27.jpg) | 二七、耳棋 |
-| 28 | 👊恶霸 | 恶霸拍桌子 | ![img](../images/28.jpg) | 二八、耳环 |
-| 29 | 🧱阿胶 | 熬阿胶 | ![img](../images/29.jpg) | 二九、耳酒 |
-| 30 | 🛺三轮 | 三轮车装满货 | ![img](../images/30.jpg) | 三零、山灵 |
-| 31 | 🦈鲨鱼 | 大白鲨 | ![img](../images/31.jpg) | 三一、山衣 |
-| 32 | 🪭扇儿 | 一把折扇打开 | ![img](../images/32.jpg) | 三二、山耳 |
-| 33 | ⭐星星 | 一颗亮星星 | ![img](../images/33.jpg) | 三三、闪闪 |
-| 34 | 🏯山寺 | 深山古寺，钟声悠扬 | ![img](../images/34.jpg) | 三四、山寺 |
-| 35 | 🪸珊瑚 | 海底珊瑚 | ![img](../images/35.jpg) | 三五、山虎 |
-| 36 | 🛤️山路 | 走山路 | ![img](../images/36.jpg) | 三六、山柳 |
-| 37 | 🐔山鸡 | 山里扑棱的野鸡 | ![img](../images/37.jpg) | 三七、山棋 |
-| 38 | 👩妇女 | 一位妇女在做饭 | ![img](../images/38.jpg) | 三八、山靶 |
-| 39 | 📐三角 | 三角尺 | ![img](../images/39.jpg) | 三九、山酒 |
-| 40 | 🎖️司令 | 司令指挥 | ![img](../images/40.jpg) | 四零、寺灵 |
-| 41 | 🎤司仪 | 婚礼司仪 | ![img](../images/41.jpg) | 四一、寺衣 |
-| 42 | 🍅柿儿 | 掰开红柿子，汁水四溅 | ![img](../images/42.jpg) | 事儿、寺耳 |
-| 43 | ⛰️石山 | 石头山 | ![img](../images/43.jpg) | 四三、寺山 |
-| 44 | 🦁石狮 | 门口的大石狮子 | ![img](../images/44.jpg) | 四四、石寺 |
-| 45 | 🧑‍🏫师父 | 师父教导 | ![img](../images/45.jpg) | 四五、寺虎 |
-| 46 | 🌾饲料 | 撒饲料 | ![img](../images/46.jpg) | 四六、寺柳 |
-| 47 | 🚗司机 | 开车的司机 | ![img](../images/47.jpg) | 四七、寺棋 |
-| 48 | 🪨石板 | 石板路 | ![img](../images/48.jpg) | 四八、寺靶 |
-| 49 | 🏺石臼 | 石臼捣药 | ![img](../images/49.jpg) | 四九、寺酒 |
-| 50 | 📕武功秘籍 | 一本泛黄的武功秘籍 | ![img](../images/50.jpg) | 五零、虎灵 |
-| 51 | 👷工人 | 五一劳动节 | ![img](../images/51.jpg) | 五一、虎衣 |
-| 52 | 🥁鼓儿 | 敲鼓 | ![img](../images/52.jpg) | 五二、虎耳 |
-| 53 | 🥩午餐肉 | 切午餐肉，油滋滋响 | ![img](../images/53.jpg) | 武三、五三 |
-| 54 | ⚔️武士 | 武士拔刀 | ![img](../images/54.jpg) | 五四、虎寺 |
-| 55 | 🚂火车 | 火车呜呜叫 | ![img](../images/55.jpg) | 五五、虎虎 |
-| 56 | 🐌蜗牛 | 蜗牛慢慢爬 | ![img](../images/56.jpg) | 五六、梧桐 |
-| 57 | ⚔️武器 | 武器瞄准 | ![img](../images/57.jpg) | 五七、虎棋 |
-| 58 | 🦊尾巴 | 翘尾巴摇啊摇 | ![img](../images/58.jpg) | 五八、舞吧 |
-| 59 | ⭐五角 | 闪闪五角星 | ![img](../images/59.jpg) | 五九、虎酒 |
-| 60 | 🥭榴莲 | 榴莲砸下来 | ![img](../images/60.jpg) | 六零、柳灵 |
-| 61 | 👧儿童 | 小朋友背着书包蹦蹦跳 | ![img](../images/61.jpg) | 六一、柳衣 |
-| 62 | 🐂牛儿 | 牛吃草 | ![img](../images/62.jpg) | 六二、柳耳 |
-| 63 | ⏳流沙 | 陷入流沙 | ![img](../images/63.jpg) | 六三、流沙 |
-| 64 | 🔩螺丝 | 拧螺丝 | ![img](../images/64.jpg) | 六四、柳寺 |
-| 65 | 🥁锣鼓 | 敲锣打鼓 | ![img](../images/65.jpg) | 六五、柳虎 |
-| 66 | 🪀溜溜球 | 溜溜球甩出去又弹回来 | ![img](../images/66.jpg) | 六六、柳柳 |
-| 67 | 🏁绿旗 | 绿色旗帜 | ![img](../images/67.jpg) | 六七、柳棋 |
-| 68 | 🥩牛排 | 煎牛排滋滋响 | ![img](../images/68.jpg) | 溜吧、路霸 |
-| 69 | 🏝️琉球 | 琉球群岛风光 | ![img](../images/69.jpg) | 六九、柳酒 |
-| 70 | 🦄麒麟 | 麒麟奔跑 | ![img](../images/70.jpg) | 七零、棋灵 |
-| 71 | 👕洗衣 | 搓衣板搓衣服，泡沫飞溅 | ![img](../images/71.jpg) | 七一、西医 |
-| 72 | 🐧企鹅 | 企鹅摇摆走 | ![img](../images/72.jpg) | 七二、棋耳 |
-| 73 | 🌿花旗参 | 花旗参切片泡水 | ![img](../images/73.jpg) | 七三、清嗓 |
-| 74 | 🏇骑士 | 骑士冲锋 | ![img](../images/74.jpg) | 七四、棋寺 |
-| 75 | 🧱积木 | 堆积木 | ![img](../images/75.jpg) | 七五、棋虎 |
-| 76 | 🦏犀牛 | 犀牛冲撞 | ![img](../images/76.jpg) | 七六、棋柳 |
-| 77 | 🦗蛐蛐 | 斗蛐蛐，两只蟋蟀在罐子里打架 | ![img](../images/77.jpg) | 机器、七七 |
-| 78 | 🍉西瓜 | 切西瓜 | ![img](../images/78.jpg) | 七八、棋靶 |
-| 79 | 🎈气球 | 气球飞上天 | ![img](../images/79.jpg) | 七九、棋酒 |
-| 80 | 🚌巴士 | 双层巴士急刹车 | ![img](../images/80.jpg) | 八零、靶灵 |
-| 81 | 🐜蚂蚁 | 蚂蚁搬食物 | ![img](../images/81.jpg) | 八一、靶衣 |
-| 82 | 🎯靶儿 | 射箭中靶 | ![img](../images/82.jpg) | 八二、靶耳 |
-| 83 | 🥜花生 | 剥花生 | ![img](../images/83.jpg) | 八三、靶山 |
-| 84 | 🍯拔丝 | 拔丝地瓜拉出金丝 | ![img](../images/84.jpg) | 八四、靶寺 |
-| 85 | 🏠白屋 | 白色的屋子，白墙白顶 | ![img](../images/85.jpg) | 八五、靶虎 |
-| 86 | ⭐八路 | 八路军行军 | ![img](../images/86.jpg) | 八六、靶柳 |
-| 87 | ♟️白棋 | 白棋落子 | ![img](../images/87.jpg) | 八七、白棋 |
-| 88 | 👨爸爸 | 爸爸背孩子 | ![img](../images/88.jpg) | 八八、靶靶 |
-| 89 | 🍌芭蕉 | 芭蕉扇风 | ![img](../images/89.jpg) | 八九、靶酒 |
-| 90 | 🍂红色秋林 | 满地红叶的秋林美景 | ![img](../images/90.jpg) | 九零、酒灵 |
-| 91 | 👕球衣 | 穿球衣 | ![img](../images/91.jpg) | 九一、酒衣 |
-| 92 | ⚽球儿 | 踢球 | ![img](../images/92.jpg) | 九二、酒耳 |
-| 93 | ☂️旧伞 | 撑旧伞 | ![img](../images/93.jpg) | 九三、酒山 |
-| 94 | 🏫教室 | 教室上课 | ![img](../images/94.jpg) | 九四、酒寺 |
-| 95 | 🚑救护车 | 救护车呼啸 | ![img](../images/95.jpg) | 九五、酒虎 |
-| 96 | 🦌鹿角 | 梅花鹿的大角 | ![img](../images/96.jpg) | 九六、酒柳 |
-| 97 | 🏳️旧旗 | 一面褪色的旧旗帜迎风飘 | ![img](../images/97.jpg) | 九七、酒棋 |
-| 98 | 🍺酒吧 | 吧台上调酒师甩瓶 | ![img](../images/98.jpg) | 九八、酒靶 |
-| 99 | 👨舅舅 | 舅舅抱外甥 | ![img](../images/99.jpg) | 九九、酒酒 |
+| 00 | 🔭双筒望远镜 | 双筒望远镜看远方 | <img src="../images/00.jpg" width="64" height="64"> | 零零、蛋蛋 |
+| 01 | 🌳茂盛树木 | 茂盛的大树 | <img src="../images/01.jpg" width="64" height="64"> | 零一、灵异 |
+| 02 | 🎐铃儿 | 铃儿响叮当 | <img src="../images/02.jpg" width="64" height="64"> | 零二、灵鹅 |
+| 03 | 🔄三脚凳 | 圆形三条腿的凳子 | <img src="../images/03.jpg" width="64" height="64"> | 零三、灵珊 |
+| 04 | 🍿零食 | 一堆零食 | <img src="../images/04.jpg" width="64" height="64"> | 灵寺、灵死 |
+| 05 | ⬟五边形咒符 | 五边形的神秘咒符 | <img src="../images/05.jpg" width="64" height="64"> | 零五、灵武 |
+| 06 | 🚶领路 | 导游带路 | <img src="../images/06.jpg" width="64" height="64"> | 零六、灵鹿 |
+| 07 | 🚩令旗 | 将军发令挥旗 | <img src="../images/07.jpg" width="64" height="64"> | 零七、灵器 |
+| 08 | 🛼溜溜鞋 | 穿溜溜鞋滑行 | <img src="../images/08.jpg" width="64" height="64"> | 零八、临别 |
+| 09 | 🌰菱角 | 剥菱角吃 | <img src="../images/09.jpg" width="64" height="64"> | 零九、灵酒 |
+| 10 | 👔衣领 | 衣服领子 | <img src="../images/10.jpg" width="64" height="64"> | 一零、依令 |
+| 11 | 🥢筷子 | 两根筷子 | <img src="../images/11.jpg" width="64" height="64"> | 一一、摇摇 |
+| 12 | 👶婴儿 | 婴儿学步 | <img src="../images/12.jpg" width="64" height="64"> | 一二、一耳 |
+| 13 | 👨‍⚕️医生 | 白大褂听诊 | <img src="../images/13.jpg" width="64" height="64"> | 一生、一山 |
+| 14 | 🔑钥匙 | 开锁的钥匙 | <img src="../images/14.jpg" width="64" height="64"> | 一时、一寺 |
+| 15 | 🦜鹦鹉 | 会说话的鸟 | <img src="../images/15.jpg" width="64" height="64"> | 一五、一壶 |
+| 16 | 🍎石榴 | 掰开红籽 | <img src="../images/16.jpg" width="64" height="64"> | 一路、一楼 |
+| 17 | 🧪试管 | 试管里冒泡泡 | <img src="../images/17.jpg" width="64" height="64"> | 一七、一起 |
+| 18 | 💰腰包 | 解开腰包掏钱 | <img src="../images/18.jpg" width="64" height="64"> | 一八、要发 |
+| 19 | 🪝衣钩 | 挂衣服的钩子 | <img src="../images/19.jpg" width="64" height="64"> | 一九、一狗 |
+| 20 | 💍耳环 | 金耳环闪闪发光 | <img src="../images/20.jpg" width="64" height="64"> | 二零、爱您 |
+| 21 | 🐊鳄鱼 | 大嘴鳄鱼 | <img src="../images/21.jpg" width="64" height="64"> | 二一、耳翼 |
+| 22 | 🦆鸭子 | 嘎嘎叫的鸭子拍翅膀 | <img src="../images/22.jpg" width="64" height="64"> | 二二、鹅耳 |
+| 23 | 🧘和尚 | 和尚念经 | <img src="../images/23.jpg" width="64" height="64"> | 二三、耳山 |
+| 24 | ⏰闹钟 | 闹钟叮铃铃响 | <img src="../images/24.jpg" width="64" height="64"> | 二四、耳饰 |
+| 25 | 🎻二胡 | 拉二胡 | <img src="../images/25.jpg" width="64" height="64"> | 二五、耳舞 |
+| 26 | 🌊河流 | 河水流淌 | <img src="../images/26.jpg" width="64" height="64"> | 二六、耳溜 |
+| 27 | 🎧耳机 | 戴耳机听歌 | <img src="../images/27.jpg" width="64" height="64"> | 二七、耳棋 |
+| 28 | 👊恶霸 | 恶霸拍桌子 | <img src="../images/28.jpg" width="64" height="64"> | 二八、耳环 |
+| 29 | 🧱阿胶 | 熬阿胶 | <img src="../images/29.jpg" width="64" height="64"> | 二九、耳酒 |
+| 30 | 🛺三轮 | 三轮车装满货 | <img src="../images/30.jpg" width="64" height="64"> | 三零、山灵 |
+| 31 | 🦈鲨鱼 | 大白鲨 | <img src="../images/31.jpg" width="64" height="64"> | 三一、山衣 |
+| 32 | 🪭扇儿 | 一把折扇打开 | <img src="../images/32.jpg" width="64" height="64"> | 三二、山耳 |
+| 33 | ⭐星星 | 一颗亮星星 | <img src="../images/33.jpg" width="64" height="64"> | 三三、闪闪 |
+| 34 | 🏯山寺 | 深山古寺，钟声悠扬 | <img src="../images/34.jpg" width="64" height="64"> | 三四、山寺 |
+| 35 | 🪸珊瑚 | 海底珊瑚 | <img src="../images/35.jpg" width="64" height="64"> | 三五、山虎 |
+| 36 | 🛤️山路 | 走山路 | <img src="../images/36.jpg" width="64" height="64"> | 三六、山柳 |
+| 37 | 🐔山鸡 | 山里扑棱的野鸡 | <img src="../images/37.jpg" width="64" height="64"> | 三七、山棋 |
+| 38 | 👩妇女 | 一位妇女在做饭 | <img src="../images/38.jpg" width="64" height="64"> | 三八、山靶 |
+| 39 | 📐三角 | 三角尺 | <img src="../images/39.jpg" width="64" height="64"> | 三九、山酒 |
+| 40 | 🎖️司令 | 司令指挥 | <img src="../images/40.jpg" width="64" height="64"> | 四零、寺灵 |
+| 41 | 🎤司仪 | 婚礼司仪 | <img src="../images/41.jpg" width="64" height="64"> | 四一、寺衣 |
+| 42 | 🍅柿儿 | 掰开红柿子，汁水四溅 | <img src="../images/42.jpg" width="64" height="64"> | 事儿、寺耳 |
+| 43 | ⛰️石山 | 石头山 | <img src="../images/43.jpg" width="64" height="64"> | 四三、寺山 |
+| 44 | 🦁石狮 | 门口的大石狮子 | <img src="../images/44.jpg" width="64" height="64"> | 四四、石寺 |
+| 45 | 🧑‍🏫师父 | 师父教导 | <img src="../images/45.jpg" width="64" height="64"> | 四五、寺虎 |
+| 46 | 🌾饲料 | 撒饲料 | <img src="../images/46.jpg" width="64" height="64"> | 四六、寺柳 |
+| 47 | 🚗司机 | 开车的司机 | <img src="../images/47.jpg" width="64" height="64"> | 四七、寺棋 |
+| 48 | 🪨石板 | 石板路 | <img src="../images/48.jpg" width="64" height="64"> | 四八、寺靶 |
+| 49 | 🏺石臼 | 石臼捣药 | <img src="../images/49.jpg" width="64" height="64"> | 四九、寺酒 |
+| 50 | 📕武功秘籍 | 一本泛黄的武功秘籍 | <img src="../images/50.jpg" width="64" height="64"> | 五零、虎灵 |
+| 51 | 👷工人 | 五一劳动节 | <img src="../images/51.jpg" width="64" height="64"> | 五一、虎衣 |
+| 52 | 🥁鼓儿 | 敲鼓 | <img src="../images/52.jpg" width="64" height="64"> | 五二、虎耳 |
+| 53 | 🥩午餐肉 | 切午餐肉，油滋滋响 | <img src="../images/53.jpg" width="64" height="64"> | 武三、五三 |
+| 54 | ⚔️武士 | 武士拔刀 | <img src="../images/54.jpg" width="64" height="64"> | 五四、虎寺 |
+| 55 | 🚂火车 | 火车呜呜叫 | <img src="../images/55.jpg" width="64" height="64"> | 五五、虎虎 |
+| 56 | 🐌蜗牛 | 蜗牛慢慢爬 | <img src="../images/56.jpg" width="64" height="64"> | 五六、梧桐 |
+| 57 | ⚔️武器 | 武器瞄准 | <img src="../images/57.jpg" width="64" height="64"> | 五七、虎棋 |
+| 58 | 🦊尾巴 | 翘尾巴摇啊摇 | <img src="../images/58.jpg" width="64" height="64"> | 五八、舞吧 |
+| 59 | ⭐五角 | 闪闪五角星 | <img src="../images/59.jpg" width="64" height="64"> | 五九、虎酒 |
+| 60 | 🥭榴莲 | 榴莲砸下来 | <img src="../images/60.jpg" width="64" height="64"> | 六零、柳灵 |
+| 61 | 👧儿童 | 小朋友背着书包蹦蹦跳 | <img src="../images/61.jpg" width="64" height="64"> | 六一、柳衣 |
+| 62 | 🐂牛儿 | 牛吃草 | <img src="../images/62.jpg" width="64" height="64"> | 六二、柳耳 |
+| 63 | ⏳流沙 | 陷入流沙 | <img src="../images/63.jpg" width="64" height="64"> | 六三、流沙 |
+| 64 | 🔩螺丝 | 拧螺丝 | <img src="../images/64.jpg" width="64" height="64"> | 六四、柳寺 |
+| 65 | 🥁锣鼓 | 敲锣打鼓 | <img src="../images/65.jpg" width="64" height="64"> | 六五、柳虎 |
+| 66 | 🪀溜溜球 | 溜溜球甩出去又弹回来 | <img src="../images/66.jpg" width="64" height="64"> | 六六、柳柳 |
+| 67 | 🏁绿旗 | 绿色旗帜 | <img src="../images/67.jpg" width="64" height="64"> | 六七、柳棋 |
+| 68 | 🥩牛排 | 煎牛排滋滋响 | <img src="../images/68.jpg" width="64" height="64"> | 溜吧、路霸 |
+| 69 | 🏝️琉球 | 琉球群岛风光 | <img src="../images/69.jpg" width="64" height="64"> | 六九、柳酒 |
+| 70 | 🦄麒麟 | 麒麟奔跑 | <img src="../images/70.jpg" width="64" height="64"> | 七零、棋灵 |
+| 71 | 👕洗衣 | 搓衣板搓衣服，泡沫飞溅 | <img src="../images/71.jpg" width="64" height="64"> | 七一、西医 |
+| 72 | 🐧企鹅 | 企鹅摇摆走 | <img src="../images/72.jpg" width="64" height="64"> | 七二、棋耳 |
+| 73 | 🌿花旗参 | 花旗参切片泡水 | <img src="../images/73.jpg" width="64" height="64"> | 七三、清嗓 |
+| 74 | 🏇骑士 | 骑士冲锋 | <img src="../images/74.jpg" width="64" height="64"> | 七四、棋寺 |
+| 75 | 🧱积木 | 堆积木 | <img src="../images/75.jpg" width="64" height="64"> | 七五、棋虎 |
+| 76 | 🦏犀牛 | 犀牛冲撞 | <img src="../images/76.jpg" width="64" height="64"> | 七六、棋柳 |
+| 77 | 🦗蛐蛐 | 斗蛐蛐，两只蟋蟀在罐子里打架 | <img src="../images/77.jpg" width="64" height="64"> | 机器、七七 |
+| 78 | 🍉西瓜 | 切西瓜 | <img src="../images/78.jpg" width="64" height="64"> | 七八、棋靶 |
+| 79 | 🎈气球 | 气球飞上天 | <img src="../images/79.jpg" width="64" height="64"> | 七九、棋酒 |
+| 80 | 🚌巴士 | 双层巴士急刹车 | <img src="../images/80.jpg" width="64" height="64"> | 八零、靶灵 |
+| 81 | 🐜蚂蚁 | 蚂蚁搬食物 | <img src="../images/81.jpg" width="64" height="64"> | 八一、靶衣 |
+| 82 | 🎯靶儿 | 射箭中靶 | <img src="../images/82.jpg" width="64" height="64"> | 八二、靶耳 |
+| 83 | 🥜花生 | 剥花生 | <img src="../images/83.jpg" width="64" height="64"> | 八三、靶山 |
+| 84 | 🍯拔丝 | 拔丝地瓜拉出金丝 | <img src="../images/84.jpg" width="64" height="64"> | 八四、靶寺 |
+| 85 | 🏠白屋 | 白色的屋子，白墙白顶 | <img src="../images/85.jpg" width="64" height="64"> | 八五、靶虎 |
+| 86 | ⭐八路 | 八路军行军 | <img src="../images/86.jpg" width="64" height="64"> | 八六、靶柳 |
+| 87 | ♟️白棋 | 白棋落子 | <img src="../images/87.jpg" width="64" height="64"> | 八七、白棋 |
+| 88 | 👨爸爸 | 爸爸背孩子 | <img src="../images/88.jpg" width="64" height="64"> | 八八、靶靶 |
+| 89 | 🍌芭蕉 | 芭蕉扇风 | <img src="../images/89.jpg" width="64" height="64"> | 八九、靶酒 |
+| 90 | 🍂红色秋林 | 满地红叶的秋林美景 | <img src="../images/90.jpg" width="64" height="64"> | 九零、酒灵 |
+| 91 | 👕球衣 | 穿球衣 | <img src="../images/91.jpg" width="64" height="64"> | 九一、酒衣 |
+| 92 | ⚽球儿 | 踢球 | <img src="../images/92.jpg" width="64" height="64"> | 九二、酒耳 |
+| 93 | ☂️旧伞 | 撑旧伞 | <img src="../images/93.jpg" width="64" height="64"> | 九三、酒山 |
+| 94 | 🏫教室 | 教室上课 | <img src="../images/94.jpg" width="64" height="64"> | 九四、酒寺 |
+| 95 | 🚑救护车 | 救护车呼啸 | <img src="../images/95.jpg" width="64" height="64"> | 九五、酒虎 |
+| 96 | 🦌鹿角 | 梅花鹿的大角 | <img src="../images/96.jpg" width="64" height="64"> | 九六、酒柳 |
+| 97 | 🏳️旧旗 | 一面褪色的旧旗帜迎风飘 | <img src="../images/97.jpg" width="64" height="64"> | 九七、酒棋 |
+| 98 | 🍺酒吧 | 吧台上调酒师甩瓶 | <img src="../images/98.jpg" width="64" height="64"> | 九八、酒靶 |
+| 99 | 👨舅舅 | 舅舅抱外甥 | <img src="../images/99.jpg" width="64" height="64"> | 九九、酒酒 |
 
 ---
 
@@ -131,106 +131,106 @@
 
 | 数字 | 联想 | 画面 | 配图 | 关联说明 |
 |------|------|------|------|----------|
-| 00 | 007 | 詹姆斯·邦德 | ![img](../images/00.jpg) | 代号007 |
-| 01 | 奥特曼 | 发射光线 | ![img](../images/01.jpg) | 01号战士 |
-| 02 | 悟空 | 翻筋斗 | ![img](../images/02.jpg) | "02"→铃儿→筋斗云 |
-| 03 | 哪吒 | 三头六臂 | ![img](../images/03.jpg) | "03"→灵山→少年英雄 |
-| 04 | 贝尔 | 荒野求生 | ![img](../images/04.jpg) | "04"→零死→生存极限 |
-| 05 | 巴赫 | 弹管风琴 | ![img](../images/05.jpg) | BWV编号 |
-| 06 | 拿破仑 | 骑马 | ![img](../images/06.jpg) | 第六次反法同盟 |
-| 07 | 周杰伦 | 弹钢琴 | ![img](../images/07.jpg) | "07"→七里香 |
-| 08 | 林书豪 | 投篮 | ![img](../images/08.jpg) | 8号球衣"Linsanity" |
-| 09 | 酿酒师 | 古法酿酒 | ![img](../images/09.jpg) | "09"→灵酒→酿酒师 |
-| 10 | 完美 | 十全十美 | ![img](../images/10.jpg) | "10"→满分 |
-| 11 | 光棍 | 11.11 | ![img](../images/11.jpg) | 光棍节 |
-| 12 | 生肖 | 十二生肖 | ![img](../images/12.jpg) | 12年一轮回 |
-| 13 | 不吉利 | 黑猫 | ![img](../images/13.jpg) | 西方忌讳13 |
-| 14 | 情人 | 2.14 | ![img](../images/14.jpg) | 情人节 |
-| 15 | 中秋 | 8.15 | ![img](../images/15.jpg) | 中秋节（农历十五） |
-| 16 | 石榴 | 掰开 | ![img](../images/16.jpg) | "16"→石榴谐音 |
-| 17 | 一起 | 团结 | ![img](../images/17.jpg) | "17"→一起 |
-| 18 | 成人 | 18岁 | ![img](../images/18.jpg) | 成年礼 |
-| 19 | 要久 | 长久 | ![img](../images/19.jpg) | "19"→要久 |
-| 20 | 弱冠 | 20岁 | ![img](../images/20.jpg) | 古代男子成年 |
-| 21 | 世纪 | 21世纪 | ![img](../images/21.jpg) | 当前时代 |
-| 22 | 双数 | 对称 | ![img](../images/22.jpg) | 两个2 |
-| 23 | 乔丹 | 23号球衣 | ![img](../images/23.jpg) | NBA传奇 |
-| 24 | 节气 | 二十四节气 | ![img](../images/24.jpg) | 中国传统文化 |
-| 25 | 银婚 | 25周年 | ![img](../images/25.jpg) | 结婚纪念日 |
-| 26 | 字母 | 26个字母 | ![img](../images/26.jpg) | 英语字母表 |
-| 27 | 宝藏 | 27号 | ![img](../images/27.jpg) | 世界之谜 |
-| 28 | 星宿 | 二十八星宿 | ![img](../images/28.jpg) | 中国天文学 |
-| 29 | 闰日 | 2.29 | ![img](../images/29.jpg) | 四年一次 |
-| 30 | 而立 | 30岁 | ![img](../images/30.jpg) | 孔子"三十而立" |
-| 31 | 消费者 | 3.15 | ![img](../images/31.jpg) | 消费者权益日 |
-| 32 | 扇儿 | 扇风 | ![img](../images/32.jpg) | "32"→扇儿 |
-| 33 | 三三 | 三三制 | ![img](../images/33.jpg) | "33"→三三 |
-| 34 | 这里 | 34° | ![img](../images/34.jpg) | 人体温度 |
-| 35 | 中年 | 35岁 | ![img](../images/35.jpg) | 职场分水岭 |
-| 36 | 天罡 | 三十六天罡 | ![img](../images/36.jpg) | 水浒传 |
-| 37 | 体温 | 37°C | ![img](../images/37.jpg) | 人体正常温度 |
-| 38 | 妇女 | 3.8 | ![img](../images/38.jpg) | 妇女节 |
-| 39 | 三九 | 三九天 | ![img](../images/39.jpg) | 最冷的时候 |
-| 40 | 不惑 | 40岁 | ![img](../images/40.jpg) | 孔子"四十不惑" |
-| 41 | 国际 | 4.1 | ![img](../images/41.jpg) | 国际愚人节 |
-| 42 | 答案 | 42 | ![img](../images/42.jpg) | 银河系漫游指南 |
-| 43 | 旗舰 | 43 | ![img](../images/43.jpg) | 区号 |
-| 44 | 死神 | 4→死 | ![img](../images/44.jpg) | 中文忌讳 |
-| 45 | 半角 | 45° | ![img](../images/45.jpg) | 直角一半 |
-| 46 | 染色体 | 46条 | ![img](../images/46.jpg) | 人类染色体 |
-| 47 | 陷阱 | 47 | ![img](../images/47.jpg) | 特工编号 |
-| 48 | 四季 | 48 | ![img](../images/48.jpg) | 一年约48周 |
-| 49 | 七七 | 49天 | ![img](../images/49.jpg) | 做七习俗 |
-| 50 | 半百 | 50岁 | ![img](../images/50.jpg) | 人生半程 |
-| 51 | 劳动 | 5.1 | ![img](../images/51.jpg) | 劳动节 |
-| 52 | 一年 | 52周 | ![img](../images/52.jpg) | 一年52周 |
-| 53 | 参谋 | 53 | ![img](../images/53.jpg) | 参谋部 |
-| 54 | 五四 | 5.4 | ![img](../images/54.jpg) | 青年节 |
-| 55 | 重五 | 端午 | ![img](../images/55.jpg) | 端午节（五月初五） |
-| 56 | 民族 | 56个 | ![img](../images/56.jpg) | 中华民族 |
-| 57 | 武器 | 57式 | ![img](../images/57.jpg) | 谐音"武器"，57式冲锋枪 |
-| 58 | 我发 | 谐音 | ![img](../images/58.jpg) | 谐音"我发"，发财吉利 |
-| 59 | 退休 | 59岁 | ![img](../images/59.jpg) | 退休前夕 |
-| 60 | 花甲 | 60岁 | ![img](../images/60.jpg) | 一个甲子 |
-| 61 | 儿童 | 6.1 | ![img](../images/61.jpg) | 儿童节 |
-| 62 | 牛郎 | 牛郎织女 | ![img](../images/62.jpg) | "62"→牛儿 |
-| 63 | 慈禧 | 1863 | ![img](../images/63.jpg) | 历史人物 |
-| 64 | 计算机 | 64位 | ![img](../images/64.jpg) | 64位系统 |
-| 65 | 退休 | 65岁 | ![img](../images/65.jpg) | 法定退休 |
-| 66 | 大顺 | 六六大顺 | ![img](../images/66.jpg) | 吉利数字 |
-| 67 | 绿色 | 绿旗 | ![img](../images/67.jpg) | "67"→绿旗 |
-| 68 | 发达 | 谐音"顺发" | ![img](../images/68.jpg) | 吉利数字 |
-| 69 | 太极 | 阴阳 | ![img](../images/69.jpg) | 形似太极图 |
-| 70 | 古稀 | 70岁 | ![img](../images/70.jpg) | 杜甫"人生七十古来稀" |
-| 71 | 建党 | 7.1 | ![img](../images/71.jpg) | 建党节 |
-| 72 | 变化 | 72变 | ![img](../images/72.jpg) | 孙悟空72变 |
-| 73 | 质数 | 73 | ![img](../images/73.jpg) | Sheldon最爱的质数 |
-| 74 | 气死 | 谐音 | ![img](../images/74.jpg) | 忌讳数字 |
-| 75 | 气温 | 75°F | ![img](../images/75.jpg) | 舒适气温 |
-| 76 | 气流 | 76 | ![img](../images/76.jpg) | 谐音"气流" |
-| 77 | 七夕 | 7.7 | ![img](../images/77.jpg) | 七夕节 |
-| 78 | 出生 | 1978 | ![img](../images/78.jpg) | 改革开放 |
-| 79 | 吃酒 | 谐音 | ![img](../images/79.jpg) | 谐音"吃酒" |
-| 80 | 耄耋 | 80岁 | ![img](../images/80.jpg) | 高寿 |
-| 81 | 建军 | 8.1 | ![img](../images/81.jpg) | 建军节 |
-| 82 | 二进制 | 2^8=256→82 | ![img](../images/82.jpg) | 计算机 |
-| 83 | 中年 | 1983 | ![img](../images/83.jpg) | 出生高峰 |
-| 84 | 复活 | 1984 | ![img](../images/84.jpg) | 奥威尔小说 |
-| 85 | 科技 | 1985 | ![img](../images/85.jpg) | 互联网前身 |
-| 86 | 八六 | 86 | ![img](../images/86.jpg) | 联想（GT86） |
-| 87 | 十一届 | 1987 | ![img](../images/87.jpg) | 三中全会 |
-| 88 | 发发 | 发财 | ![img](../images/88.jpg) | 最吉利数字 |
-| 89 | 八九 | 八九不离十 | ![img](../images/89.jpg) | 谐音"八九"，接近完美 |
-| 90 | 耄耋 | 90岁 | ![img](../images/90.jpg) | 高寿 |
-| 91 | 建党 | 1921→91 | ![img](../images/91.jpg) | 建党纪念 |
-| 92 | 南巡 | 1992 | ![img](../images/92.jpg) | 邓小平南巡 |
-| 93 | 银河号 | 1993 | ![img](../images/93.jpg) | 历史事件 |
-| 94 | 世足 | 1994 | ![img](../images/94.jpg) | 世界杯 |
-| 95 | 世妇会 | 1995 | ![img](../images/95.jpg) | 北京世妇会 |
-| 96 | 九七回归 | 1996→97 | ![img](../images/96.jpg) | 前一年 |
-| 97 | 香港回归 | 1997 | ![img](../images/97.jpg) | 重大事件 |
-| 98 | 世界杯 | 1998 | ![img](../images/98.jpg) | 法国世界杯 |
-| 99 | 澳门回归 | 1999 | ![img](../images/99.jpg) | 重大事件 |
+| 00 | 007 | 詹姆斯·邦德 | <img src="../images/00.jpg" width="64" height="64"> | 代号007 |
+| 01 | 奥特曼 | 发射光线 | <img src="../images/01.jpg" width="64" height="64"> | 01号战士 |
+| 02 | 悟空 | 翻筋斗 | <img src="../images/02.jpg" width="64" height="64"> | "02"→铃儿→筋斗云 |
+| 03 | 哪吒 | 三头六臂 | <img src="../images/03.jpg" width="64" height="64"> | "03"→灵山→少年英雄 |
+| 04 | 贝尔 | 荒野求生 | <img src="../images/04.jpg" width="64" height="64"> | "04"→零死→生存极限 |
+| 05 | 巴赫 | 弹管风琴 | <img src="../images/05.jpg" width="64" height="64"> | BWV编号 |
+| 06 | 拿破仑 | 骑马 | <img src="../images/06.jpg" width="64" height="64"> | 第六次反法同盟 |
+| 07 | 周杰伦 | 弹钢琴 | <img src="../images/07.jpg" width="64" height="64"> | "07"→七里香 |
+| 08 | 林书豪 | 投篮 | <img src="../images/08.jpg" width="64" height="64"> | 8号球衣"Linsanity" |
+| 09 | 酿酒师 | 古法酿酒 | <img src="../images/09.jpg" width="64" height="64"> | "09"→灵酒→酿酒师 |
+| 10 | 完美 | 十全十美 | <img src="../images/10.jpg" width="64" height="64"> | "10"→满分 |
+| 11 | 光棍 | 11.11 | <img src="../images/11.jpg" width="64" height="64"> | 光棍节 |
+| 12 | 生肖 | 十二生肖 | <img src="../images/12.jpg" width="64" height="64"> | 12年一轮回 |
+| 13 | 不吉利 | 黑猫 | <img src="../images/13.jpg" width="64" height="64"> | 西方忌讳13 |
+| 14 | 情人 | 2.14 | <img src="../images/14.jpg" width="64" height="64"> | 情人节 |
+| 15 | 中秋 | 8.15 | <img src="../images/15.jpg" width="64" height="64"> | 中秋节（农历十五） |
+| 16 | 石榴 | 掰开 | <img src="../images/16.jpg" width="64" height="64"> | "16"→石榴谐音 |
+| 17 | 一起 | 团结 | <img src="../images/17.jpg" width="64" height="64"> | "17"→一起 |
+| 18 | 成人 | 18岁 | <img src="../images/18.jpg" width="64" height="64"> | 成年礼 |
+| 19 | 要久 | 长久 | <img src="../images/19.jpg" width="64" height="64"> | "19"→要久 |
+| 20 | 弱冠 | 20岁 | <img src="../images/20.jpg" width="64" height="64"> | 古代男子成年 |
+| 21 | 世纪 | 21世纪 | <img src="../images/21.jpg" width="64" height="64"> | 当前时代 |
+| 22 | 双数 | 对称 | <img src="../images/22.jpg" width="64" height="64"> | 两个2 |
+| 23 | 乔丹 | 23号球衣 | <img src="../images/23.jpg" width="64" height="64"> | NBA传奇 |
+| 24 | 节气 | 二十四节气 | <img src="../images/24.jpg" width="64" height="64"> | 中国传统文化 |
+| 25 | 银婚 | 25周年 | <img src="../images/25.jpg" width="64" height="64"> | 结婚纪念日 |
+| 26 | 字母 | 26个字母 | <img src="../images/26.jpg" width="64" height="64"> | 英语字母表 |
+| 27 | 宝藏 | 27号 | <img src="../images/27.jpg" width="64" height="64"> | 世界之谜 |
+| 28 | 星宿 | 二十八星宿 | <img src="../images/28.jpg" width="64" height="64"> | 中国天文学 |
+| 29 | 闰日 | 2.29 | <img src="../images/29.jpg" width="64" height="64"> | 四年一次 |
+| 30 | 而立 | 30岁 | <img src="../images/30.jpg" width="64" height="64"> | 孔子"三十而立" |
+| 31 | 消费者 | 3.15 | <img src="../images/31.jpg" width="64" height="64"> | 消费者权益日 |
+| 32 | 扇儿 | 扇风 | <img src="../images/32.jpg" width="64" height="64"> | "32"→扇儿 |
+| 33 | 三三 | 三三制 | <img src="../images/33.jpg" width="64" height="64"> | "33"→三三 |
+| 34 | 这里 | 34° | <img src="../images/34.jpg" width="64" height="64"> | 人体温度 |
+| 35 | 中年 | 35岁 | <img src="../images/35.jpg" width="64" height="64"> | 职场分水岭 |
+| 36 | 天罡 | 三十六天罡 | <img src="../images/36.jpg" width="64" height="64"> | 水浒传 |
+| 37 | 体温 | 37°C | <img src="../images/37.jpg" width="64" height="64"> | 人体正常温度 |
+| 38 | 妇女 | 3.8 | <img src="../images/38.jpg" width="64" height="64"> | 妇女节 |
+| 39 | 三九 | 三九天 | <img src="../images/39.jpg" width="64" height="64"> | 最冷的时候 |
+| 40 | 不惑 | 40岁 | <img src="../images/40.jpg" width="64" height="64"> | 孔子"四十不惑" |
+| 41 | 国际 | 4.1 | <img src="../images/41.jpg" width="64" height="64"> | 国际愚人节 |
+| 42 | 答案 | 42 | <img src="../images/42.jpg" width="64" height="64"> | 银河系漫游指南 |
+| 43 | 旗舰 | 43 | <img src="../images/43.jpg" width="64" height="64"> | 区号 |
+| 44 | 死神 | 4→死 | <img src="../images/44.jpg" width="64" height="64"> | 中文忌讳 |
+| 45 | 半角 | 45° | <img src="../images/45.jpg" width="64" height="64"> | 直角一半 |
+| 46 | 染色体 | 46条 | <img src="../images/46.jpg" width="64" height="64"> | 人类染色体 |
+| 47 | 陷阱 | 47 | <img src="../images/47.jpg" width="64" height="64"> | 特工编号 |
+| 48 | 四季 | 48 | <img src="../images/48.jpg" width="64" height="64"> | 一年约48周 |
+| 49 | 七七 | 49天 | <img src="../images/49.jpg" width="64" height="64"> | 做七习俗 |
+| 50 | 半百 | 50岁 | <img src="../images/50.jpg" width="64" height="64"> | 人生半程 |
+| 51 | 劳动 | 5.1 | <img src="../images/51.jpg" width="64" height="64"> | 劳动节 |
+| 52 | 一年 | 52周 | <img src="../images/52.jpg" width="64" height="64"> | 一年52周 |
+| 53 | 参谋 | 53 | <img src="../images/53.jpg" width="64" height="64"> | 参谋部 |
+| 54 | 五四 | 5.4 | <img src="../images/54.jpg" width="64" height="64"> | 青年节 |
+| 55 | 重五 | 端午 | <img src="../images/55.jpg" width="64" height="64"> | 端午节（五月初五） |
+| 56 | 民族 | 56个 | <img src="../images/56.jpg" width="64" height="64"> | 中华民族 |
+| 57 | 武器 | 57式 | <img src="../images/57.jpg" width="64" height="64"> | 谐音"武器"，57式冲锋枪 |
+| 58 | 我发 | 谐音 | <img src="../images/58.jpg" width="64" height="64"> | 谐音"我发"，发财吉利 |
+| 59 | 退休 | 59岁 | <img src="../images/59.jpg" width="64" height="64"> | 退休前夕 |
+| 60 | 花甲 | 60岁 | <img src="../images/60.jpg" width="64" height="64"> | 一个甲子 |
+| 61 | 儿童 | 6.1 | <img src="../images/61.jpg" width="64" height="64"> | 儿童节 |
+| 62 | 牛郎 | 牛郎织女 | <img src="../images/62.jpg" width="64" height="64"> | "62"→牛儿 |
+| 63 | 慈禧 | 1863 | <img src="../images/63.jpg" width="64" height="64"> | 历史人物 |
+| 64 | 计算机 | 64位 | <img src="../images/64.jpg" width="64" height="64"> | 64位系统 |
+| 65 | 退休 | 65岁 | <img src="../images/65.jpg" width="64" height="64"> | 法定退休 |
+| 66 | 大顺 | 六六大顺 | <img src="../images/66.jpg" width="64" height="64"> | 吉利数字 |
+| 67 | 绿色 | 绿旗 | <img src="../images/67.jpg" width="64" height="64"> | "67"→绿旗 |
+| 68 | 发达 | 谐音"顺发" | <img src="../images/68.jpg" width="64" height="64"> | 吉利数字 |
+| 69 | 太极 | 阴阳 | <img src="../images/69.jpg" width="64" height="64"> | 形似太极图 |
+| 70 | 古稀 | 70岁 | <img src="../images/70.jpg" width="64" height="64"> | 杜甫"人生七十古来稀" |
+| 71 | 建党 | 7.1 | <img src="../images/71.jpg" width="64" height="64"> | 建党节 |
+| 72 | 变化 | 72变 | <img src="../images/72.jpg" width="64" height="64"> | 孙悟空72变 |
+| 73 | 质数 | 73 | <img src="../images/73.jpg" width="64" height="64"> | Sheldon最爱的质数 |
+| 74 | 气死 | 谐音 | <img src="../images/74.jpg" width="64" height="64"> | 忌讳数字 |
+| 75 | 气温 | 75°F | <img src="../images/75.jpg" width="64" height="64"> | 舒适气温 |
+| 76 | 气流 | 76 | <img src="../images/76.jpg" width="64" height="64"> | 谐音"气流" |
+| 77 | 七夕 | 7.7 | <img src="../images/77.jpg" width="64" height="64"> | 七夕节 |
+| 78 | 出生 | 1978 | <img src="../images/78.jpg" width="64" height="64"> | 改革开放 |
+| 79 | 吃酒 | 谐音 | <img src="../images/79.jpg" width="64" height="64"> | 谐音"吃酒" |
+| 80 | 耄耋 | 80岁 | <img src="../images/80.jpg" width="64" height="64"> | 高寿 |
+| 81 | 建军 | 8.1 | <img src="../images/81.jpg" width="64" height="64"> | 建军节 |
+| 82 | 二进制 | 2^8=256→82 | <img src="../images/82.jpg" width="64" height="64"> | 计算机 |
+| 83 | 中年 | 1983 | <img src="../images/83.jpg" width="64" height="64"> | 出生高峰 |
+| 84 | 复活 | 1984 | <img src="../images/84.jpg" width="64" height="64"> | 奥威尔小说 |
+| 85 | 科技 | 1985 | <img src="../images/85.jpg" width="64" height="64"> | 互联网前身 |
+| 86 | 八六 | 86 | <img src="../images/86.jpg" width="64" height="64"> | 联想（GT86） |
+| 87 | 十一届 | 1987 | <img src="../images/87.jpg" width="64" height="64"> | 三中全会 |
+| 88 | 发发 | 发财 | <img src="../images/88.jpg" width="64" height="64"> | 最吉利数字 |
+| 89 | 八九 | 八九不离十 | <img src="../images/89.jpg" width="64" height="64"> | 谐音"八九"，接近完美 |
+| 90 | 耄耋 | 90岁 | <img src="../images/90.jpg" width="64" height="64"> | 高寿 |
+| 91 | 建党 | 1921→91 | <img src="../images/91.jpg" width="64" height="64"> | 建党纪念 |
+| 92 | 南巡 | 1992 | <img src="../images/92.jpg" width="64" height="64"> | 邓小平南巡 |
+| 93 | 银河号 | 1993 | <img src="../images/93.jpg" width="64" height="64"> | 历史事件 |
+| 94 | 世足 | 1994 | <img src="../images/94.jpg" width="64" height="64"> | 世界杯 |
+| 95 | 世妇会 | 1995 | <img src="../images/95.jpg" width="64" height="64"> | 北京世妇会 |
+| 96 | 九七回归 | 1996→97 | <img src="../images/96.jpg" width="64" height="64"> | 前一年 |
+| 97 | 香港回归 | 1997 | <img src="../images/97.jpg" width="64" height="64"> | 重大事件 |
+| 98 | 世界杯 | 1998 | <img src="../images/98.jpg" width="64" height="64"> | 法国世界杯 |
+| 99 | 澳门回归 | 1999 | <img src="../images/99.jpg" width="64" height="64"> | 重大事件 |
 
 ---
 
