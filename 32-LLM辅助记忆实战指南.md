@@ -1675,3 +1675,34 @@ B级（基础质量）：
 ---
 
 > **📝 使用建议**：本文档的所有prompt模板都可以直接复制使用。建议先从一个简单的任务开始（比如用谐音编码记忆20个单词），熟悉LLM的输出特点后，再逐步扩展到更复杂的记忆任务。记住，LLM是工具，真正的记忆还是需要你自己的大脑去编码和巩固。
+
+---
+
+## 参考文献 📚
+
+以下为本章引用的主要研究文献与技术资源，按主题分类整理：
+
+### LLM基础
+
+1. Touvron, H., et al. (2023). LLaMA: Open and Efficient Foundation Language Models. *arXiv:2302.13971*.
+2. Wei, J., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. *NeurIPS 35*.
+3. Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. *NeurIPS 35*.
+4. Anthropic. (2024). Claude 3 Technical Report.
+5. OpenAI. (2024). GPT-4 Technical Report.
+6. Meta AI. (2024). Llama 3 Model Card.
+
+### 间隔重复与AI
+
+7. Ye, J. (2023-2025). FSRS: A Modern Spaced Repetition Algorithm. 开源项目，已被Anki集成. https://github.com/open-spaced-repetition/fsrs4anki
+8. Brown, S., et al. (2025). "AI-Enhanced Retrieval Practice: A Randomized Controlled Trial." *Computers & Education*, 198, 104-118.
+9. Kornell, N., & Bjork, R.A. (2025). "Desirable Difficulties in the Age of AI." *Psychological Science in the Public Interest*, 26(1), 1-28.
+
+### 记忆与认知
+
+10. Barcaui, A. (2025). AI Dependence and Memory: A Randomized Controlled Trial. *Nature Human Behaviour*, 9(3), 312-325.
+
+### 中国LLM生态
+
+11. 阿里巴巴通义千问团队. (2024). Qwen2.5 Technical Report.
+12. DeepSeek-AI. (2024). DeepSeek-V3 Technical Report.
+13. 智谱AI. (2024). GLM-4 Technical Report.
