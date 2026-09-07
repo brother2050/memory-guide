@@ -586,6 +586,28 @@
 
 ---
 
+### 🧪 自测
+
+**1. 后缀"-tion"通常表示什么词性？**
+A. 形容词
+B. 副词
+C. 名词
+D. 动词
+
+**2. "beautiful"和"beautifully"分别是什么词性？**
+A. 形容词、副词
+B. 名词、形容词
+C. 动词、副词
+D. 形容词、名词
+
+**3. 将形容词"simple"变为动词"简化"，应使用哪个后缀？**
+A. -ize
+B. -ify
+C. -en
+D. -ate
+
+---
+
 > **记忆口诀汇总**：
 > 名词看 -tion, -ment, -ness, -ity, -ism
 > 形容词找 -ful, -less, -ous, -ive, -able, -ant/-ent

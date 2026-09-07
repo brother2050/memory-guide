@@ -402,6 +402,26 @@
 > burn bridges 过河拆桥
 > ball your court 轮到你了
 
+### 🧪 自测
+
+**1. 习语"piece of cake"的中文对应表达是？**
+A. 一举两得
+B. 小菜一碟
+C. 因祸得福
+D. 千载难逢
+
+**2. "burn the midnight oil"的字面义和真实义分别是？**
+A. 烧午夜的油 → 熬夜工作或学习
+B. 烧午夜的油 → 一夜暴富
+C. 点亮午夜的灯 → 挑灯夜战到天亮
+D. 燃烧午夜的蜡烛 → 勤奋读书
+
+**3. 下列哪组中英习语的匹配度最高（字面义和真实义都相同）？**
+A. When pigs fly → 太阳从西边出来
+B. Bite off more than you can chew → 贪多嚼不烂
+C. Break the ice → 过河拆桥
+D. Cost an arm and a leg → 举白旗投降
+
 ---
 
 > **学习建议**：

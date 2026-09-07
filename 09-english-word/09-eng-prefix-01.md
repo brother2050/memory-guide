@@ -608,6 +608,26 @@
 | sub- vs under- | 位置下面 | 程度不足 | subway=地下路，underestimate=低估 |
 | inter- vs intra- | 两者之间 | 内部 | international=国际，intranet=内网 |
 
+### 🧪 自测
+
+**1. 前缀"un-"的核心含义是？**
+A. 再、重新
+B. 在…之前
+C. 不、相反
+D. 过度、超过
+
+**2. "trans-"前缀的含义是？**
+A. 在…之下
+B. 在…之间
+C. 跨越、转换
+D. 超级、在…之上
+
+**3. 下列哪个单词使用了"mis-"前缀（表示"错误地"）？**
+A. unhappy
+B. misunderstand
+C. preview
+D. overcome
+
 ---
 
 *编码完成。建议每天复习6个前缀，5天一个循环。*
