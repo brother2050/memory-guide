@@ -686,6 +686,43 @@
 
 ---
 
+### 🧪 自测
+
+**1. 词根"bio"和"bi"分别表示什么？**
+
+A. bio=生命，bi=二
+B. bio=二，bi=生命
+C. bio=生命，bi=生命
+D. bio=二，bi=二
+
+<details><summary>查看答案</summary>A. bio=生命(如biology=生物学)，bi=二(如bicycle=两个轮子的车)。中国学生常把bi(二)误解为"生命"。</details>
+
+**2. "respect"和"species"中的词根分别是什么？**
+
+A. 都是spect(看)
+B. respect中spect(看)，species中speci(种类)
+C. 都是speci(种类)
+D. respect中speci(种类)，species中spect(看)
+
+<details><summary>查看答案</summary>B. spect=看(respect=再看=尊敬)，speci/spec=种类(species=物种)。两者拼写相近但含义不同。</details>
+
+**3. 以下哪组词根混淆的表述是正确的？**
+
+A. dict=听，aud=说
+B. dict=说，aud=听
+C. dict=写，aud=看
+D. dict=说，aud=看
+
+<details><summary>查看答案</summary>B. dict=说(如dictate=口述)，aud=听(如audio=音频)。中国学生常把dict误解为"听"。</details>
+
+### ⚠️ 常见错误
+
+| 错误 | 表现 | 正确做法 |
+|------|------|----------|
+| bi和bio混淆 | 把bi(二)理解为"生命" | bio=生命(biology)，bi=二(bicycle) |
+| dict和aud搞反 | 以为dict是"听"，aud是"说" | dict=dictate=说，audio=听 |
+| spect和speci混淆 | 把respect(尊敬)和species(物种)的词根混为一谈 | spect=看，speci=种类，两个不同词根 |
+
 ## 九、中国学生常犯错误与易混词辨析
 
 ### 易混词根辨析
