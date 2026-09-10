@@ -1,5 +1,8 @@
 # 英语习语/俚语记忆 - 30个英语习语编码
 
+> **💡 相关技巧**：[记忆宫殿](../02-核心记忆技巧.md#1-记忆宫殿法-method-of-loci) | [间隔重复](../02-核心记忆技巧.md#5-间隔重复-spaced-repetition)
+
+
 > 英语习语(Idioms)是"话中有话"--字面意思和真实意思完全不同。
 > 记忆关键:还原习语的画面→理解字面义→联想真实义→编故事加深印象。
 > 本文件为每个习语提供:字面义→真实义→画面→故事→来源→中英对比。
@@ -410,17 +413,23 @@ B. 小菜一碟
 C. 因祸得福
 D. 千载难逢
 
+<details><summary>查看答案</summary>B. piece of cake = 小菜一碟。画面：一块蛋糕轻松吃掉→事情非常简单。</details>
+
 **2. "burn the midnight oil"的字面义和真实义分别是？**
 A. 烧午夜的油 → 熬夜工作或学习
 B. 烧午夜的油 → 一夜暴富
 C. 点亮午夜的灯 → 挑灯夜战到天亮
 D. 燃烧午夜的蜡烛 → 勤奋读书
 
+<details><summary>查看答案</summary>A. burn the midnight oil = 熬夜工作学习。画面：古时点油灯到午夜，油烧干了还在学习。</details>
+
 **3. 下列哪组中英习语的匹配度最高（字面义和真实义都相同）？**
 A. When pigs fly → 太阳从西边出来
 B. Bite off more than you can chew → 贪多嚼不烂
 C. Break the ice → 过河拆桥
 D. Cost an arm and a leg → 举白旗投降
+
+<details><summary>查看答案</summary>B. bite off more than you can chew = 贪多嚼不烂。中英习语字面义和真实义完全匹配。</details>
 
 ---
 

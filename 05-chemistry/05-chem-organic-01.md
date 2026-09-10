@@ -462,17 +462,23 @@ B. 醇的-OH连碳链，酚的-OH连苯环
 C. 醇有酸性，酚没有酸性
 D. 两者完全相同无法区分
 
+<details><summary>查看答案</summary>B. 醇的-OH连碳链，酚的-OH连苯环。记忆口诀：「酚酸醇中」——酚有酸性（苯环吸电子），醇呈中性。</details>
+
 **2. 酯化反应的本质是？**
 A. 酸脱氢，醇脱羟基
 B. 酸脱羟基，醇脱氢
 C. 酸和醇各脱一个水分子
 D. 酸和醇直接结合
 
+<details><summary>查看答案</summary>B. 酯化反应的本质是「酸脱羟基醇脱氢」。画面：酸甩掉-OH，醇甩掉-H，合成酯+水。</details>
+
 **3. 烷烃的通式是？**
 A. CnH2n
 B. CnH2n-2
 C. CnH2n+2
 D. CnHn
+
+<details><summary>查看答案</summary>C. 烷烃通式CnH₂n+2，所有碳单键饱和。记忆：烷=完（全饱和），氢最多=2n+2。</details>
 
 ---
 

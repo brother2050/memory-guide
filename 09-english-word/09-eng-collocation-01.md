@@ -1,5 +1,8 @@
 # 英语高频搭配记忆编码
 
+> **💡 相关技巧**：[记忆宫殿](../02-核心记忆技巧.md#1-记忆宫殿法-method-of-loci) | [间隔重复](../02-核心记忆技巧.md#5-间隔重复-spaced-repetition)
+
+
 > 40个核心搭配 | 搭配→谐音→画面→例句
 
 ---
@@ -698,17 +701,23 @@ B. 打破僵局
 C. 打破承诺
 D. 违背承诺
 
+<details><summary>查看答案</summary>B. break the ice = 打破僵局。画面：冰块碎裂，尴尬气氛消散。</details>
+
 **2. 下列搭配中，哪一个是"采取行动"的意思？**
 A. take a break
 B. take a look
 C. take action
 D. take a chance
 
+<details><summary>查看答案</summary>C. take action = 采取行动。区分：take a break（休息）、take a look（看一眼）。</details>
+
 **3. "keep in touch"的正确含义是？**
 A. 保守秘密
 B. 遵守承诺
 C. 保持联系
 D. 留意观察
+
+<details><summary>查看答案</summary>C. keep in touch = 保持联系。touch=触摸→保持「触碰」=保持联系。</details>
 
 ---
 

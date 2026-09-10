@@ -660,17 +660,23 @@ B. 照顾
 C. 期待
 D. 尊敬
 
+<details><summary>查看答案</summary>C. look forward to = 期待。画面：向前看（look forward）→期待未来。注意to后接动名词。</details>
+
 **2. 介词"off"的方向感密码是？**
 A. 继续、开启
 B. 分离、关闭、出发
 C. 出去、消失
 D. 向上、增加
 
+<details><summary>查看答案</summary>B. off的方向密码：分离、关闭、出发。如take off（起飞）、turn off（关闭）、set off（出发）。</details>
+
 **3. "give up"与"give in"的区别是？**
 A. give up=屈服于人，give in=放弃事情
 B. give up=放弃事情，give in=屈服于人
 C. 两者含义完全相同
 D. give up=归还，give in=赠送
+
+<details><summary>查看答案</summary>B. give up=放弃事情（give up smoking），give in=屈服于人（give in to pressure）。</details>
 
 ---
 
