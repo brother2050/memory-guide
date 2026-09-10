@@ -218,3 +218,17 @@
 ---
 
 > 💡 **进阶提示**：熟练后可混搭使用基础版和进阶版（pao-02），取各自最强的编码。参见进阶版文档。
+
+### 🧪 自测
+
+1. PAO数字编码系统中，PAO分别代表什么？
+   - A. Picture-Action-Object  B. Person-Action-Object  C. Place-Activity-Order  D. Person-Association-Orbit
+   答案：B
+
+2. PAO系统中，数字"15"在谐音派中的编码人物是什么？
+   - A. 鹦鹉  B. 医生  C. 老虎  D. 和尚
+   答案：A
+
+3. 使用PAO系统记忆6位数字时，需要将数字拆分为几组？
+   - A. 2组  B. 3组  C. 6组  D. 1组
+   答案：B

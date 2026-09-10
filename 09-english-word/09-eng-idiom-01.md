@@ -518,3 +518,17 @@ D. Cost an arm and a leg → 举白旗投降
 | **once in a blue moon** (极少) | **few and far between** (稀少) | blue moon = 频率极低，far between = 间隔长 |
 | **a blessing in disguise** (因祸得福) | **every cloud has a silver lining** (黑暗中有一线光明) | disguise = 坏事变好事，cloud = 困难中有希望 |
 | **burn bridges** (断绝后路) | **cross the Rubicon** (破釜沉舟) | bridge = 关系断绝，Rubicon = 义无反顾 |
+
+### 🧪 自测
+
+1. "once in a blue moon"是什么意思？
+   - A. 经常  B. 极少  C. 从不  D. 每月一次
+   答案：B
+
+2. "a blessing in disguise"的含义是什么？
+   - A. 伪装的祝福  B. 因祸得福  C. 假装幸运  D. 隐藏的危险
+   答案：B
+
+3. "burn bridges"在英语习语中表示什么？
+   - A. 建造桥梁  B. 断绝后路  C. 跨越障碍  D. 过河拆桥（中文直译）
+   答案：B

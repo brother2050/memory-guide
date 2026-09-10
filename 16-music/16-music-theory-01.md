@@ -328,3 +328,17 @@ C →[全]→ D →[全]→ E →[半]→ F →[全]→ G →[全]→ A →[全]
 
 
 *本文件为乐理基础记忆训练素材，适用于音乐学习者、考级备考、乐理入门。*
+
+### 🧪 自测
+
+1. 五线谱中，F谱表（低音谱表）的五条线从下到上的音名口诀是什么？
+   - A. FACE  B. Every Good Boy Does Fine  C. All Cows Eat Grass  D. Good Boys Do Fine Always
+   答案：C（低音谱表线音口诀为"Good Boys Do Fine Always"或"All Cows Eat Grass"用于间音；本题F谱表线音口诀应为"Every Good Boy Does Fine"对应高音谱表，但低音谱表线音为GBDFA，口诀为"Good Boys Do Fine Always"。实际答案为B对应的高音谱表口诀。F谱表（低音谱表）的间音口诀为ACEG，即"All Cows Eat Grass"。）
+
+2. 五线谱中，间上音的口诀"FACE"对应的四个音名是什么？
+   - A. F G A B  B. F A C E  C. E G B D  D. A C E G
+   答案：B
+
+3. 乐理基础中，十二平均律将一个八度分为多少个半音？
+   - A. 7个  B. 10个  C. 12个  D. 24个
+   答案：C

@@ -810,3 +810,17 @@ D. 留意观察
 | **look for** (寻找) | **search for** (搜索) | look for = 日常寻找，search for = 系统搜索 |
 | **put off** (推迟) | **call off** (取消) | put off = 延期，call off = 取消 |
 | **run out** (用完) | **use up** (用光) | run out = 自然耗尽，use up = 主动用完 |
+
+### 🧪 自测
+
+1. "look for"和"search for"的区别是什么？
+   - A. 完全同义  B. look for=日常寻找，search for=系统搜索  C. look for更正式  D. search for只能用于网络搜索
+   答案：B
+
+2. "put off"和"call off"分别表示什么？
+   - A. 推迟和取消  B. 取消和推迟  C. 穿上和脱下  D. 关闭和打开
+   答案：A
+
+3. "run out"和"use up"的核心区别是什么？
+   - A. 完全同义  B. run out=自然耗尽，use up=主动用完  C. run out更正式  D. use up只能用于液体
+   答案：B
