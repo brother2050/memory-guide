@@ -820,3 +820,33 @@ dis + cour + age + ment = discouragement（沮丧）
 | **form**（形状） | **form**（形成） | 同源 | formula（公式）vs reform（改革）|
 | **part**（部分） | **part**（分开） | 同源 | partner（伙伴）vs depart（离开）|
 | **pose**（放置） | **pose**（姿势） | 同源 | expose（暴露）vs posture（姿态）|
+
+
+### 🧪 自测
+
+**1. 词根"port"的含义是什么？**
+A. 站立
+B. 携带、运
+C. 写
+D. 看
+
+**2. 词根"sens/sent"的含义是什么？**
+A. 发送
+B. 感觉
+C. 法律
+D. 产生
+
+**3. 考研英语中，"miss/mit"词根的含义是什么？**
+A. 错过
+B. 送、放出
+C. 混合
+D. 减少
+
+<details>
+<summary>查看答案</summary>
+
+1. **B** — port=携带、运（transport=运输，import=进口）
+2. **B** — sens/sent=感觉（sense=感觉，sentiment=情感）
+3. **B** — miss/mit=送、放出（mission=使命，commit=承诺）
+
+</details>

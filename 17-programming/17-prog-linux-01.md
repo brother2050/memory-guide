@@ -570,3 +570,33 @@ awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -20
 
 ### 权限口诀
 > **chmod钥匙chown主sudo金，su换passwd锁**
+
+
+### 🧪 自测
+
+**1. Linux命令`cd`的功能和缩写是什么？**
+A. 复制文件（copy directory）
+B. 切换目录（change directory）
+C. 创建目录（create directory）
+D. 删除目录（delete directory）
+
+**2. 命令`rm -rf /`的含义和危险性是什么？**
+A. 删除当前目录的文件，安全
+B. 强制递归删除根目录下所有文件，极其危险，永远不要执行
+C. 列出所有文件
+D. 移动文件到回收站
+
+**3. 文本处理口诀中，"grep"的功能是什么？**
+A. 排序
+B. 搜索
+C. 替换
+D. 统计
+
+<details>
+<summary>查看答案</summary>
+
+1. **B** — cd=change directory，切换目录
+2. **B** — rm -rf / 是自毁命令，强制递归删除根目录下所有文件
+3. **B** — grep用于搜索文本内容（口诀：grep搜）
+
+</details>
