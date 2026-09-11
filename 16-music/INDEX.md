@@ -14,6 +14,7 @@
 | [16-music-rhythm-01.md](16-music-rhythm-01.md) | 节奏记忆 |
 | [16-music-instrument-01.md](16-music-instrument-01.md) | 乐器记忆 |
 | [16-music-song-01.md](16-music-song-01.md) | 歌曲记忆 |
+| [16-music-lyrics-01.md](16-music-lyrics-01.md) | 歌词记忆 🆕 |
 | [16-music-history-01.md](16-music-history-01.md) | 音乐史 |
 | [16-music-practice-01.md](16-music-practice-01.md) | 练习方法 |
 
