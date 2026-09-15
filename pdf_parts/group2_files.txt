@@ -1,0 +1,17 @@
+/home/work/.openclaw/workspace/memory-guide/39-速读与记忆.md
+/home/work/.openclaw/workspace/memory-guide/40-记忆与营养.md
+/home/work/.openclaw/workspace/memory-guide/41-记忆与情绪管理.md
+/home/work/.openclaw/workspace/memory-guide/42-记忆与创造力.md
+/home/work/.openclaw/workspace/memory-guide/43-记忆与社交.md
+/home/work/.openclaw/workspace/memory-guide/44-记忆与专注力.md
+/home/work/.openclaw/workspace/memory-guide/45-记忆与习惯养成.md
+/home/work/.openclaw/workspace/memory-guide/46-记忆与环境.md
+/home/work/.openclaw/workspace/memory-guide/47-记忆与写作.md
+/home/work/.openclaw/workspace/memory-guide/48-记忆与时间管理.md
+/home/work/.openclaw/workspace/memory-guide/49-长篇文章记忆实战.md
+/home/work/.openclaw/workspace/memory-guide/50-多语言编程记忆.md
+/home/work/.openclaw/workspace/memory-guide/51-复合记忆方法实战.md
+/home/work/.openclaw/workspace/memory-guide/52-古文与文言文记忆.md
+/home/work/.openclaw/workspace/memory-guide/53-听力记忆实战.md
+/home/work/.openclaw/workspace/memory-guide/54-绘画临摹记忆.md
+/home/work/.openclaw/workspace/memory-guide/55-影视台词记忆.md
