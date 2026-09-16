@@ -19,6 +19,9 @@
 | [03-vocab-story-chain-01.md](03-vocab-story-chain-01.md) | 故事链法 |
 | [03-vocab-dialect-01.md](03-vocab-dialect-01.md) | 方言词汇 |
 
+## 💡 学习建议
+从成语和诗词开始练习，它们有现成的画面感。易混淆词汇用对比法区分，故事链法适合长列表。日常可从课文词汇练起。
+
 ## 📚 上一篇 / 下一篇
 - ⬅️ 上一篇：[02-扑克牌记忆](../02-card/INDEX.md)
 - ➡️ 下一篇：[04-历史](../04-history/INDEX.md)

@@ -18,6 +18,9 @@
 | [07-speech-meeting-01.md](07-speech-meeting-01.md) | 会议内容 |
 | [07-speech-ted-01.md](07-speech-ted-01.md) | TED演讲 |
 
+## 💡 学习建议
+从短文段落开始练习，用记忆宫殿法安排演讲稿结构。古诗词用画面法+韵律法，TED演讲用故事法串联要点。每天练习5-10分钟脱稿表达。
+
 ## 📚 上一篇 / 下一篇
 - ⬅️ 上一篇：[06-地理](../06-geography/INDEX.md)
 - ➡️ 下一篇：[08-面孔与名字](../08-face-name/INDEX.md)

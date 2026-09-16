@@ -15,6 +15,9 @@
 | [17-prog-linux-01.md](17-prog-linux-01.md) | Linux命令 |
 | [17-prog-interview-01.md](17-prog-interview-01.md) | 面试应用 |
 
+## 💡 学习建议
+从设计模式开始练习（23种GoF模式用画面法），算法用流程记忆+代码宫殿。API用谐音法编码关键参数，面试题用间隔重复巩固。每天LeetCode练习时同步训练编码记忆。
+
 ## 📚 上一篇 / 下一篇
 - ⬅️ 上一篇：[16-音乐](../16-music/INDEX.md)
 - ➡️ 下一篇：[18-金融](../18-finance/INDEX.md)

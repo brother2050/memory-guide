@@ -18,6 +18,9 @@
 | [16-music-history-01.md](16-music-history-01.md) | 音乐史 |
 | [16-music-practice-01.md](16-music-practice-01.md) | 练习方法 |
 
+## 💡 学习建议
+先从和弦记忆开始（C-G-Am-F万能和弦），再学乐理基础。歌词用画面法+旋律法，乐器用特征编码。每天练习10分钟节奏记忆。
+
 ## 📚 上一篇 / 下一篇
 - ⬅️ 上一篇：[15-程序与流程](../15-procedure/INDEX.md)
 - ➡️ 下一篇：[17-编程](../17-programming/INDEX.md)

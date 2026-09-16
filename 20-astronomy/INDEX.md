@@ -15,6 +15,9 @@
 | [20-astro-galaxy-01.md](20-astro-galaxy-01.md) | 星系记忆 |
 | [20-astro-space-01.md](20-astro-space-01.md) | 太空探索 |
 
+## 💡 学习建议
+从星座记忆开始（88个星座用画面法），太阳系行星用故事法串联。恒星分类用谐音法（OBAFGKM），星系用记忆宫殿法。晴夜观星是最好的复习方式。
+
 ## 📚 上一篇 / 下一篇
 - ⬅️ 上一篇：[19-心理学](../19-psychology/INDEX.md)
 - ➡️ 下一篇：[21-体育](../21-sports/INDEX.md)

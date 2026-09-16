@@ -21,6 +21,9 @@
 | [10-combo-travel-01.md](10-combo-travel-01.md) | 旅行应用 |
 | [10-combo-competition-01.md](10-combo-competition-01.md) | 竞赛应用 |
 
+## 💡 学习建议
+先单独精通2-3种基础技巧（记忆宫殿+数字编码+间隔重复），再尝试组合应用。竞赛训练从数字+扑克牌组合开始，日常场景从考试+词汇组合练起。
+
 ## 📚 上一篇 / 下一篇
 - ⬅️ 上一篇：[09-英语词汇](../09-english-word/INDEX.md)
 - ➡️ 下一篇：[11-数学与物理](../11-math-physics/INDEX.md)
