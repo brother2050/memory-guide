@@ -3,6 +3,10 @@
 > **💡 相关技巧**：[记忆宫殿](../02-核心记忆技巧.md#1-记忆宫殿法-method-of-loci) | [间隔重复](../02-核心记忆技巧.md#5-间隔重复-spaced-repetition)
 
 
+
+## 📍 导航
+> [返回音乐记忆编码](INDEX.md) | [返回主页](../README.md)
+
 ## 一、30种乐器编码
 
 ### 1.1 弦乐器（String Instruments）

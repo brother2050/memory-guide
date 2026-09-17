@@ -5,18 +5,18 @@
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
 
-## 📖 文件列表
+## 📖 推荐阅读顺序
 
-| 文件 | 主题 |
-|------|------|
-| [15-proc-workflow-01.md](15-proc-workflow-01.md) | 工作流程 |
-| [15-proc-recipe-01.md](15-proc-recipe-01.md) | 烹饪流程 |
-| [15-proc-experiment-01.md](15-proc-experiment-01.md) | 实验操作 |
-| [15-proc-medical-01.md](15-proc-medical-01.md) | 医疗流程 |
-| [15-proc-chess-01.md](15-proc-chess-01.md) | 棋类步骤 |
-| [15-proc-exam-01.md](15-proc-exam-01.md) | 考试流程 |
-| [15-proc-skill-01.md](15-proc-skill-01.md) | 技能学习 |
-| [15-proc-daily-01.md](15-proc-daily-01.md) | 日常流程 |
+| # | 文件 | 主题 | 难度 |
+|---|------|------|:----:|
+| 1 | [15-proc-workflow-01.md](15-proc-workflow-01.md) | 工作流程 | ⭐ |
+| 2 | [15-proc-recipe-01.md](15-proc-recipe-01.md) | 烹饪流程 | ⭐ |
+| 3 | [15-proc-experiment-01.md](15-proc-experiment-01.md) | 实验操作 | ⭐⭐ |
+| 4 | [15-proc-medical-01.md](15-proc-medical-01.md) | 医疗流程 | ⭐⭐⭐ |
+| 5 | [15-proc-chess-01.md](15-proc-chess-01.md) | 棋类步骤 | ⭐⭐ |
+| 6 | [15-proc-exam-01.md](15-proc-exam-01.md) | 考试流程 | ⭐⭐ |
+| 7 | [15-proc-skill-01.md](15-proc-skill-01.md) | 技能学习 | ⭐⭐⭐ |
+| 8 | [15-proc-daily-01.md](15-proc-daily-01.md) | 日常流程 | ⭐ |
 
 ## 💡 学习建议
 从日常流程开始（如做菜步骤），用流程图+记忆宫殿法。考试流程用模拟练习巩固，实验步骤先理解原理再记忆顺序。每天用一个生活场景练习流程记忆。

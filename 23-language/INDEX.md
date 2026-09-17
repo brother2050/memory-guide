@@ -5,17 +5,17 @@
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
 
-## 📖 文件列表
+## 📖 推荐阅读顺序
 
-| 文件 | 主题 |
-|------|------|
-| [23-lang-japanese-01.md](23-lang-japanese-01.md) | 日语记忆 |
-| [23-lang-korean-01.md](23-lang-korean-01.md) | 韩语记忆 |
-| [23-lang-french-01.md](23-lang-french-01.md) | 法语记忆 |
-| [23-lang-spanish-01.md](23-lang-spanish-01.md) | 西班牙语记忆 |
-| [23-lang-german-01.md](23-lang-german-01.md) | 德语记忆 |
-| [23-lang-arabic-01.md](23-lang-arabic-01.md) | 阿拉伯语记忆 |
-| [23-lang-sign-01.md](23-lang-sign-01.md) | 手语记忆 |
+| # | 文件 | 主题 | 难度 |
+|---|------|------|:----:|
+| 1 | [23-lang-japanese-01.md](23-lang-japanese-01.md) | 日语记忆 | ⭐⭐ |
+| 2 | [23-lang-korean-01.md](23-lang-korean-01.md) | 韩语记忆 | ⭐⭐ |
+| 3 | [23-lang-french-01.md](23-lang-french-01.md) | 法语记忆 | ⭐⭐ |
+| 4 | [23-lang-spanish-01.md](23-lang-spanish-01.md) | 西班牙语记忆 | ⭐⭐ |
+| 5 | [23-lang-german-01.md](23-lang-german-01.md) | 德语记忆 | ⭐⭐⭐ |
+| 6 | [23-lang-arabic-01.md](23-lang-arabic-01.md) | 阿拉伯语记忆 | ⭐⭐⭐ |
+| 7 | [23-lang-sign-01.md](23-lang-sign-01.md) | 手语记忆 | ⭐⭐ |
 
 ## 📚 上一篇 / 下一篇
 - ⬅️ 上一篇：[22-艺术](../22-art/INDEX.md)

@@ -5,17 +5,17 @@
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
 
-## 📖 文件列表
+## 📖 推荐阅读顺序
 
-| 文件 | 主题 |
-|------|------|
-| [22-art-painting-01.md](22-art-painting-01.md) | 绘画记忆 |
-| [22-art-artist-01.md](22-art-artist-01.md) | 艺术家 |
-| [22-art-movement-01.md](22-art-movement-01.md) | 艺术流派 |
-| [22-art-sculpture-01.md](22-art-sculpture-01.md) | 雕塑记忆 |
-| [22-art-architecture-01.md](22-art-architecture-01.md) | 建筑艺术 |
-| [22-art-photo-01.md](22-art-photo-01.md) | 摄影艺术 |
-| [22-art-music-art-01.md](22-art-music-art-01.md) | 音乐艺术 |
+| # | 文件 | 主题 | 难度 |
+|---|------|------|:----:|
+| 1 | [22-art-painting-01.md](22-art-painting-01.md) | 绘画记忆 | ⭐ |
+| 2 | [22-art-artist-01.md](22-art-artist-01.md) | 艺术家 | ⭐⭐ |
+| 3 | [22-art-movement-01.md](22-art-movement-01.md) | 艺术流派 | ⭐⭐ |
+| 4 | [22-art-sculpture-01.md](22-art-sculpture-01.md) | 雕塑记忆 | ⭐⭐ |
+| 5 | [22-art-architecture-01.md](22-art-architecture-01.md) | 建筑艺术 | ⭐⭐ |
+| 6 | [22-art-photo-01.md](22-art-photo-01.md) | 摄影艺术 | ⭐⭐ |
+| 7 | [22-art-music-art-01.md](22-art-music-art-01.md) | 音乐艺术 | ⭐⭐⭐ |
 
 ## 💡 学习建议
 从艺术流派时间线开始（用记忆宫殿法按世纪排列），画家用特征编码法（如梵高=向日葵+星空）。建筑用空间记忆，雕塑用触觉想象。参观美术馆是最好的实战练习。

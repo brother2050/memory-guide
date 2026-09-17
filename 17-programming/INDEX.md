@@ -5,15 +5,15 @@
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
 
-## 📖 文件列表
+## 📖 推荐阅读顺序
 
-| 文件 | 主题 |
-|------|------|
-| [17-prog-syntax-01.md](17-prog-syntax-01.md) | 语法记忆 |
-| [17-prog-algorithm-01.md](17-prog-algorithm-01.md) | 算法记忆 |
-| [17-prog-pattern-01.md](17-prog-pattern-01.md) | 设计模式 |
-| [17-prog-linux-01.md](17-prog-linux-01.md) | Linux命令 |
-| [17-prog-interview-01.md](17-prog-interview-01.md) | 面试应用 |
+| # | 文件 | 主题 | 难度 |
+|---|------|------|:----:|
+| 1 | [17-prog-syntax-01.md](17-prog-syntax-01.md) | 语法记忆 | ⭐ |
+| 2 | [17-prog-algorithm-01.md](17-prog-algorithm-01.md) | 算法记忆 | ⭐⭐⭐ |
+| 3 | [17-prog-pattern-01.md](17-prog-pattern-01.md) | 设计模式 | ⭐⭐ |
+| 4 | [17-prog-linux-01.md](17-prog-linux-01.md) | Linux命令 | ⭐⭐ |
+| 5 | [17-prog-interview-01.md](17-prog-interview-01.md) | 面试应用 | ⭐⭐⭐ |
 
 ## 💡 学习建议
 从设计模式开始练习（23种GoF模式用画面法），算法用流程记忆+代码宫殿。API用谐音法编码关键参数，面试题用间隔重复巩固。每天LeetCode练习时同步训练编码记忆。

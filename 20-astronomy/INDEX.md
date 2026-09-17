@@ -5,15 +5,15 @@
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
 
-## 📖 文件列表
+## 📖 推荐阅读顺序
 
-| 文件 | 主题 |
-|------|------|
-| [20-astro-constellation-01.md](20-astro-constellation-01.md) | 星座记忆 |
-| [20-astro-solar-01.md](20-astro-solar-01.md) | 太阳系 |
-| [20-astro-star-01.md](20-astro-star-01.md) | 恒星记忆 |
-| [20-astro-galaxy-01.md](20-astro-galaxy-01.md) | 星系记忆 |
-| [20-astro-space-01.md](20-astro-space-01.md) | 太空探索 |
+| # | 文件 | 主题 | 难度 |
+|---|------|------|:----:|
+| 1 | [20-astro-constellation-01.md](20-astro-constellation-01.md) | 星座记忆 | ⭐ |
+| 2 | [20-astro-solar-01.md](20-astro-solar-01.md) | 太阳系 | ⭐⭐ |
+| 3 | [20-astro-star-01.md](20-astro-star-01.md) | 恒星记忆 | ⭐⭐ |
+| 4 | [20-astro-galaxy-01.md](20-astro-galaxy-01.md) | 星系记忆 | ⭐⭐⭐ |
+| 5 | [20-astro-space-01.md](20-astro-space-01.md) | 太空探索 | ⭐⭐⭐ |
 
 ## 💡 学习建议
 从星座记忆开始（88个星座用画面法），太阳系行星用故事法串联。恒星分类用谐音法（OBAFGKM），星系用记忆宫殿法。晴夜观星是最好的复习方式。

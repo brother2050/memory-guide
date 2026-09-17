@@ -2,6 +2,10 @@
 
 > 记忆宫殿：每条 = 症状 → 原因 → 治疗 → 画面
 
+
+## 📍 导航
+> [返回心理学记忆编码](INDEX.md) | [返回主页](../README.md)
+
 ---
 
 ## 01 重度抑郁症（Major Depressive Disorder）

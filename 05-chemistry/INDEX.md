@@ -5,17 +5,17 @@
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
 
-## 📖 文件列表
+## 📖 推荐阅读顺序
 
-| 文件 | 主题 |
-|------|------|
-| [05-chem-elements-01.md](05-chem-elements-01.md) | 元素周期表（1） |
-| [05-chem-elements-02.md](05-chem-elements-02.md) | 元素周期表（2） |
-| [05-chem-formula-01.md](05-chem-formula-01.md) | 化学公式 |
-| [05-chem-reaction-01.md](05-chem-reaction-01.md) | 化学反应 |
-| [05-chem-organic-01.md](05-chem-organic-01.md) | 有机化学 |
-| [05-chem-lab-01.md](05-chem-lab-01.md) | 实验室 |
-| [05-chem-exam-01.md](05-chem-exam-01.md) | 考试应用 |
+| # | 文件 | 主题 | 难度 |
+|---|------|------|:----:|
+| 1 | [05-chem-elements-01.md](05-chem-elements-01.md) | 元素周期表（1） | ⭐ |
+| 2 | [05-chem-elements-02.md](05-chem-elements-02.md) | 元素周期表（2） | ⭐⭐ |
+| 3 | [05-chem-formula-01.md](05-chem-formula-01.md) | 化学公式 | ⭐⭐ |
+| 4 | [05-chem-reaction-01.md](05-chem-reaction-01.md) | 化学反应 | ⭐⭐ |
+| 5 | [05-chem-organic-01.md](05-chem-organic-01.md) | 有机化学 | ⭐⭐⭐ |
+| 6 | [05-chem-lab-01.md](05-chem-lab-01.md) | 实验室 | ⭐⭐ |
+| 7 | [05-chem-exam-01.md](05-chem-exam-01.md) | 考试应用 | ⭐⭐⭐ |
 
 ## 💡 学习建议
 先背元素周期表（谐音法效果最佳），再掌握化学方程式配平。实验操作用流程记忆法，有机化学用画面法建立分子模型。
