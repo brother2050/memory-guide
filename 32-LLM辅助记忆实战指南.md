@@ -1878,6 +1878,18 @@ D. GPT-4o
 
 ---
 
+## 📚 参考文献
+
+1. Vaswani, A., et al. (2017). Attention Is All You Need. *NeurIPS*. — Transformer架构奠基论文
+2. Brown, T., et al. (2020). Language Models are Few-Shot Learners. *NeurIPS*. — GPT-3论文，展示LLM的少样本学习能力
+3. Wei, J., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning. *NeurIPS*. — 思维链提示技术
+4. Kojima, T., et al. (2022). Large Language Models are Zero-Shot Reasoners. *NeurIPS*. — 零样本推理能力
+5. Touvron, H., et al. (2023). LLaMA: Open and Efficient Foundation Language Models. *arXiv*. — 开源LLM里程碑
+6. Dettmers, T., et al. (2023). QLoRA: Efficient Finetuning of Quantized LLMs. *NeurIPS*. — 量化微调技术
+7. 何晓东等. (2024). 大语言模型在教育领域的应用综述. *计算机研究与发展*, 61(3), 456-478.
+
+---
+
 ## 📝 本章小结
 
-本章系统介绍了LLM辅助记忆实战指南的核心内容与实践方法，涵盖理论基础、科学研究证据和可操作的应用策略。建议读者结合自身情况，选择适合的方法逐步实践，在实践中不断优化个人记忆方案。
+本章系统介绍了LLM辅助记忆的核心内容与实践方法：prompt模板设计、批量编码生成、Anki卡片自动创建、知识图谱构建、本地模型部署。LLM是记忆的"外脑助手"——帮你生成编码和联想方案，但最终的记忆仍需大脑亲自参与。从简单的谐音编码开始，逐步扩展到复杂的知识组织。
