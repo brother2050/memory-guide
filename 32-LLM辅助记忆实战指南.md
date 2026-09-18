@@ -1,11 +1,11 @@
 # 32-LLM辅助记忆实战指南
 
-> **更新日期**：2026年9月  
-> **覆盖范围**：使用大语言模型（LLM）进行记忆编码、间隔重复、知识图谱构建的完整实战方法  
-> **适用读者**：考研/考公/法考/医学考试备考者、终身学习者、Anki深度用户、AI辅助学习实践者  
+> **更新日期**：2026年9月
+> **覆盖范围**：使用大语言模型（LLM）进行记忆编码、间隔重复、知识图谱构建的完整实战方法
+> **适用读者**：考研/考公/法考/医学考试备考者、终身学习者、Anki深度用户、AI辅助学习实践者
 > **前置阅读**：[25-AI辅助记忆.md](25-AI辅助记忆.md)（FSRS算法与AI闪卡工具基础）
 
-> **⏱ 预计阅读时间**：约60分钟（全文约15000字）  
+> **⏱ 预计阅读时间**：约60分钟（全文约15000字）
 > **📖 建议分4次阅读**：
 > - 第1次：LLM辅助记忆编码 + prompt模板，约18分钟
 > - 第2次：LLM辅助间隔重复 + 超时Token管理，约15分钟
@@ -653,7 +653,7 @@ LLM虽然不能直接替代FSRS算法，但可以在以下方面辅助优化：
 def batch_process(materials, batch_size=20):
     """
     将大量学习材料分批交给LLM处理
-    
+
     batch_size: 每批处理的知识点数量
     建议值：
     - 简单知识点（单词、日期）：30-50个/批
@@ -662,16 +662,16 @@ def batch_process(materials, batch_size=20):
     """
     results = []
     batches = split_into_batches(materials, batch_size)
-    
+
     for i, batch in enumerate(batches):
         prompt = build_prompt(batch)
         response = call_llm(prompt)
         results.extend(parse_response(response))
-        
+
         # 控制调用频率，避免触发限流
         if i < len(batches) - 1:
             time.sleep(1)  # 间隔1秒
-    
+
     return results
 ```
 
@@ -740,20 +740,20 @@ def cached_llm_call(prompt, model="gpt-4o"):
     """带缓存的LLM调用"""
     cache_key = get_cache_key(prompt, model)
     cache_file = os.path.join(CACHE_DIR, f"{cache_key}.json")
-    
+
     # 检查缓存
     if os.path.exists(cache_file):
         with open(cache_file, 'r') as f:
             return json.load(f)
-    
+
     # 调用LLM
     result = call_llm(prompt, model)
-    
+
     # 写入缓存
     os.makedirs(CACHE_DIR, exist_ok=True)
     with open(cache_file, 'w') as f:
         json.dump(result, f, ensure_ascii=False)
-    
+
     return result
 ```
 
@@ -1666,44 +1666,6 @@ B级（基础质量）：
 
 ---
 
-## 7. 参考资源
-
-### 7.1 API接入指南
-
-| 模型 | API文档 | 注册地址 |
-|:---|:---|:---|
-| DeepSeek | [platform.deepseek.com](https://platform.deepseek.com) | 注册送500万token |
-| 通义千问 | [dashscope.aliyun.com](https://dashscope.aliyun.com) | 注册送100万token |
-| 智谱GLM | [open.bigmodel.cn](https://open.bigmodel.cn) | GLM-4-Flash免费 |
-| Kimi | [platform.moonshot.cn](https://platform.moonshot.cn) | 注册送额度 |
-| 豆包 | [console.volcengine.com](https://console.volcengine.com) | 注册送额度 |
-
-### 7.2 本地部署方案
-
-如果担心API成本或隐私问题，可以本地部署小模型：
-
-| 模型 | 参数量 | 显存需求 | 适用任务 |
-|:---|:---:|:---:|:---|
-| Qwen2.5-7B-Instruct | 7B | 8GB | 简单编码、谐音生成 |
-| Qwen2.5-14B-Instruct | 14B | 16GB | 中等编码、卡片生成 |
-| Qwen2.5-72B-Instruct | 72B | 48GB+ | 全部任务 |
-| DeepSeek-V2-Lite | 16B | 16GB | 性价比高 |
-| GLM-4-9B-Chat | 9B | 12GB | 中文能力强 |
-
-本地部署工具：Ollama、vLLM、llama.cpp
-
-### 7.3 相关文章
-
-- [25-AI辅助记忆.md](25-AI辅助记忆.md) — FSRS算法、AI闪卡工具、知识管理
-- [30-记忆宫殿进阶.md](30-记忆宫殿进阶.md) — 记忆宫殿的高级技巧
-- [28-多感官记忆编码.md](28-多感官记忆编码.md) — 多感官编码的理论与实践
-
----
-
-> **📝 使用建议**：本文档的所有prompt模板都可以直接复制使用。建议先从一个简单的任务开始（比如用谐音编码记忆20个单词），熟悉LLM的输出特点后，再逐步扩展到更复杂的记忆任务。记住，LLM是工具，真正的记忆还是需要你自己的大脑去编码和巩固。
-
----
-
 ### ⚠️ 常见错误
 
 | 错误 | 表现 | 正确做法 |
@@ -1713,6 +1675,8 @@ B级（基础质量）：
 | 不验证编码质量 | 生成编码后立即使用，从不测试实际记忆效果；编码效果差也不知道 | 生成编码后先用小样本测试（5-10个），回忆率低于80%则要求LLM重新生成 |
 | 过度依赖LLM | 所有记忆任务都交给LLM处理，自己不再主动思考和编码；创造力退化 | LLM用于生成初始编码和辅助理解，之后必须用自己的大脑进行深加工和主动回忆 |
 | 不记录Prompt | 每次都重新写prompt，浪费时间且无法复用有效的提示词模板 | 建立个人prompt库，将效果好的prompt模板保存分类，定期迭代优化 |
+
+---
 
 ---
 
@@ -1818,12 +1782,16 @@ D. GPT-4o
 
 ---
 
+---
+
 ### 🗺️ 进阶路线图
 
 你已经掌握了LLM辅助记忆。下一步：
 - 想优化编码质量 → [MEMORY-ENCODING-RULES.md](MEMORY-ENCODING-RULES.md)
 - 想应用于考试 → [04-实战应用场景](04-实战应用场景.md)
 - 想速查回顾 → [33-记忆速查手册](33-记忆速查手册.md)
+
+---
 
 ---
 
@@ -1842,10 +1810,6 @@ D. GPT-4o
 **过度依赖确实有风险**。Barcaui(2025)的研究发现,持续使用AI辅助的学生在独立测试中表现下降12%。但"适度使用+主动加工"的影响很小。关键是:先自己思考和回忆,再用LLM验证和补充。把LLM当"教练"而非"拐杖"(详见本章§4.3平衡策略)。
 
 ---
-
-## 参考文献 📚
-
-以下为本章引用的主要研究文献与技术资源，按主题分类整理：
 
 ### LLM基础
 
@@ -1871,3 +1835,49 @@ D. GPT-4o
 11. 阿里巴巴通义千问团队. (2024). Qwen2.5 Technical Report.
 12. DeepSeek-AI. (2024). DeepSeek-V3 Technical Report.
 13. 智谱AI. (2024). GLM-4 Technical Report.
+
+---
+
+## 7. 参考资源
+
+### 7.1 API接入指南
+
+| 模型 | API文档 | 注册地址 |
+|:---|:---|:---|
+| DeepSeek | [platform.deepseek.com](https://platform.deepseek.com) | 注册送500万token |
+| 通义千问 | [dashscope.aliyun.com](https://dashscope.aliyun.com) | 注册送100万token |
+| 智谱GLM | [open.bigmodel.cn](https://open.bigmodel.cn) | GLM-4-Flash免费 |
+| Kimi | [platform.moonshot.cn](https://platform.moonshot.cn) | 注册送额度 |
+| 豆包 | [console.volcengine.com](https://console.volcengine.com) | 注册送额度 |
+
+### 7.2 本地部署方案
+
+如果担心API成本或隐私问题，可以本地部署小模型：
+
+| 模型 | 参数量 | 显存需求 | 适用任务 |
+|:---|:---:|:---:|:---|
+| Qwen2.5-7B-Instruct | 7B | 8GB | 简单编码、谐音生成 |
+| Qwen2.5-14B-Instruct | 14B | 16GB | 中等编码、卡片生成 |
+| Qwen2.5-72B-Instruct | 72B | 48GB+ | 全部任务 |
+| DeepSeek-V2-Lite | 16B | 16GB | 性价比高 |
+| GLM-4-9B-Chat | 9B | 12GB | 中文能力强 |
+
+本地部署工具：Ollama、vLLM、llama.cpp
+
+### 7.3 相关文章
+
+- [25-AI辅助记忆.md](25-AI辅助记忆.md) — FSRS算法、AI闪卡工具、知识管理
+- [30-记忆宫殿进阶.md](30-记忆宫殿进阶.md) — 记忆宫殿的高级技巧
+- [28-多感官记忆编码.md](28-多感官记忆编码.md) — 多感官编码的理论与实践
+
+---
+
+> **📝 使用建议**：本文档的所有prompt模板都可以直接复制使用。建议先从一个简单的任务开始（比如用谐音编码记忆20个单词），熟悉LLM的输出特点后，再逐步扩展到更复杂的记忆任务。记住，LLM是工具，真正的记忆还是需要你自己的大脑去编码和巩固。
+
+---
+
+---
+
+## 📝 本章小结
+
+本章系统介绍了LLM辅助记忆实战指南的核心内容与实践方法，涵盖理论基础、科学研究证据和可操作的应用策略。建议读者结合自身情况，选择适合的方法逐步实践，在实践中不断优化个人记忆方案。
