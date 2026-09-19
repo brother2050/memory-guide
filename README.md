@@ -54,6 +54,83 @@
 
 ---
 
+## 🗺️ 项目全景图
+
+```mermaid
+graph TB
+    subgraph 入口["🔰 入口"]
+        README["README.md\n你在这里"]
+        QS["QUICKSTART.md\n30分钟入门"]
+        RULES["MEMORY-ENCODING-RULES.md\n编码规则"]
+    end
+
+    subgraph core["📘 核心理论 (5章)"]
+        C01["01 记忆科学基础\n原理·脑区·遗忘曲线"]
+        C02["02 核心记忆技巧\n宫殿·联想·数字·间隔重复"]
+        C03["03 日常习惯与生理优化\n睡眠·运动·营养·冥想"]
+        C04["04 实战应用场景\n考试·演讲·职场·社交"]
+        C05["05 工具资源与行动方案\nAnki·AI工具·30天计划"]
+    end
+
+    subgraph special["📗 23个学科专项 (160+篇)"]
+        NUM["01-number 数字编码"]
+        CARD["02-card 扑克牌"]
+        VOCAB["03-vocabulary 词汇"]
+        HIST["04-history 历史"]
+        CHEM["05-chemistry 化学"]
+        GEO["06-geography 地理"]
+        MORE["07-23 演讲·人脸·英语·\n数学·医学·法律·\n金融·心理·天文·\n体育·艺术·语言"]
+    end
+
+    subgraph advanced["🔴 进阶专题 (32章)"]
+        A24["24-31 最新研究·AI·认知偏差·\n合意困难·多感官·运动·\n宫殿进阶·魔法前沿"]
+        A32["32 LLM辅助记忆"]
+        A33["33 速查手册"]
+        A34["34-55 竞赛·儿童·职场·\n老年·冥想·速读·营养·\n情绪·创造·社交·专注·\n习惯·环境·写作·时间·\n长篇·编程·复合·古文·\n听力·绘画·台词"]
+    end
+
+    subgraph practice["🏋️ 实战练习"]
+        EX["exercises/ 13个练习"]
+        PR["24-practice/ 10个实战"]
+        TM["templates/ 7个模板"]
+        AN["anki/ 870+张卡片"]
+    end
+
+    README --> core
+    core --> special
+    core --> advanced
+    special --> practice
+    advanced --> practice
+
+    C01 --> C02
+    C02 --> C04
+    C03 --> C04
+    C05 --> practice
+```
+
+### 🧭 学习路线图
+
+```mermaid
+graph LR
+    A["🔰 零基础"] -->|"1小时"| B["01 科学基础"]
+    B -->|"1小时"| C["02 核心技巧"]
+    C --> D{"你的目标?"}
+    D -->|"考试"| E["04 实战场景"]
+    D -->|"职场"| F["36 职场效率"]
+    D -->|"竞赛"| G["34 竞赛攻略"]
+    D -->|"语言"| H["09 英语词汇"]
+    D -->|"AI"| I["32 LLM实战"]
+    E --> J["选你的学科专项"]
+    F --> J
+    G --> K["01-number + 02-card"]
+    H --> J
+    I --> J
+    J --> L["🏋️ 练习巩固"]
+    L --> M["📈 持续精进"]
+```
+
+---
+
 ## ⚡ 一分钟入门
 
 > **只有1分钟？看这里就够了。**
