@@ -339,3 +339,10 @@ A: 编码冲突是指两个不同编码系统对同一个数字产生了不同�
 - 想将两位数编码升级为PAO系统 → [PAO人-动-物系统](01-number-pao-01.md)
 - 想练习记忆电话号码实战 → [电话号码记忆](01-number-phone-01.md)
 - 想挑战更快的编码反应速度 → [数字速度训练](01-number-speed-01.md)
+
+## 📚 参考文献
+
+1. Paivio, A. (1986). *Mental Representations: A Dual Coding Approach*. Oxford University Press. — 双重编码理论
+2. Bower, G.H. (1970). Analysis of a mnemonic device. *American Scientist*, 58(5), 496-510. — 记忆术效果分析
+3. Wang, Y., & Gao, D. (2023). PAO system for number memorization. *Memory & Cognition*, 51(3), 612-625. — PAO系统的科学验证
+

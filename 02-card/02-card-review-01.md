@@ -891,3 +891,10 @@ R = e^(-t/S)
 - 睡前10分钟做一次快速牌序回忆
 - 保证7-8小时睡眠
 - 午饭后小睡20分钟可以加速上午训练的巩固
+
+## 📚 参考文献
+
+1. Ebbinghaus, H. (1885). *Über das Gedächtnis*. — 遗忘曲线奠基之作
+2. Cepeda, N.J., et al. (2006). Distributed practice in verbal recall tasks. *Psychological Bulletin*, 132(3), 354-380. — 间隔效应元分析
+3. Karpicke, J.D., & Roediger, H.L. (2008). The critical importance of retrieval practice. *Science*, 321(5890), 966-968. — 提取练习效应
+

@@ -396,3 +396,10 @@ A 特殊处理：
 - 想将扑克牌编码升级为PAO系统 → [扑克牌PAO系统](02-card-pao-01.md)
 - 想练习记住整副牌的顺序 → [扑克牌顺序记忆](02-card-sequence-01.md)
 - 想挑战记忆速度 → [扑克牌速度训练](02-card-speed-01.md)
+
+## 📚 参考文献
+
+1. Paivio, A. (1986). *Mental Representations: A Dual Coding Approach*. Oxford University Press. — 双重编码理论
+2. Bower, G.H. (1970). Analysis of a mnemonic device. *American Scientist*, 58(5), 496-510. — 记忆术效果分析
+3. Maguire, E.A., et al. (2003). Routes to remembering. *Nature Neuroscience*, 6(1), 90-95. — 记忆冠军的空间策略
+

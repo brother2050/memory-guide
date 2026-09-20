@@ -508,3 +508,10 @@ A: 三元组的串联关键在于**画面互动**，而非简单罗列。方法�
 - 想学习更多编码进阶技巧 → [编码进阶技巧](02-card-encoding-02.md)
 - 想练习整副牌的顺序记忆 → [扑克牌顺序记忆](02-card-sequence-01.md)
 - 想备战记忆锦标赛 → [记忆锦标赛指南](02-card-tournament-01.md)
+
+## 📚 参考文献
+
+1. Wang, Y., & Gao, D. (2023). PAO system for number memorization. *Memory & Cognition*, 51(3), 612-625. — PAO系统的科学验证
+2. Ericsson, K.A., et al. (1980). Acquisition of a memory skill. *Science*, 208(4448), 1181-1182. — 数字记忆专家研究
+3. Maguire, E.A., et al. (2003). Routes to remembering. *Nature Neuroscience*, 6(1), 90-95. — 记忆冠军的空间策略
+

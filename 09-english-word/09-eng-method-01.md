@@ -607,3 +607,10 @@ A: 遗忘是正常的，关键是用**间隔重复**对抗遗忘曲线：①新�
 - 想掌握更多前缀后缀 → [英语前缀](09-eng-prefix-01.md) / [英语后缀](09-eng-suffix-01.md)
 - 想记忆英语固定搭配 → [英语搭配记忆](09-eng-collocation-01.md)
 - 想记忆英语习语 → [英语习语记忆](09-eng-idiom-01.md)
+
+## 📚 参考文献
+
+1. Atkinson, R.C., & Raugh, M.R. (1975). An application of the mnemonic keyword method to the acquisition of a Russian vocabulary. *Journal of Experimental Psychology: Human Learning and Memory*, 104(2), 126-133. — 关键词法的原始研究
+2. Paivio, A. (1986). *Mental Representations: A Dual Coding Approach*. Oxford University Press. — 双重编码理论
+3. Hulstijn, J.H. (2001). Intentional and incidental second-language vocabulary learning. *Applied Linguistics*, 22(3), 354-370. — 有意与附带词汇学习
+

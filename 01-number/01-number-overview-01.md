@@ -322,4 +322,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Ebbinghaus, H. (1885). *Über das Gedächtnis*. — 遗忘曲线奠基之作
+2. Miller, G.A. (1956). The magical number seven. *Psychological Review*, 63(2), 81-97. — 工作记忆容量
+3. Ericsson, K.A., et al. (1980). Acquisition of a memory skill. *Science*, 208(4448), 1181-1182. — 数字记忆专家研究
+
 ---

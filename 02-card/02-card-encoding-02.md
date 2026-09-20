@@ -579,3 +579,10 @@ C. "13→医生,穿白大褂"(数字谐音)
 3. 当基础版和备选版都有感觉时，应该选择哪个编码？
    - A. 基础版  B. 备选版  C. 画面更生动的那个  D. 更短的那个
    答案：C
+
+## 📚 参考文献
+
+1. Ericsson, K.A., & Kintsch, W. (1995). Long-term working memory. *Psychological Review*, 102(2), 211-245. — 长期工作记忆理论
+2. Chase, W.G., & Simon, H.A. (1973). Perception in chess. *Cognitive Psychology*, 4(1), 55-81. — 组块理论
+3. Dresler, M., et al. (2017). Mnemonic training reshapes brain networks. *Neuron*, 93(5), 1227-1235. — 记忆训练重塑大脑网络
+

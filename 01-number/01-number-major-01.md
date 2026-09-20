@@ -532,4 +532,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Paivio, A. (1986). *Mental Representations: A Dual Coding Approach*. Oxford University Press. — 双重编码理论
+2. Kosslyn, S.M. (1994). *Image and Brain*. MIT Press. — 心理表象的神经基础
+3. Bower, G.H. (1970). Analysis of a mnemonic device. *American Scientist*, 58(5), 496-510. — 记忆术效果分析
+
 ---

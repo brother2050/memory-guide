@@ -446,3 +446,10 @@ D. 200个
 3. **C** — 3副牌156张需要156个桩子（每张牌一个桩位）
 
 </details>
+
+## 📚 参考文献
+
+1. Maguire, E.A., et al. (2003). Routes to remembering. *Nature Neuroscience*, 6(1), 90-95. — 记忆冠军的空间策略
+2. Buzan, T. (2010). *The Memory Book*. BBC Books. — 记忆术训练指南
+3. Foer, J. (2011). *Moonwalking with Einstein*. Penguin Books. — 记忆锦标赛纪实
+

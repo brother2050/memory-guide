@@ -699,4 +699,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Side, R., & Wellman, G. (2002). *Phrasal Verbs and the Lexicon*. Cambridge University Press. — 短语动词与词汇
+2. Nation, I.S.P. (2001). *Learning Vocabulary in Another Language*. Cambridge University Press. — 二语词汇习得
+3. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
+
 ---

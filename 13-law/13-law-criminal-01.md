@@ -737,4 +737,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Roediger, H.L., & Karpicke, J.D. (2006). Test-enhanced learning. *Psychological Science*, 17(3), 249-255. — 测试效应
+2. Dunlosky, J., et al. (2013). Improving students' learning. *Psychological Science in the Public Interest*, 14(1), 4-58. — 学习技术评估
+3. Kornell, N., & Bjork, R.A. (2008). Learning concepts and categories. *Psychological Science*, 19(6), 585-592. — 间隔学习
+
 ---

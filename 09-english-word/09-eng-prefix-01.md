@@ -786,4 +786,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Nation, I.S.P. (2001). *Learning Vocabulary in Another Language*. Cambridge University Press. — 二语词汇习得
+2. Nagy, W.E., & Anderson, R.C. (1984). How many words are there in printed school English? *Reading Research Quarterly*, 19(3), 304-330. — 英语词汇量研究
+3. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
+
 ---

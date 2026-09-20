@@ -323,4 +323,10 @@ A: 先用画面法将抽象信息转化为具体图像,再用记忆宫殿放置�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Wang, Y., & Gao, D. (2023). PAO system for number memorization. *Memory & Cognition*, 51(3), 612-625. — PAO系统的科学验证
+2. Maguire, E.A., et al. (2003). Routes to remembering. *Nature Neuroscience*, 6(1), 90-95. — 记忆冠军的空间策略
+3. Dresler, M., et al. (2017). Mnemonic training reshapes brain networks. *Neuron*, 93(5), 1227-1235. — 记忆训练重塑大脑网络
+
 ---

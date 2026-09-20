@@ -347,3 +347,10 @@ D. 随机分组
 3. **B** — 手机号推荐用号段+PAO系统，前3位号段识别运营商，后8位用PAO编码
 
 </details>
+
+## 📚 参考文献
+
+1. Paivio, A. (1986). *Mental Representations: A Dual Coding Approach*. Oxford University Press. — 双重编码理论，图像与语言双重编码增强记忆
+2. Bower, G.H. (1970). Analysis of a mnemonic device. *American Scientist*, 58(5), 496-510. — 数字形状法等记忆术的效果分析
+3. Miller, G.A. (1956). The magical number seven, plus or minus two. *Psychological Review*, 63(2), 81-97. — 工作记忆容量限制的经典研究
+

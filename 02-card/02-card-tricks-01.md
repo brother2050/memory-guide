@@ -737,3 +737,10 @@ D. 每季度
 3. **C** — 每月1次系统评估，统计错误记录，替换效果不佳的编码
 
 </details>
+
+## 📚 参考文献
+
+1. Roediger, H.L., & Karpicke, J.D. (2006). Test-enhanced learning. *Psychological Science*, 17(3), 249-255. — 测试效应
+2. Bjork, R.A. (1994). Memory and metamemory considerations in training. In J. Metcalfe & A. Shimamura (Eds.), *Metacognition*. — 元认知与训练
+3. Kornell, N., & Bjork, R.A. (2008). Learning concepts and categories. *Psychological Science*, 19(6), 585-592. — 间隔学习
+

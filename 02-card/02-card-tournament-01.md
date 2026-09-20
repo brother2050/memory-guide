@@ -451,3 +451,10 @@
 3. 竞赛中常见的干扰因素不包括以下哪项？
    - A. 环境噪音  B. 时间压力  C. 不熟悉的牌具  D. 牌的颜色
    答案：D
+
+## 📚 参考文献
+
+1. Maguire, E.A., et al. (2003). Routes to remembering. *Nature Neuroscience*, 6(1), 90-95. — 记忆冠军的空间策略
+2. Dresler, M., et al. (2017). Mnemonic training reshapes brain networks. *Neuron*, 93(5), 1227-1235. — 记忆训练重塑大脑网络
+3. Buzan, T. (2010). *The Memory Book*. BBC Books. — 记忆术训练指南
+

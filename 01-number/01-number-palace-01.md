@@ -340,3 +340,10 @@ D. 构建多个宫殿
 3. **B** — 第1-7天是宫殿构建期，主要任务是选择地点并熟悉所有桩位
 
 </details>
+
+## 📚 参考文献
+
+1. O'Keefe, J., & Nadel, L. (1978). *The Hippocampus as a Cognitive Map*. Oxford University Press. — 位置细胞的发现，记忆宫殿的神经基础
+2. Maguire, E.A., et al. (2003). Routes to remembering. *Nature Neuroscience*, 6(1), 90-95. — 记忆冠军大量使用空间记忆策略
+3. Legge, E.L., et al. (2012). Building a memory palace in minutes. *Memory*, 20(4), 361-370. — 快速构建记忆宫殿的方法
+

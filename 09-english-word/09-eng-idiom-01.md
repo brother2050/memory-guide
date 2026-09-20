@@ -452,4 +452,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Lakoff, G., & Johnson, M. (1980). *Metaphors We Live By*. University of Chicago Press. — 概念隐喻理论
+2. Boers, F., & Demecheleer, M. (1998). A cognitive semantic approach to teaching prepositions. *ELT Journal*, 52(3), 197-204. — 认知语义学与词汇教学
+3. Nation, I.S.P. (2001). *Learning Vocabulary in Another Language*. Cambridge University Press. — 二语词汇习得
+
 ---

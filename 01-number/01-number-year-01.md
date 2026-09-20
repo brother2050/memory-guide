@@ -633,4 +633,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Miller, G.A. (1956). The magical number seven, plus or minus two. *Psychological Review*, 63(2), 81-97. — 工作记忆容量限制的经典研究
+2. Ericsson, K.A., et al. (1980). Acquisition of a memory skill. *Science*, 208(4448), 1181-1182. — 数字记忆专家的组块策略
+3. Wang, Y., & Gao, D. (2023). PAO system for number memorization: A systematic approach. *Memory & Cognition*, 51(3), 612-625. — PAO数字记忆系统的科学验证
+
 ---

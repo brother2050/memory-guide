@@ -575,3 +575,10 @@ D. 100%练正确率
 3. **B** — 入门期80%时间练正确率，20%时间练速度
 
 </details>
+
+## 📚 参考文献
+
+1. Ericsson, K.A., et al. (1980). Acquisition of a memory skill. *Science*, 208(4448), 1181-1182. — 记忆速度训练研究
+2. Campitelli, G., & Gobet, F. (2011). Deliberate practice. *Current Directions in Psychological Science*, 20(5), 280-285. — 刻意练习与专家性能
+3. Maguire, E.A., et al. (2003). Routes to remembering. *Nature Neuroscience*, 6(1), 90-95. — 记忆冠军的空间策略
+

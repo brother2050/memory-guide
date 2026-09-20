@@ -615,3 +615,10 @@ A: 用"金字塔画面"来区分：宪法是金字塔顶端（最高法律效力
 - 想掌握刑法记忆技巧 → [刑法记忆](13-law-criminal-01.md)
 - 想通过案例理解法条 → [案例记忆法](13-law-case-01.md)
 - 想备战法律考试 → [法律考试记忆](13-law-exam-01.md)
+
+## 📚 参考文献
+
+1. Kornell, N., & Bjork, R.A. (2008). Learning concepts and categories. *Psychological Science*, 19(6), 585-592. — 间隔学习
+2. Dunlosky, J., et al. (2013). Improving students' learning with effective learning techniques. *Psychological Science in the Public Interest*, 14(1), 4-58. — 十大学习技术评估
+3. O'Keefe, J., & Nadel, L. (1978). *The Hippocampus as a Cognitive Map*. Oxford University Press. — 记忆宫殿的神经基础
+

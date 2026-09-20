@@ -771,3 +771,10 @@ A: 三步应对：①**上下文猜测**——根据前后词根和句子意思�
 - 想掌握常见前缀 → [英语前缀大全](09-eng-prefix-01.md)
 - 想掌握常见后缀 → [英语后缀大全](09-eng-suffix-01.md)
 - 想了解综合记忆方法 → [英语单词记忆法](09-eng-method-01.md)
+
+## 📚 参考文献
+
+1. Nation, I.S.P. (2001). *Learning Vocabulary in Another Language*. Cambridge University Press. — 二语词汇习得
+2. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
+3. Nagy, W.E., & Anderson, R.C. (1984). How many words are there in printed school English? *Reading Research Quarterly*, 19(3), 304-330. — 英语词汇量研究
+

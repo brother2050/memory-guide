@@ -622,3 +622,10 @@ A: 用"人物一生"故事线串联七编：①**总则**——人从出生就�
 - 想学习刑法记忆方法 → [刑法记忆](13-law-criminal-01.md)
 - 想通过案例深化理解 → [案例记忆法](13-law-case-01.md)
 - 想掌握法律核心概念 → [法律概念记忆](13-law-concept-01.md)
+
+## 📚 参考文献
+
+1. Roediger, H.L., & Karpicke, J.D. (2006). Test-enhanced learning. *Psychological Science*, 17(3), 249-255. — 测试效应
+2. Dunlosky, J., et al. (2013). Improving students' learning. *Psychological Science in the Public Interest*, 14(1), 4-58. — 学习技术评估
+3. Kornell, N., & Bjork, R.A. (2008). Learning concepts and categories. *Psychological Science*, 19(6), 585-592. — 间隔学习
+

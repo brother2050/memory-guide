@@ -727,4 +727,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Cowan, N. (2001). The magical number 4. *Behavioral and Brain Sciences*, 24(1), 87-114. — 工作记忆容量限制
+2. Ericsson, K.A., & Kintsch, W. (1995). Long-term working memory. *Psychological Review*, 102(2), 211-245. — 长期工作记忆理论
+3. Baddeley, A.D. (2000). The episodic buffer. *Trends in Cognitive Sciences*, 4(11), 417-423. — 工作记忆模型
+
 ---

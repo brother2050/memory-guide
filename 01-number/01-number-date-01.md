@@ -339,4 +339,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Friedman, W.J. (1993). Memory for the time of past events. *Psychological Bulletin*, 113(1), 44-66. — 时间记忆的认知机制
+2. Tulving, E. (1972). Episodic and semantic memory. In E. Tulving & W. Donaldson (Eds.), *Organization of Memory*. — 情景记忆与语义记忆
+3. Baddeley, A.D. (2000). The episodic buffer. *Trends in Cognitive Sciences*, 4(11), 417-423. — 工作记忆模型
+
 ---

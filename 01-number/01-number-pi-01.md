@@ -481,4 +481,10 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 - 想用AI辅助 → [25-AI辅助记忆.md](../25-AI辅助记忆.md)
 - 想速查回顾 → [33-记忆速查手册.md](../33-记忆速查手册.md)
 
+## 📚 参考文献
+
+1. Ericsson, K.A., et al. (1980). Acquisition of a memory skill. *Science*, 208(4448), 1181-1182. — 数字记忆专家的组块策略
+2. Hunt, E., & Love, T. (1972). How good can memory be? In A.W. Melton & E. Martin (Eds.), *Coding Processes in Human Memory*. — 记忆极限研究
+3. Thompson, C.P., et al. (1993). *Mnemonics and mnemonic techniques*. In *Memory in Everyday Life*. Elsevier. — 记忆术综述
+
 ---

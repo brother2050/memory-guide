@@ -529,3 +529,10 @@
 3. 牌序记忆中，每张牌的平均记忆时间约为多少？
    - A. 0.1秒  B. 0.38秒  C. 1秒  D. 2秒
    答案：B
+
+## 📚 参考文献
+
+1. Ebbinghaus, H. (1885). *Über das Gedächtnis*. — 遗忘曲线奠基之作
+2. Karpicke, J.D., & Roediger, H.L. (2008). The critical importance of retrieval practice. *Science*, 321(5890), 966-968. — 提取练习效应
+3. Cepeda, N.J., et al. (2006). Distributed practice in verbal recall tasks. *Psychological Bulletin*, 132(3), 354-380. — 间隔效应元分析
+
