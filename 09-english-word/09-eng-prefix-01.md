@@ -3,6 +3,9 @@
 > 30个常用前缀 | 含义→谐音→画面→5个例词
 
 
+
+> **📍 本章导航**：前置 → [09-eng-root-01](09-eng-root-01.md) ｜ 相关 → [09-eng-suffix-01](09-eng-suffix-01.md)·[09-eng-method-01](09-eng-method-01.md) ｜ 方法 → M24·M11 ｜ 难度 ⭐⭐ ｜ 阅读 ~12min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -793,3 +796,12 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 3. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
 
 ---
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-root-01.md](09-eng-root-01.md) — 前缀要和词根搭配使用
+- [09-eng-suffix-01.md](09-eng-suffix-01.md) — 后缀决定词性，前后缀合起来才完整
+- [09-eng-method-01.md](09-eng-method-01.md) — 方法卡 A（M24 词根词缀法）的操作步骤与验收标准
+- [exercises/08-英语词根练习.md](../exercises/08-英语词根练习.md) — 拆词练习

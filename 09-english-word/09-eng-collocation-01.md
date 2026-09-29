@@ -6,6 +6,9 @@
 > 40个核心搭配 | 搭配→谐音→画面→例句
 
 
+
+> **📍 本章导航**：前置 → [09-eng-method-01](09-eng-method-01.md) ｜ 相关 → [09-eng-phrasal-01](09-eng-phrasal-01.md)·[09-eng-idiom-01](09-eng-idiom-01.md) ｜ 方法 → M25·M11·M07-R ｜ 难度 ⭐ ｜ 阅读 ~12min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -747,3 +750,12 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 3. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
 
 ---
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-method-01.md](09-eng-method-01.md) — 方法卡 B（M25 语境/例句法）：搭配要在句子里记
+- [09-eng-phrasal-01.md](09-eng-phrasal-01.md) — 短语动词：搭配的「方向感」版本
+- [24-practice/02-英语单词实战.md](../24-practice/02-英语单词实战.md) — 搭配的整套实战演练
+- [anki/09-英语单词.tsv](../anki/09-英语单词.tsv) — 搭配卡，配合间隔重复

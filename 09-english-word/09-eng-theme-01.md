@@ -4,6 +4,9 @@
 > 本文件覆盖医学、法律、科技、商业、学术五大主题，每主题20词。
 
 
+
+> **📍 本章导航**：前置 → [09-eng-method-01](09-eng-method-01.md) ｜ 相关 → [09-eng-sat-01](09-eng-sat-01.md)·[36-职场记忆效率](../36-职场记忆效率.md) ｜ 方法 → M10·M01·M07-R ｜ 难度 ⭐⭐ ｜ 阅读 ~15min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -413,3 +416,12 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 3. Paivio, A. (1986). *Mental Representations: A Dual Coding Approach*. Oxford University Press. — 双重编码理论
 
 ---
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-method-01.md](09-eng-method-01.md) — 方法卡 C（M10 主题词群/思维导图）的七要素
+- [36-职场记忆效率](../36-职场记忆效率.md) — 职场英语词群的落地场景
+- [24-practice/02-英语单词实战.md](../24-practice/02-英语单词实战.md) — 主题词的实战演练
+- [03-vocabulary/03-vocab-concept-01.md](../03-vocabulary/03-vocab-concept-01.md) — 中文抽象概念的主题网络（同样的 M10 思路）

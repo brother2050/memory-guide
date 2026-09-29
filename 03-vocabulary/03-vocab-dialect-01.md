@@ -6,6 +6,9 @@
 > 方言和俗语是中华文化的活化石。通过普通话→方言→谐音→画面的编码链，可以生动记忆各地方言词汇和民间智慧。
 
 
+
+> **📍 本章导航**：前置 → [03-vocabulary/INDEX.md](INDEX.md) ｜ 相关 → [03-vocab-chengyu-01.md](03-vocab-chengyu-01.md)·[23-language/INDEX.md](../23-language/INDEX.md) ｜ 方法 → M11·M12·M25 ｜ 难度 ⭐ ｜ 阅读 ~10min
+
 ## 📍 导航
 > [返回中文词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -516,4 +519,10 @@
    - A. 好心没好报  B. 没安好心  C. 自不量力  D. 多管闲事
    答案：B
 
+---
 
+## 🔗 与本书其他部分的联系
+
+- [23-language/INDEX.md](../23-language/INDEX.md) — 多语言词汇记忆：方言发音的编码思路可迁移
+- [03-vocab-chengyu-01.md](03-vocab-chengyu-01.md) — 俗语/歇后语的画面编码同门方法
+- [43-记忆与社交.md](../43-记忆与社交.md) — 饭局/社交场合的即兴表达记忆

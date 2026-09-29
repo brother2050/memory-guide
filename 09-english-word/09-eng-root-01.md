@@ -6,6 +6,9 @@
 > 本文件为每个词根提供：含义→谐音→图像→关联单词，助你批量记忆。
 
 
+
+> **📍 本章导航**：前置 → [02-核心记忆技巧](../02-核心记忆技巧.md) ｜ 相关 → [09-eng-method-01](09-eng-method-01.md)·[09-eng-root-02](09-eng-root-02.md) ｜ 方法 → M24·M11·M07-R ｜ 难度 ⭐⭐ ｜ 阅读 ~18min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -778,3 +781,11 @@ A: 三步应对：①**上下文猜测**——根据前后词根和句子意思�
 2. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
 3. Nagy, W.E., & Anderson, R.C. (1984). How many words are there in printed school English? *Reading Research Quarterly*, 19(3), 304-330. — 英语词汇量研究
 
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-method-01.md](09-eng-method-01.md) — 方法体系与选法决策表：词根法（M24）何时用、怎么与其他方法组合
+- [09-eng-prefix-01.md](09-eng-prefix-01.md) / [09-eng-suffix-01.md](09-eng-suffix-01.md) — 前后缀补全构词法拼图
+- [exercises/08-英语词根练习.md](../exercises/08-英语词根练习.md) — 词根拆解配套练习
+- [anki/英语词根.tsv](../anki/英语词根.tsv) — 词根卡片，配合 [M07-R](../方法地图.md#m07-r)+[M08](../方法地图.md#m08) 复习闭环

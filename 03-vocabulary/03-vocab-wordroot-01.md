@@ -4,6 +4,9 @@
 > 汉字是表意文字，偏旁部首就是天然的"词根"。掌握偏旁→画面→衍生字的关联链，可以批量记忆大量汉字。
 
 
+
+> **📍 本章导航**：前置 → [03-vocabulary/INDEX.md](INDEX.md) ｜ 相关 → [09-english-word/INDEX.md](../09-english-word/INDEX.md)·[23-language/INDEX.md](../23-language/INDEX.md) ｜ 方法 → M24·M10·M11 ｜ 难度 ⭐⭐ ｜ 阅读 ~13min
+
 ## 📍 导航
 > [返回中文词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -654,3 +657,12 @@
 3. 词根记忆法中，偏旁"忄"（竖心旁）和"心"（心底）的区别是什么？
    - A. 没有区别  B. 忄=即时情绪，心=深层思想  C. 忄=正面情绪，心=负面情绪  D. 忄=身体，心=心理
    答案：B
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-english-word/09-eng-root-01.md](../09-english-word/09-eng-root-01.md) — 英语词根（M24）：中英文「字族/词族」思路对照
+- [23-language/INDEX.md](../23-language/INDEX.md) — 其他语言的词汇记忆方法
+- [03-vocabulary/03-vocab-concept-01.md](03-vocab-concept-01.md) — 汉字字族网络的抽象版（概念网络 M10）
+- [exercises/04-词汇记忆练习.md](../exercises/04-词汇记忆练习.md) — 词汇记忆练习

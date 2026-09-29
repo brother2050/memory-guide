@@ -5,6 +5,9 @@
 > 本文件为每个短语提供：动词+介词→谐音→画面→故事，并系统编码介词的方向感。
 
 
+
+> **📍 本章导航**：前置 → [09-eng-collocation-01](09-eng-collocation-01.md) ｜ 相关 → [09-eng-idiom-01](09-eng-idiom-01.md)·[09-eng-method-01](09-eng-method-01.md) ｜ 方法 → M13·M11·M25 ｜ 难度 ⭐⭐ ｜ 阅读 ~15min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -706,3 +709,12 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 3. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
 
 ---
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-collocation-01.md](09-eng-collocation-01.md) — 固定搭配记忆
+- [09-eng-method-01.md](09-eng-method-01.md) — 语境法（M25）：短语动词必须放进例句记
+- [24-practice/02-英语单词实战.md](../24-practice/02-英语单词实战.md) — 实战演练
+- [anki/09-英语单词.tsv](../anki/09-英语单词.tsv) — 短语动词卡片

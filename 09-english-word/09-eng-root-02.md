@@ -4,6 +4,9 @@
 > 本文件包含50个中高级词根、20个前缀、15个后缀的编码系统。
 
 
+
+> **📍 本章导航**：前置 → [09-eng-root-01](09-eng-root-01.md) ｜ 相关 → [09-eng-method-01](09-eng-method-01.md)·[09-eng-sat-01](09-eng-sat-01.md) ｜ 方法 → M24·M13·M07-R ｜ 难度 ⭐⭐⭐ ｜ 阅读 ~20min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -891,3 +894,12 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 3. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
 
 ---
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-root-01.md](09-eng-root-01.md) — 基础词根，先修内容
+- [09-eng-sat-01.md](09-eng-sat-01.md) — 进阶词根的实战对象（GRE/SAT 难词）
+- [09-eng-method-01.md](09-eng-method-01.md) — 词根法（M24）七要素与失败回退
+- [anki/英语词根.tsv](../anki/英语词根.tsv) — 进阶词根卡片

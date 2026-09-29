@@ -6,6 +6,9 @@
 > 本文件为每个后缀提供：含义→谐音→图像→代表词→词性规律→对比记忆。
 
 
+
+> **📍 本章导航**：前置 → [09-eng-root-01](09-eng-root-01.md) ｜ 相关 → [09-eng-prefix-01](09-eng-prefix-01.md)·[09-eng-method-01](09-eng-method-01.md) ｜ 方法 → M24·M11 ｜ 难度 ⭐⭐ ｜ 阅读 ~13min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -654,3 +657,12 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 3. Schmitt, N. (2000). *Vocabulary in Language Teaching*. Cambridge University Press. — 词汇教学理论
 
 ---
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-prefix-01.md](09-eng-prefix-01.md) — 前缀改变词义方向
+- [09-eng-root-02.md](09-eng-root-02.md) — 后缀进阶与学术词汇拆解
+- [09-eng-method-01.md](09-eng-method-01.md) — 词根词缀法（M24）与语境法（M25）的分工
+- [exercises/08-英语词根练习.md](../exercises/08-英语词根练习.md) — 拆词练习

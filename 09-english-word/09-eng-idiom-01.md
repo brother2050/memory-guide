@@ -8,6 +8,9 @@
 > 本文件为每个习语提供:字面义→真实义→画面→故事→来源→中英对比。
 
 
+
+> **📍 本章导航**：前置 → [09-eng-collocation-01](09-eng-collocation-01.md) ｜ 相关 → [09-eng-phrasal-01](09-eng-phrasal-01.md)·[55-影视台词记忆](../55-影视台词记忆.md) ｜ 方法 → M25·M11·M12 ｜ 难度 ⭐⭐ ｜ 阅读 ~12min
+
 ## 📍 导航
 > [返回英语词汇记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -459,3 +462,12 @@ A: 先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 3. Nation, I.S.P. (2001). *Learning Vocabulary in Another Language*. Cambridge University Press. — 二语词汇习得
 
 ---
+
+---
+
+## 🔗 与本书其他部分的联系
+
+- [09-eng-collocation-01.md](09-eng-collocation-01.md) — 搭配记忆：习语的「常规版」
+- [55-影视台词记忆](../55-影视台词记忆.md) — 从美剧/电影台词里收集习语的真实语境
+- [09-eng-method-01.md](09-eng-method-01.md) — 强关联联想的评分标准（习语画面也要过 2 分线）
+- [03-vocabulary/03-vocab-chengyu-01.md](../03-vocabulary/03-vocab-chengyu-01.md) — 对比：中文成语的画面编码
