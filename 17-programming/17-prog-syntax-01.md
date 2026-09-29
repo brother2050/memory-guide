@@ -57,7 +57,7 @@
           print(f"耗时: {time.time()-start}")
           return result
       return wrapper
-  
+
   @timer
   def slow_func(): ...
   ```
