@@ -21,31 +21,31 @@
 | # | 文件 | 主题 | 知识点 ID 范围 | 难度 | 阅读 | 预估 tokens |
 |---|---|---|---|:---:|---|---|
 | 1 | [py-00-roadmap.md](py-00-roadmap.md) | 全景图 / 阶段表 / 编号表 / 30 天路线 | —（总图，不设点号） | ⭐ | ~15min | ~10k |
-| 2 | [py-01-setup-runtime.md](py-01-setup-runtime.md) | 环境搭建 / 解释器 / REPL / pip·venv | PY-01-01 ~ PY-01-16（16点）（16点） | ⭐ | ~12min | ~8k |
-| 3 | [py-02-variables-types.md](py-02-variables-types.md) | 变量命名 / 动态类型 / 基本类型 / id·is·== | PY-02-01 ~ PY-02-16（16点）（16点） | ⭐ | ~12min | ~8k |
-| 4 | [py-03-strings.md](py-03-strings.md) | 字符串方法 / 切片 / bytes·Unicode / 编解码 | PY-03-01 ~ PY-03-17（17点）（17点） | ⭐ | ~12min | ~8k |
-| 5 | [py-04-containers.md](py-04-containers.md) | list·tuple·dict·set / 推导式 / 深浅拷贝 | PY-04-01 ~ PY-04-17（17点）（17点） | ⭐⭐ | ~13min | ~9k |
-| 6 | [py-05-operators.md](py-05-operators.md) | 运算符 / 优先级 / 短路 / 海象 | PY-05-01 ~ PY-05-15（15点）（15点） | ⭐ | ~12min | ~8k |
-| 7 | [py-06-control-flow.md](py-06-control-flow.md) | if·for·while / else 子句 / match-case | PY-06-01 ~ PY-06-16（16点）（16点） | ⭐ | ~12min | ~8k |
-| 8 | [py-07-functions.md](py-07-functions.md) | 参数种类 / LEGB / 闭包 / 递归 / lambda | PY-07-01 ~ PY-07-18（18点）（18点） | ⭐⭐ | ~13min | ~9k |
-| 9 | [py-08-decorators.md](py-08-decorators.md) | 装饰器原理 / wraps / 带参装饰器 / partial | PY-08-01 ~ PY-08-15（15点）（15点） | ⭐⭐ | ~12min | ~8k |
-| 10 | [py-09-oop.md](py-09-oop.md) | class·self / 继承多态 / super·MRO / slots·property | PY-09-01 ~ PY-09-16（16点）（16点） | ⭐⭐ | ~14min | ~9k |
-| 11 | [py-10-magic-methods.md](py-10-magic-methods.md) | 魔术方法与协议 / 运算符重载 | PY-10-01 ~ PY-10-15（15点）（15点） | ⭐⭐ | ~13min | ~9k |
-| 12 | [py-11-iterators-generators.md](py-11-iterators-generators.md) | 迭代协议 / 生成器 / yield·send / itertools | PY-11-01 ~ PY-11-16（16点）（16点） | ⭐⭐ | ~13min | ~9k |
-| 13 | [py-12-exceptions.md](py-12-exceptions.md) | 异常层级 / try 四件套 / 自定义异常 / 异常链 | PY-12-01 ~ PY-12-16（16点）（16点） | ⭐⭐ | ~12min | ~8k |
-| 14 | [py-13-modules-packages.md](py-13-modules-packages.md) | import 机制 / 包结构 / __name__ / 发布·uv | PY-13-01 ~ PY-13-17（17点）（17点） | ⭐⭐ | ~12min | ~8k |
-| 15 | [py-14-stdlib.md](py-14-stdlib.md) | 标准库精选（os·json·collections·itertools…） | PY-14-01 ~ PY-14-15（15点）（15点） | ⭐⭐ | ~12min | ~8k |
-| 16 | [py-15-file-io.md](py-15-file-io.md) | open·with / 读写模式 / csv·json 文件 / 编码坑 | PY-15-01 ~ PY-15-13（13点）（13点） | ⭐⭐ | ~12min | ~8k |
-| 17 | [py-16-regex.md](py-16-regex.md) | 正则元字符 / 分组 / 贪婪 / re API / 实战 5 例 | PY-16-01 ~ PY-16-18（18点）（18点） | ⭐⭐ | ~12min | ~8k |
-| 18 | [py-17-typing-modern.md](py-17-typing-modern.md) | 类型注解 / dataclass·Enum·Protocol / mypy | PY-17-01 ~ PY-17-15（15点）（15点） | ⭐⭐⭐ | ~12min | ~8k |
-| 19 | [py-18-concurrency.md](py-18-concurrency.md) | GIL / threading / multiprocessing / asyncio | PY-18-01 ~ PY-18-13（13点）（13点） | ⭐⭐⭐ | ~14min | ~9k |
-| 20 | [py-19-memory-performance.md](py-19-memory-performance.md) | 引用计数·GC / slots / 生成器省内存 / profiling | PY-19-01 ~ PY-19-12（12点）（12点） | ⭐⭐⭐ | ~12min | ~8k |
-| 21 | [py-20-engineering-testing.md](py-20-engineering-testing.md) | 项目结构 / pytest / logging / lint·CI / 调试法 | PY-20-01 ~ PY-20-13（13点）（13点） | ⭐⭐⭐ | ~12min | ~8k |
+| 2 | [py-01-setup-runtime.md](py-01-setup-runtime.md) | 环境搭建 / 解释器 / REPL / pip·venv | PY-01-01 ~ PY-01-16（16点） | ⭐ | ~12min | ~8k |
+| 3 | [py-02-variables-types.md](py-02-variables-types.md) | 变量命名 / 动态类型 / 基本类型 / id·is·== | PY-02-01 ~ PY-02-16（16点） | ⭐ | ~12min | ~8k |
+| 4 | [py-03-strings.md](py-03-strings.md) | 字符串方法 / 切片 / bytes·Unicode / 编解码 | PY-03-01 ~ PY-03-17（17点） | ⭐ | ~12min | ~8k |
+| 5 | [py-04-containers.md](py-04-containers.md) | list·tuple·dict·set / 推导式 / 深浅拷贝 | PY-04-01 ~ PY-04-17（17点） | ⭐⭐ | ~13min | ~9k |
+| 6 | [py-05-operators.md](py-05-operators.md) | 运算符 / 优先级 / 短路 / 海象 | PY-05-01 ~ PY-05-15（15点） | ⭐ | ~12min | ~8k |
+| 7 | [py-06-control-flow.md](py-06-control-flow.md) | if·for·while / else 子句 / match-case | PY-06-01 ~ PY-06-16（16点） | ⭐ | ~12min | ~8k |
+| 8 | [py-07-functions.md](py-07-functions.md) | 参数种类 / LEGB / 闭包 / 递归 / lambda | PY-07-01 ~ PY-07-18（18点） | ⭐⭐ | ~13min | ~9k |
+| 9 | [py-08-decorators.md](py-08-decorators.md) | 装饰器原理 / wraps / 带参装饰器 / partial | PY-08-01 ~ PY-08-15（15点） | ⭐⭐ | ~12min | ~8k |
+| 10 | [py-09-oop.md](py-09-oop.md) | class·self / 继承多态 / super·MRO / slots·property | PY-09-01 ~ PY-09-16（16点） | ⭐⭐ | ~14min | ~9k |
+| 11 | [py-10-magic-methods.md](py-10-magic-methods.md) | 魔术方法与协议 / 运算符重载 | PY-10-01 ~ PY-10-19（19点） | ⭐⭐ | ~13min | ~9k |
+| 12 | [py-11-iterators-generators.md](py-11-iterators-generators.md) | 迭代协议 / 生成器 / yield·send / itertools | PY-11-01 ~ PY-11-16（16点） | ⭐⭐ | ~13min | ~9k |
+| 13 | [py-12-exceptions.md](py-12-exceptions.md) | 异常层级 / try 四件套 / 自定义异常 / 异常链 | PY-12-01 ~ PY-12-16（16点） | ⭐⭐ | ~12min | ~8k |
+| 14 | [py-13-modules-packages.md](py-13-modules-packages.md) | import 机制 / 包结构 / __name__ / 发布·uv | PY-13-01 ~ PY-13-17（17点） | ⭐⭐ | ~12min | ~8k |
+| 15 | [py-14-stdlib.md](py-14-stdlib.md) | 标准库精选（os·json·collections·itertools…） | PY-14-01 ~ PY-14-15（15点） | ⭐⭐ | ~12min | ~8k |
+| 16 | [py-15-file-io.md](py-15-file-io.md) | open·with / 读写模式 / csv·json 文件 / 编码坑 | PY-15-01 ~ PY-15-13（13点） | ⭐⭐ | ~12min | ~8k |
+| 17 | [py-16-regex.md](py-16-regex.md) | 正则元字符 / 分组 / 贪婪 / re API / 实战 5 例 | PY-16-01 ~ PY-16-18（18点） | ⭐⭐ | ~12min | ~8k |
+| 18 | [py-17-typing-modern.md](py-17-typing-modern.md) | 类型注解 / dataclass·Enum·Protocol / mypy | PY-17-01 ~ PY-17-15（15点） | ⭐⭐⭐ | ~12min | ~8k |
+| 19 | [py-18-concurrency.md](py-18-concurrency.md) | GIL / threading / multiprocessing / asyncio | PY-18-01 ~ PY-18-13（13点） | ⭐⭐⭐ | ~14min | ~9k |
+| 20 | [py-19-memory-performance.md](py-19-memory-performance.md) | 引用计数·GC / slots / 生成器省内存 / profiling | PY-19-01 ~ PY-19-12（12点） | ⭐⭐⭐ | ~12min | ~8k |
+| 21 | [py-20-engineering-testing.md](py-20-engineering-testing.md) | 项目结构 / pytest / logging / lint·CI / 调试法 | PY-20-01 ~ PY-20-13（13点） | ⭐⭐⭐ | ~12min | ~8k |
 | 22 | [py-21-pitfalls-interview.md](py-21-pitfalls-interview.md) | 全局消混 13 组 + 面试高频 30 问 | —（只引用 PY-ID，不新建） | ⭐⭐⭐ | ~15min | ~10k |
 | 23 | [py-22-review-drill.md](py-22-review-drill.md) | 自测四件套 / SRS 复习表 / 30·60·90 天计划 | —（只引用 PY-ID，不新建） | ⭐⭐ | ~12min | ~8k |
 | 24 | [py-23-memory-system.md](py-23-memory-system.md) | 记忆体系总纲 / Python 城一条主线串全库 / 20 分钟走城复习 | —（不新建锚点，编排已有） | ⭐⭐ | ~12min | ~8k |
 
-> 注：ID 范围与点数为合并期实测统计；锚点反查总表与各篇"📌 锚点登记表"一致，全库反查词唯一性已检查。合计 309 个知识点、309 条锚点登记（py-01~py-20），全库预算约 200k tokens。
+> 注：ID 范围与点数为合并期实测统计；锚点反查总表与各篇"📌 锚点登记表"一致，全库反查词唯一性已检查。合计 313 个知识点、320 条锚点登记（py-00~py-20），全库预算约 200k tokens。
 
 ## 二、阶段学习路径（阶段 0~6；日程主档见 [py-00](py-00-roadmap.md) 阶段表）
 
@@ -226,6 +226,10 @@
 | PY-10-13 | __add__/__mul__ | 两张频道表叠加 | 叠频道表 | [py-10-magic-methods.md](py-10-magic-methods.md) |
 | PY-10-14 | __radd__ | 客串顶替（问右边） | 客串顶替 | [py-10-magic-methods.md](py-10-magic-methods.md) |
 | PY-10-15 | __iadd__ | 原节目单续写 | 续写旧单 | [py-10-magic-methods.md](py-10-magic-methods.md) |
+| PY-10-16 | 描述符协议 | 遥控器三键接线口＋装机登记 | 三键接线口 | [py-10-magic-methods.md](py-10-magic-methods.md) |
+| PY-10-17 | 数据/非数据描述符 | 包厢特权优先级 | 包厢特权 | [py-10-magic-methods.md](py-10-magic-methods.md) |
+| PY-10-18 | property 真身 | 语音键=封装三键组合 | 语音键 | [py-10-magic-methods.md](py-10-magic-methods.md) |
+| PY-10-19 | 懒加载/校验描述符 | 代客挂衣凭牌直取 | 代客挂衣 | [py-10-magic-methods.md](py-10-magic-methods.md) |
 | PY-11-01 | 可迭代对象/迭代器 | 售货机整机 vs 取货口 | 整机与取货口 | [py-11-iterators-generators.md](py-11-iterators-generators.md) |
 | PY-11-02 | iter() | 开取货口/供货员送"STOP" | 开取货口 | [py-11-iterators-generators.md](py-11-iterators-generators.md) |
 | PY-11-03 | next()/StopIteration | 按钮取货/售罄灯 | 售罄灯 | [py-11-iterators-generators.md](py-11-iterators-generators.md) |

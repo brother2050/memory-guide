@@ -12,6 +12,7 @@
 | 比较哈希裁判组 | PY-10-06~08 | eq 判等、lt 比序、hash 定键位 |
 | 下标与按钮幕布 | PY-10-09~12 | getitem 取、setitem 写删、call、enter/exit |
 | 运算符重载三连 | PY-10-13~15 | add 正向、radd 反向、iadd 原地 |
+| 描述符与 property 真身 | PY-10-16~19 | 三键装机、包厢特权、语音键真身、代客挂衣 |
 
 ## 一、协议即遥控器按键排布（总纲）
 ### PY-10-01 魔术方法与协议 Magic Method & Protocol
@@ -296,6 +297,96 @@
 - **易错**：`__iadd__` 忘记 return self，变量会被赋成 None；没有 `__iadd__` 时 `x += 10` 后 x 已不是原来那个对象（上例 y 不变）。
 - **关联**：`→ PY-10-13：+= 与 + 是两套方法`
 
+## 六、描述符与 property 真身（口号：三键装机，包厢特权）
+
+### PY-10-16 描述符协议 Descriptor Protocol（`__get__/__set__/__delete__/__set_name__`）
+- **是什么**：一个类只要定义了 `__get__`、`__set__`、`__delete__` 三者中任一个，它的实例就叫描述符（descriptor）——属性访问被它接管。
+- **为什么**：痛点是"属性存取想加拦截逻辑（校验/懒加载/日志）"但普通属性只有裸存取 → 机制是访问 `obj.x` 时解释器按固定流程找 `type(obj).__mro__` 里的描述符并调用 `__get__`，赋值/删除同理 → 行为是属性的"取存删"全部可编程 → 边界是描述符必须定义在**类**上，定义在实例上不生效。
+- **怎么写**：
+  ```python
+  class Typed:
+      def __set_name__(self, owner, name): self.name = name      # 装机登记
+      def __get__(self, obj, owner): return None if obj is None else obj.__dict__[self.name]
+      def __set__(self, obj, value):
+          if not isinstance(value, int): raise TypeError(f"{self.name} 需要 int")
+          obj.__dict__[self.name] = value
+  class Player:
+      level = Typed()                                            # 类上挂描述符
+  p = Player(); p.level = 3
+  try: p.level = "高"
+  except TypeError as e: print("拦截:", e)
+  print(p.level)
+  ```
+  → 运行输出：`拦截: level 需要 int`\n`3`
+- **何时用/不用**：属性需要校验/懒加载/统一拦截时用；只存个值就用普通属性，别上大炮打蚊子。
+- **锚点**：遥控器背后的**三键接线口**（取/存/删）+装机时登记键位（`__set_name__`）——厂家装机时把键位名字登记好，用户按的每个键都被这三个接线口接管。
+- **易错**：描述符写在实例上不生效（必须在类上）；`__get__(self, obj, owner)` 里 obj 为 None 说明是类访问（`Player.level`），要妥善返回描述符自身或报错信息。
+- **关联**：→ PY-10-17：三种优先级由"存/删"键是否具备决定 ｜ → PY-09-11 property 就是它 ｜ → PY-08-14 cached_property 的真身也是描述符。
+
+### PY-10-17 数据描述符 vs 非数据描述符（属性查找优先级）
+- **是什么**：同时有 `__set__`/`__delete__` 的叫数据描述符，只有 `__get__` 的叫非数据描述符；属性查找顺序：**数据描述符 > 实例字典 > 非数据描述符**。
+- **为什么**：痛点是"属性有时被描述符拦截、有时又能被实例字典覆盖"搞不清 → 机制是 `obj.x` 的查找链固定：先看数据描述符，再看实例 `__dict__`，最后才轮到非数据描述符 → 行为是数据描述符能强制管住赋值，非数据描述符可被实例属性盖掉 → 边界是类属性名与实例属性名同名时永远按这条链走。
+- **怎么写**：
+  ```python
+  class DataDesc:                                               # 有 __set__：包厢特权
+      def __get__(self, obj, owner): return "数据描述符赢"
+      def __set__(self, obj, value): pass
+  class NonDataDesc:                                            # 只有 __get__：可被盖掉
+      def __get__(self, obj, owner): return "非数据描述符赢"
+  class A: x, y = DataDesc(), NonDataDesc()
+  a = A(); a.__dict__["x"] = "实例字典"; a.__dict__["y"] = "实例字典"
+  print(a.x, a.y)
+  ```
+  → 运行输出：`数据描述符赢 实例字典`
+- **何时用/不用**：想让赋值必须被拦截（校验）→ 必须做成数据描述符；只是懒加载/缓存 → 非数据描述符即可（还能被实例字典缓存结果）。
+- **锚点**：剧院**包厢特权**——数据描述符是包厢客，永远优先入座（赋值也被管）；实例字典是普通观众；非数据描述符是站票客，观众先占了座他就没座。
+- **易错**：`property` 是数据描述符，所以 `obj.prop = v` 无 setter 时抛 `AttributeError`，不会写进实例字典。
+- **关联**：→ PY-10-16：优先级由三键装备情况决定 ｜ → PY-10-18 property 的拦截力来自数据描述符身份。
+
+### PY-10-18 property 的真身（property 就是内置描述符）
+- **是什么**：`property` 是 Python 内置的数据描述符，`@x.setter` 等装饰器只是给同一个 property 对象换 `__set__` 的语法糖。
+- **为什么**：痛点是"getter/setter 写成方法后调用处得加括号，不像属性" → 机制是 property 把函数包装成描述符，`obj.x` 触发 `__get__` 调 getter、`obj.x = v` 触发 `__set__` 调 setter → 行为是读写像属性、逻辑在函数 → 边界是无 setter 的 property 赋值抛 `AttributeError`（数据描述符特权）。
+- **怎么写**：
+  ```python
+  class Circle:
+      def __init__(self, r): self._r = r
+      @property
+      def area(self): return 3.14 * self._r ** 2
+  c = Circle(2)
+  print(c.area)                      # 不加括号，像属性
+  print(type(Circle.__dict__["area"])) # 揭开真身
+  ```
+  → 运行输出：`12.56`\n`<class 'property'>`
+- **何时用/不用**：想让"算出来的值"用属性语法访问时用；需要复杂校验/懒加载/多字段拦截时自己写描述符更清晰。
+- **锚点**：遥控器上那颗**语音键**——看起来是一颗普通键（属性），背后是厂家封装好的三键组合（描述符三接线口）。
+- **易错**：property 的 getter 里再访问同名属性会无限递归（内部要存 `_x`）；`Circle.area`（类访问）返回 property 对象本身而非数值。
+- **关联**：→ PY-09-11：OOP 篇的 property 用法就是本条的皮 ｜ → PY-10-17：无 setter 的 property 仍拦赋值。
+
+### PY-10-19 描述符实战：懒加载与类型校验
+- **是什么**：描述符的两大实战形态：非数据描述符做懒加载（首次访问才计算，缓存进实例字典），数据描述符做类型/范围校验（赋值即拦截）。
+- **为什么**：痛点是"贵的计算不想每次访问都跑"和"赋值必须守规矩"两个需求散落在各处 → 机制是非数据描述符 `__get__` 首次算完写进 `obj.__dict__`（下次实例字典直取），数据描述符 `__set__` 里校验不过就抛错 → 行为是属性自动变聪明 → 边界是懒加载类属性被删缓存后会重算。
+- **怎么写**：
+  ```python
+  class lazy:
+      def __init__(self, fn): self.fn = fn
+      def __set_name__(self, owner, name): self.name = name
+      def __get__(self, obj, owner):
+          if obj is None: return self
+          val = self.fn(obj); obj.__dict__[self.name] = val      # 缓存进实例字典
+          return val
+  class Report:
+      @lazy
+      def big_table(self):
+          print("(计算中…)")
+          return sum(range(10000))
+  r = Report(); print(r.big_table); print(r.big_table)           # 只算一次
+  ```
+  → 运行输出：`(计算中…) 49995000 49995000`
+- **何时用/不用**：属性计算贵且不变 → 懒加载；赋值需守规矩 → 数据描述符；两者都要就组合使用（property 的 cached 变体，见 PY-08-14 functools.cached_property）。
+- **锚点**：剧院**代客挂衣**——懒加载像衣帽间：客人首次存衣才挂（首次访问才算），之后凭牌直取（实例字典直取）。
+- **易错**：懒加载缓存后若依赖的数据变了不会自动失效（要手动删 `__dict__` 项）；校验描述符别忘了 `__set_name__` 登记名字，否则错误信息不知道是哪个字段。
+- **关联**：→ PY-10-16：两形态就是三键的不同装备方式 ｜ → PY-08-14：stdlib 的 cached_property 是懒加载的官方现成版。
+
 ## ⚔️ 对比消混表
 | 易混点 | A | B | 判据 | 一句口诀 |
 |---|---|---|---|---|
@@ -304,6 +395,8 @@
 | __bool__ vs __len__ | 显式真值 | 回落用长度 | bool 优先，len()==0 为假 | 先问 bool 再数格子 |
 | + vs += | `__add__` 出新对象 | `__iadd__` 原地改 | 无 i 版时 += 退化为 + 再绑定 | 加号换新单、加等续旧单 |
 | __add__ vs __radd__ | 左优先 | 右兜底 | 左类型不支持时转问右 | 左不行问右边 |
+| 数据 vs 非数据描述符 | 有 `__set__`/`__delete__` | 只有 `__get__` | 赋值要不要被拦 | 包厢特权 vs 站票可被占 |
+| property vs 普通方法 | 属性语法访问 | 括号调用 | 读起来像值就用 property | 算出来的值不加括号 |
 
 ## 📌 锚点登记表
 | ID | 术语 | 锚点意象 | 反查词 |
@@ -323,6 +416,10 @@
 | PY-10-13 | __add__/__mul__ | 两张频道表叠加 | 叠频道表 |
 | PY-10-14 | __radd__ | 客串顶替（问右边） | 客串顶替 |
 | PY-10-15 | __iadd__ | 原节目单续写 | 续写旧单 |
+| PY-10-16 | 描述符协议 | 遥控器三键接线口＋装机登记 | 三键接线口 |
+| PY-10-17 | 数据/非数据描述符 | 包厢特权优先级 | 包厢特权 |
+| PY-10-18 | property 真身 | 语音键=封装三键组合 | 语音键 |
+| PY-10-19 | 懒加载/校验描述符 | 代客挂衣凭牌直取 | 代客挂衣 |
 
 ## ✅ 自测清单（合上本篇，先写再看）
 1. （写代码）写一个 `Money` 类，让 `Money(2) + Money(3)` 输出 `Money(5)`，并让 `print(m)` 显示 `￥5`。
@@ -335,6 +432,10 @@
    > 答案：`len()` 抛 `ValueError: __len__() should return >= 0`；长度必须非负。
 5. （说区别）`p += [x]` 与 `p = p + [x]` 何时行为不同？
    > 答案：对象实现了 `__iadd__` 且返回 self 时，前者原地改、p 与旧引用是同一对象；否则两者等价（生成新对象），见 PY-10-15。
+6. （说机制）为什么 `obj.x = 1` 有时被拦截抛错，有时又能直接写进实例字典？
+   > 答案：`x` 是数据描述符（含 `__set__`，如 property/校验描述符）时赋值被拦截（PY-10-17）；只是非数据描述符或普通属性时写进实例字典，且实例字典优先于非数据描述符。
+7. （写代码）不看资料，写一个 `age` 描述符：赋值小于 0 抛 `ValueError`，并让错误信息带字段名。
+   > 答案：`__set_name__` 登记 `self.name`；`__set__` 里 `if value < 0: raise ValueError(f"{self.name} 不能为负")` 后存 `obj.__dict__[self.name]`（PY-10-16/19）。
 
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-09 面向对象](py-09-oop.md) ｜ ➡️ 下一篇：[py-11 迭代与生成器](py-11-iterators-generators.md)
