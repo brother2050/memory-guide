@@ -37,15 +37,15 @@
 | 15 | [py-14-stdlib.md](py-14-stdlib.md) | 标准库精选（os·json·collections·itertools…） | PY-14-01 ~ PY-14-15（15点） | ⭐⭐ | ~12min | ~8k |
 | 16 | [py-15-file-io.md](py-15-file-io.md) | open·with / 读写模式 / csv·json 文件 / 编码坑 | PY-15-01 ~ PY-15-13（13点） | ⭐⭐ | ~12min | ~8k |
 | 17 | [py-16-regex.md](py-16-regex.md) | 正则元字符 / 分组 / 贪婪 / re API / 实战 5 例 | PY-16-01 ~ PY-16-18（18点） | ⭐⭐ | ~12min | ~8k |
-| 18 | [py-17-typing-modern.md](py-17-typing-modern.md) | 类型注解 / dataclass·Enum·Protocol / mypy | PY-17-01 ~ PY-17-15（15点） | ⭐⭐⭐ | ~12min | ~8k |
-| 19 | [py-18-concurrency.md](py-18-concurrency.md) | GIL / threading / multiprocessing / asyncio | PY-18-01 ~ PY-18-13（13点） | ⭐⭐⭐ | ~14min | ~9k |
-| 20 | [py-19-memory-performance.md](py-19-memory-performance.md) | 引用计数·GC / slots / 生成器省内存 / profiling | PY-19-01 ~ PY-19-12（12点） | ⭐⭐⭐ | ~12min | ~8k |
+| 18 | [py-17-typing-modern.md](py-17-typing-modern.md) | 类型注解 / dataclass·Enum·Protocol / mypy | PY-17-01 ~ PY-17-17（17点） | ⭐⭐⭐ | ~12min | ~8k |
+| 19 | [py-18-concurrency.md](py-18-concurrency.md) | GIL / threading / multiprocessing / asyncio | PY-18-01 ~ PY-18-14（14点） | ⭐⭐⭐ | ~14min | ~9k |
+| 20 | [py-19-memory-performance.md](py-19-memory-performance.md) | 引用计数·GC / slots / 生成器省内存 / profiling | PY-19-01 ~ PY-19-14（14点） | ⭐⭐⭐ | ~12min | ~8k |
 | 21 | [py-20-engineering-testing.md](py-20-engineering-testing.md) | 项目结构 / pytest / logging / lint·CI / 调试法 | PY-20-01 ~ PY-20-13（13点） | ⭐⭐⭐ | ~12min | ~8k |
 | 22 | [py-21-pitfalls-interview.md](py-21-pitfalls-interview.md) | 全局消混 13 组 + 面试高频 30 问 | —（只引用 PY-ID，不新建） | ⭐⭐⭐ | ~15min | ~10k |
 | 23 | [py-22-review-drill.md](py-22-review-drill.md) | 自测四件套 / SRS 复习表 / 30·60·90 天计划 | —（只引用 PY-ID，不新建） | ⭐⭐ | ~12min | ~8k |
 | 24 | [py-23-memory-system.md](py-23-memory-system.md) | 记忆体系总纲 / Python 城一条主线串全库 / 20 分钟走城复习 | —（不新建锚点，编排已有） | ⭐⭐ | ~12min | ~8k |
 
-> 注：ID 范围与点数为合并期实测统计；锚点反查总表与各篇"📌 锚点登记表"一致，全库反查词唯一性已检查。合计 313 个知识点、320 条锚点登记（py-00~py-20），全库预算约 200k tokens。
+> 注：ID 范围与点数为合并期实测统计；锚点反查总表与各篇"📌 锚点登记表"一致，全库反查词唯一性已检查。合计 318 个知识点、325 条锚点登记（py-00~py-20），全库预算约 200k tokens。
 
 ## 二、阶段学习路径（阶段 0~6；日程主档见 [py-00](py-00-roadmap.md) 阶段表）
 
@@ -340,6 +340,8 @@
 | PY-17-13 | match-case | 分拣台按形状滑槽 | 分拣台 | [py-17-typing-modern.md](py-17-typing-modern.md) |
 | PY-17-14 | match 进阶 | 卡尺+合格章 | 卡尺合格章 | [py-17-typing-modern.md](py-17-typing-modern.md) |
 | PY-17-15 | 海象 := | 量完顺手贴标签 | 贴标签 | [py-17-typing-modern.md](py-17-typing-modern.md) |
+| PY-17-16 | 泛型 Generic[T] | 通用模具图纸按料换 | 通用模具图纸 | [py-17-typing-modern.md](py-17-typing-modern.md) |
+| PY-17-17 | PEP 695 新语法 | 制图简写新规（3.12） | 简写新规 | [py-17-typing-modern.md](py-17-typing-modern.md) |
 | PY-18-01 | GIL | 路口唯一红绿灯 | 唯一红绿灯 | [py-18-concurrency.md](py-18-concurrency.md) |
 | PY-18-02 | threading | 多条车道 | 多车道 | [py-18-concurrency.md](py-18-concurrency.md) |
 | PY-18-03 | Lock | 岗亭闸机一次一辆 | 岗亭闸机 | [py-18-concurrency.md](py-18-concurrency.md) |
@@ -353,6 +355,7 @@
 | PY-18-11 | gather/create_task | 车队同时发车 | 车队发车 | [py-18-concurrency.md](py-18-concurrency.md) |
 | PY-18-12 | wait_for | 绿灯倒计时拦车 | 绿灯倒计时 | [py-18-concurrency.md](py-18-concurrency.md) |
 | PY-18-13 | 实战选型 | 方案对照板 | 对照板 | [py-18-concurrency.md](py-18-concurrency.md) |
+| PY-18-14 | TaskGroup | 车队编组同进同出 | 车队编组 | [py-18-concurrency.md](py-18-concurrency.md) |
 | PY-19-01 | 引用计数 | 行李牌 | 行李牌 | [py-19-memory-performance.md](py-19-memory-performance.md) |
 | PY-19-02 | gc 回收 | 互相绑着的行李牌→保洁剪牌 | 剪牌保洁 | [py-19-memory-performance.md](py-19-memory-performance.md) |
 | PY-19-03 | 深浅拷贝 | 搬家装箱两种装法 | 装箱搬家 | [py-19-memory-performance.md](py-19-memory-performance.md) |
@@ -365,6 +368,8 @@
 | PY-19-10 | lru_cache | 门口鞋架 | 门口鞋架 | [py-19-memory-performance.md](py-19-memory-performance.md) |
 | PY-19-11 | set/dict 查找 | 贴标签收纳箱直取 | 标签直取 | [py-19-memory-performance.md](py-19-memory-performance.md) |
 | PY-19-12 | 优化三步法 | 盘点→改造→复称 | 复称 | [py-19-memory-performance.md](py-19-memory-performance.md) |
+| PY-19-13 | bytearray/memoryview | 免搬箱看货换货 | 免搬箱 | [py-19-memory-performance.md](py-19-memory-performance.md) |
+| PY-19-14 | weakref 弱引用 | 借钥匙不占房 | 借钥匙 | [py-19-memory-performance.md](py-19-memory-performance.md) |
 | PY-20-01 | 项目结构 | 4S 店功能分区图 | 功能分区 | [py-20-engineering-testing.md](py-20-engineering-testing.md) |
 | PY-20-02 | pytest | 质检单打勾打叉 | 质检单 | [py-20-engineering-testing.md](py-20-engineering-testing.md) |
 | PY-20-03 | fixture | 准备工位铺护套 | 准备工位 | [py-20-engineering-testing.md](py-20-engineering-testing.md) |

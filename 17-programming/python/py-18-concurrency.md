@@ -12,6 +12,7 @@
 | 多进程立交 | PY-18-04,05 | 修高架绕开红绿灯，批量派单 |
 | 调度中心 | PY-18-06,07 | 线程池/进程池统一派单接口 |
 | 潮汐车道与对照板 | PY-18-09~13 | 协程让道、调度亭、选型对照 |
+| 车队编组 | PY-18-14 | TaskGroup 同进同出，一车抛锚全组回场 |
 
 ## 一、路口只有一个红绿灯（并发地基）
 ### PY-18-01 GIL 全局解释器锁
@@ -325,6 +326,33 @@ async def main():
 - **易错**：CPU 任务塞进 asyncio 直接跑（不 `run_in_executor`），整个事件循环被堵死。
 - **关联**：`→ PY-18-01：GIL 是选型的根因`　`→ PY-19-08：先测量再决定优化哪里`
 
+## 六、车队编组 TaskGroup（3.11+，口号：一车抛锚全组回场）
+
+### PY-18-14 asyncio.TaskGroup 任务组
+- **是什么**：`TaskGroup` 是 3.11+ 的结构化并发容器：`async with` 里批量建任务，出组时全部完成或全部收尾，错误打包成 `ExceptionGroup` 抛出。
+- **为什么**：痛点是 `create_task` 裸飞任务后"谁失败了、别的任务收尾了没"一团糨糊 → 机制是 TaskGroup 把一组任务绑成车队：一组任务里任何一车抛锚，全组收到取消并统一回场，错误以 `ExceptionGroup`（`except*` 捕获）汇总 → 行为是并发任务成组管理、不丢错误不漏取消 → 边界是 3.11+ 才有；`gather` 也能并行但取消语义松散，新代码优先 TaskGroup。
+- **怎么写**：
+  ```python
+  import asyncio
+  async def job(n, fail=False):
+      await asyncio.sleep(0.01)
+      if fail: raise RuntimeError(f"车{n}抛锚")
+      return n * 10
+  async def main():
+      try:
+          async with asyncio.TaskGroup() as tg:
+              tg.create_task(job(1))
+              tg.create_task(job(2, fail=True))
+      except* RuntimeError as eg:
+          print("全组回场:", [str(e) for e in eg.exceptions])
+  asyncio.run(main())
+  ```
+  → 运行输出：`全组回场: ['车2抛锚']`
+- **何时用/不用**：一组协程要"同生共死"（批量请求、并行 IO 编组）就用；只是简单并行几个无关联任务且不关心取消，`gather` 写起来更短。
+- **锚点**：调度中心的**车队编组发车**——编了组的车同进同出，一车抛锚全组回场点名（ExceptionGroup 就是回场点名簿）。
+- **易错**：捕获要用 `except*`（星号）拿 `ExceptionGroup`，普通 `except RuntimeError` 接不到；组内任务抛错会取消其余任务，别指望"坏车不影响好车"（要隔离就各自开组）。
+- **关联**：→ PY-18-11：gather/create_task 是散车发车，TaskGroup 是编组发车 ｜ → PY-12-09：ExceptionGroup 的展开读法同异常链思路。
+
 ## ⚔️ 对比消混表
 | 易混点 | A | B | 判据 | 一句口诀 |
 |---|---|---|---|---|
@@ -351,6 +379,7 @@ async def main():
 | PY-18-11 | gather/create_task | 车队同时发车 | 车队发车 |
 | PY-18-12 | wait_for | 绿灯倒计时拦车 | 绿灯倒计时 |
 | PY-18-13 | 实战选型 | 方案对照板 | 对照板 |
+| PY-18-14 | TaskGroup | 车队编组同进同出 | 车队编组 |
 
 ## ✅ 自测清单（合上本篇，先写再看）
 1. 用一句话解释：为什么多线程跑 CPU 密集任务不提速？
@@ -361,6 +390,9 @@ async def main():
 > 答案：读-改-写三步非原子，中间被切走就覆盖别人的写入；用 `with lock:` 包住。
 4. spawn 系统下跑 multiprocessing 必须加什么？写出来。
 > 答案：`if __name__ == "__main__":` 守卫包住创建进程的代码。
+
+6. （说机制）TaskGroup 里一个任务抛错，其余任务会怎样？
+   > 答案：全组被取消收尾（同进同出），错误打包成 `ExceptionGroup` 用 `except*` 捕获（PY-18-14）；要互不影响就各自开组。
 
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-17 现代语法](py-17-typing-modern.md) ｜ ➡️ 下一篇：[py-19 内存与性能](py-19-memory-performance.md)
