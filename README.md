@@ -3,7 +3,7 @@
 > **📍 本章导航**：前置 → 无（全库入口） ｜ 相关 → [30分钟上手](QUICKSTART.md)·[方法地图](方法地图.md) ｜ 方法 → M01~M42+M07-R 总线见[方法地图](方法地图.md) ｜ 难度 ⭐ ｜ 阅读 ~10min
 >
 > 系统化的记忆训练百科 · 涵盖记忆科学原理、核心技巧、实战应用及23个学科专项记忆编码
-> 全库 **315 个 Markdown 文件**（`find . -name '*.md'` 实测，含各目录 INDEX 与入口文档）：38 篇主题章节 + **213 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 23 篇**）+ 10 篇实战 + 13 个练习 + 7 个模板；另有 59 个 Anki 牌组（约 1300 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
+> 全库 **316 个 Markdown 文件**（`find . -name '*.md'` 实测，含各目录 INDEX 与入口文档）：38 篇主题章节 + **214 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 24 篇**：23 篇知识点 + [记忆体系总纲](17-programming/python/py-23-memory-system.md)）+ 10 篇实战 + 13 个练习 + 7 个模板；另有 59 个 Anki 牌组（约 1300 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
 
 ---
 
@@ -52,7 +52,7 @@
 | 听力记忆 | [53-听力记忆实战](53-听力记忆实战.md) | 10-12 min | ⭐⭐ 进阶 |
 | 绘画记忆 | [54-绘画临摹记忆](54-绘画临摹记忆.md) | 10-12 min | ⭐⭐ 进阶 |
 | 台词记忆 | [55-影视台词记忆](55-影视台词记忆.md) | 10-12 min | ⭐⭐ 进阶 |
-| 编程语言记忆方法 | [56-编程语言记忆方法](56-编程语言记忆方法.md)（八步流水线，Python 实例 [17-programming/python/](17-programming/python/INDEX.md)） | 15-20 min | ⭐⭐⭐ 高阶 |
+| 编程语言记忆方法 | [56-编程语言记忆方法](56-编程语言记忆方法.md)（八步流水线，Python 实例 [17-programming/python/](17-programming/python/INDEX.md)，含 [记忆体系总纲](17-programming/python/py-23-memory-system.md)） | 15-20 min | ⭐⭐⭐ 高阶 |
 | 实操练习 | [exercises/](exercises/) | 按需 | ⭐-⭐⭐⭐ |
 | 实战训练 | [24-practice/](24-practice/) | 按需 | ⭐⭐-⭐⭐⭐ |
 
@@ -84,7 +84,7 @@ graph TB
         CHEM["05-chemistry 化学"]
         GEO["06-geography 地理"]
         MORE["07-23 演讲·人脸·英语·\n数学·医学·法律·\n金融·心理·天文·\n体育·艺术·语言"]
-        PYTHON["17-programming/python\nPython全知识点 23篇"]
+        PYTHON["17-programming/python\nPython全知识点 24篇"]
     end
 
     subgraph advanced["🔴 进阶专题 (33章)"]
