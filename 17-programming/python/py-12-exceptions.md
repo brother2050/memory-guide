@@ -304,6 +304,11 @@
 - **易错**：`except Exception: pass` 同样拦不住 KeyboardInterrupt（好事），但裸 `except:` 连它都拦，Ctrl+C 都失灵；循环体内吞异常会让整批数据静默丢失。
 - **关联**：`→ PY-12-01：except 的处置原则` / `→ PY-12-07：记录后正确上抛`
 
+## 🆕 版本前沿（3.14）
+
+> **`except` 去括号（PEP 758，3.14+）**：`except ValueError, TypeError:` 直接写多异常不用括号（`except*` 同理）；本篇写法仍推荐带括号，兼容旧版本。
+> **finally 禁逃（PEP 765，3.14+）**：`return/break/continue` 不允许跳出 `finally` 块（过去会静默吞掉异常，是大坑）——现在直接 SyntaxError，这条坏味道从"易错"升级成"禁止"。
+
 ## ⚔️ 对比消混表
 | 易混点 | A | B | 判据 | 一句口诀 |
 |---|---|---|---|---|

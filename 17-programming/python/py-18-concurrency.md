@@ -353,6 +353,11 @@ async def main():
 - **易错**：捕获要用 `except*`（星号）拿 `ExceptionGroup`，普通 `except RuntimeError` 接不到；组内任务抛错会取消其余任务，别指望"坏车不影响好车"（要隔离就各自开组）。
 - **关联**：→ PY-18-11：gather/create_task 是散车发车，TaskGroup 是编组发车 ｜ → PY-12-09：ExceptionGroup 的展开读法同异常链思路。
 
+## 🆕 版本前沿（3.13/3.14）
+
+> **free-threading（无 GIL）时间线**：3.13 引入实验性无 GIL 构建（PEP 703）→ **3.14 转为官方支持**（PEP 779，需安装独立的 `3.14t` 构建，**默认发行版仍带 GIL**）。对本篇选型表的影响：CPU 密集多线程在 free-threaded 构建下有望真并行，松动"CPU 密集必上多进程"的铁律；但 C 扩展生态（numpy/pandas 等）仍在适配期，现阶段生产选型仍按本篇对照板执行。
+> 检测当前构建是否支持：`sysconfig.get_config_var("Py_GIL_DISABLED") == 1`。
+
 ## ⚔️ 对比消混表
 | 易混点 | A | B | 判据 | 一句口诀 |
 |---|---|---|---|---|
