@@ -3,7 +3,7 @@
 > **📍 本章导航**：前置 → 无（全库入口） ｜ 相关 → [30分钟上手](QUICKSTART.md)·[方法地图](方法地图.md) ｜ 方法 → M01~M42+M07-R 总线见[方法地图](方法地图.md) ｜ 难度 ⭐ ｜ 阅读 ~10min
 >
 > 系统化的记忆训练百科 · 涵盖记忆科学原理、核心技巧、实战应用及23个学科专项记忆编码
-> 全库 **317 个 Markdown 文件**（`find . -name '*.md'` 实测，含各目录 INDEX 与入口文档）：38 篇主题章节 + **214 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 24 篇**：23 篇知识点 + [记忆体系总纲](17-programming/python/py-23-memory-system.md)）+ 10 篇实战 + 14 个练习 + 7 个模板；另有 60 个 Anki 牌组（约 1600 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
+> 全库 **318 个 Markdown 文件**（`find . -name '*.md'` 实测，含各目录 INDEX 与入口文档）：38 篇主题章节 + **214 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 24 篇**：23 篇知识点 + [记忆体系总纲](17-programming/python/py-23-memory-system.md)）+ 10 篇实战 + 14 个练习 + 8 个模板；另有 60 个 Anki 牌组（约 1600 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
 
 ---
 
@@ -97,7 +97,7 @@ graph TB
     subgraph practice["🏋️ 实战练习"]
         EX["exercises/ 14个练习"]
         PR["24-practice/ 10个实战"]
-        TM["templates/ 7个模板"]
+        TM["templates/ 8个模板"]
         AN["anki/ 60牌组 1600+张卡片"]
     end
 
