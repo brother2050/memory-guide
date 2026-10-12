@@ -27,7 +27,7 @@ demo_proj/
 │   └── core.py
 └── tests/test_core.py    # 测试
 ```
-→ 运行验证：`PYTHONPATH=src python3 -c "from mymath.core import add; print('add(2, 3) =', add(2, 3))"` 输出 `add(2, 3) = 5`；`python3 -m pytest -q` 输出 `1 passed in 0.16s`
+→ 运行输出：`PYTHONPATH=src python3 -c "from mymath.core import add; print('add(2, 3) =', add(2, 3))"` 输出 `add(2, 3) = 5`；`python3 -m pytest -q` 输出 `1 passed in 0.16s`
 - **何时用/不用**：要做成包/多人协作必上；一次性分析脚本随意，但测试还是要写。
 - **锚点**：**4S 店功能分区**——展厅（src）、车间（tests）、库房（data）、客户区（docs）各归各位，进店的人不用问路。
 - **易错**：测试文件放 src 里会被当成源码发布；缺 `__init__.py`（或未配 pythonpath）导入直接 ModuleNotFoundError。
@@ -101,13 +101,11 @@ def test_is_even(n, expected):
 - **怎么写**：
 ```python
 import pytest
-def parse_age(text):
-    return int(text)
+def parse_age(text): return int(text)
 def test_parse_ok():
     assert parse_age("30") == 30
 def test_parse_bad():
-    with pytest.raises(ValueError):
-        parse_age("十八")
+    with pytest.raises(ValueError): parse_age("十八")
 def test_parse_bad_message():
     with pytest.raises(ValueError, match="invalid literal"):
         parse_age("abc")
@@ -166,15 +164,12 @@ logger.error("检测到故障码 P0300")
 import os
 from dataclasses import dataclass
 @dataclass(frozen=True)
-class Settings:
-    db_url: str
-    debug: bool
+class Settings: db_url: str; debug: bool
 def load_settings() -> Settings:
-    return Settings(db_url=os.environ.get("APP_DB_URL", "sqlite:///default.db"),
-                    debug=os.environ.get("APP_DEBUG", "0") == "1")
+    return Settings(os.environ.get("APP_DB_URL", "sqlite:///default.db"),
+                    os.environ.get("APP_DEBUG", "0") == "1")
 print("默认配置(开发机):", load_settings())
-os.environ["APP_DB_URL"] = "mysql://prod-db/app"
-os.environ["APP_DEBUG"] = "1"
+os.environ.update(APP_DB_URL="mysql://prod-db/app", APP_DEBUG="1")   # 服务器注入环境变量
 print("环境变量覆盖(服务器):", load_settings())
 ```
 → 运行输出：`默认配置(开发机): Settings(db_url='sqlite:///default.db', debug=False)` ／ `环境变量覆盖(服务器): Settings(db_url='mysql://prod-db/app', debug=True)`
@@ -188,7 +183,7 @@ print("环境变量覆盖(服务器):", load_settings())
 - **是什么**：出厂前三道检测线：`ruff` 查错误与坏味道（lint）、`black` 统一格式（format）、`mypy` 验类型（→ PY-17-12）。
 - **为什么**：痛点：代码风格争论浪费时间，低级错误流到线上 → 机制：机器按规则逐行检查，风格问题自动改、错误问题点名报 → 行为：同一份"有毛病"文件三件套各报各的 → 边界：ruff/black 管形式不管逻辑，mypy 管类型不管算法。
 - **怎么写**：对故意写坏的 `test_49.py`（未用导入、格式乱、类型错）：
-→ 实测输出：
+→ 运行输出：
 ```
 $ ruff check test_49.py
 I001 [*] Import block is un-sorted or un-formatted
@@ -255,7 +250,7 @@ jobs:
       - run: pip install -e . pytest ruff black mypy
       - run: ruff check . && black --check . && mypy . && pytest -q
 ```
-→ 本地等价验证（实测）：`python3 -m pytest -q test_calc.py` 输出 `2 passed in 0.15s`；三件套输出见 PY-20-09
+→ 运行输出：`python3 -m pytest -q test_calc.py` 输出 `2 passed in 0.15s`；三件套输出见 PY-20-09
 - **何时用/不用**：任何多人项目第一天就接 CI；纯本地一次性脚本不用。
 - **锚点**：**自动年检流水线**——车（代码）每次进厂（提交）都自动上一遍检测线，红灯不放行出厂（合并）。
 - **易错**：CI 里"先跳过测试"图快，流水线退化成摆设；只在本地跑测试不跑三件套。

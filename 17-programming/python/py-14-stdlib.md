@@ -48,7 +48,7 @@ print("平台标识:", sys.platform)
 → 运行输出：`解释器版本: 3.12.3` ｜ `参数条数: 1 （argv[0] 是脚本名）` ｜ `实现: cpython` ｜ `平台标识: linux`
 - **何时用/不用**：读启动参数做原型用 `sys.argv`，正式 CLI 用 argparse（PY-14-12）；查路径问题用 `sys.path`（→ PY-13-10）。
 - **锚点**：工具箱盖内侧的参数铭牌：刻着型号（version）、出厂设置（platform）、启动旋钮位（argv）。
-- **易错**：`sys.argv[0]` 是脚本名不是第一个业务参数；`sys.exit()` 抛 `SystemExit`，被裸 `except` 吞掉会导致退出失败。
+- **易错**：`sys.argv[0]` 是脚本名不是第一个业务参数
 - **关联**：`→ PY-13-10：sys.path 是找书路线图`；`→ PY-14-12：argparse 替代手写 argv 解析`。
 
 ### PY-14-03 pathlib.Path：路径万用表 Path Objects
@@ -84,7 +84,7 @@ print("还原一致:", json.loads(tag) == data)
 → 运行输出：`{` ｜ `  "name": "螺栓",` ｜ `  "qty": 6` ｜ `}` ｜ `还原一致: True`
 - **何时用/不用**：配置文件、API 数据用 json；要给人读的表格用 csv（→ PY-15-09）；二进制对象用 pickle（了解即可）。
 - **锚点**：零件标签打印机：零件数据（dict）压成标准标签（JSON 文本），扫码（loads）还原回零件。
-- **易错**：`ensure_ascii=True`（默认）把中文打成 `\u4e2d` 难读；JSON 键必须双引号字符串，Python 里 `True/None` 到 JSON 变 `true/null`。
+- **易错**：`ensure_ascii=True`（默认）把中文打成 `\u4e2d` 难读；JSON 键必须双引号字符串。
 - **关联**：`→ PY-15-11：json.dump/load 是它的文件版`。
 
 ### PY-14-05 datetime：打卡钟 The `datetime` Module
@@ -102,7 +102,7 @@ print("两时刻相差:", (t - datetime(2026,10,6)).days, "天")
 → 运行输出：`标准格式: 2026-10-06 09:25` ｜ `解析回对象: 2026-10-06` ｜ `三天后: 2026-10-09` ｜ `两时刻相差: 0 天`
 - **何时用/不用**：时间计算/比较用 datetime；只要"今天几号"可用 `date.today()`；时区处理用 `zoneinfo`（3.9+）。
 - **锚点**：车间打卡钟：now 盖时间戳、strftime 换班次牌显示、strptime 从旧小票补录、timedelta 算工时。
-- **易错**：`%m` 是月、`%M` 是分——大小写一错解析出错时间；`(t1-t2).days` 只有整天数（0.9 天也是 0 天），小时差要用 `total_seconds()`。
+- **易错**：`%m` 是月、`%M` 是分——大小写一错解析出错时间；小时差要用 `total_seconds()`。
 - **关联**：`→ PY-15-08：换行符之外的另一大格式坑在文件篇`。
 
 ## 三、零件归柜工具拼装（collections / itertools / functools）
@@ -122,7 +122,7 @@ print("双端队列:", list(q))
 → 运行输出：`计数前 2: [('a', 5), ('b', 2)]` ｜ `defaultdict: {'螺栓': 1}` ｜ `双端队列: [0, 1, 2, 3, 4]`
 - **何时用/不用**：统计词频用 Counter，累加分组用 defaultdict，队列/滑窗用 deque；简单场景普通 dict/list 就够。
 - **锚点**：多格零件收纳柜：计数格自动报数（Counter）、缺件自动补货格（defaultdict）、两头开的抽屉（deque）。
-- **易错**：`most_common(2)` 写成 `top(2)`；`defaultdict` 的 `d[k]` 访问会创建键，别在只读判断里用（改用 `k in d`）。
+- **易错**：`defaultdict` 的 `d[k]` 访问会创建键，别在只读判断里用（改用 `k in d`）。
 - **关联**：`→ PY-04-09：dict 基础操作`；`→ PY-14-07：和 itertools 都是"加工零件"工具`。
 
 ### PY-14-07 itertools：组合工具钳 The `itertools` Module
@@ -197,7 +197,7 @@ print("抽签不重复:", random.sample(range(100), 3))
 → 运行输出：`抽一个号: 2` ｜ `抓一把: 锤子` ｜ `洗牌: [2, 4, 1, 3]` ｜ `抽签不重复: [17, 94, 13]`
 - **何时用/不用**：测试数据/游戏/抽样用 random；密码、令牌用 `secrets`；科学计算用 `numpy.random`。
 - **锚点**：工具箱角落的抓阄竹罐：伸手抽一个（randint）、抓一把（sample）、摇一摇重排（shuffle）、竹罐摆位固定结果可复现（seed）。
-- **易错**：`random.choice([])` 抛 `IndexError`；`shuffle` 是原地修改不返回新列表（`x = shuffle(y)` 得 None）；测试不设 seed 每次结果不同，难复现 bug。
+- **易错**：`random.choice([])` 抛 `IndexError`；`shuffle` 是原地修改不返回新列表（`x = shuffle(y)` 得 None）
 - **关联**：`→ PY-14-09：math 管精确计算`。
 
 ## 五、登记派单打铭牌（logging / argparse / dataclasses）
@@ -216,10 +216,10 @@ log.warning("警告：扳手磨损")
 log.error("故障：电钻不转")
 ```
 → 运行输出：`INFO | 登记：今日保养完成` ｜ `WARNING | 警告：扳手磨损` ｜ `ERROR | 故障：电钻不转`（`log.exception("抢修记录")` 在异常里额外附 traceback，含 `ZeroDivisionError: division by zero`）
-- **何时用/不用**：项目一律 logging；一次性小脚本 print 无妨；需要配置文件/多输出见 → PY-20-16。
+- **何时用/不用**：项目一律 logging；一次性小脚本 print 无妨；需要配置文件/多输出见 → PY-20-07。
 - **锚点**：检修登记本：五种颜色的笔=五个级别，墨水（debug）平时不上本子，故障（error）红笔记一笔还能贴事故单（traceback）。
 - **易错**：在 `basicConfig` 之后再调不生效（想改要 `force=True`）；`f-string` 写日志（`log.info(f"...")`）浪费格式化开销，用 `log.info("%s", x)`。
-- **关联**：`→ PY-12-14：异常与 exception 的配合`；`→ PY-20-16：logging 工程配置`。
+- **关联**：`→ PY-12-14：异常与 exception 的配合`；`→ PY-20-07：logging 工程配置`。
 
 ### PY-14-12 argparse：门口工单登记板 The `argparse` Module
 - **是什么**：命令行参数解析器：`add_argument` 登记参数（位置参数=必填栏、`-n/--num` 选项栏、`type` 栏位格式），`parse_args` 一次拿好，还自带 `--help`。
@@ -236,7 +236,7 @@ print("工单:", args.job, "数量:", args.num, "类型:", type(args.num).__name
 → 运行输出：`工单: 修水管 数量: 3 类型: int`
 - **何时用/不用**：任何要传参的脚本都用它；交互式输入用 `input()`；更漂亮的 CLI 用第三方（typer/click）。
 - **锚点**：门口的工单登记板：必填栏（位置参数）、可选勾（选项）、按栏位格式填（type），填错格式登记员当场退回（自动报错）。
-- **易错**：`type=int` 只负责转换，`default=1` 不经过 type；`parse_args()` 里传列表是测试技巧，真实运行读 `sys.argv`。
+- **易错**：`type=int` 只负责转换，`default=1` 不经过 type
 - **关联**：`→ PY-14-02：sys.argv 是它的原材料`。
 
 ### PY-14-13 dataclasses：标准件规格铭牌 The `dataclasses` Module
@@ -258,7 +258,7 @@ print("可变默认安全:", b.tags, Bolt(9, tags=["镀锌"]).tags)
 → 运行输出：`Bolt(size=8, material='钢', tags=[])` ｜ `字段清单: ['size', 'material', 'tags']` ｜ `可变默认安全: [] ['镀锌']`
 - **何时用/不用**：配置、记录、DTO 用 dataclass；需要继承层级/行为的用普通 class（→ py-09）；不可变数据加 `@dataclass(frozen=True)`。
 - **锚点**：标准件规格铭牌：机器冲压出统一规格（自动 init/repr/eq），附加标注（field）另打一行小字。
-- **易错**：`tags: list = []` 直接默认可变对象 → 多实例共享一个列表（经典坑）；有默认值的字段必须排在无默认值字段后面。
+- **易错**：`tags: list = []` 不是共享列表而是当场 `ValueError: mutable default ... use default_factory`；有默认值的字段必须排在无默认值字段后面。
 - **关联**：`→ PY-09-03：类的基本语法`；`→ PY-17-12：dataclass 与类型注解配合`。
 
 ## 六、配钥匙过安检（copy / re 概览）
@@ -329,18 +329,18 @@ print("替换:", re.sub(r"\d+", "#", "a1b22c"))
 | PY-14-15 | re 概览 | 样板挑零件：样板=模式，合规格全挑出 | 样板挑件 |
 
 ## ✅ 自测清单（合上本篇，先写再看）
-1. 一行代码建目录 `data/2026`（已存在也不报错），并打印它是否存在。
+1. （写代码）一行建目录 `data/2026`（已存在不报错）并打印是否存在。
 > 答案：`os.makedirs("data/2026", exist_ok=True); print(os.path.isdir("data/2026"))` → `True`。
-2. `datetime(2026,10,6,9,25)` 减 `datetime(2026,10,6)` 的 `.days` 是多少？为什么？
-> 答案：`0`——差 9 小时 25 分，`.days` 只取整天（向下取整）。
-3. `Counter("aab")` 的 `most_common(1)` 输出什么？`defaultdict(int)` 缺键取值后字典多了什么？
-> 答案：`[('a', 2)]`；多了值为 0 的新键（访问即创建）。
-4. `list(it.count(10))` 能跑吗？怎么安全拿前 3 个？
-> 答案：不能（无限迭代内存爆掉）；`[next(c) for _ in range(3)]` 或 `list(it.islice(it.count(10), 3))`。
-5. 给定 `d = {"齿": [1,2]}`，写出"改副本内层不影响原字典"的两行代码。
-> 答案：`import copy; d2 = copy.deepcopy(d); d2["齿"].append(3)`，`d["齿"]` 仍是 `[1,2]`。
-6. 为什么 `re.match(r"\d+", "12a")` 返回成功但不代表整串是数字？怎么改？
-> 答案：match 只从头匹配前缀；加尾锚 `re.match(r"^\d+$", "12a")` 或用 `fullmatch`。
+2. （是什么）填空：`Counter("aab").most_common(1)`=`?`；`defaultdict(int)` 缺键后多`?`；`math.floor(-2.7)`=`?`、`int(-2.7)`=`?`；`(datetime(2026,10,6,9,25)-datetime(2026,10,6)).days`=`?`；logging 默认门槛`?`。
+> 答案：`[('a', 2)]`／值 0 的新键／`-3`／`-2`（截断非向下）／`0`（只算整天）／WARNING。
+3. （改错）`list(it.count(10))` 能跑吗？怎么安全拿前 3 个？
+> 答案：不能（无限，内存爆掉）；`list(it.islice(it.count(10), 3))`。
+4. （说区别）`copy.copy` 与 `copy.deepcopy` 差在哪？两行证明"改副本内层不影响原字典"（`d={"齿":[1,2]}`）。
+> 答案：外层新内层共用 vs 整棵全新；`d2 = copy.deepcopy(d); d2["齿"].append(3)` 后 `d["齿"]` 仍 `[1,2]`。
+5. （说机制）`re.match(r"\d+", "12a")` 为什么成功却不代表整串是数字？怎么改？
+> 答案：match 只从头匹配前缀；改 `re.match(r"^\d+$", "12a")` 或 `fullmatch`。
+6. （改错）`@dataclass` 里 `tags: list = []` 会怎样？怎么改？
+> 答案：当场 `ValueError: mutable default ... use default_factory`；改 `field(default_factory=list)`（PY-14-13）。
 
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-13 模块与包](py-13-modules-packages.md) ｜ ➡️ 下一篇：[py-15 文件 IO](py-15-file-io.md)

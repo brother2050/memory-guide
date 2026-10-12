@@ -79,7 +79,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 → 运行输出（真实终端实录）：见上。
 - **何时用/不用**：验证一个小语法、试一个方法时用 REPL 或 `python3 -c "代码"`；超过 5 行的逻辑写脚本文件。
 - **锚点**：灶台前的**试味小勺**——汤咸淡舀一勺尝一口就知，不必盛出整锅摆盘。
-- **易错**：REPL 里定义的变量/函数退出即失；粘贴多行代码时缩进错乱会得 `IndentationError`（PY-01-07）。
+- **易错**：REPL 里定义的变量/函数退出即失；粘贴多行代码缩进错乱会得 `IndentationError`（PY-01-07）。
 - **关联**：`→ PY-01-14：REPL 里最常用的两个帮手是 dir() 和 help()`。
 
 ### PY-01-05 脚本运行与 shebang
@@ -116,7 +116,7 @@ for i in range(3):
 → 运行输出：`0 是偶数` / `1 是奇数` / `2 是偶数`
 - **何时用/不用**：所有分支/循环/函数/类定义都按此规矩；一行式如 `if x: y = 1` 仅用于极简场景。
 - **锚点**：菜谱里"**步骤：**"后面永远跟一串动作——看到冒号就知道下面是一套连招。
-- **易错**：写 `if x > 0` 忘了冒号，报 `SyntaxError: expected ':'`；冒号是中文全角`：`也报错。
+- **易错**：写 `if x > 0` 忘了冒号，报 `SyntaxError: expected ':'`；把冒号敲成中文全角`：`，照样报错。
 - **关联**：`→ PY-06-01：if/for/while 的完整语法在控制流篇`。
 
 ### PY-01-07 缩进 Indentation
@@ -168,7 +168,7 @@ print(len(s))
 ```
 → 运行输出：`中文字符串没问题` 换行 `8`
 - **何时用/不用**：3.x 项目不必写 `# -*- coding: utf-8 -*-`（写了也无害）；维护 Python 2 遗留文件时才需要它。
-- **锚点**：全厨房的食材标签**统一用简体中文印刷**——不用每张标签单独注明"本标签为中文"。
+- **锚点**：全厨房食材标签**统一印简体中文**——谁也不用单独注明"本标签是中文"。
 - **易错**：终端/编辑器不是 UTF-8 时显示乱码，被误判为代码错误；Windows 记事本另存为 ANSI 后中文报 `SyntaxError`。
 - **关联**：`→ PY-03-15：str 与 bytes 的编码差异在字符串篇展开`。
 
@@ -200,7 +200,7 @@ $ python --version                # 验证
 → 运行输出（实测）：`Python 3.12.3`；`sys.prefix` 从系统 `/usr` 变为 `.venv` 的绝对路径（本机实测 `…/pycheck/A/venv_demo`）
 - **何时用/不用**：每个正式项目必建；临时跑三行验证代码可不动用。
 - **锚点**：**每场宴席一间独立小厨房**——川菜的花椒味不会串到粤菜的汤里；宴席结束（项目删掉）厨房整个撤走。
-- **易错**：Debian/Ubuntu 缺 `python3-venv` 时报 `The virtual environment was not created successfully because ensurepip is not available.`（实测原文），按报错提示 `apt install python3.12-venv` 即可；忘了 activate 就 pip install，包又装回了系统环境。
+- **易错**：Debian/Ubuntu 缺 `python3-venv` 会报 `The virtual environment was not created successfully because ensurepip is not available.`（实测原文）——照提示 `apt install python3.12-venv` 就好。另一坑：忘了 activate 就 pip install，包又装回系统环境。
 - **关联**：`→ PY-01-10：激活后 pip 才装进这间厨房`；`→ PY-13-13：uv 是新一代更快的环境与包管理工具`。
 
 ### PY-01-12 requirements.txt 依赖清单
@@ -254,7 +254,7 @@ print(str.upper.__doc__)
 
 ### PY-01-15 启动期常见报错读法
 - **是什么**：写代码头几天最常撞的四类错误：SyntaxError（语法）、IndentationError（缩进）、NameError（名字未定义）、FileNotFoundError（文件不存在）。
-- **为什么**：痛点：满屏 Traceback 不知从哪看 → 机制：错误类型、消息、文件与行号都写在最后几行 → 行为：先读最后一行"类型：消息"，再按行号回源码 → 边界：消息是英文但结构固定，记类型名即可。
+- **为什么**：痛点：满屏错误回溯（Traceback）不知从哪看 → 机制：类型、消息、文件行号都写在最后几行 → 行为：先读最后一行"类型：消息"，再按行号回源码 → 边界：消息是英文但结构固定，记类型名即可。
 - **怎么写**：
 ```python
 # test_15.py：把四种错误各触发一次
@@ -273,7 +273,7 @@ for demo in demos:
 → 运行输出（实测四条）：`SyntaxError: invalid syntax (demo.py, line 1)`；`ZeroDivisionError: division by zero`；`NameError: name 'nope' is not defined`；`FileNotFoundError: [Errno 2] No such file or directory: '不存在的文件.txt'`
 - **何时用/不用**：每次报错先自己按"类型→消息→行号"三步读；连读三遍仍不懂再搜/问人。
 - **锚点**：灶台的**报警蜂鸣器**——不同的响法对应不同险情：短促尖叫（SyntaxError=语法当场错）、长鸣（NameError=找不到食材）。
-- **易错**：只盯着报错第一行的文件路径发愁，真正的答案在最后一行；改错时一次改多处，新错掩盖旧错。
+- **易错**：只盯报错第一行的文件路径发愁，答案其实在最后一行；改错时一次改多处，新错掩盖旧错。
 - **关联**：`→ PY-12-01：可预期的运行期错误应当用 try/except 接住`；`→ PY-12-06：Traceback 的完整读法在异常篇`。
 
 ### PY-01-16 import this 与 PEP 8
@@ -312,7 +312,7 @@ import this
 | PY-01-06 | 冒号与代码块 | "步骤："后一串动作 | 步骤冒号 |
 | PY-01-07 | 缩进 | 菜谱手稿步骤退一格写 | 退一格 |
 | PY-01-08 | 注释/docstring | 菜谱旁铅笔小字 | 铅笔小字 |
-| PY-01-09 | UTF-8 | 标签统一简体印刷 | 统一标签 |
+| PY-01-09 | UTF-8 | 标签统一印简体中文 | 简体标签 |
 | PY-01-10 | pip/PyPI | 食材采购市场 | 采购市场 |
 | PY-01-11 | venv | 一间独立小厨房 | 独立厨房 |
 | PY-01-12 | requirements.txt | 采购清单 | 采购清单 |

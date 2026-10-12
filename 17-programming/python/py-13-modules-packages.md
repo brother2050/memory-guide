@@ -46,7 +46,7 @@ print("已缓存在 sys.modules:", "book" in sys.modules)
 → 运行输出：`《book》被翻开：顶层代码开始执行` ｜ `book.pages = 300` ｜ `book.read() = 读了 300 页` ｜ `已缓存在 sys.modules: True`
 - **何时用/不用**：机制不用手写，但排 `ModuleNotFoundError`、循环导入必须靠它；模块顶层别放假动作（会被 import 触发）。
 - **锚点**：管理员找书三步曲——先查借阅登记簿（`sys.modules`）→ 按索书号路线图逐排找（`sys.path`）→ 找到才翻印（执行顶层代码）。
-- **易错**：把 import 当"声明"→ 顶层 `print`/读文件在 import 瞬间就跑，测试里冒出意外输出。
+- **易错**：把 import 当"声明"——顶层 `print` 在 import 瞬间就跑。
 - **关联**：`→ PY-13-03：命中缓存则不再执行`；`→ PY-13-10：sys.path 是找书路线图`。
 
 ### PY-13-03 sys.modules 缓存只执行一次 Module Cache
@@ -80,7 +80,7 @@ print("test_13_04.py 自己的 __name__ =", __name__)
 → 运行输出：`story.py 的 __name__ = story` ｜ `test_13_04.py 自己的 __name__ = __main__`；直接运行 `python3 story.py`：`story.py 的 __name__ = __main__`
 - **何时用/不用**："既当脚本又当库"的文件必用；纯库文件不需要。
 - **锚点**：扉页藏书章——自己翻看盖"本人所有"（`__main__`），被别馆借走盖"某某馆藏"（模块名）。
-- **易错**：是双下划线开头结尾（dunder 名），写成 `name_`、`__name` 都拿不到预期值。
+- **易错**：是双下划线开头结尾（dunder 名），写成 `_name_`/`name` 都取不到。
 - **关联**：`→ PY-13-05：用它做守卫`；`→ PY-13-12：python -m 时 __name__ 同样是 __main__`。
 
 ### PY-13-05 `if __name__ == "__main__":` 守卫 Main Guard
@@ -112,7 +112,7 @@ print(t.hello())
 → 运行输出：`mylib 是包（有 __path__）: True` ｜ `tools.py 是模块（有 __file__）: True` ｜ `tools 模块问好`
 - **何时用/不用**：≤3 个模块平铺即可；开始分层（core/、utils/）就建包；无 `__init__` 的写法见 PY-13-09。
 - **锚点**：一排书架（目录）+ 架头书架牌（`__init__.py`）才算分区；没挂牌的角落只是堆放处。
-- **易错**：漏建或写成 `init.py` →（3.3 前）`import mylib` 直接 `ModuleNotFoundError`。
+- **易错**：写成 `init.py` 等于没挂牌：退化成命名空间包，`__init__` 初始化/导出全失效。
 - **关联**：`→ PY-13-07：书架牌上写什么`；`→ PY-13-08：包内互借怎么写`。
 
 ### PY-13-07 `__init__.py` 的三重身份 Package Initializer
@@ -129,7 +129,7 @@ print("星号导入拿到:", hello.__name__, __version__)
 → 运行输出：`tools 模块问好` ｜ `版本号来自 __init__: 1.0` ｜ `星号导入拿到: hello 1.0`
 - **何时用/不用**：小包留空只当牌子；要"开箱即用"或统一版本号就做导出；重逻辑别放。
 - **锚点**：书架牌三用——挂架牌（标识分区）、开馆摆展示书（初始化代码）、写明外借清单（`__all__`）。
-- **易错**：`from tools import hello`（漏点号）报 `ModuleNotFoundError`；包内互借必须 `from .tools import ...`。
+- **易错**：`from tools import hello`（漏点号）报 `ModuleNotFoundError`
 - **关联**：`→ PY-13-13：__all__ 管星号导入`；`→ PY-13-08：这里的点号是相对导入`。
 
 ### PY-13-08 绝对导入 vs 相对导入 Absolute vs Relative Import
@@ -158,7 +158,7 @@ print("nsarea.__file__ =", nsarea.__file__)
 → 运行输出：`共享自习区的书` ｜ `nsarea.__file__ = None`
 - **何时用/不用**：新手项目老老实实放 `__init__.py` 最稳；只有多目录插件体系才用它。
 - **锚点**："共享自习区"：没有书架牌的开放区，书照样找得到；问它"牌子在哪"（`__file__`）答"没牌子"（None）。
-- **易错**：代码假定"包必有 `__file__`"会在它这里崩；两个目录抢同一包名时合并结果依赖路径顺序。
+- **易错**：代码假定"包必有 `__file__`"会在它这里崩
 - **关联**：`→ PY-13-06：普通包有 __init__.py`。
 
 ## 四、找书路线图（`sys.path` 与运行方式）
@@ -241,7 +241,7 @@ print("显式点名仍能借到（只是约定）:", menu2._内部台账)
 → 运行输出：`《畅销榜》` ｜ `_内部台账 被 import * 跳过: True` ｜ `显式点名仍能借到（只是约定）: 馆员专用库存本`
 - **何时用/不用**：辅助函数加 `_`，对外 API 不加；要真"锁"看封装（→ PY-09-12）。
 - **锚点**：书脊贴"馆内阅览"小标签（下划线）：代借员见标签不拿，真点名硬借馆员也不拦。
-- **易错**：把"下划线=私有"当安全边界（一 import 就拿到）；单独一个 `_` 常作占位变量，场景不同别混。
+- **易错**：下划线不是安全边界；单独一个 `_` 常作占位变量，场景不同别混。
 - **关联**：`→ PY-13-13：__all__ 管星号，下划线管默认名单`。
 
 ## 六、开分馆手续（打包与独立环境）
@@ -257,7 +257,7 @@ with open("tinyproj/pyproject.toml", "rb") as f:
 print("包名:", meta["name"], "| 版本:", meta["version"])
 ```
 → 运行输出：`包名: tinybook | 版本: 0.1.0`；在 `tinyproj/` 跑 `python3 -m build --no-isolation` 真实输出：`Successfully built tinybook-0.1.0.tar.gz and tinybook-0.1.0-py3-none-any.whl`
-- **何时用/不用**：要分发才打包；内部脚本不需要；装完先自测（→ PY-20-18）。
+- **何时用/不用**：要分发才打包；内部脚本不需要；装完先自测（→ PY-20-02）。
 - **锚点**：开分馆的办馆申请书：写清馆名（name）、开馆日期（version）、申报哪些文件；审核过了盖章出包（build 产物）。
 - **易错**：`[project]` 漏 `version` → 构建 `KeyError`；目录名与包名撞车（同名嵌套）→ 导入混乱。
 - **关联**：`→ PY-13-16：产物装进哪个环境由 venv 决定`。
@@ -276,8 +276,8 @@ print("隔离生效      :", sys.prefix != sys.base_prefix)
 → 运行输出：`venv 内 prefix : .venv2` ｜ `系统 base     : /usr` ｜ `隔离生效      : True`
 - **何时用/不用**：每项目开工先建（或用 uv，PY-13-17）；只跑标准库小脚本可省。
 - **锚点**：每项目一间独立馆藏：A 馆装修（升级依赖）不影响 B 馆；馆内书架（`prefix`）≠ 总馆（`base_prefix`）。
-- **易错**：Debian/Ubuntu 缺 `python3-venv` 时报真实错误 `The virtual environment was not created successfully because ensurepip is not available` → `apt install python3.12-venv` 后重建；忘激活会装到全局。
-- **关联**：`→ PY-13-17：uv 一条命令建环境+装包`；`→ PY-20-17：工程依赖管理`。
+- **易错**：Debian/Ubuntu 缺 `python3-venv` 时报真实错误 `...ensurepip is not available` → `apt install python3.12-venv` 后重建；忘激活会装到全局。
+- **关联**：`→ PY-13-17：uv 一条命令建环境+装包`；`→ PY-20-10：工程依赖管理`。
 
 ### PY-13-17 uv：新一代工具链 uv Toolchain
 - **是什么**：Rust 写的 Python 包管理器：`uv venv` 建环境、`uv pip install` 装包，比 pip+venv 快一个数量级，还能自动管理 Python 版本。
@@ -288,7 +288,7 @@ uv venv .venvuv
 uv pip install --python .venvuv/bin/python six
 ```
 → 运行输出：`Using CPython 3.12.3 interpreter at: /usr/bin/python3` ｜ `Creating virtual environment at: .venvuv` ｜ `Installed 1 package in 147ms`（`+ six==1.17.0`；毫秒数随环境波动）；用该解释器验证：`uv venv prefix: .venvuv` ｜ `隔离生效      : True`
-- **何时用/不用**：新项目推荐 uv（或 poetry，→ PY-20-17）；只需复现老 requirements.txt 时 pip 够用。
+- **何时用/不用**：新项目推荐 uv（或 poetry，→ PY-20-10）；只需复现老 requirements.txt 时 pip 够用。
 - **锚点**：馆际物流高铁：过去"建馆（venv）+进书（pip）"两班车换乘，现在一条直达；车票上印着用哪个版本的馆长（interpreter）。
 - **易错**：命令前忘激活/没指向 venv 解释器 → 装进系统环境；网络受限报下载超时，配置 `UV_INDEX_URL` 换镜像。
 - **关联**：`→ PY-13-16：uv venv 产物的隔离机制相同`；`→ PY-13-15：装的就是 build 出的 wheel`。
@@ -325,18 +325,18 @@ uv pip install --python .venvuv/bin/python six
 | PY-13-17 | uv | 馆际物流高铁：建馆+进书直达 | 馆际高铁 |
 
 ## ✅ 自测清单（合上本篇，先写再看）
-1. 写 `lib.py`（含 `def f(): return 1` 与 `_hidden = 2`），用三种 import 写法各调用一次 `f()`。
-> 答案：`import lib; lib.f()`／`from lib import f; f()`／`import lib as L; L.f()`；`from lib import *` 拿不到 `_hidden`。
-2. `import story` 时 story.py 里 `print(__name__)` 输出什么？直接 `python3 story.py` 呢？
-> 答案：`story`／`__main__`。
-3. 为什么 `from .tools import hello` 写在顶层脚本必报错？怎么改？
-> 答案：脚本无包上下文（`__package__` 为 None）→ `attempted relative import with no known parent package`；改 `from mylib.tools import hello` 并 `python -m` 运行。
-4. `__all__ = ["a"]` 的模块里有 `b`，星号导入后怎么拿到 `b`？
-> 答案：`import m; m.b` 或 `from m import b`——`__all__` 只管 `import *`。
-5. `ModuleNotFoundError: No module named 'mylib'`，列两个最可能原因和验证命令。
-> 答案：①mylib 不在 `sys.path`（打印 `sys.path` 对照）；②运行位置不对（改在项目根 `python -m`）。
-6. 建隔离环境并一行证明隔离生效。
-> 答案：`python3 -m venv .venv`（缺 ensurepip 加 `--without-pip`）后 `import sys; print(sys.prefix != sys.base_prefix)` → `True`。
+1. （写代码）`lib.py`（`def f(): return 1`、`_hidden = 2`），三种 import 各调一次 `f()`。
+> 答案：`import lib; lib.f()`／`from lib import f; f()`／`import lib as L; L.f()`；`import *` 拿不到 `_hidden`。
+2. （是什么）`import story` 两遍：story.py 的 `__name__` 是什么、顶层 `print` 打几遍？改了 story.py 怎么立即生效？
+> 答案：`story`／`__main__`；顶层只打一遍（sys.modules 缓存）；`importlib.reload(story)` 或重启。
+3. （说机制）`from .tools import hello` 写在顶层脚本为何必报错？`ModuleNotFoundError: No module named 'mylib'` 是哪两个原因？
+> 答案：① 脚本无 `__package__`，报 `attempted relative import with no known parent package`，改 `from mylib.tools import hello`；② mylib 不在 `sys.path` 或位置不对（项目根 `python -m`）。
+4. （说区别）`__all__` 与 `_` 前缀都挡"外借"，差在哪？`__all__ = ["a"]` 的模块里怎么拿到 `b`？
+> 答案：`__all__` 只管 `import *`，`_` 是不外借约定（显式导入仍能拿）；`import m; m.b` 或 `from m import b`。
+5. （写代码）建隔离环境并一行证明隔离生效。
+> 答案：`python3 -m venv .venv` 后 `import sys; print(sys.prefix != sys.base_prefix)` → `True`。
+6. （改错）demo.py 顶层裸写 `main()` 做演示，别人 `import demo` 会怎样？怎么改？
+> 答案：import 瞬间演示就跑（副作用外泄）；`main()` 挪进 `if __name__ == "__main__":`。
 
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-12 异常](py-12-exceptions.md) ｜ ➡️ 下一篇：[py-14 标准库](py-14-stdlib.md)

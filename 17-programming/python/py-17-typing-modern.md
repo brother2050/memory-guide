@@ -52,7 +52,7 @@ print(maybe(5), maybe(-1), apply(lambda x: x * x, 7))
 - **为什么**：痛点：`Union` 写法啰嗦且像函数调用 → 机制：3.10 起 `|` 直接构造联合类型，还能用于 `isinstance` → 行为：`int | None` 一眼读出"整数或空" → 边界：3.9 及以下只能写 `Union`，竖线会报错。
 - **怎么写**：
 ```python
-def parse(raw: str) -> int | str:
+def parse(raw: str) -> int | str:       # 3.10+ 竖线联合
     return int(raw) if raw.isdigit() else raw
 print(parse("42"), parse("abc"))
 print(isinstance(1, int | str), isinstance("x", int | str), isinstance(1.5, int | str))
@@ -131,10 +131,8 @@ class Config:
 c = Config()
 c.tags.append("web")   # 冻的是字段绑定，列表内容仍可变
 print(c)
-try:
-    c.host = "example.com"
-except Exception as e:
-    print("改字段被拒:", type(e).__name__, e)
+try: c.host = "example.com"
+except Exception as e: print("改字段被拒:", type(e).__name__, e)
 ```
 → 运行输出：`Config(host='localhost', tags=['web'])` ／ `改字段被拒: FrozenInstanceError cannot assign to field 'host'`
 - **何时用/不用**：配置对象、常量数据用 frozen 防误改；需要频繁改字段的业务对象别冻结。
@@ -154,15 +152,13 @@ class Status(Enum):
     DONE = 3
 print(Status.RUNNING, "| name:", Status.RUNNING.name, "| value:", Status.RUNNING.value)
 print(Status(3), Status.DONE is Status(3))
-try:
-    Status(99)
-except ValueError as e:
-    print("越界值被拒:", e)
+try: Status(99)
+except ValueError as e: print("越界值被拒:", e)
 ```
 → 运行输出：`Status.RUNNING | name: RUNNING | value: 2` ／ `Status.DONE True` ／ `越界值被拒: 99 is not a valid Status`
 - **何时用/不用**：状态机/类别等封闭集合用 Enum；真要"任意整数"的场景别硬套。
 - **锚点**：工地的**材料等级牌**——只有甲/乙/丙三块牌，想拿"丁等"没有这块牌。
-- **易错**：`Status.RUNNING == 2` 在普通 Enum 里是 False（成员不等于它的值），只有 `IntEnum` 才和整数互通。
+- **易错**：`Status.RUNNING == 2` 在普通 Enum 里是 False（成员不等于它的值），只有 `IntEnum` 与整数互通。
 - **关联**：`→ PY-17-13：match-case 常按枚举成员分拣`　`→ PY-10-02：枚举靠 __eq__/__hash__ 单例机制`
 
 ### PY-17-09 Protocol 协议（结构化类型）
@@ -233,12 +229,12 @@ def area(width: float, height: float) -> float:
 result: float = area("3", 4)
 print(result)
 ```
-→ 实测：`python3 mypy_bad.py` 输出 `3333`（运行居然没报错！）；`mypy mypy_bad.py` 输出：
+→ 运行输出：`python3 mypy_bad.py` 输出 `3333`（运行居然没报错！）；`mypy mypy_bad.py` 输出：
 ```
 mypy_bad.py:3: error: Argument 1 to "area" has incompatible type "str"; expected "float"  [arg-type]
 Found 1 error in 1 file (checked 1 source file)
 ```
-- **何时用/不用**：提交前/CI 里跑 `mypy .`（见 PY-20-09）；一次性脚本可免，但库代码强烈建议。
+- **何时用/不用**：提交前/CI 里跑 `mypy .`（PY-20-09）；一次性脚本可免，库代码强烈建议。
 - **锚点**：**质检章**——章是静态的：不搬砖不施工，只对照图纸盖"合格/不合格"，违规行直接点名。
 - **易错**：mypy 绿灯≠程序正确，它只验收类型这一个维度；`Any` 太多会让质检形同虚设。
 - **关联**：`→ PY-17-01：注解是图纸，mypy 是验收`　`→ PY-20-09：三件套之一`
@@ -249,15 +245,11 @@ Found 1 error in 1 file (checked 1 source file)
 - **怎么写**：
 ```python
 def handle(cmd: str) -> str:
-    match cmd.split():
-        case ["quit"]:
-            return "退出"
-        case ["go", direction]:
-            return f"向{direction}走"
-        case ["go", direction, steps]:
-            return f"向{direction}走{steps}步"
-        case _:
-            return "听不懂"
+    match cmd.split():                      # 3.10+ 结构模式匹配
+        case ["quit"]: return "退出"
+        case ["go", direction]: return f"向{direction}走"
+        case ["go", direction, steps]: return f"向{direction}走{steps}步"
+        case _: return "听不懂"
 print(handle("quit"), "|", handle("go north"), "|", handle("what"))
 ```
 → 运行输出：`退出 | 向north走 | 听不懂`
@@ -273,14 +265,11 @@ print(handle("quit"), "|", handle("go north"), "|", handle("what"))
 ```python
 from dataclasses import dataclass
 @dataclass
-class Point:
-    x: float
-    y: float
+class Point: x: float; y: float
 def describe(p) -> str:
-    match p:
-        case Point(x=0, y=0): return "原点"
+    match p:                                # 3.10+ 类/序列/守卫模式
+        case Point(x=0, y=0) | [0, 0] | (0, 0): return "原点"
         case Point(x=x, y=0): return f"x轴上的点({x}, 0)"
-        case [0, 0] | (0, 0): return "原点序列"
         case [x, y] if x == y: return f"对角线上的点({x}, {y})"
         case _: return "普通点"
 print(describe(Point(5, 0)), "|", describe([3, 3]), "|", describe([2, 9]))
@@ -316,16 +305,16 @@ while (line := lines.pop(0)) != "":
 - **是什么**：泛型（generic）= 一套代码按类型参数 `T` 复用；老式写法用 `TypeVar` 定义 `T`，类继承 `Generic[T]`，函数直接标注 `T`。
 - **为什么**：痛点是"容器/工具类写死类型就只能服务一种类型，复制粘贴又难维护" → 机制是类型参数 `T` 是占位符，用时由注解（如 `Box[int]`）实化，静态检查器据此换算每个位置的类型 → 行为是写一份代码得类型安全的多种版本 → 边界是运行时不强制（类型擦除，只是给 mypy 看的图纸）。
 - **怎么写**：
-  ```python
-  from typing import TypeVar, Generic
-  T = TypeVar("T")
-  class Box(Generic[T]):
-      def __init__(self, content: T): self.content = content
-      def get(self) -> T: return self.content
-  b: Box[int] = Box(3)
-  print(b.get(), Box[str]("书").get())
-  ```
-  → 运行输出：`3 书`
+```python
+from typing import TypeVar, Generic
+T = TypeVar("T")
+class Box(Generic[T]):
+    def __init__(self, content: T): self.content = content
+    def get(self) -> T: return self.content
+b: Box[int] = Box(3)
+print(b.get(), Box[str]("书").get())
+```
+→ 运行输出：`3 书`
 - **何时用/不用**：写容器/工具类/仓储类且希望"装什么都行但一盒一类型"时用；单次使用的简单函数直接写具体类型更清晰。
 - **锚点**：设计院的**通用模具图纸**——同一张图纸标注"材料：T"，客户下单换材料（int/str）就出对应产品，图纸不用重画。
 - **易错**：`TypeVar` 定义后是全局占位符，别把 `T` 当运行时类型用（`isinstance(x, T)` 报错）；`Box[int]` 在运行时只是标注，不校验内容。
@@ -335,15 +324,15 @@ while (line := lines.pop(0)) != "":
 - **是什么**：Python 3.12 新式类型语法：`def f[T]()` 泛型函数、`class Pair[A, B]` 泛型类、`type Alias = ...` 类型别名声明——统一用方括号声明类型参数。
 - **为什么**：痛点是老式泛型要先 `T = TypeVar("T")`、别名要在运行时求值，又冗长又容易错 → 机制是 3.12 把类型参数收进签名/类头的方括号里，`type` 语句声明惰性别名 → 行为是声明更短、作用域更干净（类型参数只在定义内可见）→ 边界是 3.12+ 才可用，老版本仍用 PY-17-16 写法。
 - **怎么写**：
-  ```python
-  type Alias = dict[str, int]              # 新式类型别名（3.12+）
-  def first[T](items: list[T]) -> T:       # 不用 TypeVar
-      return items[0]
-  class Pair[A, B]:
-      def __init__(self, a: A, b: B): self.a, self.b = a, b
-  print(first([10, 20]), Pair("左", 3.14).b, Alias is dict)
-  ```
-  → 运行输出：`10 3.14 False`
+```python
+type Alias = dict[str, int]              # 3.12+ 新式类型别名
+def first[T](items: list[T]) -> T:       # 3.12+ 泛型签名
+    return items[0]
+class Pair[A, B]:
+    def __init__(self, a: A, b: B): self.a, self.b = a, b
+print(first([10, 20]), Pair("左", 3.14).b, Alias is dict)
+```
+→ 运行输出：`10 3.14 False`
 - **何时用/不用**：项目锁定 3.12+ 就用新写法（更短更准）；要兼容老版本用 PY-17-16 的 TypeVar 写法。
 - **锚点**：设计院推行**简写新规**（3.12 年新制度图规范）——方括号里写料号，`type` 语句贴图纸别名；旧图纸（老写法）仍有效但院里不再推荐。
 - **易错**：`type Alias = ...` 是声明不是赋值（`Alias` 不是运行时类型对象，`Alias is dict` 为 False 是预期）；3.11 及以下跑新语法直接 `SyntaxError`。
@@ -394,7 +383,7 @@ while (line := lines.pop(0)) != "":
 4. 用海象一行完成"取正则结果并判断"。
 > 答案：`if m := re.search(r"\d+", s): print(m.group())`。
 
-6. （说区别）TypeVar 写法与 3.12 新式 `def f[T]()` 怎么选？
+5. （说区别）TypeVar 写法与 3.12 新式 `def f[T]()` 怎么选？
    > 答案：项目锁定 3.12+ 用 PEP 695 新语法（PY-17-17，免声明 TypeVar、作用域更干净）；要兼容旧版本用 `TypeVar`+`Generic[T]`（PY-17-16）。
 
 ## 📍 导航

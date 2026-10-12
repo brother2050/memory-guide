@@ -66,7 +66,7 @@ with open("notes.txt", encoding="utf-8") as f:
 → 运行输出（文件三行"第一张/第二张/第三张"）：`整捆点完: '第一张\n第二张\n第三张\n'` ｜ `一张张点: '第一张' '第二张'` ｜ `装订成沓: ['第一张', '第二张', '第三张']`
 - **何时用/不用**：小文件 `read()`；大文件/逐行处理 `for line in f`（最省内存）；要列表用 `readlines()` 或推导式。
 - **锚点**：点钞三式：整捆一次点完（read）、一张张点（readline）、点完装订成沓（readlines）。
-- **易错**：文件指针是单行道——同一个 `f` 读两次，第二次拿到空；`readline()` 到末尾返回 `""` 不是报错，循环里要判空。
+- **易错**：同一 `f` 读两次第二次拿到空；`readline()` 到末尾返回 `""` 不是报错。
 - **关联**：`→ PY-15-02：读取都在 with 块内做`。
 
 ## 二、窗口业务牌（读写模式矩阵）
@@ -90,7 +90,7 @@ with open("mode.txt", encoding="utf-8") as f:        # r = 只读
 → 运行输出：`重复开户被拒: [Errno 17] File exists: 'mode.txt'` ｜ `账户流水: ['开户行: A', '续存: B']`
 - **何时用/不用**：读用 `r`；重建用 `w`；记流水用 `a`；确保不覆盖用 `x`；要"读改写"整个文件，宁可读进来再 `w` 重写。
 - **锚点**：窗口业务牌：r 取款、w 销户重开（旧记录清零）、a 续存（流水接着记）、x 新开户（已有户不开）。
-- **易错**：`w` 打开已存在文件**立刻清空**（哪怕后面没写任何东西）；`r` 打开不存在的文件抛 `FileNotFoundError`，`w`/`a` 会自动建。
+- **易错**：`w` 打开已存在文件**立刻清空**（哪怕后面没写任何东西）
 - **关联**：`→ PY-15-05：w 与 a 的对比`；`→ PY-15-06：加 b 变二进制窗口`。
 
 ### PY-15-05 `w` 覆盖 vs `a` 追加 Truncate vs Append
@@ -107,7 +107,7 @@ with open("flow.txt", encoding="utf-8") as f: print("a 之后流水:", f.read().
 → 运行输出：`w 之后只剩: ['2月']` ｜ `a 之后流水: ['2月', '3月']`
 - **何时用/不用**：配置快照/导出结果用 `w`；日志、账本、csv 累积行用 `a`。
 - **锚点**：`w` 是"重开存折"（旧页全撕）、`a` 是"流水账往下记"（旧页留着）。
-- **易错**：循环里误用 `w` 每轮清空，最后只剩一轮数据；`a` 模式下 `seek` 到中间写也会强制回到末尾。
+- **易错**：循环里误用 `w` 每轮清空，最后只剩一轮数据
 - **关联**：`→ PY-15-04：模式矩阵里的两格`；`→ PY-14-11：日志落盘常用追加`。
 
 ### PY-15-06 文本模式 vs 二进制模式 Text vs Binary
@@ -169,7 +169,7 @@ with open("nl.txt", encoding="utf-8", newline="") as f:  # 原样保留
 → 运行输出：`原始字节: b'a\r\nb\r\n'` ｜ `默认读法: 'a\nb\n'` ｜ `原样读法: 'a\r\nb\r\n'`
 - **何时用/不用**：普通读写就用默认；处理 csv/固定格式小票用 `newline=""`（写 csv 时也建议给）；比对原始字节用 `rb`。
 - **锚点**：柜台叫号机小票的"回车+换行"两步走（`\r\n`）：默认点钞时帮你把两步并成一步（`\n`），要验小票原样就得挂"原样"牌（`newline=""`）。
-- **易错**：字符串里 `strip()` 没去掉 `\r` 导致 `"a" == line.strip()` 失败；写 csv 不给 `newline=""` 在 Windows 上会多出空行。
+- **易错**：字符串里 `strip()` 没去掉 `\r` 导致 `"a" == line.strip()` 失败
 - **关联**：`→ PY-15-07：编码是另一半格式坑`；`→ PY-15-09：csv 读写建议配 newline=""`。
 
 ## 四、专窗打单（csv / json 文件）
@@ -259,7 +259,7 @@ vault/2026/10 → 子柜: [] → 件: ['c.txt']
 ```
 - **何时用/不用**：全盘扫描/批量改名用 walk；只要一层用 `os.listdir`/`Path.iterdir`；按模式筛选用 `Path.rglob`（PY-15-13）。
 - **锚点**：金库逐层盘点：盘点员从大门（根目录）进，每层报"子柜几个、各件几件"（dirs/files），直到最底层小库。
-- **易错**：`files` 只是文件名不含路径，要 `os.path.join(root, f)` 才能打开；遍历时删除目录要小心 `dirs[:]` 剪枝写法。
+- **易错**：`files` 只是文件名不含路径，要 `os.path.join(root, f)` 才能打开
 - **关联**：`→ PY-14-01：os 模块基础`；`→ PY-15-13：pathlib 的替代写法`。
 
 ### PY-15-13 pathlib 实操：电子流水单 Path I/O
@@ -275,7 +275,7 @@ print("iterdir 柜面清单:", sorted(p.name for p in Path("vault").iterdir()))
 ```
 → 运行输出：`read_text: 流水` ｜ `rglob 全行查询: ['a.txt', 'b.txt', 'c.txt', 'd.txt']` ｜ `iterdir 柜面清单: ['2026', 'a.txt']`
 - **何时用/不用**：日常文件操作首选 pathlib；要逐行流式读/精细控制仍用 `open`。
-- **锚点**：VIP 电子流水单：一张电子单上写（write_text）读（read_text）查（rglob 全行流水查询），不用再一张张翻纸档。
+- **锚点**：电子流水单：一张电子单上写（write_text）读（read_text）查（rglob 全行流水查询），不用再一张张翻纸档。
 - **易错**：`rglob("*.txt")` 的模式不是正则（是 glob 通配，`*` 跨目录）；`write_text` 每次覆盖全文，追加还得 `open(..., "a")`。
 - **关联**：`→ PY-14-03：Path 基础属性`；`→ PY-15-12：os.walk 的等价物`。
 
@@ -304,21 +304,21 @@ print("iterdir 柜面清单:", sorted(p.name for p in Path("vault").iterdir()))
 | PY-15-10 | csv 写 | 开票打单 | 开票打单 |
 | PY-15-11 | json 文件 | 保险柜存取件凭条 | 存取凭条 |
 | PY-15-12 | os.walk | 金库逐层盘点单 | 金库盘点 |
-| PY-15-13 | pathlib 实操 | VIP 电子流水单 | 电子流水单 |
+| PY-15-13 | pathlib 实操 | 电子流水单：写读查一张单 | 电子流水单 |
 
 ## ✅ 自测清单（合上本篇，先写再看）
-1. 写 3 行代码：把 `["a","b"]` 两行写入 `x.txt`（utf-8），再整读打印。
-> 答案：`with open("x.txt","w",encoding="utf-8") as f: f.write("a\nb\n")` 后 `with open("x.txt",encoding="utf-8") as f: print(f.read())` → `a\nb\n`。
-2. 为什么 `open("log.txt","w")` 一行没写也会让旧日志消失？想保留旧日志怎么办？
-> 答案：`w` 打开即截断清空；用 `"a"` 追加。
-3. 文件指针读两次的现象是什么？怎么解决？
-> 答案：第二次 `read()` 拿到 `""`（指针已在末尾）；重新 `open` 或 `f.seek(0)`。
-4. gbk 文件用 utf-8 读报什么错？给出既能显示又不崩的写法。
-> 答案：`UnicodeDecodeError ... invalid continuation byte`；`open(p, encoding="utf-8", errors="replace")`（显示乱码但不崩）或直接 `encoding="gbk"`。
-5. 一行代码列出 `vault/` 下所有 `.txt` 的文件名。
+1. （写代码）把 `["a","b"]` 两行写入 `x.txt`（utf-8），再整读打印。
+> 答案：`open("x.txt","w",encoding="utf-8")` 后 `f.write("a\nb\n")`；再 `print(open("x.txt",encoding="utf-8").read())`。
+2. （说机制）① `open("log.txt","w")` 为何清空旧日志？② 同一 `f` 读两次会怎样？
+> 答案：① `w` 打开即截断清空，改 `"a"` 追加；② 第二次 `read()` 得 `""`，重新 `open` 或 `f.seek(0)`。
+3. （是什么）gbk 文件用 utf-8 读报什么错？给不崩的读法。
+> 答案：`UnicodeDecodeError`；`open(p, encoding="utf-8", errors="replace")` 或 `encoding="gbk"`。
+4. （写代码）一行列出 `vault/` 下所有 `.txt` 的文件名。
 > 答案：`[p.name for p in Path("vault").rglob("*.txt")]`。
-6. 写 csv 时为什么要 `newline=""`？
-> 答案：防止 Windows 上文本模式把 `\n` 翻译成 `\r\n` 导致行距加倍（多出空行）。
+5. （说区别）`json.load(f)` vs `json.loads(s)`、`csv.reader` vs `DictReader`？写 csv 为何配 `newline=""`？
+> 答案：文件对象 vs 字符串；格子列表 vs 列名→值字典；防 `\n` 被翻成 `\r\n`（PY-15-08/09/11）。
+6. （改错）两处错各报什么、怎么改：① 文本模式 `f.write(b"bytes")` ② with 块外 `f.read()`。
+> 答案：① `TypeError: write() argument must be str`→改 `wb`；② `ValueError: I/O operation on closed file`→读放进 with。
 
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-14 标准库](py-14-stdlib.md) ｜ ➡️ 下一篇：[py-16 正则](py-16-regex.md)

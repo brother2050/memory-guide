@@ -44,7 +44,7 @@
   → 运行输出：`捕获 ZeroDivisionError` ｜ `捕获 KeyError` ｜ `捕获 ValueError`
 - **何时用/不用**：处置逻辑不同就分多个 except；处置完全相同的几种异常才用元组合并。
 - **锚点**：分警情处置台——火警走一号台、门禁走二号台；一个警铃罩住多个警情（元组）。
-- **易错**：`except (KeyError, ValueError)` 的括号漏写变成语法错误；父类 `except Exception` 写在子类前面，后面的分支成为死代码。
+- **易错**：`except (KeyError, ValueError)` 的括号漏写变成语法错误
 - **关联**：`→ PY-12-03：分支顺序依赖异常层级` / `→ PY-12-04：as 后接异常对象`
 
 ### PY-12-03 异常层级
@@ -60,7 +60,7 @@
   → 运行输出：`True` ｜ `True` ｜ `True` ｜ `False`
 - **何时用/不用**：库代码捕获 `Exception` 并记录、上层应用按具体类型精细处置；永远别用裸 `except:`。
 - **锚点**：消防警情分类树——"起火"是大树干，烟雾报警、电器火是枝叶；树干能罩住整根枝（父类接子类）。
-- **易错**：`except Exception` 以为万能，其实漏掉 KeyboardInterrupt（这通常是好事，但要知道）；自定义异常不继承 `Exception` 会导致 except Exception 接不住。
+- **易错**：漏拦 KeyboardInterrupt；自定义异常不继承 `Exception` 会导致 except Exception 接不住。
 - **关联**：`→ PY-12-11：自定义异常应挂在 Exception 下` / `→ PY-12-02：分支顺序按层级排`
 
 ### PY-12-04 异常对象与 args
@@ -98,7 +98,7 @@
   → 运行输出：`解析成功: 42` ｜ `安检收尾` ｜ `格式错误` ｜ `安检收尾`
 - **何时用/不用**：成功才执行的后续动作（如解析后入库）放 else；既非出错也非收尾的逻辑根本别进 try 结构。
 - **锚点**：检查合格才开的旁门——try 没报警，人员从 else 门放行。
-- **易错**：把后续处理写进 try 里，其异常被 except 误捕；以为 else 会"无论如何都跑"（那是 finally）。
+- **易错**：把后续处理写进 try 里，其异常被 except 误捕
 - **关联**：`→ PY-12-06：else=平安门、finally=总闸`
 
 ### PY-12-06 finally 子句
@@ -171,7 +171,7 @@
   → 运行输出：`context = KeyError` ｜ `cause   = None`
 - **何时用/不用**：它自动发生，无需手动维护；想表达"因为所以"请显式 from，想隐藏细节用 from None。
 - **锚点**：警报单背面自动贴上一条警情单——没人吩咐，系统自己贴的（隐式）。
-- **易错**：把 `__context__` 当因果链给用户看，可能暴露无关底层细节；以为没写 from 就没有链，其实 traceback 里照样有。
+- **易错**：把 `__context__` 当因果链给用户看，可能暴露无关底层细节
 - **关联**：`→ PY-12-08：显式因果用 from`
 
 ### PY-12-10 raise from None 断链
@@ -210,7 +210,7 @@
   → 运行输出：`SmokeAlarm 2 - 三楼烟雾超标`
 - **何时用/不用**：库/框架对外报错必须自定义（调用方要精确捕获）；一次性脚本用内置异常足够。
 - **锚点**：自家消防警情分类牌——自家楼的警情分"烟雾/明火"两级，保安按牌处置。
-- **易错**：自定义异常不写 `__init__` 直接 `super().__init__(msg)` 也行，但忘了调 super 会导致 `str(e)` 为空；继承错基类（如 ValueError）会让调用方的 except ValueError 误接。
+- **易错**：不写 `__init__` 时 `Exception(msg)` 自带 args 也行；写了 `__init__` 却忘调 `super().__init__(msg)` 会让 `str(e)` 为空；继承错基类（如 ValueError）会让调用方的 except ValueError 误接。
 - **关联**：`→ PY-12-03：挂进异常层级树`
 
 ### PY-12-12 EAFP vs LBYL
@@ -263,7 +263,7 @@
   → 运行输出：`1 / 0      -> ZeroDivisionError` ｜ `int('a')   -> ValueError` ｜ `{}['k']    -> KeyError` ｜ `[][0]      -> IndexError` ｜ `len(1)     -> TypeError`
 - **何时用/不用**：写 except 前先想清楚"这会抛什么"，按表选型；不确定就先跑一遍看真实类型，别凭感觉写 Exception。
 - **锚点**：常见警情速查表贴在消控室墙上——什么响什么铃，一眼对照。
-- **易错**：`int("a")` 是 ValueError 不是 TypeError（类型对值不对）；`1/0` 在整数/浮点都是 ZeroDivisionError，但 numpy 里是 inf 不报错。
+- **易错**：`int("a")` 是 ValueError 不是 TypeError（类型对值不对）；`1/0` 在整数/浮点都是 ZeroDivisionError，但 numpy 里是 inf（只告警不抛异常）。
 - **关联**：`→ PY-12-03：完整层级看异常树`
 
 ### PY-12-15 异常与资源清理
@@ -340,16 +340,18 @@
 | PY-12-16 | 吞异常 | 把报警器捂住 | 捂报警器 |
 
 ## ✅ 自测清单（合上本篇，先写再看）
-1. （写代码）`try: x=int("a") ... ` 想让 ValueError 被处理、其他异常继续传播，except 该怎么写？
-   > 答案：`except ValueError as e: ...`（只列 ValueError），其余自动继续向上传播。
-2. （说顺序）try 成功、try 失败两种情况下，else/except/finally 的执行顺序各是什么？
-   > 答案：成功 → try→else→finally；失败 → try→匹配的 except→finally（PY-12-05/06）。
-3. （说机制）`raise E2 from e1` 与在 except 里直接 `raise E2` 的 traceback 有何不同？
-   > 答案：前者显示 "The above exception was the direct cause"（`__cause__=e1`）；后者显示 "During handling..."（`__context__` 隐式链）。
-4. （改错）`assert user_age >= 18` 用来挡未成年用户，有什么坑？
-   > 答案：`python -O` 下 assert 全部失效；对外校验应 `raise ValueError(...)`（PY-12-13）。
-5. （说区别）`except:` 与 `except Exception:` 差在哪？
-   > 答案：前者是裸 except，连 KeyboardInterrupt/SystemExit 一起拦；后者只拦 Exception 族（PY-12-03）。
+1. （是什么）`1/0`、`int("a")`、`{}["k"]`、`len(1)` 各抛什么异常？
+   > 答案：ZeroDivisionError／ValueError／KeyError／TypeError。
+2. （说区别）`except:` 与 `except Exception:` 差在哪？
+   > 答案：裸 except 连 KeyboardInterrupt/SystemExit 都拦；后者只拦 Exception 族。
+3. （说顺序）try 成功/失败时 else、except、finally 顺序？
+   > 答案：成功 try→else→finally；失败 try→except→finally（PY-12-05/06）。
+4. （说机制）`raise E2 from e1` 与 except 里 `raise E2` 的 traceback 差在哪？
+   > 答案：前者 `__cause__=e1`（"direct cause"）；后者 `__context__` 隐式链（"During handling"）（PY-12-08/09）。
+5. （写代码）只处理 ValueError、其余异常继续传播，except 怎么写？
+   > 答案：`except ValueError as e: ...`（只列 ValueError），其余自动上抛。
+6. （改错）两处坑各错在哪、怎么改：① `assert user_age >= 18` 挡未成年用户；② 整段解析包进 `except Exception: pass`。
+   > 答案：① `python -O` 下 assert 失效，对外校验用 `raise ValueError(...)`（PY-12-13）；② 吞掉真实故障，只捕预期异常并记录后上抛/转换（PY-12-16/07）。
 
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-11 迭代与生成器](py-11-iterators-generators.md) ｜ ➡️ 下一篇：[py-13 模块与包](py-13-modules-packages.md)

@@ -41,16 +41,13 @@ print("删掉 b 后:", sys.getrefcount(a) - 1)
 ```python
 import gc
 class Box:
-    def __init__(self, name):
-        self.name, self.ref = name, None
-    def __del__(self):
-        print(f"  [{self.name}] 被回收")
+    def __init__(self, name): self.name, self.ref = name, None
+    def __del__(self): print(f"  [{self.name}] 被回收")
 a, b = Box("甲箱"), Box("乙箱")
 a.ref, b.ref = b, a            # 互相引用，形成环
 del a, b
 print("还没听到'被回收' → 环形垃圾卡住了")
-n = gc.collect()
-print("gc.collect() 回收对象数:", n)
+print("gc.collect() 回收对象数:", gc.collect())
 ```
 → 运行输出：`还没听到'被回收' → 环形垃圾卡住了` ／ `  [甲箱] 被回收` ／ `  [乙箱] 被回收` ／ `gc.collect() 回收对象数: 2`
 - **何时用/不用**：一般不用手动 gc；怀疑内存泄漏时 `gc.collect()` + `gc.get_objects()` 排查。
@@ -86,20 +83,16 @@ print("外层身份不同:", original is not shallow, "| 内层共享:", origina
 - **怎么写**：
 ```python
 import sys
-class Heavy:                       # 默认：每实例带一个属性字典 __dict__
-    def __init__(self, x): self.x = x
-class Light:
-    __slots__ = ("x",)
-    def __init__(self, x): self.x = x
-h, l = Heavy(1), Light(1)
-print("Heavy 有 __dict__:", hasattr(h, "__dict__"), "| Light:", hasattr(l, "__dict__"))
-print("实例+属性表字节: Heavy", sys.getsizeof(h) + sys.getsizeof(h.__dict__), "| Light", sys.getsizeof(l))
-try:
-    l.y = 2
-except AttributeError as e:
-    print("乱挂属性被拒:", e)
+class Heavy: pass                # 默认实例带属性字典 __dict__
+class Light: __slots__ = ("x",)  # 只留这一格，砍掉 __dict__
+h, l = Heavy(), Light()
+h.x = l.x = 1
+print("有 __dict__:", hasattr(h, "__dict__"), hasattr(l, "__dict__"))
+print("字节: Heavy", sys.getsizeof(h) + sys.getsizeof(h.__dict__), "| Light", sys.getsizeof(l))
+try: l.y = 2
+except AttributeError as e: print("乱挂属性被拒:", e)
 ```
-→ 运行输出：`Heavy 有 __dict__: True | Light: False` ／ `实例+属性表字节: Heavy 344 | Light 40` ／ `乱挂属性被拒: 'Light' object has no attribute 'y'`
+→ 运行输出：`有 __dict__: True False` ／ `字节: Heavy 344 | Light 40` ／ `乱挂属性被拒: 'Light' object has no attribute 'y'`
 - **何时用/不用**：海量小对象（点/节点/记录）用 slots；普通业务类不必上。
 - **锚点**：**定格收纳柜**——柜子只有预定的几格（slots），衣服只能进格子，想塞柜缝（乱挂属性）直接被拒。
 - **易错**：slots 类的子类若不声明 slots，又会长回 `__dict__`，瘦身效果丢失。
@@ -126,22 +119,21 @@ print("生成器按需出数:", next(big_gen), next(big_gen))
 ## 三、先测量后动手（计时与盘点）
 ### PY-19-06 字符串拼接 join vs +
 - **是什么**：拼接大量字符串用 `"".join(parts)`，而不是循环 `s += part`。
-- **为什么**：痛点：循环拼接每次生成新字符串对象，旧的变垃圾 → 机制：`join` 先算总长一次分配，再批量拷贝（摊还 O(n)）→ 行为：2 万段拼接 join 比循环快两个量级（0.0001s vs 0.0272s）→ 边界：两三段拼接直接 `+` 或 f-string 更清晰。
+- **为什么**：痛点：循环拼接每次生成新字符串对象，旧的变垃圾 → 机制：`join` 先算总长一次分配，再批量拷贝（摊还 O(n)）→ 行为：2 万段拼接 join 比循环快两个量级（0.0001s vs 0.0245s）→ 边界：两三段拼接直接 `+` 或 f-string 更清晰。
 - **怎么写**：
 ```python
 import time
 parts = ["word"] * 20_000
-t0 = time.perf_counter()
 s = ""
-for p in parts:
-    s += p
+t0 = time.perf_counter()
+for p in parts: s += p
 t_plus = time.perf_counter() - t0
 t0 = time.perf_counter()
 s2 = "".join(parts)
 t_join = time.perf_counter() - t0
 print(f"循环 += 耗时: {t_plus:.4f}s / join 耗时: {t_join:.4f}s / 一致: {s == s2}")
 ```
-→ 运行输出：`循环 += 耗时: 0.0272s / join 耗时: 0.0001s / 一致: True`（耗时随机器浮动）
+→ 运行输出：`循环 += 耗时: 0.0245s / join 耗时: 0.0001s / 一致: True`（耗时随机器浮动）
 - **何时用/不用**：循环内拼接一律 join；固定两三段文本用 f-string 最顺手。
 - **锚点**：**一次装箱 vs 来一件搬一次**——join 是量好总长一次装满一箱；`+=` 是每来一件就把整箱倒出来重装一遍。
 - **易错**：以为 `+=` 在循环里"就地追加"——字符串不可变，每次都是新对象（PY-03-09）。
@@ -167,9 +159,9 @@ print(f"join 2000 次: {t_join:.4f}s / 循环+= 2000 次: {t_loop:.4f}s")
 ### PY-19-08 cProfile + pstats 找热点
 - **是什么**：`cProfile` 给程序全程记账：每个函数调用多少次、花了多少秒；`pstats` 排序出"最胖的函数"。
 - **为什么**：痛点：凭直觉优化，改了半天最热的函数没动 → 机制：profiler 在每次函数调用前后记时间戳 → 行为：fib(26) 递归被调 39 万次、耗时占绝对大头，一眼锁定热点 → 边界：profiler 本身有开销（数字偏大），只看相对排序；线程多时统计口径不同。
-- **怎么写**（节选，main() 里调用 fib(26)/sum_squares(50_000)，完整实测代码见 test_36.py）：
+- **怎么写**：
 ```python
-import cProfile, pstats, io
+import cProfile, pstats
 def fib(n): return n if n < 2 else fib(n-1) + fib(n-2)
 def sum_squares(n): return sum(i * i for i in range(n))
 def main():
@@ -177,16 +169,14 @@ def main():
     sum_squares(50_000)
 pr = cProfile.Profile()
 pr.enable(); main(); pr.disable()
-buf = io.StringIO()
-pstats.Stats(pr, stream=buf).sort_stats("cumulative").print_stats(3)
-print(buf.getvalue())
+pstats.Stats(pr).sort_stats("cumulative").print_stats(3)
 ```
-→ 运行输出（路径截短，耗时随机器浮动）：
+→ 运行输出（截取核心行，路径截短，耗时随机器浮动）：
 ```
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    0.084    0.084 .../demo_profile.py:4(main)
- 392835/1    0.074    0.000    0.074    0.074 .../demo_profile.py:2(fib)
-        1    0.000    0.000    0.010    0.010 .../demo_profile.py:3(sum_squares)
+        1    0.000    0.000    0.102    0.102 .../demo_profile.py:4(main)
+ 392835/1    0.095    0.000    0.095    0.095 .../demo_profile.py:2(fib)
+        1    0.000    0.000    0.007    0.007 .../demo_profile.py:3(sum_squares)
 ```
 - **何时用/不用**：程序变慢先 cProfile 定位热点，再决定优化谁；几行小代码用 timeit 就够。
 - **锚点**：收纳前先**上秤盘点**——把每件行李（函数）放上体重秤，最重的那件才值得动手"断舍离"。
@@ -208,7 +198,7 @@ top = tracemalloc.take_snapshot().compare_to(before, "lineno")[:1]
 for stat in top: print("增长最多的行:", stat)
 ```
 → 运行输出（路径截短）：`分配后: 当前 4124 KB, 峰值 4124 KB` ／ `增长最多的行: .../demo_mem.py:4: size=4123 KiB (+4123 KiB), count=50001 (+50001), average=84 B`（文件名/行号随保存情况变化）
-- **何时用/不用**：内存泄漏/膨胀用 tracemalloc 定位行号；只想看总量用 `sys.getsizeof`/`gettracemalloc` 之外的粗测即可。
+- **何时用/不用**：内存泄漏/膨胀用 tracemalloc 定位行号；只想看总量用 `sys.getsizeof` 之类的粗测即可。
 - **锚点**：**收纳前后拍照对比**——搬进来拍一张、收拾完拍一张，两张照片一叠，哪面墙堆多了自动现形。
 - **易错**：快照对比忘记取 `before` 基线，看到的是全量不是增量；长驻服务要在稳定期取样。
 - **关联**：`→ PY-19-01：谁在占内存的行级视角`　`→ PY-19-05：大列表常是头号囤货者`
@@ -250,18 +240,18 @@ print(f"list 成员判断: {t_list:.4f}s / set 成员判断: {t_set:.4f}s")
 
 ### PY-19-12 优化三步法：先测量 → 换结构 → 再测量
 - **是什么**：性能优化的固定流程：①测量定位（timeit/cProfile）→ ②对症下药（先换数据结构/算法，后抠微优化）→ ③复测确认收益。
-- **为什么**：痛点：不测量就优化＝凭感觉断舍离，扔错东西还越整越慢 → 机制：瓶颈往往集中在一两处（二八定律），换算法是数量级收益，微优化只是零头 → 行为：词频统计从 list 线性查换成 dict.get，50 次运行 0.1363s→0.0103s 提速约 13 倍 → 边界：没测量前禁止"顺手优化"；每次只改一处好归因。
-- **怎么写**（节选对比，片段不可直接运行：两段各包进 `timeit.timeit(..., number=50)` 计时才是完整可跑版）：
+- **为什么**：痛点：不测量就优化＝凭感觉断舍离，扔错东西还越整越慢 → 机制：瓶颈往往集中在一两处（二八定律），换算法是数量级收益，微优化只是零头 → 行为：词频统计从 list 线性查换成 dict.get，50 次运行 0.1280s→0.0083s 提速约 15 倍 → 边界：没测量前禁止"顺手优化"；每次只改一处好归因。
+- **怎么写**（旧/新两版各包进 `timeit.timeit(..., number=50)` 同表计时）：
 ```python
-# 旧方案：词频统计用 list 线性找键（内层扫描）
-for ch in text:
-    for i, (k, v) in enumerate(count):
-        if k == ch: ...
-# 新方案：dict.get（查键 O(1)）
-for ch in text:
-    count[ch] = count.get(ch, 0) + 1
+import timeit
+setup = "text = ''.join(chr(0x4e00 + i) for i in range(70)) * 40"
+old = "count = []\nfor ch in text:\n    for i, (k, v) in enumerate(count):\n        if k == ch: count[i] = (k, v+1); break\n    else: count.append((ch, 1))"
+new = "count = {}\nfor ch in text:\n    count[ch] = count.get(ch, 0) + 1"
+t_old = timeit.timeit(old, setup=setup, number=50)   # 旧方案：list 线性找键（内层扫描）
+t_new = timeit.timeit(new, setup=setup, number=50)   # 新方案：dict.get（查键 O(1)）
+print(f"旧方案(list 线性查) 50 次: {t_old:.4f}s / 新方案(dict 查键)  50 次: {t_new:.4f}s / 提速约 {t_old/t_new:.0f} 倍")
 ```
-→ 运行输出：`旧方案(list 线性查) 50 次: 0.1363s` ／ `新方案(dict 查键)  50 次: 0.0103s` ／ `提速约 13 倍`（耗时随机器浮动）
+→ 运行输出：`旧方案(list 线性查) 50 次: 0.1280s / 新方案(dict 查键)  50 次: 0.0083s / 提速约 15 倍`（耗时随机器浮动）
 - **何时用/不用**：程序"感觉慢"时走三步法；没测量报告的优化请求先补测量。
 - **锚点**：**断舍离三步**——先盘点（上秤/拍照）→ 再改造（换收纳结构）→ 复称（确认真的轻了），不复称等于没收拾。
 - **易错**：一次改好几处，变快了不知道是哪招生效；只优化冷代码（占总时长 1% 的部分再快也没用）。
@@ -273,14 +263,14 @@ for ch in text:
 - **是什么**：`bytearray` 是可变字节序列（bytes 的可改版）；`memoryview` 是它的零拷贝视图——切片/读写不复制底层数组，直接在原数据上操作。
 - **为什么**：痛点是"大二进制数据改一小段却要整块复制"费时费内存 → 机制是 memoryview 只存"起始+长度+格式"的窗口，读写直达缓冲区；bytearray 提供可变底座 → 行为是百万级数据局部修改不产生副本 → 边界是 memoryview 挂着时底层数据不能被收缩/释放；它不能替代文本处理（那是 py-03 的地盘）。
 - **怎么写**：
-  ```python
-  data = bytearray(b"ABCDEFGH")
-  mv = memoryview(data)
-  print(mv[0:4].tobytes(), mv[0:4].readonly)
-  mv[0:4] = b"1234"                      # 通过视图原地改
-  print(data)
-  ```
-  → 运行输出：`b'ABCD' False`\n`bytearray(b'1234EFGH')`
+```python
+data = bytearray(b"ABCDEFGH")
+mv = memoryview(data)
+print(mv[0:4].tobytes(), mv[0:4].readonly)
+mv[0:4] = b"1234"                      # 通过视图原地改
+print(data)
+```
+→ 运行输出：`b'ABCD' False` ｜ `bytearray(b'1234EFGH')`
 - **何时用/不用**：大二进制缓冲的局部读写/解析（图像、网络包、文件头）必备；小 bytes 操作直接切片，别为省几字节上视图。
 - **锚点**：断舍离里的**免搬箱看货**——memoryview 是"不搬箱子就能从窗口看货、换货"；bytearray 是那只可开箱换货的箱子（bytes 是封死的塑封箱）。
 - **易错**：`mv[0:4] = b"12"` 长度不匹配直接 `ValueError`（视图赋值不能改长度）；`memoryview(bytes(...))` 是只读视图，赋值抛 `TypeError`。
@@ -290,16 +280,16 @@ for ch in text:
 - **是什么**：`weakref.ref(obj)` 创建弱引用：能拿到对象但**不增加引用计数**，对象被回收后弱引用自动变 `None`（或触发回调）。
 - **为什么**：痛点是缓存/观察者持有对象导致对象永远无法回收（内存泄漏） → 机制是弱引用不计入引用计数与循环 GC 的强引用边，最后一个强引用消失时对象照常回收 → 行为是"想用时还在，没人用时自动消失" → 边界是 list/dict/int/str 等部分内置类型不支持弱引用（要包一层自定义类）。
 - **怎么写**：
-  ```python
-  import weakref
-  class Big: pass
-  b = Big()
-  r = weakref.ref(b)                       # 借钥匙：不占房
-  print(r() is b)
-  del b                                    # 主人退房
-  print(r())                               # 钥匙失效
-  ```
-  → 运行输出：`True`\n`None`
+```python
+import weakref
+class Big: pass
+b = Big()
+r = weakref.ref(b)                       # 借钥匙：不占房
+print(r() is b)
+del b
+print(r())                               # 主人退房，钥匙失效
+```
+→ 运行输出：`True` ｜ `None`
 - **何时用/不用**：做缓存/注册表/观察者列表怕"拿着不放"时用（或直接用 `WeakKeyDictionary/WeakValueDictionary`）；需要保活的普通持有别用（对象会提前消失）。
 - **锚点**：断舍离里的**借钥匙不占房**——弱引用是借出去的备用钥匙：房子该卖卖（回收），钥匙自然失效；强引用是把房子过户到你名下（永不回收）。
 - **易错**：弱引用只是"通行证"不是"保管箱"，期间任何强引用存在对象都不会回收；`r()` 每次调用才取对象，取出后要用变量接住，否则临时值立刻可回收。

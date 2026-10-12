@@ -3,7 +3,7 @@
 > **📍 本章导航**：前置 → [py-00 路线图](py-00-roadmap.md) ｜ 相关 → py-01~py-20（消混对象）·[py-22 复习系统](py-22-review-drill.md) ｜ 方法 → [M13](../../方法地图.md#m13)·[M08](../../方法地图.md#m08) ｜ 难度 ⭐⭐⭐ ｜ 阅读 ~15min（约 10k tokens）
 >
 > 本章逻辑链：py-01~py-20 已完成篇内消混 → 本篇做**跨篇全局消混**（13 组）+ **面试高频 30 问** → [py-22](py-22-review-drill.md) 把 30 问练成肌肉记忆。
-> **本篇不新建锚点**：锚点在各源篇，本篇只引用 PY-ID（`PY-模块号-序号` 规则见 [INDEX.md](INDEX.md)；消混表引用精确 PY-xx-xx，未定稿篇暂以模块级 PY-xx 占位；问题的（→ PY-xx）为答案所在模块的指引）。
+> **本篇不新建锚点**：锚点在各源篇，本篇只引用 PY-ID（`PY-模块号-序号` 规则见 [INDEX.md](INDEX.md)；消混表引用精确 PY-xx-xx；问题的（→ PY-xx）为答案所在模块的指引）。
 
 ## 🗺️ 本篇知识地图
 | 组块（口号） | 成员 | 一句话 |
@@ -37,8 +37,8 @@ print("跨表达式 257:", int("257") is int("257"))
 | 定义 | 赋值=贴同一标签；浅拷贝 `copy.copy()`=只拷外壳一层、嵌套层共享；深拷贝 `copy.deepcopy()`=递归全拷、完全独立 |
 | 判据 | 只改顶层 → 浅拷贝；会改嵌套层且互不牵连 → 深拷贝；刻意共享同一份 → 赋值 |
 | 反例 | 浅拷贝后 `orig[0][0]=99`，拷贝品内层跟着变（以为是备份，实际共用器官） |
-| 一句口诀 | 赋值贴标签，浅拷换外壳，深拷连内脏 |
-| → PY-ID | PY-04-19 浅拷贝与深浅拷贝 · PY-19（引用计数）→ 见 [py-04](py-04-containers.md)·[py-19](py-19-memory-performance.md) |
+| 一句口诀 | 赋值贴标签，浅拷换外壳，深拷连内脏；动嵌套必深拷 |
+| → PY-ID | PY-04-17 浅拷贝与深拷贝 · PY-19-03 深浅拷贝 → 见 [py-04](py-04-containers.md)·[py-19](py-19-memory-performance.md) |
 ```python
 import copy
 orig = [[1, 2], [3]]
@@ -51,7 +51,7 @@ print("赋值 :", assign); print("浅拷:", shallow); print("深拷:", deep)
 | 项 | 内容 |
 |---|---|
 | 定义 | `def f(x, bucket=[])` 的默认值在 **def 执行时只创建一次**，多次调用共享同一个 list |
-| 判据 | 默认值是 list/dict/set → 必换 `None` 哨兵；int/str/tuple 等不可变 → 可放心写 |
+| 判据 | 默认值是 list/dict/set → 必换 `None` 哨兵；不可变默认值 → 放心写 |
 | 反例 | `add(1)` 得 `[1]`，`add(2)` 得 `[1, 2]`——第二次"继承"第一次的残留 |
 | 一句口诀 | 默认可变是共享，None 哨兵函数里建 |
 | → PY-ID | PY-07-04 可变默认参数陷阱 · PY-07-03 默认参数 → 见 [py-07](py-07-functions.md) |
@@ -102,10 +102,10 @@ print(sys.intern(s1) is sys.intern(s2))     # 显式驻留后才是同一对象
 ### G6 可变 vs 不可变
 | 项 | 内容 |
 |---|---|
-| 定义 | 不可变（immutable）：int/str/tuple/frozenset，创建后不能改内容；可变（mutable）：list/dict/set，可原地增删改。不可变锁的是**槽位**，不锁槽位里的货 |
+| 定义 | 不可变（immutable）：int/str/tuple/frozenset，创建后不能改内容；可变（mutable）：list/dict/set，可原地增删改 |
 | 判据 | 要当 dict 键/集合元素 → 必须可哈希 → 不可变；要原地增删 → 可变 |
 | 反例 | `t = ([1], 2)` 是 tuple，但 `t[0].append(99)` 成功——不可变壳里藏着可变 list |
-| 一句口诀 | 不可变锁的是槽位，锁不住槽位里的货 |
+| 一句口诀 | 要当键必须不可变，要增删选可变；锁得住槽位，锁不住货 |
 | → PY-ID | PY-02-13 可变与不可变 · PY-04-05 元组 tuple → 见 [py-02](py-02-variables-types.md)·[py-04](py-04-containers.md) |
 ```python
 t = ([1], 2)
@@ -138,7 +138,7 @@ f(1, 2, name="张三")
 | 判据 | 读取顺序：实例 `__dict__` → 类 → 基类（沿 MRO）；实例上赋同名值 = **遮蔽**，不是修改类变量 |
 | 反例 | `d1.kind = "宠物"` 后 d1 变了 d2 没变——给 d1 新建了实例变量，类变量毫发无损 |
 | 一句口诀 | 实例赋值是遮蔽，改类变量用类名 |
-| → PY-ID | PY-09（类变量vs实例变量）→ 见 [py-09](py-09-oop.md) |
+| → PY-ID | PY-09-05 类变量/遮蔽 · PY-09-04 实例变量 → 见 [py-09](py-09-oop.md) |
 ```python
 class Dog:
     kind = "犬科"            # 类变量：全实例共享
@@ -155,7 +155,7 @@ print(d1.kind, d2.kind, Dog.kind)
 | 判据 | 要用类本身（工厂方法/替代构造）→ classmethod；纯工具与类无关 → staticmethod；要实例状态 → 普通方法 |
 | 反例 | 工厂方法写成 staticmethod，子类调用永远构造出父类实例——丢了 cls 就丢了多态 |
 | 一句口诀 | classmethod 收 cls 管造物，staticmethod 挂名纯工具 |
-| → PY-ID | PY-09（类方法/静态方法）→ 见 [py-09](py-09-oop.md) |
+| → PY-ID | PY-09-15 class/staticmethod → 见 [py-09](py-09-oop.md) |
 ```python
 class Date:
     def __init__(self, y, m, d):
@@ -176,7 +176,7 @@ print(Date.from_str("2026-10-06").y, Date.ok("2026-10-06"))
 | 判据 | 数据大 / 只遍历一次 / 流水线处理 → 生成器；要索引、多次遍历、`len()` → 列表 |
 | 反例 | 遍历完生成器再遍历一次是空的——"像列表的括号"其实已耗尽 |
 | 一句口诀 | 方括号囤货全算完，圆括号售货按需来 |
-| → PY-ID | PY-11（生成器）·PY-04-14 列表推导式 → 见 [py-11](py-11-iterators-generators.md)·[py-04](py-04-containers.md) |
+| → PY-ID | PY-11-09 生成器表达式 · PY-11-10 惰性求值 · PY-04-12 列表推导式 → 见 [py-11](py-11-iterators-generators.md)·[py-04](py-04-containers.md) |
 ```python
 gen = (x * 2 for x in range(3))         # 生成器：按需产出
 print(next(gen), next(gen))
@@ -190,8 +190,8 @@ print(lst, lst)
 | 定义 | 可迭代对象（iterable）实现 `__iter__`（list/dict/str/generator…）；迭代器（iterator）实现 `__iter__` **和** `__next__`，是带游标的取货员 |
 | 判据 | `iter(x) is x` → 迭代器；`iter(x) is not x` → 仅可迭代。for = `iter()` + 反复 `next()` 直到 `StopIteration` |
 | 反例 | `next([10,20])` 报 `TypeError`——list 能 for，但自己不是迭代器 |
-| 一句口诀 | 可迭代是货品单，迭代器是取货员 |
-| → PY-ID | PY-11（迭代协议）→ 见 [py-11](py-11-iterators-generators.md) |
+| 一句口诀 | iter(x) is x 才是取货员，否则只是货品单 |
+| → PY-ID | PY-11-01 可迭代对象/迭代器 · PY-11-06 可迭代≠迭代器 → 见 [py-11](py-11-iterators-generators.md) |
 ```python
 lst = [10, 20]
 it = iter(lst)                 # 可迭代对象 -> 迭代器
@@ -205,8 +205,8 @@ print(next(it), next(it))
 | 定义 | 返回码风格：函数返回 `(ok, value)`，调用方手动检查；异常风格（Python 惯例）：出错即 `raise`，调用方 `try/except`，正常路径干净 |
 | 判据 | Python 首选异常（EAFP"先做再捕"）；返回码适合"错误是常态"的流程（如逐行解析统计失败数） |
 | 反例 | `(False, None)` 被忽略 → None 悄悄流入下游，报错点离现场十万八千里 |
-| 一句口诀 | Python 出错就报警，返回码要记得查警铃 |
-| → PY-ID | PY-12（EAFP/LBYL）→ 见 [py-12](py-12-exceptions.md) |
+| 一句口诀 | Python 出错就报警，常错流程用返回码且必查 |
+| → PY-ID | PY-12-12 EAFP/LBYL → 见 [py-12](py-12-exceptions.md) |
 ```python
 import json
 def parse_rc(text):            # 返回码风格：调用方必须记得检查返回值
@@ -223,9 +223,9 @@ print(parse_rc("{bad}"))       # 遗忘检查 ok 标志 -> None 埋雷
 |---|---|
 | 定义 | GIL（全局解释器锁）是 CPython 的锁：同一时刻只让**一个线程执行字节码**。两大误解："多线程没用"（错）、"多线程=并行"（也错） |
 | 判据 | IO 密集（网络/磁盘/睡眠）→ 多线程**有效**（等待时释放 GIL）；CPU 密集 → 多线程**无效**，换 `multiprocessing`/原生扩展 |
-| 反例 | 两个 CPU 密集线程不比一个快（实测略慢）；两个 IO 等待线程总耗时≈一个的耗时 |
+| 反例 | 两个 CPU 密集线程不比一个快；两个 IO 等待线程总耗时≈一个 |
 | 一句口诀 | 等 IO 时放锁所以快，算数时抢锁所以白搭 |
-| → PY-ID | PY-18（GIL/并发模型）→ 见 [py-18](py-18-concurrency.md) |
+| → PY-ID | PY-18-01 GIL → 见 [py-18](py-18-concurrency.md) |
 ```python
 import threading, time
 def io_task():                 # 模拟 IO 等待（等待时释放 GIL）

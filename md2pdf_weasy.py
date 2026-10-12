@@ -241,6 +241,15 @@ def build_html(base):
             if f.endswith('.md') and f != 'INDEX.md':
                 add_section(f"{dirname}/{f}")
                 parts.append(md2html(os.path.join(dpath, f)))
+        # 二级目录（如 17-programming/python/）
+        for sub in sorted(os.listdir(dpath)):
+            subpath = os.path.join(dpath, sub)
+            if os.path.isdir(subpath):
+                add_part(f"📗 {dirname}/{sub}", sub)
+                for f in sorted(os.listdir(subpath)):
+                    if f.endswith('.md'):
+                        add_section(f"{dirname}/{sub}/{f}")
+                        parts.append(md2html(os.path.join(subpath, f)))
 
     # ── Part 4: Practice ──
     pdpath = os.path.join(base, "24-practice")
@@ -253,7 +262,7 @@ def build_html(base):
     # ── Part 5: Exercises ──
     edpath = os.path.join(base, "exercises")
     if os.path.isdir(edpath):
-        add_part("📕 实操练习", "exercises · 13个练习")
+        add_part("📕 实操练习", "exercises · 14个练习")
         for f in sorted(os.listdir(edpath)):
             if f.endswith('.md'):
                 parts.append(md2html(os.path.join(edpath, f)))
@@ -261,7 +270,7 @@ def build_html(base):
     # ── Part 6: Templates ──
     tdpath = os.path.join(base, "templates")
     if os.path.isdir(tdpath):
-        add_part("📒 实用模板", "templates · 7个模板")
+        add_part("📒 实用模板", "templates · 8个模板")
         for f in sorted(os.listdir(tdpath)):
             if f.endswith('.md'):
                 parts.append(md2html(os.path.join(tdpath, f)))
@@ -312,6 +321,7 @@ def main():
 </html>"""
 
     # Save intermediate HTML for debugging
+    os.makedirs(os.path.join(BASE_DIR, "pdf_output"), exist_ok=True)
     html_path = os.path.join(BASE_DIR, "pdf_output", "记忆指南-完整版.html")
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(full_html)

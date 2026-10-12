@@ -22,9 +22,9 @@
 ```python
 import re
 text = "订单A-2026 金额100元 订单B-2027 金额250元"
-print(re.findall(r"\d+", text)); print("扫描模块就绪:", re.__name__)
+print(re.findall(r"\d+", text))
 ```
-→ 运行输出：`['2026', '100', '2027', '250']` ｜ `扫描模块就绪: re`
+→ 运行输出：`['2026', '100', '2027', '250']`
 - **何时用/不用**：校验、抽取、替换用 re；一行能写清的字符串方法（`str.split/find`）更直白。
 - **锚点**：安检扫描仪开机：整包行李（文本）过机器，按通缉图案（模式）把可疑物全部捞出来。
 - **易错**：`\d` 在普通字符串里被当转义序列警告，模式一律写 `r"..."`（PY-16-04）。
@@ -66,10 +66,11 @@ print("[^aeiou] 非元音:", re.findall(r"[^aeiou]+", "hello"))
 - **怎么写**：
 ```python
 import re
-print("普通 '\\n' 是换行:", repr("\n"), "| 原始 r'\\n' 是两字符:", repr(r"\n")); print("转义后匹配字面点:", re.findall(r"3\.14", "圆周率3.14"), re.findall(r"3\.14", "3x14"))
-print("不转义的 . 通吃:", re.findall(r"3.14", "3x14"))
+print(repr("\n"), repr(r"\n"))          # 普通串\n是换行，原始串是两个字符
+print("转义点:", re.findall(r"3\.14", "圆周率3.14"), re.findall(r"3\.14", "3x14"))
+print("裸点号:", re.findall(r"3.14", "3x14"))
 ```
-→ 运行输出：`普通 '\n' 是换行: '\n' | 原始 r'\n' 是两字符: '\\n'` ｜ `转义后匹配字面点: ['3.14'] []` ｜ `不转义的 . 通吃: ['3x14']`
+→ 运行输出：`'\n' '\\n'` ｜ `转义点: ['3.14'] []` ｜ `裸点号: ['3x14']`
 - **何时用/不用**：正则模式一律 `r"..."`；只写普通文本不需要。
 - **锚点**：给通缉令贴保护膜（`r""`）：膜内的 `\` 原样保留，不被翻译官（字符串层）先啃一口。
 - **易错**：`"3\.14"` 与 `r"3\.14"` 结果一样但前者在复杂模式里会失手；`r"C:\new\"` 语法错误（结尾裸 `\`）。
@@ -116,7 +117,9 @@ print("贪婪 .*:", re.findall(r"<b>.*</b>", s)); print("懒惰 .*?:", re.findal
 ```python
 import re
 m = re.search(r"(\d{4})-(\d{2})", "日期2026-10-06")
-print("整体:", m.group(0), "| 组1:", m.group(1), "| 组2:", m.group(2)); print("findall 带组:", re.findall(r"(\w+)@(\w+)", "a@x b@y")); print("反向引用 \\1:", re.findall(r"(\d)-\1", "1-1 2-3"))
+print("整体:", m.group(0), "| 组1:", m.group(1), "| 组2:", m.group(2))
+print("findall 带组:", re.findall(r"(\w+)@(\w+)", "a@x b@y"))
+print("反向引用 \\1:", re.findall(r"(\d)-\1", "1-1 2-3"))
 ```
 → 运行输出：`整体: 2026-10 | 组1: 2026 | 组2: 10` ｜ `findall 带组: [('a', 'x'), ('b', 'y')]` ｜ `反向引用 \1: ['1']`
 - **何时用/不用**：要拆字段就分组；只想"整体匹配不拆"时用 `(?:...)` 非捕获组省开销。
@@ -209,7 +212,9 @@ print("反向引用:", re.sub(r"(\w+)@(\w+)", r"\2-\1", "mail me@example"))
 ```python
 import re
 pat = re.compile(r"abc", re.I)          # 预设：不分大小写
-print("re.I:", pat.findall("ABC abc Abc")); print("re.M 多行:", re.findall(r"^b\w+", "apple\nbanana", re.M)); print("re.S 让 . 吞换行:", re.findall(r"a.*c", "a\nb\nc", re.S))
+print("re.I:", pat.findall("ABC abc Abc"))
+print("re.M 多行:", re.findall(r"^b\w+", "apple\nbanana", re.M))
+print("re.S 让 . 吞换行:", re.findall(r"a.*c", "a\nb\nc", re.S))
 ```
 → 运行输出：`re.I: ['ABC', 'abc', 'Abc']` ｜ `re.M 多行: ['banana']` ｜ `re.S 让 . 吞换行: ['a\nb\nc']`
 - **何时用/不用**：模式用两次以上就 compile；一次性小脚本直接 `re.findall(...)`。
@@ -256,7 +261,8 @@ for s in ["13812345678", "12812345678", "1381234567", "电话13812345678"]: prin
 ```python
 import re
 pat = re.compile(r"\d{4}[-/.]\d{1,2}[-/.]\d{1,2}")
-print(pat.findall("会议 2026-10-06 开始，2026/10/08 结束，纪念日 2026.10.10")); print("解析成分:", re.match(r"(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})", "2026/10/8").groups())
+print(pat.findall("会议 2026-10-06 开始，2026/10/08 结束，纪念日 2026.10.10"))
+print("解析成分:", re.match(r"(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})", "2026/10/8").groups())
 ```
 → 运行输出：`['2026-10-06', '2026/10/08', '2026.10.10']` ｜ `解析成分: ('2026', '10', '8')`
 - **何时用/不用**：从文本批量抽日期用它；要判断合法性/算星期交给 datetime（→ PY-14-05）。
