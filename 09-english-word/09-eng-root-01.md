@@ -244,10 +244,10 @@
 - **图像**：一个人搬着特别重（grav）的石头
 - **衍生词**：
   1. **gravity** (grav + ity) = 重力 → 重的力量
-  2. **grave** (grav + e) = 严重的；坟墓 → 重大的事
+  2. **grave** (grav + e) = 严重的 → 重大的事（⚠️ "坟墓"义的 grave 是同形异源的另一个词，不属于 grav 词根）
   3. **aggravate** (ag- 向 + grav + ate) = 加重 → 使更重
   4. **gravitate** (grav + itate) = 受吸引 → 被重量拉过去
-  5. **engrave** (en- 使 + grave) = 雕刻 → 用力刻下去
+  5. **engrave** = 雕刻 → ⚠️ 源自日耳曼语 graven（雕刻），与 grav（重）词根无关，仅外形相似
 
 ### 24. viv/vit = 生命、活
 - **谐音**：viv → "微微" → 微微一笑表示活着真好
@@ -603,7 +603,7 @@
   2. **correspond** (cor- 一起 + respond) = 对应；通信 → 一起回应
   3. **responsible** (re- 回 + spons + ible) = 负责的 → 能回应的
   4. **sponsor** (spons + or) = 赞助者 → 做出承诺的人
-  5. **spontaneous** (spon + taneous) = 自发的 → 出自内心的承诺
+  5. **spontaneous** = 自发的 → ⚠️ 源自拉丁语 sponte（自愿），**不是 spond 词根**，仅外形相似，别当同根记
 
 ### 52. cept/ceiv = 拿、抓
 - **谐音**：cept → "赛普特" → 赛普特抓东西特别准

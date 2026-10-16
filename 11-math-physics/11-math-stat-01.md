@@ -224,7 +224,7 @@
 
 **公式：** $F = \frac{MS_{between}}{MS_{within}} = \frac{组间方差}{组内方差}$
 
-**谐音：** "ANOVA" → "A NO VA" → "A没有VA" → 方差分析（Analysis Of Variance）
+**谐音：** "ANOVA" → "阿诺瓦" → 一位**阿诺瓦**教官给三组士兵量身高（方差分析，Analysis Of Variance）
 
 **画面：** 三组士兵分别站成三排。ANOVA比较"排与排之间的身高差异"和"每排内部的身高差异"。如果排间差异远大于排内差异，说明三排士兵身高确实不同。
 

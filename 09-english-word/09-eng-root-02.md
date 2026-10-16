@@ -227,7 +227,7 @@
   1. **paternal** (patr + nal) = 父亲的 → 与父亲有关
   2. **patriarch** (patri + arch) = 家长 → 父亲首领
   3. **patron** (patr + on) = 赞助人 → 像父亲一样的人
-  4. **patriot** (patri + ot) = 爱国者 → 爱父亲land的人
+  4. **patriot** (patri + ot) = 爱国者 → 爱祖国（父亲之土）的人
   5. **patrimony** (patrimoni + y) = 遗产 → 父亲留下的
 
 #### 23. mater/matr = 母亲
@@ -353,7 +353,7 @@
   1. **biography** (bio + graphy) = 传记 → 写生命的
   2. **symbiotic** (sym + biotic) = 共生的 → 一起生命的
   3. **biodegradable** (bio + degradable) = 可生物降解的
-  4. **biopsy** (bio + psy) = 活检 → 取生命组织
+  4. **biopsy** (bio + opsis 看) = 活检 → 看一眼生命组织
   5. **bionics** (bio + nics) = 仿生学
 
 #### 36. cess = 让步、去
@@ -420,7 +420,7 @@
   2. **erratic** (err + atic) = 不稳定的 → 漫游的
   3. **erroneous** (err + oneous) = 错误的 → 犯错的
   4. **aberrant** (ab + err + ant) = 异常的 → 偏离犯错的
-  5. **errand** (err + and) = 差事 → 漫游去做的事
+  5. **errand** = 差事 → ⚠️ 源自古英语 ærende（差使），与 err（漫游）词根无关，仅外形相似
 
 #### 43. fin = 结束、界限
 - **谐音**：fin → "分" → 分出界限
@@ -562,7 +562,7 @@
 | **-ful** | 充满…的 | "否" | 满杯水 | beautiful, powerful, grateful |
 | **-less** | 没有…的 | "乐斯" | 空杯子 | careless, homeless, useless |
 | **-ous** | 有…性质的 | "额斯" | 冒险的标志 | dangerous, famous, curious |
-| **-ive** | 有…倾向的 | "一夫" | 性行为者 | active, creative, negative |
+| **-ive** | 有…倾向的 | "一夫" | 一个挑夫（一夫）挑着担子往前倾 | active, creative, negative |
 
 ### C. 动词后缀
 
@@ -758,7 +758,7 @@ dis + cour + age + ment = discouragement（沮丧）
   1. **liberal** (liber + al) = 自由的 → 与自由有关的
   2. **liberate** (liber + ate) = 解放 → 使自由
   3. **liberty** (liber + ty) = 自由 → 自由的状态
-  4. **deliver** (de- 离开 + liver) = 递送 → 使脱离
+  4. **deliver** (de- 离开 + liber) = 递送 → 使脱离
   5. **deliberate** (de- 完全 + liber + ate) = 故意的；深思熟虑的 → 完全自由思考
 
 ### 55. serve = 保持、服务
