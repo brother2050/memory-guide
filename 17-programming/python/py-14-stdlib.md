@@ -48,7 +48,7 @@ print("平台标识:", sys.platform)
 → 运行输出：`解释器版本: 3.12.3` ｜ `参数条数: 1 （argv[0] 是脚本名）` ｜ `实现: cpython` ｜ `平台标识: linux`
 - **何时用/不用**：读启动参数做原型用 `sys.argv`，正式 CLI 用 argparse（PY-14-12）；查路径问题用 `sys.path`（→ PY-13-10）。
 - **锚点**：工具箱盖内侧的参数铭牌：刻着型号（version）、出厂设置（platform）、启动旋钮位（argv）。
-- **易错**：`sys.argv[0]` 是脚本名不是第一个业务参数
+- **易错**：`sys.argv[0]` 是脚本名不是第一个业务参数。
 - **关联**：`→ PY-13-10：sys.path 是找书路线图`；`→ PY-14-12：argparse 替代手写 argv 解析`。
 
 ### PY-14-03 pathlib.Path：路径万用表 Path Objects
@@ -123,7 +123,7 @@ print("双端队列:", list(q))
 - **何时用/不用**：统计词频用 Counter，累加分组用 defaultdict，队列/滑窗用 deque；简单场景普通 dict/list 就够。
 - **锚点**：多格零件收纳柜：计数格自动报数（Counter）、缺件自动补货格（defaultdict）、两头开的抽屉（deque）。
 - **易错**：`defaultdict` 的 `d[k]` 访问会创建键，别在只读判断里用（改用 `k in d`）。
-- **关联**：`→ PY-04-09：dict 基础操作`；`→ PY-14-07：和 itertools 都是"加工零件"工具`。
+- **关联**：`→ PY-04-06：dict 基础操作`；`→ PY-14-07：和 itertools 都是"加工零件"工具`。
 
 ### PY-14-07 itertools：组合工具钳 The `itertools` Module
 - **是什么**：迭代器（iterator）加工工具：`chain` 接长料、`islice` 截一段、`count` 无限计数、`accumulate` 累加——全部惰性、省内存。
@@ -141,7 +141,7 @@ print("累加 accumulate:", list(it.accumulate([1, 2, 3, 4])))
 - **何时用/不用**：多序列拼接/截断/笛卡尔积用它；一次性的简单循环别硬套（可读性优先）。
 - **锚点**：组合工具钳：一把钳子多个头——接料头（chain）、截断头（islice）、棘轮计数头（count）、累加头（accumulate）。
 - **易错**：`chain` 传的是可变参数不是列表的列表（要 `from_iterable`）；迭代器用一次就空，第二次循环拿不到东西。
-- **关联**：`→ PY-11-14：生成器的惰性原理`。
+- **关联**：`→ PY-11-10：生成器的惰性原理`。
 
 ### PY-14-08 functools：工具改装店 The `functools` Module
 - **是什么**：函数工具：`lru_cache` 给纯函数加缓存（结果登记）、`partial` 预置部分参数造新函数、`reduce` 把序列折叠成一个值。
@@ -161,7 +161,7 @@ print("reduce 累乘:", reduce(lambda a, b: a * b, [1, 2, 3, 4]))
 - **何时用/不用**：慢纯函数（递归、调接口）上 `lru_cache`；反复传同一参数用 `partial`；`reduce` 大多可用生成器/`sum` 替代。
 - **锚点**：工具改装店：给常用工具贴"借用登记"免重复开仓（lru_cache）、把扳手预置好开口尺寸（partial）、把几节料压成一坨（reduce）。
 - **易错**：`lru_cache` 用在有副作用/可变参数函数上会返回脏结果；装饰器顺序（`@lru_cache` 与 `@property`）写反不生效。
-- **关联**：`→ PY-08-06：装饰器原理`；`→ PY-19-10：缓存的内存代价`。
+- **关联**：`→ PY-08-01：装饰器原理`；`→ PY-19-10：缓存的内存代价`。
 
 ## 四、算得准抽得随机（math / random）
 
@@ -179,7 +179,7 @@ print("圆周率前 6 位:", round(math.pi, 6))
 - **何时用/不用**：取整/开方/公约数用 math；简单算术直接运算符；统计（均值/方差）用 `statistics`。
 - **锚点**：工具箱里的水平仪与直角尺：往上弹（ceil）、往下压（floor）、对齐直角（isqrt 只认整数刻度）。
 - **易错**：`int(-2.7)` 是 `-2`（截断）而 `math.floor(-2.7)` 是 `-3`（向下）——负数方向不一样；`isqrt(17)` 是 4（截尾）不是五入。
-- **关联**：`→ PY-02-06：float 精度问题`；`→ PY-14-10：random 管随机，math 管精确`。
+- **关联**：`→ PY-02-05：float 精度问题`；`→ PY-14-10：random 管随机，math 管精确`。
 
 ### PY-14-10 random：抓阄竹罐 The `random` Module
 - **是什么**：伪随机（pseudo-random）工具：`randint` 抽区间整数、`choice` 抓一个、`sample` 抓多个不重复、`shuffle` 洗牌、`seed` 固定随机序列。
@@ -197,7 +197,7 @@ print("抽签不重复:", random.sample(range(100), 3))
 → 运行输出：`抽一个号: 2` ｜ `抓一把: 锤子` ｜ `洗牌: [2, 4, 1, 3]` ｜ `抽签不重复: [17, 94, 13]`
 - **何时用/不用**：测试数据/游戏/抽样用 random；密码、令牌用 `secrets`；科学计算用 `numpy.random`。
 - **锚点**：工具箱角落的抓阄竹罐：伸手抽一个（randint）、抓一把（sample）、摇一摇重排（shuffle）、竹罐摆位固定结果可复现（seed）。
-- **易错**：`random.choice([])` 抛 `IndexError`；`shuffle` 是原地修改不返回新列表（`x = shuffle(y)` 得 None）
+- **易错**：`random.choice([])` 抛 `IndexError`；`shuffle` 是原地修改不返回新列表（`x = shuffle(y)` 得 None）。
 - **关联**：`→ PY-14-09：math 管精确计算`。
 
 ## 五、登记派单打铭牌（logging / argparse / dataclasses）
@@ -219,7 +219,7 @@ log.error("故障：电钻不转")
 - **何时用/不用**：项目一律 logging；一次性小脚本 print 无妨；需要配置文件/多输出见 → PY-20-07。
 - **锚点**：检修登记本：五种颜色的笔=五个级别，墨水（debug）平时不上本子，故障（error）红笔记一笔还能贴事故单（traceback）。
 - **易错**：在 `basicConfig` 之后再调不生效（想改要 `force=True`）；`f-string` 写日志（`log.info(f"...")`）浪费格式化开销，用 `log.info("%s", x)`。
-- **关联**：`→ PY-12-14：异常与 exception 的配合`；`→ PY-20-07：logging 工程配置`。
+- **关联**：`→ PY-12-14：常见异常速查`；`→ PY-20-07：logging 工程配置`。
 
 ### PY-14-12 argparse：门口工单登记板 The `argparse` Module
 - **是什么**：命令行参数解析器：`add_argument` 登记参数（位置参数=必填栏、`-n/--num` 选项栏、`type` 栏位格式），`parse_args` 一次拿好，还自带 `--help`。
@@ -236,7 +236,7 @@ print("工单:", args.job, "数量:", args.num, "类型:", type(args.num).__name
 → 运行输出：`工单: 修水管 数量: 3 类型: int`
 - **何时用/不用**：任何要传参的脚本都用它；交互式输入用 `input()`；更漂亮的 CLI 用第三方（typer/click）。
 - **锚点**：门口的工单登记板：必填栏（位置参数）、可选勾（选项）、按栏位格式填（type），填错格式登记员当场退回（自动报错）。
-- **易错**：`type=int` 只负责转换，`default=1` 不经过 type
+- **易错**：`type=int` 只负责转换，`default=1` 不经过 type。
 - **关联**：`→ PY-14-02：sys.argv 是它的原材料`。
 
 ### PY-14-13 dataclasses：标准件规格铭牌 The `dataclasses` Module
@@ -259,7 +259,7 @@ print("可变默认安全:", b.tags, Bolt(9, tags=["镀锌"]).tags)
 - **何时用/不用**：配置、记录、DTO 用 dataclass；需要继承层级/行为的用普通 class（→ py-09）；不可变数据加 `@dataclass(frozen=True)`。
 - **锚点**：标准件规格铭牌：机器冲压出统一规格（自动 init/repr/eq），附加标注（field）另打一行小字。
 - **易错**：`tags: list = []` 不是共享列表而是当场 `ValueError: mutable default ... use default_factory`；有默认值的字段必须排在无默认值字段后面。
-- **关联**：`→ PY-09-03：类的基本语法`；`→ PY-17-12：dataclass 与类型注解配合`。
+- **关联**：`→ PY-09-03：类的基本语法`；`→ PY-17-06：dataclass 与类型注解配合`。
 
 ## 六、配钥匙过安检（copy / re 概览）
 
@@ -281,7 +281,7 @@ print("深拷贝齿纹 :", deep["齿"], "（完全独立）")
 - **何时用/不用**：只增删顶层键用浅拷贝；嵌套结构要互不干扰用深拷贝；纯不可变元素（数字/字符串）浅拷贝即安全。
 - **锚点**：五金店门口配钥匙摊：配钥匙坯（copy，柄新齿纹共用）还是整套锁芯复刻（deepcopy，齿纹全新）。
 - **易错**：`b = a.copy()` 对 dict/list 是浅拷贝但对 tuple 是"原样返回"（不可变无需拷贝）；含自引用的对象 deepcopy 能处理，`copy.copy` 也只复制外层。
-- **关联**：`→ PY-04-14：深浅拷贝原理对比`；`→ PY-19-05：拷贝的内存代价`。
+- **关联**：`→ PY-04-17：深浅拷贝原理对比`；`→ PY-19-05：拷贝的内存代价`。
 
 ### PY-14-15 re 概览：按样板挑零件 The `re` Module (Overview)
 - **是什么**：正则表达式（regular expression）模块：用模式串从文本里"找、抽、换"。常用五个操作：`match/search/findall/sub/compile`。
@@ -297,7 +297,7 @@ print("替换:", re.sub(r"\d+", "#", "a1b22c"))
 - **何时用/不用**：格式明确的检索/校验/替换用 re；HTML/JSON 等嵌套格式用专用解析器；正则细节一概不在本篇展开。
 - **锚点**：按样板挑零件：一张样板（模式）压在整箱零件上逐一比对，合规格的全挑出来（findall）；换件（sub）也是照样板挑出再替换。
 - **易错**：模式不加锚点会"半匹配"（`re.match(r"\d+", "12a")` 也成功，只匹配到 `12`）；反斜杠忘写 `r""` 变转义灾难。
-- **关联**：`→ 见 PY-16-01：正则元字符与匹配规则全套`；`→ 见 PY-16-10：match/search/findall/sub/compile 逐个实测`。
+- **关联**：`→ 见 PY-16-02：正则元字符与匹配规则全套`；`→ 见 PY-16-10~13：match/search/findall/sub/compile 逐个实测`。
 
 ## ⚔️ 对比消混表
 | 易混点 | A | B | 判据 | 一句口诀 |

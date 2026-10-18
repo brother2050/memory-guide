@@ -49,7 +49,7 @@ print("业务完自动关窗:", f.closed)
 - **何时用/不用**：所有文件操作一律 with；一个 with 可同时开多个文件（逗号并列或嵌套）。
 - **锚点**：VIP 自动关窗服务：业务办完自动关窗落锁，哪怕客户中途发火摔门（抛异常）也照样锁好。
 - **易错**：with 块内 `f` 才有效，块外继续 `f.read()` 报"文件已关闭"；把 `f.read()` 写在 with 外是常见错位。
-- **关联**：`→ PY-15-01：open/close 的自动化`；`→ PY-10-11：__enter__/__exit__ 魔术方法`。
+- **关联**：`→ PY-15-01：open/close 的自动化`；`→ PY-10-12：__enter__/__exit__ 魔术方法`。
 
 ### PY-15-03 点钞三式：read / readline / readlines
 - **是什么**：三种读取粒度：`read()` 整个文件进一个字符串；`readline()` 每次一行；`readlines()`/直接迭代返回行列表/逐行。
@@ -90,7 +90,7 @@ with open("mode.txt", encoding="utf-8") as f:        # r = 只读
 → 运行输出：`重复开户被拒: [Errno 17] File exists: 'mode.txt'` ｜ `账户流水: ['开户行: A', '续存: B']`
 - **何时用/不用**：读用 `r`；重建用 `w`；记流水用 `a`；确保不覆盖用 `x`；要"读改写"整个文件，宁可读进来再 `w` 重写。
 - **锚点**：窗口业务牌：r 取款、w 销户重开（旧记录清零）、a 续存（流水接着记）、x 新开户（已有户不开）。
-- **易错**：`w` 打开已存在文件**立刻清空**（哪怕后面没写任何东西）
+- **易错**：`w` 打开已存在文件**立刻清空**（哪怕后面没写任何东西）。
 - **关联**：`→ PY-15-05：w 与 a 的对比`；`→ PY-15-06：加 b 变二进制窗口`。
 
 ### PY-15-05 `w` 覆盖 vs `a` 追加 Truncate vs Append
@@ -107,12 +107,12 @@ with open("flow.txt", encoding="utf-8") as f: print("a 之后流水:", f.read().
 → 运行输出：`w 之后只剩: ['2月']` ｜ `a 之后流水: ['2月', '3月']`
 - **何时用/不用**：配置快照/导出结果用 `w`；日志、账本、csv 累积行用 `a`。
 - **锚点**：`w` 是"重开存折"（旧页全撕）、`a` 是"流水账往下记"（旧页留着）。
-- **易错**：循环里误用 `w` 每轮清空，最后只剩一轮数据
+- **易错**：循环里误用 `w` 每轮清空，最后只剩一轮数据。
 - **关联**：`→ PY-15-04：模式矩阵里的两格`；`→ PY-14-11：日志落盘常用追加`。
 
 ### PY-15-06 文本模式 vs 二进制模式 Text vs Binary
 - **是什么**：文本模式（`r/w/a`）读写 `str`，平台自动换行转换、需 `encoding`；二进制模式（`rb/wb/ab`）读写 `bytes`，逐字节原样进出、不许指定 encoding。
-- **为什么**：图片/压缩包/加密数据没有"字符"可言，按文本读写会损坏字节 → 二进制模式把磁盘字节原样搬 → 行为：文本文件用 `rb` 读会得到编码后的字节 → 边界：`str` 与 `bytes` 互转必须显式 encode/decode（→ PY-03-11）。
+- **为什么**：图片/压缩包/加密数据没有"字符"可言，按文本读写会损坏字节 → 二进制模式把磁盘字节原样搬 → 行为：文本文件用 `rb` 读会得到编码后的字节 → 边界：`str` 与 `bytes` 互转必须显式 encode/decode（→ PY-03-14）。
 - **怎么写**：
 ```python
 data = "金额¥100"
@@ -126,8 +126,8 @@ with open("cash.txt", "rb") as f: print("文本文件的原始字节:", f.read()
 → 运行输出：`二进制读回: b'\xe9\x87\x91\xe9\xa2\x9d\xc2\xa5100'` ｜ `解码后: 金额¥100` ｜ `文本文件的原始字节: b'\xe9\x87\x91\xe9\xa2\x9d\xc2\xa5100'`
 - **何时用/不用**：纯文本（配置、csv、日志）用文本模式；图片/音视频/序列化字节用 `rb/wb`。
 - **锚点**：柜员手抄汉字（文本模式，认字迹）vs 点钞机过钞（二进制，钞票原样过机不认字）。
-- **易错**：文本模式写二进制内容抛 `TypeError: write() argument must be str`；二进制读回的 `b"..."` 要 `.decode()` 才是字符串。
-- **关联**：`→ PY-03-11：encode/decode 与 bytes`；`→ PY-15-07：文本模式的编码坑`。
+- **易错**：文本模式写二进制内容抛 `TypeError: write() argument must be str, not bytes`；二进制读回的 `b"..."` 要 `.decode()` 才是字符串。
+- **关联**：`→ PY-03-14：encode/decode 与 bytes`；`→ PY-15-07：文本模式的编码坑`。
 
 ## 三、凭证字迹（编码与换行）
 
@@ -151,7 +151,7 @@ with open("gbk.txt", encoding="utf-8", errors="replace") as f:
 - **何时用/不用**：打开来源不明的文本一律显式给 encoding（工程默认 utf-8）；处理历史 Windows 文件记得可能是 gbk。
 - **锚点**：凭证上的字迹章：utf-8 是行内标准字迹，gbk 是旧式字迹；拿旧凭证盖新章（用错编码）当场对不上账（报错）或字迹糊掉（replace）。
 - **易错**：`open()` 不写 encoding 依赖系统默认（跨机器行为不同）；`errors="ignore"` 静默丢字符，比报错更难排查。
-- **关联**：`→ PY-03-12：Unicode 与常见编码`；`→ PY-15-08：另一大格式坑是换行符`。
+- **关联**：`→ PY-03-15：UTF-8 与 GBK 编码坑`；`→ PY-15-08：另一大格式坑是换行符`。
 
 ### PY-15-08 换行符与 `newline` 参数 Newline Handling
 - **是什么**：Windows 用 `\r\n`、Linux 用 `\n` 表示换行；文本模式默认"通用换行"读入时统一成 `\n`，写入时 `newline=None` 转成平台约定，`newline=""` 原样保留。
@@ -169,7 +169,7 @@ with open("nl.txt", encoding="utf-8", newline="") as f:  # 原样保留
 → 运行输出：`原始字节: b'a\r\nb\r\n'` ｜ `默认读法: 'a\nb\n'` ｜ `原样读法: 'a\r\nb\r\n'`
 - **何时用/不用**：普通读写就用默认；处理 csv/固定格式小票用 `newline=""`（写 csv 时也建议给）；比对原始字节用 `rb`。
 - **锚点**：柜台叫号机小票的"回车+换行"两步走（`\r\n`）：默认点钞时帮你把两步并成一步（`\n`），要验小票原样就得挂"原样"牌（`newline=""`）。
-- **易错**：字符串里 `strip()` 没去掉 `\r` 导致 `"a" == line.strip()` 失败
+- **易错**：字符串里 `strip()` 没去掉 `\r` 导致 `"a" == line.strip()` 失败。
 - **关联**：`→ PY-15-07：编码是另一半格式坑`；`→ PY-15-09：csv 读写建议配 newline=""`。
 
 ## 四、专窗打单（csv / json 文件）
@@ -259,7 +259,7 @@ vault/2026/10 → 子柜: [] → 件: ['c.txt']
 ```
 - **何时用/不用**：全盘扫描/批量改名用 walk；只要一层用 `os.listdir`/`Path.iterdir`；按模式筛选用 `Path.rglob`（PY-15-13）。
 - **锚点**：金库逐层盘点：盘点员从大门（根目录）进，每层报"子柜几个、各件几件"（dirs/files），直到最底层小库。
-- **易错**：`files` 只是文件名不含路径，要 `os.path.join(root, f)` 才能打开
+- **易错**：`files` 只是文件名不含路径，要 `os.path.join(root, f)` 才能打开。
 - **关联**：`→ PY-14-01：os 模块基础`；`→ PY-15-13：pathlib 的替代写法`。
 
 ### PY-15-13 pathlib 实操：电子流水单 Path I/O
@@ -318,7 +318,7 @@ print("iterdir 柜面清单:", sorted(p.name for p in Path("vault").iterdir()))
 5. （说区别）`json.load(f)` vs `json.loads(s)`、`csv.reader` vs `DictReader`？写 csv 为何配 `newline=""`？
 > 答案：文件对象 vs 字符串；格子列表 vs 列名→值字典；防 `\n` 被翻成 `\r\n`（PY-15-08/09/11）。
 6. （改错）两处错各报什么、怎么改：① 文本模式 `f.write(b"bytes")` ② with 块外 `f.read()`。
-> 答案：① `TypeError: write() argument must be str`→改 `wb`；② `ValueError: I/O operation on closed file`→读放进 with。
+> 答案：① `TypeError: write() argument must be str, not bytes`→改 `wb`；② `ValueError: I/O operation on closed file`→读放进 with。
 
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-14 标准库](py-14-stdlib.md) ｜ ➡️ 下一篇：[py-16 正则](py-16-regex.md)

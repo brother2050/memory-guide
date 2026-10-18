@@ -26,7 +26,7 @@ import sys
 print(sys.version.split()[0])
 print(sys.implementation.name)
 ```
-→ 运行输出：`3.12.3` 换行 `cpython`
+→ 运行输出：`3.12.3` ⏎ `cpython`
 - **何时用/不用**：定位"这段代码在谁肚子里跑"时用；日常写代码不用管，报错说"某某实现不支持"时才回来查。
 - **锚点**：厨房里那位"官方特级厨师"——菜谱（源码）没人看得懂就下锅，全靠他逐句念成动作；菜谱写得他念不下去就是报错。
 - **易错**：把 Python 版本（语言）和 CPython（实现）混为一谈；装了 Python 不等于命令是 `python`（见 PY-01-02）。
@@ -39,7 +39,7 @@ print(sys.implementation.name)
 ```bash
 $ python3 --version
 ```
-→ 运行输出（实测）：`Python 3.12.3`
+→ 运行输出：`Python 3.12.3`
 - **何时用/不用**：每换一台机器、每个新终端开工前先敲一次；已在同一环境连续工作时不必反复敲。
 - **锚点**：菜谱封面印着"2026 年版"——开火前先看封面年份，别拿 20 年前的菜谱做今天的宴席。
 - **易错**：在只装了 Python 2 的老机器上 `python --version` 显示 `Python 2.7.x`，照抄 3.x 代码会满屏 `SyntaxError`。
@@ -54,7 +54,7 @@ $ python3 --version
 print("你好，Python！")
 print(1 + 1)
 ```
-→ 运行输出：`你好，Python！` 换行 `2`
+→ 运行输出：`你好，Python！` ⏎ `2`
 - **何时用/不用**：调试看值、脚本出结果用；写库/模块给别人 import 时少 print，多用 return 与 logging（PY-14）。
 - **锚点**：厨房的**出餐口**——菜做好了要从窗口喊出来递给客人，`print` 就是那声"出餐！"。
 - **易错**：`print "hi"`（Python 2 写法）在 3.x 报 `SyntaxError`；print 多个值默认空格分隔，要精确拼接用 f-string（PY-02-15）。
@@ -76,7 +76,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 'pypypy'
 >>> exit()
 ```
-→ 运行输出（真实终端实录）：见上。
+→ 运行输出：见上（真实终端实录）。
 - **何时用/不用**：验证一个小语法、试一个方法时用 REPL 或 `python3 -c "代码"`；超过 5 行的逻辑写脚本文件。
 - **锚点**：灶台前的**试味小勺**——汤咸淡舀一勺尝一口就知，不必盛出整锅摆盘。
 - **易错**：REPL 里定义的变量/函数退出即失；粘贴多行代码缩进错乱会得 `IndentationError`（PY-01-07）。
@@ -93,7 +93,7 @@ print('Hello from a script!')
 ```bash
 $ chmod +x hello_demo.py && ./hello_demo.py
 ```
-→ 运行输出（实测）：`Hello from a script!` 且 `returncode = 0`
+→ 运行输出：`Hello from a script!`（returncode = 0）
 - **何时用/不用**：一切要保存、复用、交付的代码写成脚本；只验证一个表达式用 REPL（PY-01-04）。
 - **锚点**：从"随手试味"升级到"**照整本菜谱做一桌菜**"——菜谱存成册子（.py 文件），封面上写明用哪位厨师（shebang）。
 - **易错**：忘了 `chmod +x` 就 `./hello.py` 会得 `Permission denied`；在 Windows 记事本里存成 `hello.py.txt` 会报找不到文件。
@@ -113,7 +113,7 @@ for i in range(3):
     else:
         print(f"{i} 是奇数")
 ```
-→ 运行输出：`0 是偶数` / `1 是奇数` / `2 是偶数`
+→ 运行输出：`0 是偶数` ⏎ `1 是奇数` ⏎ `2 是偶数`
 - **何时用/不用**：所有分支/循环/函数/类定义都按此规矩；一行式如 `if x: y = 1` 仅用于极简场景。
 - **锚点**：菜谱里"**步骤：**"后面永远跟一串动作——看到冒号就知道下面是一套连招。
 - **易错**：写 `if x > 0` 忘了冒号，报 `SyntaxError: expected ':'`；把冒号敲成中文全角`：`，照样报错。
@@ -150,7 +150,7 @@ def add(a, b):
 print(add(2, 3))
 print(add.__doc__)
 ```
-→ 运行输出：`5` 换行 `两数相加，返回和。`
+→ 运行输出：`5` ⏎ `两数相加，返回和。`
 - **何时用/不用**：对外函数必写 docstring；临时调试别堆几十行注释，删干净再交付。
 - **锚点**：菜谱旁的**铅笔小字**："这道菜少放盐，因为客人血压高"——写的是原因，不是"把盐放进锅"。
 - **易错**：三引号忘闭合会一路吃到文件尾得 `SyntaxError`；把 docstring 写在函数体第二行就不算 docstring（`__doc__` 为 None）。
@@ -166,7 +166,7 @@ s = "中文字符串没问题"
 print(s)
 print(len(s))
 ```
-→ 运行输出：`中文字符串没问题` 换行 `8`
+→ 运行输出：`中文字符串没问题` ⏎ `8`
 - **何时用/不用**：3.x 项目不必写 `# -*- coding: utf-8 -*-`（写了也无害）；维护 Python 2 遗留文件时才需要它。
 - **锚点**：全厨房食材标签**统一印简体中文**——谁也不用单独注明"本标签是中文"。
 - **易错**：终端/编辑器不是 UTF-8 时显示乱码，被误判为代码错误；Windows 记事本另存为 ANSI 后中文报 `SyntaxError`。
@@ -182,7 +182,7 @@ print(len(s))
 $ python3 -m pip --version
 $ python3 -m pip install six
 ```
-→ 运行输出（实测）：`pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)`；`[退出码 0] Requirement already satisfied: six in /usr/local/lib/python3.12/dist-packages (1.17.0)`
+→ 运行输出：`pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)`；`[退出码 0] Requirement already satisfied: six in /usr/local/lib/python3.12/dist-packages (1.17.0)`（两条命令依次）
 - **何时用/不用**：需要第三方库时用；标准库（PY-14）已覆盖的功能不必装包。
 - **锚点**：厨房旁的**食材采购市场**——缺什么食材（第三方库）就去市场买一份回来放进库房（site-packages）。
 - **易错**：`pip` 与 `python3` 不是同一个解释器的配套工具时，"装了却 import 不到"；国内环境建议配镜像源再装。
@@ -197,7 +197,7 @@ $ python3 -m venv .venv          # 建环境
 $ source .venv/bin/activate       # 激活（Windows：.venv\Scripts\activate）
 $ python --version                # 验证
 ```
-→ 运行输出（实测）：`Python 3.12.3`；`sys.prefix` 从系统 `/usr` 变为 `.venv` 的绝对路径（本机实测 `…/pycheck/A/venv_demo`）
+→ 运行输出：`Python 3.12.3`；`sys.prefix` 从系统 `/usr` 变为 `.venv` 的绝对路径（本机实测）
 - **何时用/不用**：每个正式项目必建；临时跑三行验证代码可不动用。
 - **锚点**：**每场宴席一间独立小厨房**——川菜的花椒味不会串到粤菜的汤里；宴席结束（项目删掉）厨房整个撤走。
 - **易错**：Debian/Ubuntu 缺 `python3-venv` 会报 `The virtual environment was not created successfully because ensurepip is not available.`（实测原文）——照提示 `apt install python3.12-venv` 就好。另一坑：忘了 activate 就 pip install，包又装回系统环境。
@@ -211,7 +211,7 @@ $ python --version                # 验证
 $ pip freeze > requirements.txt   # 导出当前环境
 $ pip install -r requirements.txt # 按清单复现
 ```
-→ 运行输出（实测，清单含 `six==1.17.0`）：`[退出码 0] Requirement already satisfied: six==1.17.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 1)) (1.17.0)`
+→ 运行输出：`[退出码 0] Requirement already satisfied: six==1.17.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 1)) (1.17.0)`（实测清单含 `six==1.17.0`）
 - **何时用/不用**：项目交付、上服务器、团队协作必写；一次性小脚本不必。
 - **锚点**：**采购清单**——新厨师（新同事）拿着清单跑一趟市场，就能把厨房备得跟你一模一样。
 - **易错**：把 `pip freeze` 全量清单当手写清单，会装出一堆没用的包甚至冲突；`>=` 可能装到不兼容的新版。
@@ -246,7 +246,7 @@ print(sorted(os.listdir("pkgdemo")))
 print("upper" in dir(str))
 print(str.upper.__doc__)
 ```
-→ 运行输出：`True` 换行 `Return a copy of the string converted to uppercase.`
+→ 运行输出：`True` ⏎ `Return a copy of the string converted to uppercase.`
 - **何时用/不用**：忘方法名时 dir，懂了名字但不知参数时 help；熟练后直接查文档更快。
 - **锚点**：灶台旁的**厨具说明书抽屉**——不知道这把刀（对象）能干什么，拉开抽屉（dir）看清单，再翻对应说明书（help）。
 - **易错**：`help()` 在脚本里输出长文刷屏，应放 REPL 里用；dir 输出按字母序，不代表调用顺序。
@@ -270,7 +270,7 @@ for demo in demos:
     except BaseException as e:
         print(f"{type(e).__name__}: {e}")
 ```
-→ 运行输出（实测四条）：`SyntaxError: invalid syntax (demo.py, line 1)`；`ZeroDivisionError: division by zero`；`NameError: name 'nope' is not defined`；`FileNotFoundError: [Errno 2] No such file or directory: '不存在的文件.txt'`
+→ 运行输出：`SyntaxError: invalid syntax (demo.py, line 1)` ⏎ `ZeroDivisionError: division by zero` ⏎ `NameError: name 'nope' is not defined` ⏎ `FileNotFoundError: [Errno 2] No such file or directory: '不存在的文件.txt'`（四条依次触发）
 - **何时用/不用**：每次报错先自己按"类型→消息→行号"三步读；连读三遍仍不懂再搜/问人。
 - **锚点**：灶台的**报警蜂鸣器**——不同的响法对应不同险情：短促尖叫（SyntaxError=语法当场错）、长鸣（NameError=找不到食材）。
 - **易错**：只盯报错第一行的文件路径发愁，答案其实在最后一行；改错时一次改多处，新错掩盖旧错。
@@ -284,7 +284,7 @@ for demo in demos:
 # test_16.py
 import this
 ```
-→ 运行输出（实测节选）：`The Zen of Python, by Tim Peters / Beautiful is better than ugly. / Explicit is better than implicit.`（全文 20 行）
+→ 运行输出：`The Zen of Python, by Tim Peters` ⏎ `Beautiful is better than ugly.` ⏎ `Explicit is better than implicit.`（节选，全文 19 条格言）
 - **何时用/不用**：入门期读一遍建立审美；争论写法时用它裁决。
 - **锚点**：厨房墙上挂的**灶王爷前的守则牌**——"明火不离人、刀具归位"，新人第一天先拜读。
 - **易错**：把之禅当教条钻牛角尖；它说的是权衡（"Simple is better than complex" 的下一句是"Complex is better than complicated"）。

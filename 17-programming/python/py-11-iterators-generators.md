@@ -27,7 +27,7 @@
   → 运行输出：`True` ｜ `True 可乐 薯片` ｜ `True`
 - **何时用/不用**：写框架代码要分清"接受 iterable 还是 iterator"；日常 for 循环只管用 iterable，无需手动区分。
 - **锚点**：售货机整机（可反复来买）vs 机身上的取货口（一次取一件，取完就空）。
-- **易错**：把 list 直接当迭代器用 `next(list)` 报 `TypeError: 'list' object is not an iterator`
+- **易错**：把 list 直接当迭代器用 `next(list)` 报 `TypeError: 'list' object is not an iterator`。
 - **关联**：`→ PY-11-02：iter() 负责把可迭代变成迭代器` / `→ PY-10-01：这是协议观的完整实例`
 ### PY-11-02 iter() 两种用法
 - **是什么**：`iter(obj)` 把可迭代对象变成迭代器；`iter(可调用, 哨兵)` 反复调用函数直到返回哨兵值。
@@ -44,7 +44,7 @@
   → 运行输出：`A B` ｜ `苹果汁 可乐`
 - **何时用/不用**：流式数据"读到某个值为止"就用双参版（如 `iter(lambda: f.readline(), '')`）；普通容器遍历用单参版即可。
 - **锚点**：开取货口——单参版是给售货机开口子；双参版是雇个供货员一直送，送来"STOP"牌子就辞退。
-- **易错**：双参版忘写哨兵会无限调用
+- **易错**：哨兵写错、永不出现就无限调用；漏写第二参报 TypeError（函数不是可迭代对象）。
 - **关联**：`→ PY-11-03：next() 是取货动作本身`
 ### PY-11-03 next() 与 StopIteration
 - **是什么**：`next(it)` 取下一个值；取完抛 `StopIteration`，传第二个参数可给默认值（不抛异常）。
@@ -158,7 +158,7 @@
   → 运行输出：`1 2 3` ｜ `True`
 - **何时用/不用**：写递推序列（斐波那契、滑动窗口）时用挂起省掉手写状态机；无状态的一次性变换直接用普通函数。
 - **锚点**：售货机断电记忆——货道出到第几件（局部变量 n）来电后原样接着出。
-- **易错**：两个 next 之间修改了外部共享状态，重入时行为诡异
+- **易错**：两个 next 之间修改了外部共享状态，重入时行为诡异。
 - **关联**：`→ PY-11-07：yield 的暂停/恢复机制`
 ### PY-11-09 生成器表达式 Generator Expression
 - **是什么**：`(表达式 for x in ... if ...)` 是生成器表达式（genexp），小括号版"推导式"，产出惰性生成器。
@@ -226,7 +226,7 @@
   → 运行输出：`出货口就绪` ｜ `吐出：可乐` ｜ `吐出：薯片`
 - **何时用/不用**：需要回传通道（简单协程、管道控制）才用 send；单向产数据用 next 就够，别过度设计。
 - **锚点**：投币口——机器吐货（yield）的同时能收硬币（send），投什么吐什么。
-- **易错**：一上来 `g.send("x")` 报 `TypeError: can't send non-None value to a just-started generator`
+- **易错**：一上来 `g.send("x")` 报 `TypeError: can't send non-None value to a just-started generator`。
 - **关联**：`→ PY-11-13：close 是反向的关门信号`
 ### PY-11-13 close() 与 GeneratorExit
 - **是什么**：`gen.close()` 向生成器内注入 `GeneratorExit` 异常使其收尾关闭；关闭后再 next 抛 StopIteration。

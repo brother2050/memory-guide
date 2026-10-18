@@ -22,7 +22,7 @@ def greet(name):            # 铺产线
     print(f"欢迎{name}进厂")
 print(greet("小王"))         # 按启动钮
 ```
-→ 运行输出：欢迎小王进厂 ／ None
+→ 运行输出：`欢迎小王进厂` ⏎ `None`
 - **何时用/不用**：同一逻辑复用 ≥2 次就函数化；只跑一次的三五行脚本直接写。
 - **锚点**：铺流水线——def 铺线登记图纸，调用按绿色启动钮；不按按钮传送带纹丝不动。
 - **易错**：函数体只写 `print` 却去拿返回值，拿到 None（出料口是空的，见 PY-07-17）。
@@ -37,7 +37,7 @@ def add_material(a, b, c):  # 进料口三个工位
 print(add_material(1, 2, 3))
 add_material(1, 2)          # 少上一袋料
 ```
-→ 运行输出：6 ／ 报错：add_material() missing 1 required positional argument: 'c'
+→ 运行输出：`6` ⏎ 报错：`TypeError: add_material() missing 1 required positional argument: 'c'`
 - **何时用/不用**：参数 ≤3 个、含义靠顺序就清楚时用；参数多或同类型易混时改关键字实参（PY-07-05）。
 - **锚点**：进料口三个工位按传送带顺序对号入座——先到先放，放错工位机器照跑、产品报废。
 - **易错**：`sub(2, 1)` 传反不报错但结果相反；防法是点名传参。
@@ -51,7 +51,7 @@ def stamp(label, times=1):  # 预装压印 1 次
     return label * times
 print(stamp("优"), stamp("优", 3))
 ```
-→ 运行输出：优 优优优
+→ 运行输出：`优 优优优`
 - **何时用/不用**：有高频可选配置时用；金额、权限这类必须显式确认的参数别留默认。
 - **锚点**：进料口预装的夹具——常规件直接用默认夹具，特殊件来了才换。
 - **易错**：默认参数必须排在无默认参数右边，`def f(a=1, b)` 是定义期 SyntaxError。
@@ -67,7 +67,7 @@ def add(item, bucket=[]):   # 错：全厂共用一只箱
 print(add("螺丝"))
 print(add("螺母"))          # 螺丝还赖着
 ```
-→ 运行输出：['螺丝'] ／ ['螺丝', '螺母']
+→ 运行输出：`['螺丝']` ⏎ `['螺丝', '螺母']`
 - **何时用/不用**：永远别拿可变对象当默认值；正解 `bucket=None` 占位、函数内 `if bucket is None: bucket=[]` 现造新箱。
 - **锚点**：夹具上粘着上一批的余料——每批料掉进同一夹具越粘越多；None 占位=每次换新夹具。
 - **易错**：想当然以为"每次调用都重跑默认值表达式"；写两行测试一跑就现形。
@@ -81,7 +81,7 @@ def paint(color, area):
     return f"{area}刷{color}"
 print(paint("白", "墙面"), paint(area="墙面", color="白"))
 ```
-→ 运行输出：墙面刷白 墙面刷白
+→ 运行输出：`墙面刷白 墙面刷白`
 - **何时用/不用**：参数 ≥3 个或同类型易混时用；短函数两三个参数，位置传参更紧凑。
 - **锚点**：料箱贴标签、按标签点名进料——喊名字（`color=`）而不是排队号。
 - **易错**：`colour="白"` 报 unexpected keyword argument；位置实参不能跟在关键字实参后面。
@@ -96,7 +96,7 @@ def collect(*items):        # 无标签散料箱
 collect("砂纸", "油漆", "滚筒")
 collect()                   # 空箱也合法
 ```
-→ 运行输出：tuple ('砂纸', '油漆', '滚筒') ／ tuple ()
+→ 运行输出：`tuple ('砂纸', '油漆', '滚筒')` ⏎ `tuple ()`
 - **何时用/不用**：包装器、工具函数收任意个参数时用；固定签名的业务函数明确列形参更好读。
 - **锚点**：`*` 是敞口麻袋——没标签的散料全倒进来，扎口后是一袋（元组）。
 - **易错**：args 是元组不可改（`items[0]=…` 报 TypeError）；名字可任意但惯例 `*args`。
@@ -110,7 +110,7 @@ def order(**options):       # 带标签料箱
     print(type(options).__name__, options)
 order(color="白", style="简约")
 ```
-→ 运行输出：dict {'color': '白', 'style': '简约'}
+→ 运行输出：`dict {'color': '白', 'style': '简约'}`
 - **何时用/不用**：装饰器/包装器透传参数时必备；业务函数滥用会让签名失去约束。
 - **锚点**：`**` 是双层标签料箱——每件料都贴名字（键），开箱按标签取件。
 - **易错**：`func(**{'a': 1})` 等价 `func(a=1)`；与 *args 并存时散料先入麻袋、标签件后入箱。
@@ -125,7 +125,7 @@ def wire(*, length, color): # 星号后必须点名
 print(wire(length=10, color="红"))
 wire(10, "红")              # 想按位置塞
 ```
-→ 运行输出：红电线10米 ／ 报错：wire() takes 0 positional arguments but 2 were given
+→ 运行输出：`红电线10米` ⏎ 报错：`TypeError: wire() takes 0 positional arguments but 2 were given`
 - **何时用/不用**：布尔开关、配置项（如 `*, verbose=False`）强烈建议 keyword-only；教学小例子不必。
 - **锚点**：车间门口的点名窗口——`*` 号是窗口，后面的人必须报名字才放行。
 - **易错**：`def f(*args, mode)` 里 mode 也是 keyword-only（*args 已占位置名额）。
@@ -140,7 +140,7 @@ def cut(size, /, material="木板"):  # 斜杠前只认位置
 print(cut(2))
 cut(size=2)                 # 想点名
 ```
-→ 运行输出：木板2块 ／ 报错：cut() got some positional-only arguments passed as keyword arguments: 'size'
+→ 运行输出：`木板2块` ⏎ 报错：`TypeError: cut() got some positional-only arguments passed as keyword arguments: 'size'`
 - **何时用/不用**：写库/公开 API 想保留改名自由时用；日常业务代码少见，能读懂即可。
 - **锚点**：传送带直通工位——`/` 是直通闸门，料只能顺带进，不收标签。
 - **易错**：`/` 和 `*` 都不是参数名、不占位置，是纯语法记号；3.8 前跑直接 SyntaxError。
@@ -154,7 +154,7 @@ def process(a, b=0, *parts, mode, level=1, **extra):
     return a, b, parts, mode, level, extra
 print(process(1, 2, 3, 4, mode="fast", level=2, tag="X"))
 ```
-→ 运行输出：(1, 2, (3, 4), 'fast', 2, {'tag': 'X'})
+→ 运行输出：`(1, 2, (3, 4), 'fast', 2, {'tag': 'X'})`
 - **何时用/不用**：写复杂签名前默念"位置→斜杠→散料→点名→标签"；简单函数别堆五种。
 - **锚点**：进料总布局图：左门传送带→直通闸→散料口→点名窗→标签仓，单向流动不许逆行。
 - **易错**：`f(*lst, **dct)` 的星号是**调用侧解包**，与定义侧的收集星号是反向动作。
@@ -175,7 +175,7 @@ def workshop():
 workshop()
 print("全局仍是:", tool, "内建可用:", len)
 ```
-→ 运行输出：工位借到: 车间螺丝刀 ／ 全局仍是: 厂仓扳手 内建可用: `<built-in function len>`
+→ 运行输出：`工位借到: 车间螺丝刀` ⏎ `全局仍是: 厂仓扳手 内建可用: <built-in function len>`
 - **何时用/不用**：遇 `NameError`/`UnboundLocalError` 先画四级上报图定位；能用参数传就别用全局变量。
 - **锚点**：工人找工具四级上报：工位抽屉(L)→车间工具间(E)→厂区总仓(G)→全国统配物资(B)，找到即返回，不翻上级。
 - **易错**：函数内对同名变量**赋值**会令它变本地：全局 `x=1` + 函数里 `print(x); x=2` 抛 UnboundLocalError。
@@ -197,7 +197,7 @@ def make():
 inc(); f = make()
 print("厂部账:", count, "车间账:", f(), f())
 ```
-→ 运行输出：厂部账: 1 车间账: 1 2
+→ 运行输出：`厂部账: 1 车间账: 1 2`
 - **何时用/不用**：尽量少用 global（多线程、单测都遭罪）；轻量状态用 nonlocal 闭包或类更稳。
 - **锚点**：改账必须填调拨单——global 报"厂部"，nonlocal 报"上一道车间"，不报单就只算本工位私账。
 - **易错**：`nonlocal` 不能改模块级变量（SyntaxError: no binding for nonlocal），两者不可互换。
@@ -215,7 +215,7 @@ def make_counter():
 c1, c2 = make_counter(), make_counter()
 print(c1(), c1(), c2())
 ```
-→ 运行输出：1 2 1
+→ 运行输出：`1 2 1`
 - **何时用/不用**：轻量状态、定制回调用闭包；状态复杂、需多方法协作用类（→ 见 [py-09](py-09-oop.md)）。
 - **锚点**：工人出厂带走私人工具箱（`__closure__`），箱里的数只有他能改；每招一次工发一只新箱。
 - **易错**：循环里 `[lambda: i for i in range(3)]` 是晚绑定，取出来全返回 2；当场定格写 `lambda i=i: i` → [0, 1, 2]（实测）。
@@ -233,7 +233,7 @@ def fact(n):                # 车间里再开同款车间
     return n * fact(n - 1)
 print(fact(5))
 ```
-→ 运行输出：120
+→ 运行输出：`120`
 - **何时用/不用**：树形/嵌套/分治天然递归；简单线性累加用循环更省内存、更好调试。
 - **锚点**：车间套车间的套娃工序——每层做一半、剩下交给下一层，最里层贴"收工单"才逐层发货。
 - **易错**：出口写成 `if n == 1`（遇 fact(0) 无限递归）；漏写 return 返回 None。
@@ -252,7 +252,7 @@ except RecursionError as e:
     print("报错:", type(e).__name__, "-", e)
 print("默认上限:", sys.getrecursionlimit())
 ```
-→ 运行输出：报错: RecursionError - maximum recursion depth exceeded ／ 默认上限: 1000
+→ 运行输出：`报错: RecursionError - maximum recursion depth exceeded` ⏎ `默认上限: 1000`
 - **何时用/不用**：能写循环的别为炫技用递归；深嵌套数据（JSON 树）用递归时加深度保护或改迭代。
 - **锚点**：厂房限高牌 1000 层——车间嵌套超限楼板塌（栈溢出），限高牌就是 `getrecursionlimit()`。
 - **易错**：把上限调到 10 万"解决"溢出，多半换来段错误或更难查的崩溃。
@@ -267,7 +267,7 @@ parts = [("螺母", 3), ("螺丝", 1)]
 print(square(5))
 print(sorted(parts, key=lambda p: p[1]))   # 码料员按数量码料
 ```
-→ 运行输出：25 ／ [('螺丝', 1), ('螺母', 3)]
+→ 运行输出：`25` ⏎ `[('螺丝', 1), ('螺母', 3)]`
 - **何时用/不用**：作 `key=`、filter/map 的一次性小函数用 lambda；多行、要复用、要调试的逻辑写 def。
 - **锚点**：临时工——不挂工牌（无函数名）、一行活干完就走；排序 key 是"码料员"岗位，也是临时工（`lambda p: p[1]`）。
 - **易错**：`lambda x: return x` 是 SyntaxError（体只能是表达式）；`sorted()` 返回新列表，原地排序用 `list.sort()`。
@@ -286,7 +286,7 @@ print(measure(3), measure(-1))
 a, b = measure(4)           # 拆箱
 print(a, b)
 ```
-→ 运行输出：(3, 6) (None, 0) ／ 4 8
+→ 运行输出：`(3, 6) (None, 0)` ⏎ `4 8`
 - **何时用/不用**：要产出值就必须 return；纯副作用（打印/写文件）函数可无 return，但名字要体现动作。
 - **锚点**：出料口传送带——return 是往带上放件，不放件出厂箱里是 None；`return a, b` 是两件封成一箱（元组=封箱胶带）。
 - **易错**：把 `print(x)` 当 return 是新手第一大坑；解包个数不匹配报 ValueError: too many/not enough values。
@@ -303,7 +303,7 @@ def run(fn, data):          # 函数当进料
     return fn(data)
 print(my_func("python"), run(lambda s: s[::-1], "abc"))
 ```
-→ 运行输出：PYTHON cba
+→ 运行输出：`PYTHON cba`
 - **何时用/不用**：回调、策略选择、map/filter 都靠它；简单直调不必绕一层。
 - **锚点**：机器可贴牌转让——流水线是资产：能过户（赋值）、能当料运进别的车间（传参）、能当产品运出（返回）。
 - **易错**：写 `run(shout(), data)` 多了括号＝把执行结果当函数传；要运"机器"，不是运"产品"。
@@ -339,10 +339,10 @@ print(my_func("python"), run(lambda s: s[::-1], "abc"))
 | PY-07-18 | 一等公民 | 机器贴牌转让 | 贴牌转让 |
 ## ✅ 自测清单（合上本篇，先写再看）
 1. 写 `def join_words(*words, sep="-")`，调用 `join_words("a", "b", "c")` 输出什么？sep 为什么必须点名？
-   > 答案：`a-b-c`；sep 在 *words 后是 keyword-only（PY-07-08）。
+> 答案：`a-b-c`；sep 在 *words 后是 keyword-only（PY-07-08）。
 2. `def f(x, lst=[])` 连续 `f(1)`、`f(2)` 各返回什么？怎么改？
-   > 答案：`[1]` 然后 `[1, 2]`（共享默认箱）；改 `lst=None` + 函数内现造列表（PY-07-04）。
+> 答案：`[1]` 然后 `[1, 2]`（共享默认箱）；改 `lst=None` + 函数内现造列表（PY-07-04）。
 3. 只写 `print("hi")` 的函数调用后返回什么？`return 3, 4` 返回的又是什么？
-   > 答案：None（自动 return None）；元组 `(3, 4)`（PY-07-17）。
+> 答案：None（自动 return None）；元组 `(3, 4)`（PY-07-17）。
 ## 📍 导航
 > [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-06 控制流](py-06-control-flow.md) ｜ ➡️ 下一篇：[py-08 装饰器](py-08-decorators.md)

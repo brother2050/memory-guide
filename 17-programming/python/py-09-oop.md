@@ -1,5 +1,5 @@
 # py-09 面向对象 — 记忆编码
-> **📍 本章导航**：前置 → [py-07 函数](py-07-functions.md) ｜ 相关 → [py-08 装饰器](py-08-decorators.md)·[py-10 魔术方法](py-10-magic-methods.md) ｜ 方法 → [M13](../../方法地图.md#m13)·[M15](../../方法地图.md#m15) ｜ 难度 ⭐⭐⭐ ｜ 阅读 ~12min（约 9k tokens）
+> **📍 本章导航**：前置 → [py-07 函数](py-07-functions.md) ｜ 相关 → [py-08 装饰器](py-08-decorators.md)·[py-10 魔术方法](py-10-magic-methods.md) ｜ 方法 → [M13](../../方法地图.md#m13)·[M15](../../方法地图.md#m15) ｜ 难度 ⭐⭐⭐ ｜ 阅读 ~12min（约 7k tokens）
 >
 > 本章逻辑链：py-07~08 会把"动作"打包复用了 → 本篇解决"数据+动作怎么绑成一个组织"（家族企业：族谱/家规/接班）→ 引出 py-10"给对象装万能遥控器（魔术方法）"。意象域：家族企业（执照/工牌/家训/族谱/编制）。
 
@@ -42,7 +42,7 @@ print(m.who(), Member.who(m))  # 等价的两种叫法
 → 运行输出：我是小王 我是小王
 - **何时用/不用**：实例方法必写 self；类方法用 cls（PY-09-15），静态方法谁都不用。
 - **锚点**：随身工牌"本人"——干活先亮工牌（self），公司才知道这单算谁的。
-- **易错**：定义漏写 self，`m.who("小王")` 报 TypeError: who() takes 1 positional argument but 2 were given。
+- **易错**：定义漏写 self，`m.who("小王")` 报 TypeError: Member.who() takes 1 positional argument but 2 were given。
 - **关联**：→ PY-09-03：__init__ 里的 self.x 就是发工牌
 ### PY-09-03 __init__ 初始化 Constructor Init
 - **是什么**：`__init__` 是实例出生时的入职登记：收构造参数、给实例装初始属性；它不"返回对象"。
@@ -56,7 +56,7 @@ class Member:
 m = Member("小王")
 print(m.name)
 ```
-→ 运行输出：登记小王 ／ 小王
+→ 运行输出：登记小王 ｜ 小王
 - **何时用/不用**：实例需要初始状态就写 __init__；无状态类可省略（默认继承 object 的）。
 - **锚点**：入职登记表——新生儿（实例）一落地就填表（__init__），填完就能上岗。
 - **易错**：__init__ 里 `return 5` 报 TypeError: __init__() should return None, not 'int'（实测）。
@@ -199,7 +199,7 @@ t = Trust(); t.money = 100; print(t.money)
 → 运行输出：100（`t.money = -1` 报 ValueError: 金额不能为负，实测）
 - **何时用/不用**：读时计算/校验/缓存用 property；纯数据存取用普通属性，别过度包装。
 - **锚点**：家族信托柜台——客户以为在查"属性"，实际每次都在柜台（getter）现算现给；存钱先过守门人（setter）验成色。
-- **易错**：只写 getter 时 `t.money = 3` 报 AttributeError: can't set attribute；setter 里赋 `self.money` 会无限递归，须赋 `self._money`。
+- **易错**：只写 getter 时 `t.money = 3` 报 AttributeError: property 'money' of 'Trust' object has no setter；setter 里赋 `self.money` 会无限递归，须赋 `self._money`。
 - **关联**：→ PY-09-10：比名称改写更体面的封装
 
 ## 四、族谱排序：super 与 MRO（口号："请示族长，族谱排辈"）
@@ -250,7 +250,7 @@ try: s.age = 30
 except AttributeError as e: print("报错:", e)
 print(s.name)
 ```
-→ 运行输出：报错: 'Staff' object has no attribute 'age' ／ 小王
+→ 运行输出：报错: 'Staff' object has no attribute 'age' ｜ 小王
 - **何时用/不用**：海量小对象/想锁属性集合用 slots；普通业务类不必（损失灵活性）。
 - **锚点**：家族编制名额——进人（属性）必须有坑位，没编制的（age）连门都进不来。
 - **易错**：带 slots 的子类再定义 `__dict__` 会前功尽弃；slots 与类变量同名互相踩。
@@ -331,7 +331,7 @@ print(Car().run())
 3. `__init__` 里写 `return 5` 会发生什么？
    > 答案：TypeError: __init__() should return None, not 'int'（PY-09-03）。
 4. `t.money = 3` 时若 money 只有 @property 会怎样？怎么修？
-   > 答案：AttributeError: can't set attribute；加 `@money.setter`（PY-09-11）。
+   > 答案：AttributeError: property 'money' of 'Trust' object has no setter；加 `@money.setter`（PY-09-11）。
 5. classmethod 造实例为什么写 `cls(...)` 而不是 `Date(...)`？
    > 答案：cls 指向实际调用的类（含子类），写死 Date 会丢子类（PY-09-15）。
 

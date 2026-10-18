@@ -3,7 +3,7 @@
 > **📍 本章导航**：前置 → [py-13 模块包](py-13-modules-packages.md) ｜ 相关 → [py-12 异常](py-12-exceptions.md)·[py-17 类型](py-17-typing-modern.md) ｜ 方法 → [M13](../../方法地图.md#m13)·[M15](../../方法地图.md#m15) ｜ 难度 ⭐⭐ ｜ 阅读 ~13min（约 9k tokens）
 >
 > 本章逻辑链：py-19 会优化单个程序了 → 本篇解决"项目怎么摆、质量怎么守、怎么交给别人维护" → 全库收尾，衔接 py-21 易混表与 py-22 复习系统。意象域：**4S 店质检流水线**（功能分区/质检单/广播站/出厂检测线），锚点不越域。
-> 工具链输出全部实测（Python 3.12.3 ／ pytest 9.1.1 ／ ruff 0.16.10 ／ mypy 2.4.0 ／ poetry 2.5.1 ／ uv 0.12.23）。
+> 工具链输出全部实测（Python 3.12.3 ／ pytest 9.1.1 ／ ruff 0.16.10 ／ black 26.10.0 ／ mypy 2.4.0 ／ poetry 2.5.1 ／ uv 0.12.23）。
 
 ## 🗺️ 本篇知识地图
 | 组块（口号） | 成员 | 一句话 |
@@ -27,11 +27,11 @@ demo_proj/
 │   └── core.py
 └── tests/test_core.py    # 测试
 ```
-→ 运行输出：`PYTHONPATH=src python3 -c "from mymath.core import add; print('add(2, 3) =', add(2, 3))"` 输出 `add(2, 3) = 5`；`python3 -m pytest -q` 输出 `1 passed in 0.16s`
+→ 运行输出：`PYTHONPATH=src python3 -c "from mymath.core import add; print('add(2, 3) =', add(2, 3))"` 输出 `add(2, 3) = 5`；`python3 -m pytest -q` 输出 `1 passed in 0.19s`（耗时浮动）
 - **何时用/不用**：要做成包/多人协作必上；一次性分析脚本随意，但测试还是要写。
 - **锚点**：**4S 店功能分区**——展厅（src）、车间（tests）、库房（data）、客户区（docs）各归各位，进店的人不用问路。
 - **易错**：测试文件放 src 里会被当成源码发布；缺 `__init__.py`（或未配 pythonpath）导入直接 ModuleNotFoundError。
-- **关联**：`→ PY-13-03：包与 __init__.py 机制`　`→ PY-20-02：tests/ 里放什么`
+- **关联**：`→ PY-13-07：包与 __init__.py 机制`　`→ PY-20-02：tests/ 里放什么`
 
 ## 二、质检单三件套（pytest）
 ### PY-20-02 pytest 基础
@@ -46,12 +46,12 @@ def test_add():
 def test_add_negative():
     assert add(-1, 1) == 0
 ```
-→ 运行输出（`python3 -m pytest -q test_calc.py`）：`2 passed in 0.15s`；故意写错期望值时输出（截取核心行）：
+→ 运行输出（`python3 -m pytest -q test_calc.py`，耗时浮动）：`2 passed in 0.16s`；故意写错期望值时输出（截取核心行）：
 ```
 >       assert add(1, 2) == 4
 E       assert 3 == 4
 E        +  where 3 = add(1, 2)
-1 failed in 0.10s
+1 failed in 0.07s
 ```
 - **何时用/不用**：写函数就配测试，越早写越省；纯探索性分析可以后补。
 - **锚点**：**质检单**——每辆车（函数）过检一项打一个勾（assert），不合格项直接圈出实测值和标准值。
@@ -73,7 +73,7 @@ def test_sorted(sample_list):      # 参数名 = fixture 名，自动注入
 def test_len(sample_list):
     assert len(sample_list) == 3
 ```
-→ 运行输出（`pytest -q -s test_fix.py`）：`  [准备] 造一份测试数据` / `.  [准备] 造一份测试数据` / `.` / `2 passed in 0.15s`（打印与进度点交错）
+→ 运行输出（`pytest -q -s test_fix.py`，耗时浮动）：`  [准备] 造一份测试数据` ／ `.  [准备] 造一份测试数据` ／ `.` ／ `2 passed in 0.05s`（打印与进度点交错）
 - **何时用/不用**：任何"测试前要先造的东西"都做成 fixture；一次性的简单值直接在用例里写更直白。
 - **锚点**：**准备工位**——每辆车开上工位，技师先铺护套、摆工具（fixture），检测完工位复原给下一辆。
 - **易错**：fixture 名写错（不匹配）会报"fixture not found"；在 fixture 里藏断言会让失败点难找。
@@ -89,7 +89,7 @@ import pytest
 def test_is_even(n, expected):
     assert (n % 2 == 0) == expected
 ```
-→ 运行输出（`pytest -q test_param.py`）：`4 passed in 0.05s`
+→ 运行输出（`pytest -q test_param.py`）：`4 passed in 0.10s`（耗时浮动）
 - **何时用/不用**：同一函数的边界值/典型值批量测；逻辑不同的用例别硬塞进一个参数化。
 - **锚点**：**批量过检线**——同款检测项目（如灯光检）连过 4 边车，每辆车一张成绩单。
 - **易错**：参数组全用同一个可变对象（如一个 list），某用例改了会影响后面的组（同 PY-17-07 的共享坑）。
@@ -110,11 +110,11 @@ def test_parse_bad_message():
     with pytest.raises(ValueError, match="invalid literal"):
         parse_age("abc")
 ```
-→ 运行输出（`pytest -q test_age.py`）：`3 passed in 0.07s`
+→ 运行输出（`pytest -q test_age.py`）：`3 passed in 0.06s`（耗时浮动）
 - **何时用/不用**：函数会抛异常就必须测异常分支（PY-12 的 try/except 同理）；不抛异常的纯计算不需要。
 - **锚点**：**故意踩刹车测故障码**——质检员故意踩一脚刹车，看仪表盘是不是报出预期的故障码（异常类型+文案都对才算过）。
 - **易错**：`pytest.raises` 包住的代码太多，别的行抛异常也被当成"测过"，掩盖真问题。
-- **关联**：`→ PY-12-05：异常层级决定 except 精度`　`→ PY-20-02：断言家族`
+- **关联**：`→ PY-12-03：异常层级决定 except 精度`　`→ PY-20-02：断言家族`
 
 ## 三、广播站与开关牌（logging 与配置）
 ### PY-20-06 logging 分级
@@ -130,7 +130,7 @@ logging.warning("警告：机油剩余 10%")
 logging.error("错误：刹车片磨损超限")
 logging.critical("致命：发动机无法启动")
 ```
-→ 运行输出（DEBUG 一行被过滤）：`INFO:root:信息：车辆进场登记` / `WARNING:root:警告：机油剩余 10%` / `ERROR:root:错误：刹车片磨损超限` / `CRITICAL:root:致命：发动机无法启动`
+→ 运行输出（DEBUG 一行被过滤）：`INFO:root:信息：车辆进场登记` ／ `WARNING:root:警告：机油剩余 10%` ／ `ERROR:root:错误：刹车片磨损超限` ／ `CRITICAL:root:致命：发动机无法启动`
 - **何时用/不用**：程序里的观察信息一律 logging；给最终用户看的正式输出才用 print。
 - **锚点**：车间**广播喇叭分级**——小事（调试）不广播，进场（信息）念一条，故障（警告/错误）全厂响。
 - **易错**：用 print 排查问题，上线删漏一行；`basicConfig` 重复调用不生效（要先 `basicConfig(force=True)` 或用 handler）。
@@ -150,11 +150,11 @@ logger.addHandler(console); logger.addHandler(fileh)
 logger.info("车辆进场登记")
 logger.error("检测到故障码 P0300")
 ```
-→ 运行输出：`09:39:04 INFO     车辆进场登记` / `09:39:04 ERROR    检测到故障码 P0300`（时间戳为运行时刻）；文件内容同这两行
+→ 运行输出：`09:39:04 INFO     车辆进场登记` ／ `09:39:04 ERROR    检测到故障码 P0300`（时间戳为运行时刻）；文件内容同这两行
 - **何时用/不用**：正式项目用 dictConfig/yaml 配置更整洁；小脚本 `basicConfig` 够用。
 - **锚点**：**广播站三件套**——广播室里：发话的部门（logger）对着喇叭（console handler）和录音机（file handler）念统一格式的播音稿（formatter）。
 - **易错**：重复 `addHandler` 导致日志打两遍；忘了 `setFormatter` 输出没有时间没法排障。
-- **关联**：`→ PY-20-06：分级是门槛`　`→ PY-14-12：logging 标准库概览`
+- **关联**：`→ PY-20-06：分级是门槛`　`→ PY-14-11：logging 标准库概览`
 
 ### PY-20-08 配置管理
 - **是什么**：把"环境相关"的值（数据库地址、开关）交给环境变量/配置文件，代码只读配置对象。
@@ -176,14 +176,14 @@ print("环境变量覆盖(服务器):", load_settings())
 - **何时用/不用**：换环境就变的值都进配置；业务常量（如税率表）放代码或数据文件即可。
 - **锚点**：**工位开关牌**——同一个工位，白天/夜班插不同的开关牌（环境变量），设备（代码）不用改装。
 - **易错**：配置在 import 时读一次就缓存，运行中改环境变量不生效；调试开关写死 True 忘了关。
-- **关联**：`→ PY-17-07：Settings 用 frozen dataclass 防误改`　`→ PY-15-05：配置文件读取`
+- **关联**：`→ PY-17-07：Settings 用 frozen dataclass 防误改`　`→ PY-15-11：配置文件读取`
 
 ## 四、出厂检测线（工具链）
 ### PY-20-09 ruff / black / mypy 三件套
 - **是什么**：出厂前三道检测线：`ruff` 查错误与坏味道（lint）、`black` 统一格式（format）、`mypy` 验类型（→ PY-17-12）。
 - **为什么**：痛点：代码风格争论浪费时间，低级错误流到线上 → 机制：机器按规则逐行检查，风格问题自动改、错误问题点名报 → 行为：同一份"有毛病"文件三件套各报各的 → 边界：ruff/black 管形式不管逻辑，mypy 管类型不管算法。
 - **怎么写**：对故意写坏的 `test_49.py`（未用导入、格式乱、类型错）：
-→ 运行输出：
+→ 运行输出（截取核心行）：
 ```
 $ ruff check test_49.py
 I001 [*] Import block is un-sorted or un-formatted
@@ -197,7 +197,7 @@ $ mypy test_49.py
 test_49.py:7: error: Incompatible types in assignment (expression has type "str", variable has type "int")  [assignment]
 Found 1 error in 1 file (checked 1 source file)
 ```
-改对后（`test_49b.py`）三线全绿：`All checks passed!` / `All done! ✨ 🍰 ✨`＋`1 file would be left unchanged.` / `Success: no issues found in 1 source file`
+改对后（`test_49b.py`）三线全绿：`All checks passed!` ／ `All done! ✨ 🍰 ✨`＋`1 file would be left unchanged.` ／ `Success: no issues found in 1 source file`
 - **何时用/不用**：正式项目全上并接入 CI；临时脚本至少跑 ruff。
 - **锚点**：**出厂三道检测线**——外观检（ruff 查毛病）、抛光线（black 拉平格式）、底盘测功机（mypy 验类型），三关都绿才准出厂。
 - **易错**：把 black 的格式建议当语法错误去改逻辑；mypy 报错就随手 `# type: ignore` 掩盖。
@@ -232,7 +232,7 @@ Found 1 error in 1 file (checked 1 source file)
 - **何时用/不用**：新项目/CI 提速强烈推荐；已深度绑定 poetry 的存量项目别中途换轨。
 - **锚点**：**极速配件物流**——普通物流（pip）走陆运，uv 是同城闪送：下单到装车毫秒级。
 - **易错**：uv 默认不激活环境，直接 `python` 仍用系统解释器，要用 `uv run` 或指定 `--python`。
-- **关联**：`→ PY-13-08：venv/virtualenv 的原理`　`→ PY-20-10：poetry 对照`
+- **关联**：`→ PY-13-16：venv/virtualenv 的原理`　`→ PY-20-10：poetry 对照`
 
 ## 五、自动年检与排故（CI 与调试）
 ### PY-20-12 CI 持续集成概念
@@ -250,7 +250,7 @@ jobs:
       - run: pip install -e . pytest ruff black mypy
       - run: ruff check . && black --check . && mypy . && pytest -q
 ```
-→ 运行输出：`python3 -m pytest -q test_calc.py` 输出 `2 passed in 0.15s`；三件套输出见 PY-20-09
+→ 运行输出：`python3 -m pytest -q test_calc.py` 输出 `2 passed in 0.16s`（耗时浮动）；三件套输出见 PY-20-09
 - **何时用/不用**：任何多人项目第一天就接 CI；纯本地一次性脚本不用。
 - **锚点**：**自动年检流水线**——车（代码）每次进厂（提交）都自动上一遍检测线，红灯不放行出厂（合并）。
 - **易错**：CI 里"先跳过测试"图快，流水线退化成摆设；只在本地跑测试不跑三件套。
@@ -274,7 +274,7 @@ jobs:
 - **何时用/不用**：三五分钟的小 bug 用①；要留档/线上用②；断点级排查用③；三板斧都不行再上 cProfile（PY-19-08）。
 - **锚点**：**排故三板斧**——听异响（print 一听）、装行车记录仪（logging 留档）、上举升机逐件拆检（pdb 单步）。
 - **易错**：pdb 里 `n`（下一行）和 `s`（进函数）混用，追进底层库出不来（用 `u`/`q` 退出）；调试完忘删 print。
-- **关联**：`→ PY-20-06：logging 分级`　`→ PY-12-07：traceback 是排故第一现场`
+- **关联**：`→ PY-20-06：logging 分级`　`→ PY-01-15：traceback 是排故第一现场`
 
 ## ⚔️ 对比消混表
 | 易混点 | A | B | 判据 | 一句口诀 |
