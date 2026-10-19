@@ -279,7 +279,7 @@ asyncio.run(main())
 - **何时用/不用**：调外部接口、读外部资源必设超时；本地纯计算不需要。
 - **锚点**：绿灯**倒计时牌**——倒计时归零还没过路口的车被拦下（取消）。
 - **易错**：`TimeoutError` 在 3.11+ 即 `asyncio.TimeoutError`；捕获写成 `except Exception` 会吞掉别的错。
-- **关联**：`→ PY-18-11：gather 也接受 timeout 参数`　`→ PY-12-01：超时是异常要处理`
+- **关联**：`→ PY-18-11：wait_for 常包住 gather 给整组限时`　`→ PY-12-01：超时是异常要处理`
 
 ### PY-18-13 实战选型：IO 密集 vs CPU 密集
 - **是什么**：并发工具选择表：按"任务在等 IO 还是烧 CPU"选线程/协程/进程。
@@ -293,9 +293,10 @@ async def fetch(i): await asyncio.sleep(0.2); return i   # 模拟 IO
 async def io_all():
     t0 = time.perf_counter(); await asyncio.gather(*(fetch(i) for i in range(5)))   # IO → 协程
     print(f"IO 密集 5 任务(协程): {time.perf_counter()-t0:.2f}s（≈0.2s）")
-asyncio.run(io_all()); t0 = time.perf_counter()
-with ProcessPoolExecutor(2) as ex: r = ex.submit(cpu_heavy, 8_000_000).result()    # CPU → 进程池
-print(f"CPU 密集单任务(进程池): {time.perf_counter()-t0:.2f}s", "| 结果非零:", r > 0)
+if __name__ == "__main__":            # spawn 系统防递归（同 PY-18-07）
+    asyncio.run(io_all()); t0 = time.perf_counter()
+    with ProcessPoolExecutor(2) as ex: r = ex.submit(cpu_heavy, 8_000_000).result()    # CPU → 进程池
+    print(f"CPU 密集单任务(进程池): {time.perf_counter()-t0:.2f}s", "| 结果非零:", r > 0)
 ```
 → 运行输出：`IO 密集 5 任务(协程): 0.20s（≈0.2s）` ／ `CPU 密集单任务(进程池): 0.42s | 结果非零: True`（耗时随机器浮动）
 - **何时用/不用**：照对照板选；拿不准先写单线程，用 py-19 的 profiling 找到瓶颈再换。
@@ -325,7 +326,7 @@ except* RuntimeError as eg: print("全组回场:", [str(e) for e in eg.exception
 - **何时用/不用**：一组协程要"同生共死"（批量请求、并行 IO 编组）就用；只是并行几个无关联任务且不关心取消，`gather` 更短。
 - **锚点**：调度中心的**车队编组发车**——编了组的车同进同出，一车抛锚全组回场点名（ExceptionGroup 就是回场点名簿）。
 - **易错**：捕获要用 `except*`（星号）拿 `ExceptionGroup`，普通 `except RuntimeError` 接不到；组内任务抛错会取消其余任务，别指望"坏车不影响好车"（要隔离就各自开组）。
-- **关联**：→ PY-18-11：gather/create_task 是散车发车，TaskGroup 是编组发车 ｜ → PY-12-09：ExceptionGroup 的展开读法同异常链思路。
+- **关联**：`→ PY-18-11：gather/create_task 是散车发车，TaskGroup 是编组发车`　`→ PY-12-09：ExceptionGroup 的展开读法同异常链思路`
 
 ## 🆕 版本前沿（3.13/3.14）
 

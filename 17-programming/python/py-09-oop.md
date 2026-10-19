@@ -23,7 +23,7 @@ class Workshop:               # 注册执照
 w = Workshop()                # 开一家分公司
 print(type(w).__name__, w.run())
 ```
-→ 运行输出：Workshop 开工
+→ 运行输出：`Workshop 开工`
 - **何时用/不用**：数据+行为强绑定、要造多个同类对象时用类；一次性脚本用 py-07 的函数更轻。
 - **锚点**：注册一张家族企业执照（class），照执照开出一家家分公司（实例）；执照本身不开门营业。
 - **易错**：类体里的方法不调用永不执行；`Workshop.run()` 少给 self 报 TypeError。
@@ -39,10 +39,10 @@ class Member:
 m = Member("小王")
 print(m.who(), Member.who(m))  # 等价的两种叫法
 ```
-→ 运行输出：我是小王 我是小王
+→ 运行输出：`我是小王 我是小王`
 - **何时用/不用**：实例方法必写 self；类方法用 cls（PY-09-15），静态方法谁都不用。
 - **锚点**：随身工牌"本人"——干活先亮工牌（self），公司才知道这单算谁的。
-- **易错**：定义漏写 self，`m.who("小王")` 报 TypeError: Member.who() takes 1 positional argument but 2 were given。
+- **易错**：定义漏写 self（写成 `def who(name)`），`m.who("小王")` 报 TypeError: Member.who() takes 1 positional argument but 2 were given。
 - **关联**：→ PY-09-03：__init__ 里的 self.x 就是发工牌
 ### PY-09-03 __init__ 初始化 Constructor Init
 - **是什么**：`__init__` 是实例出生时的入职登记：收构造参数、给实例装初始属性；它不"返回对象"。
@@ -56,7 +56,7 @@ class Member:
 m = Member("小王")
 print(m.name)
 ```
-→ 运行输出：登记小王 ｜ 小王
+→ 运行输出：`登记小王` ｜ `小王`
 - **何时用/不用**：实例需要初始状态就写 __init__；无状态类可省略（默认继承 object 的）。
 - **锚点**：入职登记表——新生儿（实例）一落地就填表（__init__），填完就能上岗。
 - **易错**：__init__ 里 `return 5` 报 TypeError: __init__() should return None, not 'int'（实测）。
@@ -73,7 +73,7 @@ a, b = Member("甲", 100), Member("乙")
 a.savings += 50
 print(a.savings, b.savings)
 ```
-→ 运行输出：150 0
+→ 运行输出：`150 0`
 - **何时用/不用**：对象独有的数据用实例变量；全族共享数据用类变量（PY-09-05）。
 - **锚点**：私房钱——各人揣各人的兜，甲加了 50，乙的兜纹丝不动。
 - **易错**：方法里写 `name = x`（漏 self.）只是本地变量，出方法就消失。
@@ -89,7 +89,7 @@ f1, f2 = Family(), Family()
 f1.assets.append("祖宅"); f2.motto = "耕读传家"   # 共享 vs 遮蔽
 print(f2.assets, f1.motto, f2.motto)
 ```
-→ 运行输出：['祖宅'] 勤俭持家 耕读传家
+→ 运行输出：`['祖宅'] 勤俭持家 耕读传家`
 - **何时用/不用**：常量/共享配置用类变量；每对象数据用实例变量，永远别拿可变类变量当 per-instance 数据。
 - **锚点**：家训匾挂祠堂全族看一块匾；祖产账本谁记一笔全族可见；子孙在自家门口挂新门牌（遮蔽）只盖自己家。
 - **易错**：类里 `assets = []` 当默认值用＝共享账本（与 PY-07-04 可变默认同坑）；以为 `f.motto=x` 改了家训。
@@ -108,7 +108,7 @@ class Branch(Family):         # 分号挂总号招牌
 b = Branch()
 print(b.brand(), b.sell())
 ```
-→ 运行输出：王氏字号 卖货
+→ 运行输出：`王氏字号 卖货`
 - **何时用/不用**：真有 is-a 关系（分号是家族企业）才继承；只是 has-a 用组合（PY-09-16）。
 - **锚点**：分号开张挂总号招牌——没写的本事（brand）沿族谱向上找，总号的照用。
 - **易错**：父类方法改签名子类全崩；继承层级超过 2~3 层就该怀疑设计。
@@ -125,7 +125,7 @@ class Branch(Family):
         return "新规：勤俭+创新"
 print(Family().rule(), Branch().rule())
 ```
-→ 运行输出：祖训：勤俭 新规：勤俭+创新
+→ 运行输出：`祖训：勤俭 新规：勤俭+创新`
 - **何时用/不用**：行为确实要变才重写；只加不改就别动父类方法名。
 - **锚点**：接班人修订家规——新版盖过旧版，老宅（父类实例）还按祖训办。
 - **易错**：重写时拼错方法名（`ruel`）不报错，等于悄悄新增了一个没人调的方法。
@@ -142,7 +142,7 @@ class Online(Branch):
 shops = [Branch(), Online()]     # 同一条家规，各房各执行
 print(" ".join(s.rule() for s in shops))
 ```
-→ 运行输出：勤俭 快送
+→ 运行输出：`勤俭 快送`
 - **何时用/不用**：一族对象"统一接口、各自实现"时用；分支极少时直接写 if 更直白。
 - **锚点**：同一条"勤俭"家训，各房执行各的——族长喊"按家规办"，每家做法不同但接口一致。
 - **易错**：以为多态必须继承才成立；任何有 `rule()` 的对象都能进这个循环。
@@ -158,7 +158,7 @@ b = Branch()
 print(isinstance(b, Branch), isinstance(b, Family),
       issubclass(Branch, Family), type(b) is Branch)
 ```
-→ 运行输出：True True True True
+→ 运行输出：`True True True True`
 - **何时用/不用**：类型分流/断言用 isinstance；想写"多分支 isinstance 链"先反省是否该用多态（PY-09-08）。
 - **锚点**：查户口验族谱——isinstance 认"族谱上有名的都算"，type 只认身份证号一字不差。
 - **易错**：`isinstance(True, int)` 为 True（bool 是 int 子类），判整数会被布尔混入。
@@ -177,7 +177,7 @@ class Account:
 a = Account()
 print(a._note, a._Account__safe)
 ```
-→ 运行输出：内务 账本（`a.__safe` 报 AttributeError: 'Account' object has no attribute '__safe'，实测）
+→ 运行输出：`内务 账本`（`a.__safe` 报 AttributeError: 'Account' object has no attribute '__safe'，实测）
 - **何时用/不用**：外部不该碰的状态用 __x；同包协作/子类要用的用 _x；想真控读写用 property（PY-09-11）。
 - **锚点**：_ 是贴"内务"标签的柜子（挡君子），__ 是带暗格的保险柜（钥匙孔叫 _Account__safe）。
 - **易错**：子类访问 `self.__x` 会因改名找不到父类私有属性；`__x` 在类体内外含义不同。
@@ -196,7 +196,7 @@ class Trust:
         self._money = v
 t = Trust(); t.money = 100; print(t.money)
 ```
-→ 运行输出：100（`t.money = -1` 报 ValueError: 金额不能为负，实测）
+→ 运行输出：`100`（`t.money = -1` 报 ValueError: 金额不能为负，实测）
 - **何时用/不用**：读时计算/校验/缓存用 property；纯数据存取用普通属性，别过度包装。
 - **锚点**：家族信托柜台——客户以为在查"属性"，实际每次都在柜台（getter）现算现给；存钱先过守门人（setter）验成色。
 - **易错**：只写 getter 时 `t.money = 3` 报 AttributeError: property 'money' of 'Trust' object has no setter；setter 里赋 `self.money` 会无限递归，须赋 `self._money`。
@@ -215,7 +215,7 @@ class Branch(Family):
         return "接班+" + super().rule()   # 请示族长接着办
 print(Branch().rule())
 ```
-→ 运行输出：接班+祖训
+→ 运行输出：`接班+祖训`
 - **何时用/不用**：重写+扩展父类行为必用 super；单继承里 `Family.rule(self)` 虽等价但多继承下会失效。
 - **锚点**：到家祠请示族长——接班人先办自己的新规矩，再按族谱往上问祖训（super）。
 - **易错**：漏写 super 会"断了祖训"（父类逻辑丢失）；`super()` 括号不能漏（3.x 必须写 super()）。
@@ -231,7 +231,7 @@ class C(A): pass
 class D(B, C): pass
 print([cls.__name__ for cls in D.__mro__])
 ```
-→ 运行输出：['D', 'B', 'C', 'A', 'object']
+→ 运行输出：`['D', 'B', 'C', 'A', 'object']`
 - **何时用/不用**：多继承/混入（mixin）排查"调了谁的实现"必查 __mro__；单继承不用管。
 - **锚点**：族谱长幼排序——族长（D）先问大房（B）再问二房（C）最后到共同祖先（A），排序固定不乱。
 - **易错**：`class D(C, B)` 悄悄换了查找优先级；MRO 无法线性化时创建类直接抛 TypeError。
@@ -250,7 +250,7 @@ try: s.age = 30
 except AttributeError as e: print("报错:", e)
 print(s.name)
 ```
-→ 运行输出：报错: 'Staff' object has no attribute 'age' ｜ 小王
+→ 运行输出：`报错: 'Staff' object has no attribute 'age'` ｜ `小王`
 - **何时用/不用**：海量小对象/想锁属性集合用 slots；普通业务类不必（损失灵活性）。
 - **锚点**：家族编制名额——进人（属性）必须有坑位，没编制的（age）连门都进不来。
 - **易错**：带 slots 的子类再定义 `__dict__` 会前功尽弃；slots 与类变量同名互相踩。
@@ -269,7 +269,7 @@ class Date:
     def valid(s): return len(s.split("-")) == 3
 d = Date.from_text("2026-10-06"); print(d.y, Date.valid("2026-10-06"))
 ```
-→ 运行输出：2026 True
+→ 运行输出：`2026 True`
 - **何时用/不用**：多入口构造用 classmethod；纯工具函数用 staticmethod 或干脆放模块里。
 - **锚点**：classmethod=家族大会（cls 是全族代表，开完会发新成员）；staticmethod=外聘顾问（挂着公司名，其实不进族谱）。
 - **易错**：classmethod 里写 `return Date(...)` 丢子类，须写 `return cls(...)`；staticmethod 没有任何隐式参数。
@@ -287,7 +287,7 @@ class Car:
     def run(self): return "车动了+" + self.engine.power()
 print(Car().run())
 ```
-→ 运行输出：车动了+电机
+→ 运行输出：`车动了+电机`
 - **何时用/不用**：默认优先组合；确有稳定 is-a 关系且要多态才继承（"组合优于继承"）。
 - **锚点**：联姻办合资公司（组合，装外姓电机）vs 子承父业（继承，挂祖传招牌）——能合作不收养。
 - **易错**：为复用一个方法继承大类，父类一改全族遭殃；组合件没在 __init__ 装配就 AttributeError。

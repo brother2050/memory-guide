@@ -187,4 +187,4 @@ print("第3次 [100]      :", avg_score([100]))
    > 答案：[../../templates/记忆训练进度追踪表.md](../../templates/记忆训练进度追踪表.md)；记每日+周月总结，重点看趋势。
 
 ## 📍 导航
-> [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-21 易错与面试](py-21-pitfalls-interview.md) ｜ ➡️ 下一篇：无（收官篇，回 [INDEX](INDEX.md) 走阶段路径）
+> [返回 python/INDEX](INDEX.md) ｜ ⬅️ 上一篇：[py-21 易错与面试](py-21-pitfalls-interview.md) ｜ ➡️ 下一篇：[py-23 记忆体系总纲](py-23-memory-system.md)（收官篇，回 [INDEX](INDEX.md) 走阶段路径）

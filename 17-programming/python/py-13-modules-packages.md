@@ -327,7 +327,7 @@ uv pip install --python .venvuv/bin/python six
 ## ✅ 自测清单（合上本篇，先写再看）
 1. （写代码）`lib.py`（`def f(): return 1`、`_hidden = 2`），三种 import 各调一次 `f()`。
 > 答案：`import lib; lib.f()`／`from lib import f; f()`／`import lib as L; L.f()`；`import *` 拿不到 `_hidden`。
-2. （是什么）`import story` 两遍：story.py 的 `__name__` 是什么、顶层 `print` 打几遍？改了 story.py 怎么立即生效？
+2. （是什么）`import story` 两遍：story.py 被导入/直接运行时 `__name__` 各是什么、顶层 `print` 打几遍？改了 story.py 怎么立即生效？
 > 答案：`story`／`__main__`；顶层只打一遍（sys.modules 缓存）；`importlib.reload(story)` 或重启。
 3. （说机制）`from .tools import hello` 写在顶层脚本为何必报错？`ModuleNotFoundError: No module named 'mylib'` 是哪两个原因？
 > 答案：① 脚本无 `__package__`，报 `attempted relative import with no known parent package`，改 `from mylib.tools import hello`；② mylib 不在 `sys.path` 或位置不对（项目根 `python -m`）。

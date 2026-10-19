@@ -31,7 +31,7 @@ demo_proj/
 - **何时用/不用**：要做成包/多人协作必上；一次性分析脚本随意，但测试还是要写。
 - **锚点**：**4S 店功能分区**——展厅（src）、车间（tests）、库房（data）、客户区（docs）各归各位，进店的人不用问路。
 - **易错**：测试文件放 src 里会被当成源码发布；缺 `__init__.py`（或未配 pythonpath）导入直接 ModuleNotFoundError。
-- **关联**：`→ PY-13-07：包与 __init__.py 机制`　`→ PY-20-02：tests/ 里放什么`
+- **关联**：`→ PY-13-07：__init__.py 的三重身份`　`→ PY-20-02：tests/ 里放什么`
 
 ## 二、质检单三件套（pytest）
 ### PY-20-02 pytest 基础
@@ -133,7 +133,7 @@ logging.critical("致命：发动机无法启动")
 → 运行输出（DEBUG 一行被过滤）：`INFO:root:信息：车辆进场登记` ／ `WARNING:root:警告：机油剩余 10%` ／ `ERROR:root:错误：刹车片磨损超限` ／ `CRITICAL:root:致命：发动机无法启动`
 - **何时用/不用**：程序里的观察信息一律 logging；给最终用户看的正式输出才用 print。
 - **锚点**：车间**广播喇叭分级**——小事（调试）不广播，进场（信息）念一条，故障（警告/错误）全厂响。
-- **易错**：用 print 排查问题，上线删漏一行；`basicConfig` 重复调用不生效（要先 `basicConfig(force=True)` 或用 handler）。
+- **易错**：用 print 排查问题，上线删漏一行；`basicConfig` 重复调用不生效（重配需 `force=True` 或改用 handler）。
 - **关联**：`→ PY-20-07：喇叭怎么接线`　`→ PY-20-13：调试第②法`
 
 ### PY-20-07 logging 配置：logger/handler/formatter
@@ -176,7 +176,7 @@ print("环境变量覆盖(服务器):", load_settings())
 - **何时用/不用**：换环境就变的值都进配置；业务常量（如税率表）放代码或数据文件即可。
 - **锚点**：**工位开关牌**——同一个工位，白天/夜班插不同的开关牌（环境变量），设备（代码）不用改装。
 - **易错**：配置在 import 时读一次就缓存，运行中改环境变量不生效；调试开关写死 True 忘了关。
-- **关联**：`→ PY-17-07：Settings 用 frozen dataclass 防误改`　`→ PY-15-11：配置文件读取`
+- **关联**：`→ PY-17-07：Settings 用 frozen dataclass 防误改`　`→ PY-15-11：json 文件读写`
 
 ## 四、出厂检测线（工具链）
 ### PY-20-09 ruff / black / mypy 三件套
