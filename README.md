@@ -533,7 +533,7 @@ python3 md2pdf_weasy.py --resume
 python3 md2pdf_weasy.py --out 记忆指南-完整版.pdf --batch-size 40
 ```
 
-- 输出默认在 `pdf_output/记忆指南-完整版.pdf`；加 `--out 记忆指南-完整版.pdf` 可输出到仓库根目录更新内置 PDF。
+- 输出默认在 `pdf_output/记忆指南-完整版.pdf`；PDF 仅本地生成，不入库（与 md 内容重复，.gitignore 已排除根目录 PDF）。
 - 失败文件清单记录在 `pdf_output/failed_files.txt`，构建细节见 [pdf_parts/README.md](pdf_parts/README.md)。
 
 ### 并行生成（推荐）
