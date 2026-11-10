@@ -9,21 +9,21 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [03-vocab-concept-01.md](03-vocab-concept-01.md) | 记忆概念 | ⭐ |
-| 2 | [03-vocab-chengyu-01.md](03-vocab-chengyu-01.md) | 成语记忆（基础） | ⭐⭐ |
-| 3 | [03-vocab-chengyu-02.md](03-vocab-chengyu-02.md) | 成语记忆（进阶） | ⭐⭐ |
-| 4 | [03-vocab-similar-01.md](03-vocab-similar-01.md) | 易混词辨析 | ⭐⭐ |
-| 5 | [03-vocab-poetry-01.md](03-vocab-poetry-01.md) | 诗词记忆 | ⭐⭐ |
-| 6 | [03-vocab-wordroot-01.md](03-vocab-wordroot-01.md) | 字根记忆 | ⭐⭐ |
-| 7 | [03-vocab-dialect-01.md](03-vocab-dialect-01.md) | 方言记忆 | ⭐⭐ |
-| 8 | [03-vocab-list-01.md](03-vocab-list-01.md) | 词汇清单 | ⭐⭐ |
-| 9 | [03-vocab-story-chain-01.md](03-vocab-story-chain-01.md) | 故事链法 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [03-vocab-concept-01.md](03-vocab-concept-01.md) | 记忆概念 | ⭐⭐ | ~12min |
+| 2 | [03-vocab-chengyu-01.md](03-vocab-chengyu-01.md) | 成语记忆（基础） | ⭐⭐ | ~12min |
+| 3 | [03-vocab-chengyu-02.md](03-vocab-chengyu-02.md) | 成语记忆（进阶） | ⭐⭐ | ~12min |
+| 4 | [03-vocab-similar-01.md](03-vocab-similar-01.md) | 易混词辨析 | ⭐⭐ | ~13min |
+| 5 | [03-vocab-poetry-01.md](03-vocab-poetry-01.md) | 诗词记忆 | ⭐⭐ | ~12min |
+| 6 | [03-vocab-wordroot-01.md](03-vocab-wordroot-01.md) | 字根记忆 | ⭐⭐ | ~13min |
+| 7 | [03-vocab-dialect-01.md](03-vocab-dialect-01.md) | 方言记忆 | ⭐ | ~10min |
+| 8 | [03-vocab-list-01.md](03-vocab-list-01.md) | 词汇清单 | ⭐⭐ | ~12min |
+| 9 | [03-vocab-story-chain-01.md](03-vocab-story-chain-01.md) | 故事链法 | ⭐⭐⭐ | ~18min |
 
 ## 🧰 方法体系与选法决策（中文词汇版）
 
-> 中文词汇的方法机制要**多样**：故事（[M02]）/位置（[M01]/[M06]）/意义加工（[M13]）/韵律压缩（[M14]）/多感官（[M11]）/语境应用（[M25]）/复习闭环（[M07-R]+[M08]）。只用一种（比如只会编故事）会遇到“故事太多互相干扰”的天花板。推荐组合：**编码 1-2 个 + 固化 1 个 + 提取 1 个**（[方法地图 §3.2](../方法地图.md#m24)）。
+> 中文词汇的方法机制要**多样**：故事（[M02]）/位置（[M01]/[M06]）/意义加工（[M13]）/韵律压缩（[M14]）/多感官（[M11]）/语境应用（[M25]）/复习闭环（[M07-R]+[M08]）。只用一种（比如只会编故事）会遇到“故事太多互相干扰”的天花板。推荐组合：**编码 1-2 个 + 固化 1 个 + 提取 1 个**（[方法地图 §3.2](../方法地图.md#32-最小组合是什么)）。
 
 ### 选法决策表（按目标）
 
@@ -35,7 +35,7 @@
 | 古诗文词汇 | 意象画面+[M01](../方法地图.md#m01) → [03-vocab-poetry-01](03-vocab-poetry-01.md) | [M13](../方法地图.md#m13) 文化背景 | [M07-R](../方法地图.md#m07-r)+默写 | 20 min | 诗词 5 首/周，7 天后默写 ≥85% |
 | 生字/字族积累 | 拆字归族（[M24](../方法地图.md#m24) 思路）→ [03-vocab-wordroot-01](03-vocab-wordroot-01.md) | [M10](../方法地图.md#m10) 字族图 | 同上 | 15 min | 字族 5 组/周，衍生字测验 ≥80% |
 | 方言/俗语兴趣 | 谐音+画面（[M11](../方法地图.md#m11)）→ [03-vocab-dialect-01](03-vocab-dialect-01.md) | [M25](../方法地图.md#m25) 场景对话 | 轻量复习 | 10 min | 兴趣类，不设硬指标 |
-| 长词表/竞赛级 | [M02](../方法地图.md#m02) 故事链 → [03-vocab-story-chain-01](03-vocab-story-chain-01.md) | [M01](../方法地图.md#m01)/[M06](../方法地图.md#m06) | 同上 | 30 min | 30 词链/次，7 天后顺序回忆 ≥80% |
+| 长词表/竞赛级 | [M02](../方法地图.md#m02) 故事链 → [03-vocab-story-chain-01](03-vocab-story-chain-01.md) | [M01](../方法地图.md#m01)/[M06](../方法地图.md#m06) | 同上 | 30 min | 30 词链/次，7 天后顺序提取 ≥80% |
 
 ### 三个关键补充方法（本章常用但容易被跳过）
 

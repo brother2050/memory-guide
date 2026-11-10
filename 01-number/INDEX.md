@@ -9,21 +9,21 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [01-number-overview-01.md](01-number-overview-01.md) | 数字记忆总览 | ⭐ |
-| 2 | [01-number-basics-01.md](01-number-basics-01.md) | 基础方法 | ⭐ |
-| 3 | [01-number-2digit-01.md](01-number-2digit-01.md) | 两位数编码表 | ⭐⭐ |
-| 4 | [01-number-pao-01.md](01-number-pao-01.md) | PAO系统（基础） | ⭐⭐ |
-| 5 | [01-number-pao-02.md](01-number-pao-02.md) | PAO系统（进阶） | ⭐⭐⭐ |
-| 6 | [01-number-palace-01.md](01-number-palace-01.md) | 宫殿法编码 | ⭐⭐ |
-| 7 | [01-number-phone-01.md](01-number-phone-01.md) | 电话号码记忆 | ⭐⭐ |
-| 8 | [01-number-date-01.md](01-number-date-01.md) | 日期记忆 | ⭐⭐ |
-| 9 | [01-number-year-01.md](01-number-year-01.md) | 年份记忆 | ⭐⭐ |
-| 10 | [01-number-idcard-01.md](01-number-idcard-01.md) | 身份证号记忆 | ⭐⭐ |
-| 11 | [01-number-major-01.md](01-number-major-01.md) | 专业代码记忆 | ⭐⭐ |
-| 12 | [01-number-pi-01.md](01-number-pi-01.md) | 圆周率记忆 | ⭐⭐⭐ |
-| 13 | [01-number-speed-01.md](01-number-speed-01.md) | 速度训练 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [01-number-overview-01.md](01-number-overview-01.md) | 数字记忆总览 | ⭐ | ~7min |
+| 2 | [01-number-basics-01.md](01-number-basics-01.md) | 基础方法 | ⭐ | ~7min |
+| 3 | [01-number-2digit-01.md](01-number-2digit-01.md) | 两位数编码表 | ⭐⭐ | ~12min |
+| 4 | [01-number-pao-01.md](01-number-pao-01.md) | PAO系统（基础） | ⭐⭐ | ~10min |
+| 5 | [01-number-pao-02.md](01-number-pao-02.md) | PAO系统（进阶） | ⭐⭐⭐ | ~11min |
+| 6 | [01-number-palace-01.md](01-number-palace-01.md) | 宫殿法编码 | ⭐⭐ | ~6min |
+| 7 | [01-number-phone-01.md](01-number-phone-01.md) | 电话号码记忆 | ⭐⭐ | ~7min |
+| 8 | [01-number-date-01.md](01-number-date-01.md) | 日期记忆 | ⭐⭐ | ~6min |
+| 9 | [01-number-year-01.md](01-number-year-01.md) | 年份记忆 | ⭐⭐ | ~10min |
+| 10 | [01-number-idcard-01.md](01-number-idcard-01.md) | 身份证号记忆 | ⭐⭐ | ~12min |
+| 11 | [01-number-major-01.md](01-number-major-01.md) | 专业代码记忆 | ⭐⭐ | ~11min |
+| 12 | [01-number-pi-01.md](01-number-pi-01.md) | 圆周率记忆 | ⭐⭐⭐ | ~9min |
+| 13 | [01-number-speed-01.md](01-number-speed-01.md) | 速度训练 | ⭐⭐⭐ | ~11min |
 
 ## 💡 学习建议
 - **先打基础再进阶**：从0-9数字形状/谐音编码开始，熟练后再学习两位数编码表（00-99），这是所有数字记忆的基石

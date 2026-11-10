@@ -14,15 +14,15 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [23-lang-japanese-01.md](23-lang-japanese-01.md) | 日语记忆 | ⭐⭐ |
-| 2 | [23-lang-korean-01.md](23-lang-korean-01.md) | 韩语记忆 | ⭐⭐ |
-| 3 | [23-lang-french-01.md](23-lang-french-01.md) | 法语记忆 | ⭐⭐ |
-| 4 | [23-lang-spanish-01.md](23-lang-spanish-01.md) | 西班牙语记忆 | ⭐⭐ |
-| 5 | [23-lang-german-01.md](23-lang-german-01.md) | 德语记忆 | ⭐⭐⭐ |
-| 6 | [23-lang-arabic-01.md](23-lang-arabic-01.md) | 阿拉伯语记忆 | ⭐⭐⭐ |
-| 7 | [23-lang-sign-01.md](23-lang-sign-01.md) | 手语记忆 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [23-lang-japanese-01.md](23-lang-japanese-01.md) | 日语记忆 | ⭐⭐ | ~15min |
+| 2 | [23-lang-korean-01.md](23-lang-korean-01.md) | 韩语记忆 | ⭐⭐ | ~15min |
+| 3 | [23-lang-french-01.md](23-lang-french-01.md) | 法语记忆 | ⭐⭐ | ~12min |
+| 4 | [23-lang-spanish-01.md](23-lang-spanish-01.md) | 西班牙语记忆 | ⭐⭐ | ~12min |
+| 5 | [23-lang-german-01.md](23-lang-german-01.md) | 德语记忆 | ⭐⭐⭐ | ~15min |
+| 6 | [23-lang-arabic-01.md](23-lang-arabic-01.md) | 阿拉伯语记忆 | ⭐⭐⭐ | ~15min |
+| 7 | [23-lang-sign-01.md](23-lang-sign-01.md) | 手语记忆 | ⭐⭐ | ~13min |
 
 ## 🧭 方法速配（全语言通用骨架）
 

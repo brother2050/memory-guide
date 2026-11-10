@@ -1,8 +1,10 @@
 # 🧪 Python 闭卷测试卷（T1 基础 + T2 进阶）
 
-> **📍 本章导航**：前置 → [py-22 复习系统](../17-programming/python/py-22-review-drill.md)（自测四件套 T1/T2 口径）·[py-00 路线图](../17-programming/python/py-00-roadmap.md)（阶段表）｜ 相关 → [17-programming/python/INDEX](../17-programming/python/INDEX.md)（阶段出口检验）·[进度追踪表](../templates/记忆训练进度追踪表.md) ｜ 方法 → [M08](../方法地图.md#m08)·[M30](../方法地图.md#m30)·[M32](../方法地图.md#m32)·[M07-R](../方法地图.md#m07-r) ｜ 难度 ⭐⭐⭐ ｜ 阅读 ~15min（做题另计）
+> **📍 本章导航**：前置 → [py-22 复习系统](../17-programming/python/py-22-review-drill.md)（自测四件套 T1/T2 口径）·[py-00 路线图](../17-programming/python/py-00-roadmap.md)（阶段表）｜ 相关 → [17-programming/python/INDEX](../17-programming/python/INDEX.md)（阶段出口检验）·[进度追踪表](../templates/记忆训练进度追踪表.md) ｜ 方法 → [M08](../方法地图.md#m08)·[M30](../方法地图.md#m30)·[M32](../方法地图.md#m32)·[M07-R](../方法地图.md#m07-r) ｜ 难度 ⭐⭐-⭐⭐⭐（T1 ⭐⭐ / T2 ⭐⭐⭐） ｜ 阅读 ~15min（做题另计）
 >
 > 不是看懂了就算会——**合上资料、限时手写、先写再对答案**。
+
+**难度**：⭐⭐-⭐⭐⭐（T1 ⭐⭐ / T2 ⭐⭐⭐） | **预计用时**：2×90 分钟（T1/T2 各 90 分钟） | **计分/自评**：每卷满分 100，卷面 ≥70 分且手写代码一次写对 ≥6/8 为通过 | **前置知识**：py-02~py-20 对应篇目
 
 ## 🎯 使用说明（先读这 10 行再开卷）
 

@@ -9,15 +9,15 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [21-sports-ball-01.md](21-sports-ball-01.md) | 球类运动 | ⭐ |
-| 2 | [21-sports-olympic-01.md](21-sports-olympic-01.md) | 奥运知识 | ⭐⭐ |
-| 3 | [21-sports-chinese-01.md](21-sports-chinese-01.md) | 中国传统运动 | ⭐⭐ |
-| 4 | [21-sports-martial-01.md](21-sports-martial-01.md) | 武术记忆 | ⭐⭐ |
-| 5 | [21-sports-fitness-01.md](21-sports-fitness-01.md) | 健身知识 | ⭐⭐ |
-| 6 | [21-sports-record-01.md](21-sports-record-01.md) | 体育纪录 | ⭐⭐⭐ |
-| 7 | [21-sports-winter-01.md](21-sports-winter-01.md) | 冬季运动 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [21-sports-ball-01.md](21-sports-ball-01.md) | 球类运动 | ⭐ | ~17min |
+| 2 | [21-sports-olympic-01.md](21-sports-olympic-01.md) | 奥运知识 | ⭐⭐ | ~16min |
+| 3 | [21-sports-chinese-01.md](21-sports-chinese-01.md) | 中国传统运动 | ⭐⭐ | ~14min |
+| 4 | [21-sports-martial-01.md](21-sports-martial-01.md) | 武术记忆 | ⭐⭐ | ~13min |
+| 5 | [21-sports-fitness-01.md](21-sports-fitness-01.md) | 健身知识 | ⭐⭐ | ~15min |
+| 6 | [21-sports-record-01.md](21-sports-record-01.md) | 体育纪录 | ⭐⭐⭐ | ~15min |
+| 7 | [21-sports-winter-01.md](21-sports-winter-01.md) | 冬季运动 | ⭐⭐ | ~15min |
 
 ## 💡 学习建议
 - **球类规则用场景法**：将每种球类的核心规则用一个比赛场景编码，如足球越位→“一个球员站在对方半场等球，比倒数第二个防守球员更靠近球门”

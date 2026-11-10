@@ -9,17 +9,20 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [04-history-timeline-01.md](04-history-timeline-01.md) | 时间线总览 | ⭐ |
-| 2 | [04-history-china-01.md](04-history-china-01.md) | 中国史·古代 | ⭐⭐ |
-| 3 | [04-history-china-02.md](04-history-china-02.md) | 中国史·近现代 | ⭐⭐ |
-| 4 | [04-history-world-01.md](04-history-world-01.md) | 世界史 | ⭐⭐ |
-| 5 | [04-history-war-01.md](04-history-war-01.md) | 战争史 | ⭐⭐ |
-| 6 | [04-history-invention-01.md](04-history-invention-01.md) | 发明史 | ⭐⭐ |
-| 7 | [04-history-people-01.md](04-history-people-01.md) | 历史人物 | ⭐⭐ |
-| 8 | [04-history-tech-01.md](04-history-tech-01.md) | 科技史 | ⭐⭐ |
-| 9 | [04-history-exam-01.md](04-history-exam-01.md) | 考试应用 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [04-history-timeline-01.md](04-history-timeline-01.md) | 时间线总览 | ⭐ | ~15min |
+| 2 | [04-history-china-01.md](04-history-china-01.md) | 中国史·古代 | ⭐⭐ | ~12min |
+| 3 | [04-history-china-02.md](04-history-china-02.md) | 中国史·近现代 | ⭐⭐ | ~14min |
+| 4 | [04-history-world-01.md](04-history-world-01.md) | 世界史 | ⭐⭐ | ~12min |
+| 5 | [04-history-war-01.md](04-history-war-01.md) | 战争史 | ⭐⭐ | ~10min |
+| 6 | [04-history-invention-01.md](04-history-invention-01.md) | 发明史 | ⭐⭐ | ~13min |
+| 7 | [04-history-people-01.md](04-history-people-01.md) | 历史人物 | ⭐⭐ | ~10min |
+| 8 | [04-history-tech-01.md](04-history-tech-01.md) | 科技史 | ⭐⭐ | ~11min |
+| 9 | [04-history-exam-01.md](04-history-exam-01.md) | 考试应用 | ⭐⭐ | ~17min |
+| 10 | [优化总结.md](优化总结.md) | 目录优化工作记录（附录） | ⭐ | ~5min |
+
+> 📎 附录：[04-history 优化总结](优化总结.md) — 本目录历次内容优化的工作记录（非学习内容）
 
 ## 💡 学习建议
 - **先建时间线框架**：用记忆宫殿将中国朝代按顺序排列（夏→商→周→秦→汉→...→清→现代），每个朝代用一个标志性画面代表

@@ -3,7 +3,7 @@
 > **📍 本章导航**：前置 → 无（全库入口） ｜ 相关 → [30分钟上手](QUICKSTART.md)·[方法地图](方法地图.md) ｜ 方法 → M01~M42+M07-R 总线见[方法地图](方法地图.md) ｜ 难度 ⭐ ｜ 阅读 ~10min
 >
 > 系统化的记忆训练百科 · 涵盖记忆科学原理、核心技巧、实战应用及23个学科专项记忆编码
-> 全库 **326 个 Markdown 文件**（2026-11-09 `find . -name '*.md'` 实测，含各目录 INDEX 与入口文档；较 11-05 新增开发者定制 3 篇：[我的记忆行动方案](我的记忆行动方案.md)、[Java/Python 消混表](17-programming/java-python-消混表.md)、[开发场景记忆登记表](templates/开发场景记忆登记表.md)）：38 篇主题章节 + **214 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 25 篇**：23 篇知识点 + [记忆体系总纲](17-programming/python/py-23-memory-system.md) + [锚点反查总表](17-programming/python/py-24-anchor-registry.md)）+ 10 篇实战 + 14 个练习 + 9 个模板 + 索引/规则/审计等文档；另有 60 个 Anki 牌组（约 1600 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
+> 全库 **321 个 Markdown 文件**（2026-11-09 `find . -name '*.md'` 实测，含各目录 INDEX 与入口文档；较 11-05 新增开发者定制 3 篇：[我的记忆行动方案](我的记忆行动方案.md)、[Java/Python 消混表](17-programming/java-python-消混表.md)、[开发场景记忆登记表](templates/开发场景记忆登记表.md)）：38 篇主题章节 + **216 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 25 篇**：23 篇知识点 + [记忆体系总纲](17-programming/python/py-23-memory-system.md) + [锚点反查总表](17-programming/python/py-24-anchor-registry.md)）+ 10 篇实战 + 14 个练习 + 9 个模板 + 34 篇索引/规则/审计与入口文档；另有 60 个 Anki 牌组（实测 1628 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
 
 ---
 
@@ -85,7 +85,7 @@ graph TB
         C05["05 工具资源与行动方案\nAnki·AI工具·30天计划"]
     end
 
-    subgraph special["📗 23个学科专项 (213篇)"]
+    subgraph special["📗 23个学科专项 (216篇)"]
         NUM["01-number 数字编码"]
         CARD["02-card 扑克牌"]
         VOCAB["03-vocabulary 词汇"]
@@ -106,8 +106,8 @@ graph TB
     subgraph practice["🏋️ 实战练习"]
         EX["exercises/ 14个练习"]
         PR["24-practice/ 10个实战"]
-        TM["templates/ 8个模板"]
-        AN["anki/ 60牌组 1600+张卡片"]
+        TM["templates/ 9个模板"]
+        AN["anki/ 60牌组 1628张卡片"]
     end
 
     README --> core
@@ -149,7 +149,7 @@ graph LR
 
 > **只有1分钟？看这里就够了。**
 
-记忆的核心公式：**记忆效果 = 编码深度 × 存储巩固 × 提取频率**
+记忆的核心公式：**记忆效果 = 编码深度 × 巩固质量 × 提取频率**
 
 三个最有效的技巧（方法 ID 见 [方法地图](方法地图.md)）：
 1. **记忆宫殿** [M01](方法地图.md#m01)：把信息放在你熟悉的空间里（[详细教程](02-核心记忆技巧.md#1-记忆宫殿法-method-of-loci)）
@@ -264,7 +264,7 @@ graph LR
 | 14 | [14-route/](14-route/) | 路线记忆（方向、GPS、城市导航） | 7 | ⭐ |
 | 15 | [15-procedure/](15-procedure/) | 程序记忆（考试流程、实验步骤、菜谱） | 8 | ⭐ |
 | 16 | [16-music/](16-music/) | 音乐记忆（和弦、乐理、乐器、节奏） | 8 | ⭐⭐ |
-| 17 | [17-programming/](17-programming/) | 编程记忆（算法、设计模式、语法） | 5 | ⭐⭐ |
+| 17 | [17-programming/](17-programming/) | 编程记忆（算法、设计模式、语法、Java/Python 消混） | 6 | ⭐⭐ |
 | 18 | [18-finance/](18-finance/) | 金融记忆（概念、公式、指标、历史） | 9 | ⭐⭐ |
 | 19 | [19-psychology/](19-psychology/) | 心理学记忆（认知、发展、实验、理论） | 7 | ⭐⭐ |
 | 20 | [20-astronomy/](20-astronomy/) | 天文记忆（星座、恒星、太阳系、星系） | 5 | ⭐ |
@@ -489,7 +489,7 @@ A：见 [05-工具资源与行动方案](05-工具资源与行动方案.md#国�
 
 ## 🤝 贡献
 
-欢迎贡献！详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎贡献！发现错漏、补充案例、改进编码，都可以直接提交 Issue / PR；新增方法 ID 请在[方法地图](方法地图.md)变更记录中提议，由维护者统一注册。
 
 ## 📥 国内获取与网络加速
 
@@ -514,38 +514,7 @@ Anki 官网下载慢、AnkiWeb 同步不稳？见 [05-工具资源与行动方�
 
 ## 📥 PDF 生成
 
-项目提供完整版 PDF（290 篇 Markdown 文档合订，约 3440 页；页数以实际生成为准）。
-
-### 安装依赖（国内推荐清华镜像）
-```bash
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple weasyprint markdown
-```
-
-### 全量生成（自动分批渲染、进度显示、单文件失败不中断）
-```bash
-python3 md2pdf_weasy.py
-```
-
-### 中途中断后断点续跑
-```bash
-python3 md2pdf_weasy.py --resume
-```
-
-### 自定义输出/批大小
-```bash
-python3 md2pdf_weasy.py --out 记忆指南-完整版.pdf --batch-size 40
-```
-
-- 输出默认在 `pdf_output/记忆指南-完整版.pdf`；PDF 仅本地生成，不入库（与 md 内容重复，.gitignore 已排除根目录 PDF）。
-- 失败文件清单记录在 `pdf_output/failed_files.txt`，构建细节见 [pdf_parts/README.md](pdf_parts/README.md)。
-
-### 并行生成（推荐）
-```bash
-# 5个子代理并行，速度更快
-python3 pdf_parts/convert.py output.pdf file1.md file2.md ...
-```
-
-同样支持失败容错（单文件失败不中断整体构建），细节见 [pdf_parts/README.md](pdf_parts/README.md)。
+> 仓库整理时已移除 PDF 构建工具链（旧版分批渲染脚本不再维护），当前仅提供 Markdown 版本，不再附带成品 PDF。如需 PDF，可用 Pandoc、Typora 等通用 Markdown 导出工具自行生成。
 
 ---
 

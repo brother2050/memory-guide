@@ -9,15 +9,15 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [22-art-painting-01.md](22-art-painting-01.md) | 绘画记忆 | ⭐ |
-| 2 | [22-art-artist-01.md](22-art-artist-01.md) | 艺术家 | ⭐⭐ |
-| 3 | [22-art-movement-01.md](22-art-movement-01.md) | 艺术流派 | ⭐⭐ |
-| 4 | [22-art-sculpture-01.md](22-art-sculpture-01.md) | 雕塑记忆 | ⭐⭐ |
-| 5 | [22-art-architecture-01.md](22-art-architecture-01.md) | 建筑艺术 | ⭐⭐ |
-| 6 | [22-art-photo-01.md](22-art-photo-01.md) | 摄影艺术 | ⭐⭐ |
-| 7 | [22-art-music-art-01.md](22-art-music-art-01.md) | 音乐艺术 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [22-art-painting-01.md](22-art-painting-01.md) | 绘画记忆 | ⭐ | ~15min |
+| 2 | [22-art-artist-01.md](22-art-artist-01.md) | 艺术家 | ⭐⭐ | ~12min |
+| 3 | [22-art-movement-01.md](22-art-movement-01.md) | 艺术流派 | ⭐⭐ | ~10min |
+| 4 | [22-art-sculpture-01.md](22-art-sculpture-01.md) | 雕塑记忆 | ⭐⭐ | ~9min |
+| 5 | [22-art-architecture-01.md](22-art-architecture-01.md) | 建筑艺术 | ⭐⭐ | ~10min |
+| 6 | [22-art-photo-01.md](22-art-photo-01.md) | 摄影艺术 | ⭐⭐ | ~11min |
+| 7 | [22-art-music-art-01.md](22-art-music-art-01.md) | 音乐艺术 | ⭐⭐⭐ | ~13min |
 
 ## 💡 学习建议
 - **艺术家用特征编码**：每个艺术家绑定一个标志性特征，如梵高→向日葵+星空，毕加索→立体主义+变形人脸
