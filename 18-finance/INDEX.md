@@ -9,17 +9,17 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [18-fin-concept-01.md](18-fin-concept-01.md) | 金融概念 | ⭐ |
-| 2 | [18-fin-formula-01.md](18-fin-formula-01.md) | 金融公式 | ⭐⭐ |
-| 3 | [18-fin-indicator-01.md](18-fin-indicator-01.md) | 指标 | ⭐⭐ |
-| 4 | [18-fin-market-01.md](18-fin-market-01.md) | 市场 | ⭐⭐ |
-| 5 | [18-fin-history-01.md](18-fin-history-01.md) | 金融史 | ⭐⭐ |
-| 6 | [18-fin-behavioral-01.md](18-fin-behavioral-01.md) | 行为金融 | ⭐⭐ |
-| 7 | [18-fin-global-01.md](18-fin-global-01.md) | 国际金融 | ⭐⭐ |
-| 8 | [18-fin-crypto-01.md](18-fin-crypto-01.md) | 加密货币 | ⭐⭐ |
-| 9 | [18-fin-exam-01.md](18-fin-exam-01.md) | CPA考试 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [18-fin-concept-01.md](18-fin-concept-01.md) | 金融概念 | ⭐ | ~16min |
+| 2 | [18-fin-formula-01.md](18-fin-formula-01.md) | 金融公式 | ⭐⭐ | ~13min |
+| 3 | [18-fin-indicator-01.md](18-fin-indicator-01.md) | 指标 | ⭐⭐ | ~12min |
+| 4 | [18-fin-market-01.md](18-fin-market-01.md) | 市场 | ⭐⭐ | ~14min |
+| 5 | [18-fin-history-01.md](18-fin-history-01.md) | 金融史 | ⭐⭐ | ~20min |
+| 6 | [18-fin-behavioral-01.md](18-fin-behavioral-01.md) | 行为金融 | ⭐⭐ | ~18min |
+| 7 | [18-fin-global-01.md](18-fin-global-01.md) | 国际金融 | ⭐⭐ | ~14min |
+| 8 | [18-fin-crypto-01.md](18-fin-crypto-01.md) | 加密货币 | ⭐⭐ | ~15min |
+| 9 | [18-fin-exam-01.md](18-fin-exam-01.md) | CPA考试 | ⭐⭐ | ~16min |
 
 ## 💡 学习建议
 - **公式用画面法**：如市盈率P/E→“价格（P）除以收益（E）”→想象一个价格标签被收益数字除的画面

@@ -9,15 +9,15 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [19-psych-concept-01.md](19-psych-concept-01.md) | 心理学概念 | ⭐ |
-| 2 | [19-psych-theory-01.md](19-psych-theory-01.md) | 理论流派 | ⭐⭐ |
-| 3 | [19-psych-cognitive-01.md](19-psych-cognitive-01.md) | 认知心理学 | ⭐⭐ |
-| 4 | [19-psych-develop-01.md](19-psych-develop-01.md) | 发展心理学 | ⭐⭐ |
-| 5 | [19-psych-experiment-01.md](19-psych-experiment-01.md) | 经典实验 | ⭐⭐ |
-| 6 | [19-psych-disorder-01.md](19-psych-disorder-01.md) | 心理障碍 | ⭐⭐ |
-| 7 | [19-psych-self-01.md](19-psych-self-01.md) | 自我认知 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [19-psych-concept-01.md](19-psych-concept-01.md) | 心理学概念 | ⭐ | ~15min |
+| 2 | [19-psych-theory-01.md](19-psych-theory-01.md) | 理论流派 | ⭐⭐ | ~12min |
+| 3 | [19-psych-cognitive-01.md](19-psych-cognitive-01.md) | 认知心理学 | ⭐⭐ | ~26min |
+| 4 | [19-psych-develop-01.md](19-psych-develop-01.md) | 发展心理学 | ⭐⭐ | ~17min |
+| 5 | [19-psych-experiment-01.md](19-psych-experiment-01.md) | 经典实验 | ⭐⭐ | ~11min |
+| 6 | [19-psych-disorder-01.md](19-psych-disorder-01.md) | 心理障碍 | ⭐⭐ | ~12min |
+| 7 | [19-psych-self-01.md](19-psych-self-01.md) | 自我认知 | ⭐⭐ | ~13min |
 
 ## 💡 学习建议
 - **流派用人物锚定**：每个心理学流派绑定一个代表人物，如弗洛伊德→精神分析→“躺在沙发上做梦”

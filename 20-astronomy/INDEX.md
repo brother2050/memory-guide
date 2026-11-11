@@ -9,13 +9,13 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [20-astro-constellation-01.md](20-astro-constellation-01.md) | 星座记忆 | ⭐ |
-| 2 | [20-astro-solar-01.md](20-astro-solar-01.md) | 太阳系 | ⭐⭐ |
-| 3 | [20-astro-star-01.md](20-astro-star-01.md) | 恒星记忆 | ⭐⭐ |
-| 4 | [20-astro-galaxy-01.md](20-astro-galaxy-01.md) | 星系记忆 | ⭐⭐⭐ |
-| 5 | [20-astro-space-01.md](20-astro-space-01.md) | 太空探索 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [20-astro-constellation-01.md](20-astro-constellation-01.md) | 星座记忆 | ⭐ | ~29min |
+| 2 | [20-astro-solar-01.md](20-astro-solar-01.md) | 太阳系 | ⭐⭐ | ~14min |
+| 3 | [20-astro-star-01.md](20-astro-star-01.md) | 恒星记忆 | ⭐⭐ | ~16min |
+| 4 | [20-astro-galaxy-01.md](20-astro-galaxy-01.md) | 星系记忆 | ⭐⭐⭐ | ~15min |
+| 5 | [20-astro-space-01.md](20-astro-space-01.md) | 太空探索 | ⭐⭐⭐ | ~20min |
 
 ## 💡 学习建议
 - **星座用画面法**：88个星座每个用一个标志性画面，如猎户座→“一个猎人举着弓箭站在星空中”

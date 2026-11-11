@@ -9,21 +9,21 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [16-music-theory-01.md](16-music-theory-01.md) | 乐理基础 | ⭐ |
-| 2 | [16-music-chord-01.md](16-music-chord-01.md) | 和弦记忆 | ⭐⭐ |
-| 3 | [16-music-rhythm-01.md](16-music-rhythm-01.md) | 节奏记忆 | ⭐⭐ |
-| 4 | [16-music-instrument-01.md](16-music-instrument-01.md) | 乐器记忆 | ⭐⭐ |
-| 5 | [16-music-song-01.md](16-music-song-01.md) | 歌曲记忆 | ⭐⭐ |
-| 6 | [16-music-lyrics-01.md](16-music-lyrics-01.md) | 歌词记忆 | ⭐⭐ |
-| 7 | [16-music-history-01.md](16-music-history-01.md) | 音乐史 | ⭐⭐⭐ |
-| 8 | [16-music-practice-01.md](16-music-practice-01.md) | 练习方法 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [16-music-theory-01.md](16-music-theory-01.md) | 乐理基础 | ⭐ | ~13min |
+| 2 | [16-music-chord-01.md](16-music-chord-01.md) | 和弦记忆 | ⭐⭐ | ~16min |
+| 3 | [16-music-rhythm-01.md](16-music-rhythm-01.md) | 节奏记忆 | ⭐⭐ | ~12min |
+| 4 | [16-music-instrument-01.md](16-music-instrument-01.md) | 乐器记忆 | ⭐⭐ | ~13min |
+| 5 | [16-music-song-01.md](16-music-song-01.md) | 歌曲记忆 | ⭐⭐ | ~13min |
+| 6 | [16-music-lyrics-01.md](16-music-lyrics-01.md) | 歌词记忆 | ⭐⭐ | ~7min |
+| 7 | [16-music-history-01.md](16-music-history-01.md) | 音乐史 | ⭐⭐⭐ | ~13min |
+| 8 | [16-music-practice-01.md](16-music-practice-01.md) | 练习方法 | ⭐⭐⭐ | ~14min |
 
 ## 💡 学习建议
 - **和弦用数字编码**：C→1，D→2，E→3...用数字对应音级，和弦进行如1-5-6-4→"一五六四"的谐音故事
 - **万能和弦先掌握**：C-G-Am-F是流行音乐最常用的4个和弦，先用画面法记住这组走向
-- **歌词用旋律法**：将歌词与旋律节奏绑定，利用旋律的"钩子"带动歌词回忆
+- **歌词用旋律法**：将歌词与旋律节奏绑定，利用旋律的"钩子"带动歌词提取
 - **乐器用特征编码**：每种乐器用一个标志性特征编码，如小提琴=弓弦摩擦，钢琴=黑白键
 - **每天听10分钟古典音乐**：边听边尝试识别乐器和和弦走向，将理论与听觉体验结合
 
