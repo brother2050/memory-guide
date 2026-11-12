@@ -16,16 +16,16 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [12-bio-cell-01.md](12-bio-cell-01.md) | 细胞 | ⭐ |
-| 2 | [12-bio-anatomy-01.md](12-bio-anatomy-01.md) | 解剖 | ⭐⭐ |
-| 3 | [12-bio-genetics-01.md](12-bio-genetics-01.md) | 遗传 | ⭐⭐ |
-| 4 | [12-bio-ecology-01.md](12-bio-ecology-01.md) | 生态 | ⭐⭐ |
-| 5 | [12-bio-taxonomy-01.md](12-bio-taxonomy-01.md) | 分类 | ⭐⭐ |
-| 6 | [12-bio-process-01.md](12-bio-process-01.md) | 生物过程 | ⭐⭐ |
-| 7 | [12-med-disease-01.md](12-med-disease-01.md) | 疾病 | ⭐⭐ |
-| 8 | [12-med-drug-01.md](12-med-drug-01.md) | 药物 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [12-bio-cell-01.md](12-bio-cell-01.md) | 细胞 | ⭐ | ~19min |
+| 2 | [12-bio-anatomy-01.md](12-bio-anatomy-01.md) | 解剖 | ⭐⭐ | ~11min |
+| 3 | [12-bio-genetics-01.md](12-bio-genetics-01.md) | 遗传 | ⭐⭐ | ~12min |
+| 4 | [12-bio-ecology-01.md](12-bio-ecology-01.md) | 生态 | ⭐⭐ | ~14min |
+| 5 | [12-bio-taxonomy-01.md](12-bio-taxonomy-01.md) | 分类 | ⭐⭐ | ~11min |
+| 6 | [12-bio-process-01.md](12-bio-process-01.md) | 生物过程 | ⭐⭐ | ~12min |
+| 7 | [12-med-disease-01.md](12-med-disease-01.md) | 疾病 | ⭐⭐ | ~11min |
+| 8 | [12-med-drug-01.md](12-med-drug-01.md) | 药物 | ⭐⭐ | ~12min |
 
 ## 💡 学习建议
 - **细胞结构用宫殿法**：将细胞器（线粒体、内质网、高尔基体等）放在记忆宫殿的不同位置，每个位置用颜色和形状编码

@@ -12,14 +12,14 @@
 | # | 文件 | 主题 | 难度 | 阅读时长 |
 |---|------|------|:----:|:----:|
 | 1 | [02-card-encoding-01.md](02-card-encoding-01.md) | 编码基础 | ⭐ | ~14min |
-| 2 | [02-card-encoding-02.md](02-card-encoding-02.md) | 编码进阶 | ⭐⭐ | ~14min |
+| 2 | [02-card-encoding-02.md](02-card-encoding-02.md) | 备选编码系统 | ⭐⭐ | ~14min |
 | 3 | [02-card-pao-01.md](02-card-pao-01.md) | PAO系统 | ⭐⭐ | ~10min |
 | 4 | [02-card-sequence-01.md](02-card-sequence-01.md) | 顺序记忆 | ⭐⭐ | ~10min |
 | 5 | [02-card-review-01.md](02-card-review-01.md) | 复习策略 | ⭐⭐ | ~15min |
 | 6 | [02-card-speed-01.md](02-card-speed-01.md) | 速度训练 | ⭐⭐⭐ | ~12min |
 | 7 | [02-card-tournament-01.md](02-card-tournament-01.md) | 竞赛应用 | ⭐⭐⭐ | ~7min |
 | 8 | [02-card-tricks-01.md](02-card-tricks-01.md) | 实用技巧 | ⭐⭐ | ~11min |
-| 9 | [02-card-variation-01.md](02-card-variation-01.md) | 变体玩法 | ⭐⭐ | ~8min |
+| 9 | [02-card-variation-01.md](02-card-variation-01.md) | 进阶技巧（双副/多副牌） | ⭐⭐ | ~8min |
 
 ## 💡 学习建议
 - **编码先行**：先将52张牌全部建立唯一编码形象（如红桃A=织女，黑桃K=岳飞），确保每张牌能在1秒内反应出对应画面

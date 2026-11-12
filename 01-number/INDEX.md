@@ -21,7 +21,7 @@
 | 8 | [01-number-date-01.md](01-number-date-01.md) | 日期记忆 | ⭐⭐ | ~6min |
 | 9 | [01-number-year-01.md](01-number-year-01.md) | 年份记忆 | ⭐⭐ | ~10min |
 | 10 | [01-number-idcard-01.md](01-number-idcard-01.md) | 身份证号记忆 | ⭐⭐ | ~12min |
-| 11 | [01-number-major-01.md](01-number-major-01.md) | 专业代码记忆 | ⭐⭐ | ~11min |
+| 11 | [01-number-major-01.md](01-number-major-01.md) | Major System（主谐音系统） | ⭐⭐ | ~11min |
 | 12 | [01-number-pi-01.md](01-number-pi-01.md) | 圆周率记忆 | ⭐⭐⭐ | ~9min |
 | 13 | [01-number-speed-01.md](01-number-speed-01.md) | 速度训练 | ⭐⭐⭐ | ~11min |
 

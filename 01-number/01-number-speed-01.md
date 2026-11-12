@@ -526,6 +526,6 @@ A：先用画面法将抽象信息转化为具体图像，再用记忆宫殿放�
 
 1. Ericsson, K.A., et al. (1980). Acquisition of a memory skill. *Science*, 208(4448), 1181-1182. — 数字记忆速度训练的科学研究
 2. Campitelli, G., & Gobet, F. (2011). Deliberate practice necessary but not sufficient. *Current Directions in Psychological Science*, 20(5), 280-285. — 刻意练习与专家性能
-3. Gillund, G., & Shiffrin, R.M. (1984). A retrieval model for both recognition and recall. *Psychological Review*, 91(1), 1-67. — 记忆检索模型
+3. Gillund, G., & Shiffrin, R.M. (1984). A retrieval model for both recognition and recall. *Psychological Review*, 91(1), 1-67. — 记忆提取模型
 
 ---

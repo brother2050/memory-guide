@@ -9,15 +9,15 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [05-chem-elements-01.md](05-chem-elements-01.md) | 元素周期表（1） | ⭐ |
-| 2 | [05-chem-elements-02.md](05-chem-elements-02.md) | 元素周期表（2） | ⭐⭐ |
-| 3 | [05-chem-formula-01.md](05-chem-formula-01.md) | 化学公式 | ⭐⭐ |
-| 4 | [05-chem-reaction-01.md](05-chem-reaction-01.md) | 化学反应 | ⭐⭐ |
-| 5 | [05-chem-organic-01.md](05-chem-organic-01.md) | 有机化学 | ⭐⭐⭐ |
-| 6 | [05-chem-lab-01.md](05-chem-lab-01.md) | 实验室 | ⭐⭐ |
-| 7 | [05-chem-exam-01.md](05-chem-exam-01.md) | 考试应用 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [05-chem-elements-01.md](05-chem-elements-01.md) | 元素周期表（1） | ⭐ | ~6min |
+| 2 | [05-chem-elements-02.md](05-chem-elements-02.md) | 元素周期表（2） | ⭐⭐ | ~6min |
+| 3 | [05-chem-formula-01.md](05-chem-formula-01.md) | 化学公式 | ⭐⭐ | ~6min |
+| 4 | [05-chem-reaction-01.md](05-chem-reaction-01.md) | 化学反应 | ⭐⭐ | ~7min |
+| 5 | [05-chem-organic-01.md](05-chem-organic-01.md) | 有机化学 | ⭐⭐⭐ | ~5min |
+| 6 | [05-chem-lab-01.md](05-chem-lab-01.md) | 实验室 | ⭐⭐ | ~6min |
+| 7 | [05-chem-exam-01.md](05-chem-exam-01.md) | 考试应用 | ⭐⭐⭐ | ~8min |
 
 ## 💡 学习建议
 - **元素周期表用谐音法**：如第一周期"氢氦"→"侵害"，第二周期"锂铍硼碳氮氧氟氖"→"鲤皮捧碳，蛋养福奶"，将元素名编成顺口溜

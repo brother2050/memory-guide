@@ -14,15 +14,15 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [13-law-concept-01.md](13-law-concept-01.md) | 法律概念 | ⭐ |
-| 2 | [13-law-constitution-01.md](13-law-constitution-01.md) | 宪法 | ⭐⭐ |
-| 3 | [13-law-civil-01.md](13-law-civil-01.md) | 民法 | ⭐⭐ |
-| 4 | [13-law-criminal-01.md](13-law-criminal-01.md) | 刑法 | ⭐⭐ |
-| 5 | [13-law-ip-01.md](13-law-ip-01.md) | 知识产权 | ⭐⭐ |
-| 6 | [13-law-case-01.md](13-law-case-01.md) | 经典案例 | ⭐⭐ |
-| 7 | [13-law-exam-01.md](13-law-exam-01.md) | 法考应用 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [13-law-concept-01.md](13-law-concept-01.md) | 法律概念 | ⭐ | ~17min |
+| 2 | [13-law-constitution-01.md](13-law-constitution-01.md) | 宪法 | ⭐⭐ | ~15min |
+| 3 | [13-law-civil-01.md](13-law-civil-01.md) | 民法 | ⭐⭐ | ~15min |
+| 4 | [13-law-criminal-01.md](13-law-criminal-01.md) | 刑法 | ⭐⭐ | ~17min |
+| 5 | [13-law-ip-01.md](13-law-ip-01.md) | 知识产权 | ⭐⭐ | ~17min |
+| 6 | [13-law-case-01.md](13-law-case-01.md) | 经典案例 | ⭐⭐ | ~11min |
+| 7 | [13-law-exam-01.md](13-law-exam-01.md) | 法考应用 | ⭐⭐ | ~14min |
 
 ## 💡 学习建议
 - **法条用场景法**：将抽象法条转化为具体案例场景，如"正当防卫"→想象一个人被攻击时反击的画面

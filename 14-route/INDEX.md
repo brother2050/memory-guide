@@ -11,15 +11,15 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [14-route-direction-01.md](14-route-direction-01.md) | 方向记忆 | ⭐ |
-| 2 | [14-route-city-01.md](14-route-city-01.md) | 城市路线 | ⭐⭐ |
-| 3 | [14-route-building-01.md](14-route-building-01.md) | 建筑导航 | ⭐⭐ |
-| 4 | [14-route-memory-palace-01.md](14-route-memory-palace-01.md) | 记忆宫殿路线 | ⭐⭐⭐ |
-| 5 | [14-route-gps-01.md](14-route-gps-01.md) | GPS辅助 | ⭐⭐ |
-| 6 | [14-route-travel-01.md](14-route-travel-01.md) | 旅行路线 | ⭐⭐ |
-| 7 | [14-route-emergency-01.md](14-route-emergency-01.md) | 紧急路线 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [14-route-direction-01.md](14-route-direction-01.md) | 方向记忆 | ⭐ | ~11min |
+| 2 | [14-route-city-01.md](14-route-city-01.md) | 城市路线 | ⭐⭐ | ~9min |
+| 3 | [14-route-building-01.md](14-route-building-01.md) | 建筑导航 | ⭐⭐ | ~10min |
+| 4 | [14-route-memory-palace-01.md](14-route-memory-palace-01.md) | 记忆宫殿路线 | ⭐⭐⭐ | ~22min |
+| 5 | [14-route-gps-01.md](14-route-gps-01.md) | GPS辅助 | ⭐⭐ | ~15min |
+| 6 | [14-route-travel-01.md](14-route-travel-01.md) | 旅行路线 | ⭐⭐ | ~14min |
+| 7 | [14-route-emergency-01.md](14-route-emergency-01.md) | 紧急路线 | ⭐⭐⭐ | ~12min |
 
 ## 💡 学习建议
 - **方向感先建立基准**：用太阳位置（东升西落）和地标建筑建立东南西北基准，再练习相对方向判断

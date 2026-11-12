@@ -18,7 +18,7 @@
 | 5 | [04-history-war-01.md](04-history-war-01.md) | 战争史 | ⭐⭐ | ~10min |
 | 6 | [04-history-invention-01.md](04-history-invention-01.md) | 发明史 | ⭐⭐ | ~13min |
 | 7 | [04-history-people-01.md](04-history-people-01.md) | 历史人物 | ⭐⭐ | ~10min |
-| 8 | [04-history-tech-01.md](04-history-tech-01.md) | 科技史 | ⭐⭐ | ~11min |
+| 8 | [04-history-tech-01.md](04-history-tech-01.md) | 历史日期编码实战 | ⭐⭐ | ~11min |
 | 9 | [04-history-exam-01.md](04-history-exam-01.md) | 考试应用 | ⭐⭐ | ~17min |
 | 10 | [优化总结.md](优化总结.md) | 目录优化工作记录（附录） | ⭐ | ~5min |
 

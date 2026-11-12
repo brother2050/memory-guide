@@ -3,7 +3,7 @@
 > **📍 本章导航**：前置 → 无（全库入口） ｜ 相关 → [30分钟上手](QUICKSTART.md)·[方法地图](方法地图.md) ｜ 方法 → M01~M42+M07-R 总线见[方法地图](方法地图.md) ｜ 难度 ⭐ ｜ 阅读 ~10min
 >
 > 系统化的记忆训练百科 · 涵盖记忆科学原理、核心技巧、实战应用及23个学科专项记忆编码
-> 全库 **321 个 Markdown 文件**（2026-11-09 `find . -name '*.md'` 实测，含各目录 INDEX 与入口文档；较 11-05 新增开发者定制 3 篇：[我的记忆行动方案](我的记忆行动方案.md)、[Java/Python 消混表](17-programming/java-python-消混表.md)、[开发场景记忆登记表](templates/开发场景记忆登记表.md)）：38 篇主题章节 + **216 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 25 篇**：23 篇知识点 + [记忆体系总纲](17-programming/python/py-23-memory-system.md) + [锚点反查总表](17-programming/python/py-24-anchor-registry.md)）+ 10 篇实战 + 14 个练习 + 9 个模板 + 34 篇索引/规则/审计与入口文档；另有 60 个 Anki 牌组（实测 1628 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
+> 全库 **322 个 Markdown 文件**（2026-11-12 `find . -name '*.md'` 实测，含各目录 INDEX 与入口文档；较 11-05 新增开发者定制 4 篇：[我的记忆行动方案](我的记忆行动方案.md)、[Java/Python 消混表](17-programming/java-python-消混表.md)、[开发场景记忆登记表](templates/开发场景记忆登记表.md)、[开发者记忆精读版](开发者记忆精读版.md)）：38 篇主题章节 + **216 篇学科专题文章**（23个专项目录，含 [17-programming/python/](17-programming/python/INDEX.md) **Python 全知识点记忆实例 25 篇**：23 篇知识点 + [记忆体系总纲](17-programming/python/py-23-memory-system.md) + [锚点反查总表](17-programming/python/py-24-anchor-registry.md)）+ 10 篇实战 + 14 个练习 + 9 个模板 + 35 篇索引/规则/审计与入口文档；另有 60 个 Anki 牌组（实测 1628 张卡片，.tsv 不计入 md 数），从零基础到记忆竞技，总有一篇适合你
 
 ---
 

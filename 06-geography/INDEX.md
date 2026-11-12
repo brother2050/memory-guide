@@ -9,18 +9,18 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [06-geo-memory-01.md](06-geo-memory-01.md) | 记忆方法总览 | ⭐ |
-| 2 | [06-geo-china-01.md](06-geo-china-01.md) | 中国地理 | ⭐⭐ |
-| 3 | [06-geo-china-city-01.md](06-geo-china-city-01.md) | 中国城市 | ⭐⭐ |
-| 4 | [06-geo-capital-01.md](06-geo-capital-01.md) | 首都记忆 | ⭐⭐ |
-| 5 | [06-geo-country-01.md](06-geo-country-01.md) | 国家记忆（1） | ⭐⭐ |
-| 6 | [06-geo-country-02.md](06-geo-country-02.md) | 国家记忆（2） | ⭐⭐ |
-| 7 | [06-geo-river-01.md](06-geo-river-01.md) | 河流记忆 | ⭐⭐ |
-| 8 | [06-geo-climate-01.md](06-geo-climate-01.md) | 气候类型 | ⭐⭐ |
-| 9 | [06-geo-world-city-01.md](06-geo-world-city-01.md) | 世界城市 | ⭐⭐ |
-| 10 | [06-geo-quiz-01.md](06-geo-quiz-01.md) | 测验练习 | ⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [06-geo-memory-01.md](06-geo-memory-01.md) | 记忆方法总览 | ⭐ | ~5min |
+| 2 | [06-geo-china-01.md](06-geo-china-01.md) | 中国地理 | ⭐⭐ | ~5min |
+| 3 | [06-geo-china-city-01.md](06-geo-china-city-01.md) | 中国城市 | ⭐⭐ | ~9min |
+| 4 | [06-geo-capital-01.md](06-geo-capital-01.md) | 首都记忆 | ⭐⭐ | ~6min |
+| 5 | [06-geo-country-01.md](06-geo-country-01.md) | 国家记忆（1） | ⭐⭐ | ~5min |
+| 6 | [06-geo-country-02.md](06-geo-country-02.md) | 国家记忆（2） | ⭐⭐ | ~6min |
+| 7 | [06-geo-river-01.md](06-geo-river-01.md) | 河流记忆 | ⭐⭐ | ~5min |
+| 8 | [06-geo-climate-01.md](06-geo-climate-01.md) | 气候类型 | ⭐⭐ | ~5min |
+| 9 | [06-geo-world-city-01.md](06-geo-world-city-01.md) | 世界城市 | ⭐⭐ | ~5min |
+| 10 | [06-geo-quiz-01.md](06-geo-quiz-01.md) | 测验练习 | ⭐⭐ | ~6min |
 
 ## 💡 学习建议
 - **中国地理用身体桩法**：将34个省级行政区按从头到脚的顺序排列，每个省用一个标志性画面代表（如四川=熊猫，云南=孔雀）

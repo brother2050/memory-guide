@@ -7,25 +7,25 @@
 ## ⚡ 3 分钟速览
 - **读完能得到什么**：面部特征编码（脸型/发型/眼睛…）→ 名字谐音画面 → 两者绑定的完整链条，外加聚会、面试、会议、饭局等国内社交场景的实战素材。
 - **最小行动**：今天见新面孔时只盯住 1 个最突出的特征（大鼻子、酒窝都行），把姓氏谐音成一个物件和它撞在一起——先记住一个人就是胜利。
-- **容错提醒**：记串了两张相似的脸别慌，这恰恰提醒你要给两张脸各加一个「差异桥」（比如一个戴眼镜一个不戴）。
+- **容错提醒**：记混了两张相似的脸别慌，这恰恰提醒你要给两张脸各加一个「差异桥」（比如一个戴眼镜一个不戴）。
 
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [08-face-name-01.md](08-face-name-01.md) | 面孔记忆基础 | ⭐ |
-| 2 | [08-face-feature-01.md](08-face-feature-01.md) | 面部特征 | ⭐⭐ |
-| 3 | [08-face-association-01.md](08-face-association-01.md) | 关联技巧 | ⭐⭐ |
-| 4 | [08-face-profession-01.md](08-face-profession-01.md) | 职业关联 | ⭐⭐ |
-| 5 | [08-face-family-01.md](08-face-family-01.md) | 家庭场景 | ⭐ |
-| 6 | [08-face-workplace-01.md](08-face-workplace-01.md) | 职场场景 | ⭐⭐ |
-| 7 | [08-face-interview-01.md](08-face-interview-01.md) | 面试场景 | ⭐⭐ |
-| 8 | [08-face-celebrity-01.md](08-face-celebrity-01.md) | 名人面孔 | ⭐⭐⭐ |
-| 9 | [08-face-exercise-01.md](08-face-exercise-01.md) | 练习方法 | ⭐⭐ |
-| 10 | [08-face-similar-01.md](08-face-similar-01.md) | 相似面孔 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [08-face-name-01.md](08-face-name-01.md) | 面孔记忆基础 | ⭐ | ~6min |
+| 2 | [08-face-feature-01.md](08-face-feature-01.md) | 面部特征 | ⭐⭐ | ~5min |
+| 3 | [08-face-association-01.md](08-face-association-01.md) | 关联技巧 | ⭐⭐ | ~5min |
+| 4 | [08-face-profession-01.md](08-face-profession-01.md) | 职业关联 | ⭐⭐ | ~5min |
+| 5 | [08-face-family-01.md](08-face-family-01.md) | 家庭场景 | ⭐ | ~5min |
+| 6 | [08-face-workplace-01.md](08-face-workplace-01.md) | 职场场景 | ⭐⭐ | ~5min |
+| 7 | [08-face-interview-01.md](08-face-interview-01.md) | 面试场景 | ⭐⭐ | ~6min |
+| 8 | [08-face-celebrity-01.md](08-face-celebrity-01.md) | 名人面孔 | ⭐⭐⭐ | ~5min |
+| 9 | [08-face-exercise-01.md](08-face-exercise-01.md) | 练习方法 | ⭐⭐ | ~6min |
+| 10 | [08-face-similar-01.md](08-face-similar-01.md) | 相似面孔 | ⭐⭐⭐ | ~6min |
 
 ## 💡 学习建议
 - **特征提取是第一步**：观察人脸5秒，找出最突出的1-2个特征（大鼻子、浓眉毛、酒窝等），将其编码为一个关键词

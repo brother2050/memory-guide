@@ -2,7 +2,7 @@
 
 > 中文词汇记忆涵盖成语、诗词、易混词、方言等中文语言知识的记忆方法。中文是象形文字体系，天然适合画面编码法。本章系统讲解如何用记忆术攻克中文学习中的各类词汇难题。
 
-> **📍 本章导航**：前置 → [02-核心记忆技巧](../02-核心记忆技巧.md) ｜ 相关 → [09-english-word/INDEX.md](../09-english-word/INDEX.md)·[exercises/04-词汇记忆练习.md](../exercises/04-词汇记忆练习.md) ｜ 方法 → M01·M02·M06·M10·M11·M13·M25·M07-R·M08 ｜ 难度 ⭐⭐ ｜ 阅读 ~8min
+> **📍 本章导航**：前置 → [02-核心记忆技巧](../02-核心记忆技巧.md) ｜ 相关 → [09-english-word/INDEX.md](../09-english-word/INDEX.md)·[exercises/04-词汇记忆练习.md](../exercises/04-词汇记忆练习.md) ｜ 方法 → M01·M02·M06·M10·M11·M13·M25·M07-R·M08 ｜ 难度 ⭐⭐ ｜ 阅读 ~8min ｜ 方法 ID 注册表 → [方法地图.md](../方法地图.md)
 
 ## 📍 导航
 > [01-记忆科学基础](../01-记忆科学基础.md) | [02-核心记忆技巧](../02-核心记忆技巧.md) | [返回主页](../README.md)
@@ -11,14 +11,14 @@
 
 | # | 文件 | 主题 | 难度 | 阅读时长 |
 |---|------|------|:----:|:----:|
-| 1 | [03-vocab-concept-01.md](03-vocab-concept-01.md) | 记忆概念 | ⭐⭐ | ~12min |
+| 1 | [03-vocab-concept-01.md](03-vocab-concept-01.md) | 抽象概念记忆 | ⭐⭐ | ~12min |
 | 2 | [03-vocab-chengyu-01.md](03-vocab-chengyu-01.md) | 成语记忆（基础） | ⭐⭐ | ~12min |
 | 3 | [03-vocab-chengyu-02.md](03-vocab-chengyu-02.md) | 成语记忆（进阶） | ⭐⭐ | ~12min |
 | 4 | [03-vocab-similar-01.md](03-vocab-similar-01.md) | 易混词辨析 | ⭐⭐ | ~13min |
 | 5 | [03-vocab-poetry-01.md](03-vocab-poetry-01.md) | 诗词记忆 | ⭐⭐ | ~12min |
 | 6 | [03-vocab-wordroot-01.md](03-vocab-wordroot-01.md) | 字根记忆 | ⭐⭐ | ~13min |
 | 7 | [03-vocab-dialect-01.md](03-vocab-dialect-01.md) | 方言记忆 | ⭐ | ~10min |
-| 8 | [03-vocab-list-01.md](03-vocab-list-01.md) | 词汇清单 | ⭐⭐ | ~12min |
+| 8 | [03-vocab-list-01.md](03-vocab-list-01.md) | 词语列表记忆训练 | ⭐⭐ | ~12min |
 | 9 | [03-vocab-story-chain-01.md](03-vocab-story-chain-01.md) | 故事链法 | ⭐⭐⭐ | ~18min |
 
 ## 🧰 方法体系与选法决策（中文词汇版）

@@ -14,16 +14,16 @@
 
 ## 📖 推荐阅读顺序
 
-| # | 文件 | 主题 | 难度 |
-|---|------|------|:----:|
-| 1 | [07-speech-poem-01.md](07-speech-poem-01.md) | 诗词背诵 | ⭐⭐ |
-| 2 | [07-speech-paragraph-01.md](07-speech-paragraph-01.md) | 段落背诵 | ⭐⭐ |
-| 3 | [07-speech-article-01.md](07-speech-article-01.md) | 文章背诵 | ⭐⭐ |
-| 4 | [07-speech-speech-01.md](07-speech-speech-01.md) | 演讲稿记忆 | ⭐⭐ |
-| 5 | [07-speech-story-01.md](07-speech-story-01.md) | 故事记忆 | ⭐ |
-| 6 | [07-speech-list-01.md](07-speech-list-01.md) | 清单记忆 | ⭐⭐ |
-| 7 | [07-speech-meeting-01.md](07-speech-meeting-01.md) | 会议记录 | ⭐⭐ |
-| 8 | [07-speech-ted-01.md](07-speech-ted-01.md) | TED演讲 | ⭐⭐⭐ |
+| # | 文件 | 主题 | 难度 | 阅读时长 |
+|---|------|------|:----:|:----:|
+| 1 | [07-speech-poem-01.md](07-speech-poem-01.md) | 诗词背诵 | ⭐⭐ | ~10min |
+| 2 | [07-speech-paragraph-01.md](07-speech-paragraph-01.md) | 段落背诵 | ⭐⭐ | ~7min |
+| 3 | [07-speech-article-01.md](07-speech-article-01.md) | 文章背诵 | ⭐⭐ | ~7min |
+| 4 | [07-speech-speech-01.md](07-speech-speech-01.md) | 演讲稿记忆 | ⭐⭐ | ~7min |
+| 5 | [07-speech-story-01.md](07-speech-story-01.md) | 故事记忆 | ⭐ | ~5min |
+| 6 | [07-speech-list-01.md](07-speech-list-01.md) | 清单记忆 | ⭐⭐ | ~7min |
+| 7 | [07-speech-meeting-01.md](07-speech-meeting-01.md) | 会议记录 | ⭐⭐ | ~5min |
+| 8 | [07-speech-ted-01.md](07-speech-ted-01.md) | TED演讲 | ⭐⭐⭐ | ~5min |
 
 ## 💡 学习建议
 - **诗词用宫殿法**：每句诗放在一个桩位上，用画面还原诗句意境，如"大漠孤烟直"→沙漠中一缕青烟直直升起
