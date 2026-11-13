@@ -31,14 +31,14 @@
 
 ## 02. take a break (休息一下)
 
-### 谐音
+### 谐音（二）
 **"忒课a break"** → 太累了需要休息
 
-### 画面编码
+### 画面编码（二）
 ☕ **一个人☕坐在长椅上喝咖啡，旁边写着"BREAK TIME"。**
 - 长椅+咖啡 = 休息
 
-### 例句
+### 例句（二）
 - Let's **take a break** after two hours of study.
 - He **took a break** from work to eat lunch.
 
@@ -46,14 +46,14 @@
 
 ## 03. have a chat (聊聊天)
 
-### 谐音
+### 谐音（三）
 **"嗨v a chat"** → 嗨，聊聊天
 
-### 画面编码
+### 画面编码（三）
 💬 **两个人💬坐在沙发上聊天，头顶有对话气泡。**
 - 沙发+气泡 = 聊天
 
-### 例句
+### 例句（三）
 - Can we **have a chat** about your homework?
 - They **had a chat** over coffee.
 
@@ -61,14 +61,14 @@
 
 ## 04. do homework (做作业)
 
-### 谐音
+### 谐音（四）
 **"堵homework"** → 堵在作业里出不来
 
-### 画面编码
+### 画面编码（四）
 📚 **一个学生📚被作业本埋起来，只露出头。**
 - 被埋 = 做作业
 
-### 例句
+### 例句（四）
 - I need to **do my homework** before dinner.
 - She **does her homework** every evening.
 
@@ -76,14 +76,14 @@
 
 ## 05. pay attention (注意)
 
-### 谐音
+### 谐音（五）
 **"赔attention"** → 赔了注意力
 
-### 画面编码
+### 画面编码（五）
 👁️ **一只大眼睛👁️盯着前方，旁边有"ATTENTION"标签。**
 - 大眼睛 = 注意
 
-### 例句
+### 例句（五）
 - Please **pay attention** to the teacher.
 - He didn't **pay attention** during the meeting.
 
@@ -91,14 +91,14 @@
 
 ## 06. catch a cold (感冒)
 
-### 谐音
+### 谐音（六）
 **"凯奇a cold"** → 凯奇感冒了
 
-### 画面编码
+### 画面编码（六）
 🤧 **一个人🤧打喷嚏，鼻涕流下来。**
 - 打喷嚏 = 感冒
 
-### 例句
+### 例句（六）
 - I **caught a cold** last week.
 - Wear a jacket or you'll **catch a cold**.
 
@@ -106,14 +106,14 @@
 
 ## 07. keep a secret (保守秘密)
 
-### 谐音
+### 谐音（七）
 **"基普a secret"** → 基普守住秘密
 
-### 画面编码
+### 画面编码（七）
 🤫 **一个人🤫把手指放在嘴唇上，旁边有一个上锁的盒子。**
 - 嘴唇+锁 = 保密
 
-### 例句
+### 例句（七）
 - Can you **keep a secret**?
 - She **kept the secret** for many years.
 
@@ -121,14 +121,14 @@
 
 ## 08. break a promise (违背承诺)
 
-### 谐音
+### 谐音（八）
 **"布瑞克a promise"** → 布瑞克违背承诺
 
-### 画面编码
+### 画面编码（八）
 💔 **一个心💔碎成两半，旁边有一张撕碎的承诺书。**
 - 碎心+撕纸 = 违背承诺
 
-### 例句
+### 例句（八）
 - He **broke his promise** to help me.
 - Never **break a promise** to a child.
 
@@ -136,14 +136,14 @@
 
 ## 09. hold a meeting (开会)
 
-### 谐音
+### 谐音（九）
 **"厚德a meeting"** → 厚德载物地开会
 
-### 画面编码
+### 画面编码（九）
 👥 **一群人👥围坐在会议桌旁，投影仪显示"MEETING"。**
 - 会议桌 = 开会
 
-### 例句
+### 例句（九）
 - We'll **hold a meeting** tomorrow at 10 AM.
 - The manager **held a meeting** with the team.
 
@@ -151,14 +151,14 @@
 
 ## 10. lose weight (减肥)
 
-### 谐音
+### 谐音（十）
 **"漏丝weight"** → 体重像漏丝一样减少
 
-### 画面编码
+### 画面编码（十）
 ⚖️ **一个体重秤⚖️上的数字在不断减少。**
 - 数字减少 = 减肥
 
-### 例句
+### 例句（十）
 - She wants to **lose weight** before summer.
 - He **lost 10 pounds** by exercising daily.
 
@@ -166,14 +166,14 @@
 
 ## 11. make a mistake (犯错)
 
-### 谐音
+### 谐音（十一）
 **"没课a mistake"** → 没课的时候犯错
 
-### 画面编码
+### 画面编码（十一）
 🤦 **一个人🤦‍♂️拍额头，旁边有一个大大的"X"。**
 - 拍额头 = 犯错
 
-### 例句
+### 例句（十一）
 - Everyone **makes mistakes** sometimes.
 - I **made a mistake** in the calculation.
 
@@ -181,14 +181,14 @@
 
 ## 12. take a look (看一看)
 
-### 谐音
+### 谐音（十二）
 **"忒课a look"** → 太好奇了看一看
 
-### 画面编码
+### 画面编码（十二）
 👀 **一个人👀用放大镜仔细看东西。**
 - 放大镜 = 仔细看
 
-### 例句
+### 例句（十二）
 - Let me **take a look** at your phone.
 - Can you **take a look** at this report?
 
@@ -196,14 +196,14 @@
 
 ## 13. have a try (试一试)
 
-### 谐音
+### 谐音（十三）
 **"嗨v a try"** → 嗨，试一试
 
-### 画面编码
+### 画面编码（十三）
 🎯 **一个人🎯投飞镖，虽然没中靶心但很开心。**
 - 投飞镖 = 尝试
 
-### 例句
+### 例句（十三）
 - Why not **have a try**?
 - She **had a try** at cooking Italian food.
 
@@ -211,14 +211,14 @@
 
 ## 14. do damage (造成损害)
 
-### 谐音
+### 谐音（十四）
 **"堵damage"** → 堵住损害
 
-### 画面编码
+### 画面编码（十四）
 💥 **一辆车💥撞到墙上，墙裂开了。**
 - 撞墙 = 造成损害
 
-### 例句
+### 例句（十四）
 - The storm **did a lot of damage** to the house.
 - Smoking **does damage** to your health.
 
@@ -226,14 +226,14 @@
 
 ## 15. pay a visit (拜访)
 
-### 谐音
+### 谐音（十五）
 **"赔a visit"** → 赔着时间去拜访
 
-### 画面编码
+### 画面编码（十五）
 🚪 **一个人🚪按门铃，手里拿着礼物。**
 - 按门铃 = 拜访
 
-### 例句
+### 例句（十五）
 - We should **pay a visit** to grandma this weekend.
 - He **paid a visit** to the museum.
 
@@ -241,14 +241,14 @@
 
 ## 16. catch a bus (赶公交车)
 
-### 谐音
+### 谐音（十六）
 **"掐尺a bus"** → 掐着尺子量时间赶公交
 
-### 画面编码
+### 画面编码（十六）
 🚌 **一个人🚌跑向公交车，车门即将关闭。**
 - 跑向公交 = 赶车
 
-### 例句
+### 例句（十六）
 - I need to **catch the 8 AM bus**.
 - She **caught the bus** just in time.
 
@@ -256,14 +256,14 @@
 
 ## 17. keep in touch (保持联系)
 
-### 谐音
+### 谐音（十七）
 **"撇in touch"** → 把联系撇在心里
 
-### 画面编码
+### 画面编码（十七）
 📱 **两个人📱各拿一部手机，中间有信号线连接。**
 - 手机+信号 = 保持联系
 
-### 例句
+### 例句（十七）
 - Let's **keep in touch** after graduation.
 - We've **kept in touch** for over 10 years.
 
@@ -271,14 +271,14 @@
 
 ## 18. break the ice (打破僵局)
 
-### 谐音
+### 谐音（十八）
 **"不锐客the ice"** → 不锐利的客人打破冰
 
-### 画面编码
+### 画面编码（十八）
 🧊 **一个人🧊用锤子打破冰块，大家开始聊天。**
 - 打破冰 = 破冰
 
-### 例句
+### 例句（十八）
 - A joke can **break the ice** at a party.
 - He told a funny story to **break the ice**.
 
@@ -286,14 +286,14 @@
 
 ## 19. hold one's breath (屏住呼吸)
 
-### 谐音
+### 谐音（十九）
 **"厚德one's breath"** → 厚德地屏住呼吸
 
-### 画面编码
+### 画面编码（十九）
 😤 **一个人😤憋气，脸颊鼓起来。**
 - 憋气 = 屏住呼吸
 
-### 例句
+### 例句（十九）
 - **Hold your breath** and count to 10.
 - She **held her breath** while diving.
 
@@ -301,14 +301,14 @@
 
 ## 20. lose one's temper (发脾气)
 
-### 谐音
+### 谐音（二十）
 **"漏丝one's temper"** → 脾气漏出来了
 
-### 画面编码
+### 画面编码（二十）
 🌋 **一座火山🌋爆发，岩浆喷出来。**
 - 火山爆发 = 发脾气
 
-### 例句
+### 例句（二十）
 - He **lost his temper** when the computer crashed.
 - Try not to **lose your temper** with customers.
 
