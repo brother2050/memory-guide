@@ -2,7 +2,6 @@
 
 > PAO（Person-Action-Object）系统将每两位数字转化为一个人物、一个动作和一个物件。本版以**谐音**为核心，优先选择"一看就能浮现画面"的编码。
 
-
 ## 📍 导航
 > [返回数字记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -211,8 +210,6 @@
 
 ---
 
-
-
 ---
 
 ## 六、更多练习实例
@@ -278,7 +275,6 @@
 - 每周替换5-10个，不要一次性全部替换
 - 最终形成"混搭版"——每个数字选画面最强的编码
 
-
 > 💡 **进阶提示**：熟练后可混搭使用基础版和进阶版（pao-02），取各自最强的编码。参见进阶版文档。
 
 ### 🧪 自测
@@ -318,4 +314,3 @@ A：普通编码是"一个数字=一个画面"（如13=医生），而PAO是"一
 1. Wang, Y., & Gao, D. (2023). PAO system for number memorization. *Memory & Cognition*, 51(3), 612-625. — PAO数字记忆系统的科学验证
 2. Ericsson, K.A., & Kintsch, W. (1995). Long-term working memory. *Psychological Review*, 102(2), 211-245. — 长期工作记忆理论
 3. Chase, W.G., & Simon, H.A. (1973). Perception in chess. *Cognitive Psychology*, 4(1), 55-81. — 组块理论，专家利用领域知识组织信息
-

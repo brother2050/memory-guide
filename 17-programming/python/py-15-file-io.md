@@ -229,7 +229,7 @@ with open("vault.json", encoding="utf-8") as f:
 print("取回:", back, "| 与原件一致:", back == account)
 ```
 → 运行输出：`取回: {'户名': '张三', '余额': 100} | 与原件一致: True`；凭条内容（真实文件）：
-```
+```json
 {
   "户名": "张三",
   "余额": 100
@@ -252,7 +252,7 @@ for root, dirs, files in os.walk("vault"):
     print(root, "→ 子柜:", dirs, "→ 件:", sorted(files))
 ```
 → 运行输出：
-```
+```text
 vault → 子柜: ['2026'] → 件: ['a.txt']
 vault/2026 → 子柜: ['10'] → 件: ['b.txt']
 vault/2026/10 → 子柜: [] → 件: ['c.txt']

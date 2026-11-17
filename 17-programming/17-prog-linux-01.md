@@ -4,7 +4,6 @@
 > 记忆策略：每个命令 → 功能场景 → 缩写来源 → 谐音锚点 → 视觉画面
 > 目标：看到命令名 → 脑中浮现画面 → 自动提取用法
 
-
 ## 📍 导航
 > [返回编程记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -474,7 +473,7 @@ awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -20
 ```
 
 ### 管道思维链
-```
+```text
 数据源 → 过滤 → 转换 → 排序 → 去重 → 统计 → 输出
   │        │       │       │       │       │       │
  cat    grep    awk/cut  sort   uniq     wc    head/tail
@@ -580,7 +579,6 @@ awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -20
 
 ### 权限口诀
 > **chmod钥匙chown主sudo金，su换passwd锁**
-
 
 ### 🧪 自测
 

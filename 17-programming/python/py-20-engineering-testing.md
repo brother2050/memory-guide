@@ -19,7 +19,7 @@
 - **是什么**：约定式目录：`src/包名/` 放代码、`tests/` 放测试、`pyproject.toml` 放元数据，即"4S 店功能分区图"。
 - **为什么**：痛点：脚本、测试、数据堆一个文件夹，三个月后自己都找不到入口 → 机制：src 布局让"源码"和"随手跑的脚本"物理隔离，测试只能按安装后的方式导入 → 行为：`pytest` 通过 `pythonpath=["src"]` 找到包 → 边界：小脚本不必全套，超过 3 个文件就该分区。
 - **怎么写**：实测最小项目（`demo_proj/`）：
-```
+```text
 demo_proj/
 ├── pyproject.toml        # 元数据 + 工具配置
 ├── src/mymath/           # 源码包
@@ -47,7 +47,7 @@ def test_add_negative():
     assert add(-1, 1) == 0
 ```
 → 运行输出（`python3 -m pytest -q test_calc.py`，耗时浮动）：`2 passed in 0.16s`；故意写错期望值时输出（截取核心行）：
-```
+```text
 >       assert add(1, 2) == 4
 E       assert 3 == 4
 E        +  where 3 = add(1, 2)
@@ -184,7 +184,7 @@ print("环境变量覆盖(服务器):", load_settings())
 - **为什么**：痛点：代码风格争论浪费时间，低级错误流到线上 → 机制：机器按规则逐行检查，风格问题自动改、错误问题点名报 → 行为：同一份"有毛病"文件三件套各报各的 → 边界：ruff/black 管形式不管逻辑，mypy 管类型不管算法。
 - **怎么写**：对故意写坏的 `test_49.py`（未用导入、格式乱、类型错）：
 → 运行输出（截取核心行）：
-```
+```text
 $ ruff check test_49.py
 I001 [*] Import block is un-sorted or un-formatted
 F401 [*] `os` imported but unused
@@ -207,7 +207,7 @@ Found 1 error in 1 file (checked 1 source file)
 - **是什么**：poetry 是"进货管家"：`pyproject.toml` 写订货单（依赖+元数据），`poetry.lock` 锁死实际进货版本。
 - **为什么**：痛点：requirements.txt 和打包配置两套账，依赖版本漂移 → 机制：一个 pyproject 统管依赖/构建/工具配置，lock 文件保证人人装同版本 → 行为：`poetry new demo_pkg` 秒建标准项目骨架 → 边界：poetry 自建虚拟环境管理，团队要统一用它。
 - **怎么写**：实测命令卡：
-```
+```text
 ① poetry --version        → Poetry (version 2.5.1)
 ② poetry new demo_pkg     → Created package demo_pkg in demo_pkg
 ③ 查看骨架                → demo_pkg/README.md / pyproject.toml / src/demo_pkg/__init__.py / tests/__init__.py
@@ -222,7 +222,7 @@ Found 1 error in 1 file (checked 1 source file)
 - **是什么**：uv 是 Rust 写的"极速配件物流"：`uv venv` 秒建虚拟环境，`uv pip install` 秒装包，还能管项目依赖。
 - **为什么**：痛点：pip/venv 慢、工具链碎片化（装环境半小时）→ 机制：单二进制 + 全局缓存 + 并行下载 → 行为：`uv venv` 即建环境，装 six 实测毫秒级（83ms） → 边界：生态较新，与 poetry 的 lock 格式不同，团队要选边站。
 - **怎么写**：实测命令卡：
-```
+```text
 ① uv --version            → uv 0.12.23 (x86_64-unknown-linux-gnu)
 ② uv venv demo_venv       → Creating virtual environment at: demo_venv
 ③ uv pip install --python demo_venv/bin/python six
@@ -260,7 +260,7 @@ jobs:
 - **是什么**：排故三板斧：①print/断言现场看值 ②logging 分级留痕 ③pdb 逐行停看（`python3 -m pdb 脚本.py`）。
 - **为什么**：痛点：bug 藏在中间变量里，肉眼看代码看不出来 → 机制：三法递进——print 看一眼、logging 留证据、pdb 冻住现场逐帧查 → 行为：pdb 在断点停住后 `p 变量` 看现场、`n` 单步 → 边界：print 一次性问题够用；线上问题用 logging；复杂状态机值得上 pdb/IDE 断点。
 - **怎么写**：pdb 实测（`total_demo.py` 里 `total += p * rate` 处设断点；输出路径截短）：
-```
+```text
 命令流：b 5 → c → p p → n → p total → c → p p → p total → c → q
 (Pdb) Breakpoint 1 at .../total_demo.py:5
 (Pdb) > ...(5)total_price()   → total += p * rate

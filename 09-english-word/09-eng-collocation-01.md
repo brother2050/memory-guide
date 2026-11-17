@@ -2,10 +2,7 @@
 
 > **💡 相关技巧**：[记忆宫殿](../02-核心记忆技巧.md#1-记忆宫殿法-method-of-loci) | [间隔重复](../02-核心记忆技巧.md#5-间隔重复-spaced-repetition)
 
-
 > 40个核心搭配 | 搭配→谐音→画面→例句
-
-
 
 > **📍 本章导航**：前置 → [09-eng-method-01](09-eng-method-01.md) ｜ 相关 → [09-eng-phrasal-01](09-eng-phrasal-01.md)·[09-eng-idiom-01](09-eng-idiom-01.md) ｜ 方法 → M25·M11·M07-R ｜ 难度 ⭐ ｜ 阅读 ~12min
 
@@ -721,7 +718,6 @@
 3. "run out"和"use up"的核心区别是什么？
    - A. 完全同义  B. run out=自然耗尽，use up=主动用完  C. run out更正式  D. use up只能用于液体
    答案：B
-
 
 ---
 

@@ -3,8 +3,6 @@
 
 > 汉字是表意文字，偏旁部首就是天然的"词根"。掌握偏旁→画面→衍生字的关联链，可以批量记忆大量汉字。
 
-
-
 > **📍 本章导航**：前置 → [03-vocabulary/INDEX.md](INDEX.md) ｜ 相关 → [09-english-word/INDEX.md](../09-english-word/INDEX.md)·[23-language/INDEX.md](../23-language/INDEX.md) ｜ 方法 → M24·M10·M11 ｜ 难度 ⭐⭐ ｜ 阅读 ~13min
 
 ## 📍 导航

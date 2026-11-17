@@ -2,7 +2,6 @@
 
 > 本指南介绍数字记忆的三种基础方法：数字形状法、数字韵律法和数字桩法。这些方法是所有高级数字记忆技术的基石，适合零基础入门者。
 
-
 ## 📍 导航
 > [返回数字记忆编码](INDEX.md) | [返回主页](../README.md)
 
@@ -210,19 +209,19 @@ PAO、Major System等高级方法需要为00-99建立100个编码，前期投入
 
 ### 练习1：形状法速记
 用形状法记住以下数字序列（限时30秒）：
-```
+```text
 4  7  2  9  0  5  3  8  1  6
 ```
 
 ### 练习2：韵律法速记
 用韵律法记住以下数字序列（限时30秒）：
-```
+```text
 3  1  4  1  5  9  2  6
 ```
 
 ### 练习3：身体桩速记
 用身体桩法记住以下6位验证码（限时20秒）：
-```
+```text
 8  3  6  2  9  1
 ```
 
@@ -295,7 +294,7 @@ PAO、Major System等高级方法需要为00-99建立100个编码，前期投入
 
 ### 建议4：从基础到PAO的过渡路径
 
-```
+```text
 基础方法（0-9）
   ↓ 熟练掌握
 两位数编码（00-99谐音表）
@@ -363,4 +362,3 @@ D. 随机分组
 1. Paivio, A. (1986). *Mental Representations: A Dual Coding Approach*. Oxford University Press. — 双重编码理论
 2. Bower, G.H. (1970). Analysis of a mnemonic device. *American Scientist*, 58(5), 496-510. — 记忆术效果分析
 3. Miller, G.A. (1956). The magical number seven, plus or minus two. *Psychological Review*, 63(2), 81-97. — 工作记忆容量限制的经典研究
-

@@ -172,7 +172,7 @@ pr.enable(); main(); pr.disable()
 pstats.Stats(pr).sort_stats("cumulative").print_stats(3)
 ```
 → 运行输出（截取核心行，路径截短，耗时随机器浮动）：
-```
+```text
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
         1    0.000    0.000    0.102    0.102 .../demo_profile.py:4(main)
  392835/1    0.095    0.000    0.095    0.095 .../demo_profile.py:2(fib)

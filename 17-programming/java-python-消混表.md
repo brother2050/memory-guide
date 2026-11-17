@@ -57,7 +57,7 @@
 
 ## 二、判别练习（做卡前先自测）
 
-**看代码说语言 + 说出哪行"串"了（如果串了）：**
+**看代码说语言 + 说出哪行混淆了（如果有混淆）：**
 
 1. `for (item in items) { print(item) }` —— 混在哪？
    - 答案：这是"缝合怪"。Python 是 `for item in items:`（无括号无大括号）；Java 是 `for (Item item : items)`（冒号不是 in）。差别句："Python 的 for 直接 in，Java 的 for 用冒号表示'中的每个'。"

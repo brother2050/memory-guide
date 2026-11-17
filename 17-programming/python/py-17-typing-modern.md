@@ -230,7 +230,7 @@ result: float = area("3", 4)
 print(result)
 ```
 → 运行输出：`python3 mypy_bad.py` 输出 `3333`（运行居然没报错！）；`mypy mypy_bad.py` 输出：
-```
+```text
 mypy_bad.py:3: error: Argument 1 to "area" has incompatible type "str"; expected "float"  [arg-type]
 Found 1 error in 1 file (checked 1 source file)
 ```

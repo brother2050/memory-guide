@@ -66,7 +66,7 @@ print(1 + 1)
 - **是什么**：REPL（Read-Eval-Print Loop，读取-求值-打印循环）即敲 `python3` 进入的 `>>>` 交互界面。
 - **为什么**：痛点：改一行代码要新建文件、存盘、执行，试错太慢 → 机制：REPL 每读一行就立刻求值并打印 → 行为：随手验证表达式、查看对象 → 边界：关掉窗口代码就没了，正式代码必须落盘成脚本。
 - **怎么写**：
-```
+```text
 $ python3
 Python 3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.

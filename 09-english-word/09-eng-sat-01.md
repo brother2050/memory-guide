@@ -5,8 +5,6 @@
 >
 > 💡 **国内考生怎么用这张表**：GRE/SAT 是北美的研究生/本科入学考试，词汇难度大致相当于国内专八拔高词汇、或雅思 7 分以上的难词层。如果你备战的是四六级/考研/雅思，先把 [09-eng-method-01](09-eng-method-01.md) 里的考试高频词拿下，再把这 50 个当「拔高层」慢慢啃——它们对考研英语阅读里的学术长难词同样管用。每天 5-10 个足矣，别一口气硬塞 50 个。
 
-
-
 > **📍 本章导航**：前置 → [09-eng-root-02](09-eng-root-02.md) ｜ 相关 → [09-eng-method-01](09-eng-method-01.md)·[09-eng-theme-01](09-eng-theme-01.md) ｜ 方法 → M24·M11·M12·M07-R ｜ 难度 ⭐⭐⭐ ｜ 阅读 ~15min
 
 ## 📍 导航
@@ -345,7 +343,7 @@
 ## 二、词根归类记忆
 
 ### 词根：loqu/locut = 说
-```
+```text
 loquacious（话多的）→ loqu + acious
 eloquent（雄辩的）→ e + loqu + ent
 grandiloquent（夸大的）→ grand + iloqu + ent
@@ -353,7 +351,7 @@ soliloquy（独白）→ sol + iloqu + y
 ```
 
 ### 词根：path = 感情
-```
+```text
 apathy（冷漠）→ a + pathy
 empathy（共情）→ em + pathy
 antipathy（反感）→ anti + pathy
@@ -361,7 +359,7 @@ sympathy（同情）→ sym + pathy
 ```
 
 ### 词根：magn = 大
-```
+```text
 magnanimous（宽宏大量的）→ magn + anim + ous
 magnify（放大）→ magn + ify
 magnitude（大小）→ magn + itude
@@ -369,7 +367,7 @@ magnificent（壮丽的）→ magn + ific + ent
 ```
 
 ### 词根：err = 走/犯错
-```
+```text
 aberrant（异常的）→ ab + err + ant
 error（错误）→ err + or
 erratic（不稳定的）→ err + atic
@@ -377,7 +375,7 @@ erroneous（错误的）→ err + oneous
 ```
 
 ### 词根：sequ/secut = 跟随
-```
+```text
 obsequious（谄媚的）→ ob + sequ + ious
 consecutive（连续的）→ con + secut + ive
 subsequent（随后的）→ sub + sequ + ent
@@ -385,7 +383,7 @@ consequence（后果）→ con + sequ + ence
 ```
 
 ### 词根：voc/vok = 声音
-```
+```text
 equivocal（模棱两可的）→ equi + voc + al
 vociferous（喧哗的）→ voc + ifer + ous
 provocative（挑衅的）→ pro + voc + ative
@@ -401,7 +399,7 @@ advocate（提倡）→ ad + voc + ate
 把50个单词分配到家里的不同位置：
 
 #### 玄关（1-5）
-```
+```text
 门把手 → aberrant（异常的）→ 门把手坏了，行为异常
 鞋柜 → acrimony（尖刻）→ 鞋柜里有尖刻的味道
 镜子 → amalgamate（合并）→ 两面镜子合并成一面
@@ -410,7 +408,7 @@ advocate（提倡）→ ad + voc + ate
 ```
 
 #### 客厅（6-12）
-```
+```text
 沙发 → arduous（艰巨的）→ 沙发太重了，搬起来艰巨
 电视 → articulate（善于表达的）→ 电视里的人善于表达
 茶几 → audacious（大胆的）→ 茶几上放着大胆的装饰
@@ -421,7 +419,7 @@ advocate（提倡）→ ad + voc + ate
 ```
 
 #### 厨房（13-18）
-```
+```text
 冰箱 → corroborate（证实）→ 冰箱里证实有食物
 灶台 → cursory（粗略的）→ 灶台上粗略地做菜
 水槽 → cynical（愤世嫉俗的）→ 水槽里的水愤世嫉俗
@@ -431,7 +429,7 @@ advocate（提倡）→ ad + voc + ate
 ```
 
 #### 卧室（19-26）
-```
+```text
 床 → didactic（说教的）→ 床头放着说教的书
 枕头 → egregious（极坏的）→ 枕头里藏着极坏的秘密
 衣柜 → eloquent（雄辩的）→ 衣柜里的衣服雄辩地展示
@@ -443,7 +441,7 @@ advocate（提倡）→ ad + voc + ate
 ```
 
 #### 书房（27-34）
-```
+```text
 书桌 → iconoclast（打破传统者）→ 书桌上放着锤子
 电脑 → innocuous（无害的）→ 电脑屏幕显示无害的内容
 键盘 → insipid（乏味的）→ 键盘敲出乏味的文字
@@ -455,7 +453,7 @@ advocate（提倡）→ ad + voc + ate
 ```
 
 #### 浴室（35-40）
-```
+```text
 镜子 → mendacious（虚假的）→ 镜子里的像是虚假的
 水龙头 → obsequious（谄媚的）→ 水龙头谄媚地出水
 浴缸 → ostentatious（炫耀的）→ 浴缸炫耀地镶着金边
@@ -465,7 +463,7 @@ advocate（提倡）→ ad + voc + ate
 ```
 
 #### 阳台（41-50）
-```
+```text
 栏杆 → perfunctory（敷衍的）→ 栏杆敷衍地刷了漆
 花盆 → pedantic（学究气的）→ 花盆里种着学究的植物
 椅子 → pragmatic（务实的）→ 椅子务实地坐着
@@ -483,7 +481,7 @@ advocate（提倡）→ ad + voc + ate
 ## 四、挂钩法速记
 
 ### 数字挂钩（1-10）
-```
+```text
 1 = 蜡烛 → aberrant → 蜡烛走路走歪了
 2 = 鹅 → acrimony → 鹅说话尖刻
 3 = 耳朵 → amalgamate → 两个耳朵合并
@@ -497,7 +495,7 @@ advocate（提倡）→ ad + voc + ate
 ```
 
 ### 字母挂钩（A-Z选关键）
-```
+```text
 A = 苹果 → aberrant（异常的苹果）
 B = 书 → bibliophile（爱书的人）
 C = 猫 → capricious（善变的猫）
@@ -525,7 +523,7 @@ E = 老鹰 → eloquent（雄辩的老鹰）
 
 ### 每日学习计划
 
-```
+```text
 第1天：学习 A组（8个）+ 复习第1次
 第2天：学习 C组（8个）+ 复习 A组（第2次）
 第3天：学习 D-E组（8个）+ 复习 A组（第3次）+ C组（第2次）
@@ -538,7 +536,7 @@ E = 老鹰 → eloquent（雄辩的老鹰）
 
 ### 每周巩固计划
 
-```
+```text
 第1周：学习全部50个（按上述计划）
 第2周：每天复习10个，循环5天
 第3周：每天测试15个，找出薄弱词
@@ -562,21 +560,21 @@ E = 老鹰 → eloquent（雄辩的老鹰）
 
 ### 1. 词根推测法
 遇到生词时，用词根推测含义：
-```
+```text
 不认识的词：MISANTHROPE
 拆解：mis-（恨）+ anthrope（人）→ 恨人的人 → 厌世者
 ```
 
 ### 2. 上下文验证法
 用上下文验证词根推测：
-```
+```text
 "The misanthrope avoided all social gatherings."
 → 厌世者避免所有社交聚会 → 推测正确
 ```
 
 ### 3. 排除法
 用词根排除明显错误的选项：
-```
+```text
 选项A：philanthrope（爱人的人）→ phil-（爱）
 选项B：misanthrope（恨人的人）→ mis-（恨）
 选项C：anthropoid（类人的）→ anthrop-（人）
@@ -586,7 +584,7 @@ E = 老鹰 → eloquent（雄辩的老鹰）
 
 ### 4. 同义词替换法
 用已知词替换生词：
-```
+```text
 原文：The acrimonious debate lasted for hours.
 替换：The bitter/sharp debate lasted for hours.
 → 理解为"尖刻的辩论"
@@ -627,7 +625,6 @@ E = 老鹰 → eloquent（雄辩的老鹰）
 3. GRE/SAT词汇记忆中，每天建议记忆多少个新词？
    - A. 1-2个  B. 5-10个  C. 50个以上  D. 越多越好
    答案：B
-
 
 ---
 

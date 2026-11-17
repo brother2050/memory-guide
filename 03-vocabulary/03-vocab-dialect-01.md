@@ -2,10 +2,7 @@
 
 > **💡 相关技巧**：[记忆宫殿](../02-核心记忆技巧.md#1-记忆宫殿法-method-of-loci) | [间隔重复](../02-核心记忆技巧.md#5-间隔重复-spaced-repetition)
 
-
 > 方言和俗语是中华文化的活化石。通过普通话→方言→谐音→画面的编码链，可以生动记忆各地方言词汇和民间智慧。
-
-
 
 > **📍 本章导航**：前置 → [03-vocabulary/INDEX.md](INDEX.md) ｜ 相关 → [03-vocab-chengyu-01.md](03-vocab-chengyu-01.md)·[23-language/INDEX.md](../23-language/INDEX.md) ｜ 方法 → M11·M12·M25 ｜ 难度 ⭐ ｜ 阅读 ~10min
 

@@ -3,8 +3,6 @@
 > 掌握基础词根后，进阶词根和前后缀让你能拆解更复杂的学术词汇。
 > 本文件包含50个中高级词根、20个前缀、15个后缀的编码系统。
 
-
-
 > **📍 本章导航**：前置 → [09-eng-root-01](09-eng-root-01.md) ｜ 相关 → [09-eng-method-01](09-eng-method-01.md)·[09-eng-sat-01](09-eng-sat-01.md) ｜ 方法 → M24·M13·M07-R ｜ 难度 ⭐⭐⭐ ｜ 阅读 ~20min
 
 ## 📍 导航
@@ -579,7 +577,7 @@
 ### 策略1：三段拆解法
 任何英语单词都可以拆为：**前缀 + 词根 + 后缀**
 
-```
+```text
 un + forget + able = unforgettable（难忘的）
 不 + 忘记 + 能…的 = 不能被忘记的
 
@@ -593,7 +591,7 @@ in + vis + ible = invisible（看不见的）
 ### 策略2：词根家族树
 以词根为核心，像家族树一样展开：
 
-```
+```text
          port（搬运）
         /    |     \
   transport  export  import
@@ -604,7 +602,7 @@ in + vis + ible = invisible（看不见的）
 ### 策略3：前缀变换练习
 同一个词根加上不同前缀，意义完全不同：
 
-```
+```text
 词根：spect（看）
 - in + spect = inspect（检查）→ 往里看
 - re + spect = respect（尊重）→ 再看一眼
@@ -616,7 +614,7 @@ in + vis + ible = invisible（看不见的）
 ### 策略4：后缀变换练习
 同一个词根加上不同后缀，词性变化：
 
-```
+```text
 词根：act（做）
 - act + or = actor（演员）→ 做事的人
 - act + ion = action（行动）→ 做的过程
@@ -630,49 +628,49 @@ in + vis + ible = invisible（看不见的）
 ## 五、多词根单词拆解实例
 
 ### 实例1：**Communication**（交流）
-```
+```text
 com-（一起） + mun-（公共） + -ic-（连接） + -ation（名词）
 → 一起在公共场合传递信息 = 交流
 ```
 
 ### 实例2：**Unconstitutional**（违宪的）
-```
+```text
 un-（不） + con-（一起） + stitut（站立） + -ion（名词） + -al（形容词）
 → 不按照一起站立的规则 = 不符合宪法的
 ```
 
 ### 实例3：**Internationalization**（国际化）
-```
+```text
 inter-（之间） + nation（国家） + -al（形容词） + -ize（使…化） + -ation（名词）
 → 使国家之间 = 国际化
 ```
 
 ### 实例4：**Misinterpretation**（误解）
-```
+```text
 mis-（错误） + inter-（之间） + pret（价格/价值） + -ation（名词）
 → 在之间错误地估价 = 误解
 ```
 
 ### 实例5：**Biodegradable**（可生物降解的）
-```
+```text
 bio-（生命/生物） + de-（向下/去除） + grad（步/级） + -able（能…的）
 → 能被生物一步步降解的
 ```
 
 ### 实例6：**Psychopharmacology**（精神药理学）
-```
+```text
 psycho-（心理/精神） + pharma-（药） + -co-（连接） + -logy（学科）
 → 研究精神药物的学科
 ```
 
 ### 实例7：**Electroencephalograph**（脑电图仪）
-```
+```text
 electro-（电） + encephalo-（脑） + -graph（写/记录）
 → 记录脑部电信号的仪器
 ```
 
 ### 实例8：**Counterrevolutionary**（反革命的）
-```
+```text
 counter-（反对） + re-（回） + volut（转） + -ion（名词） + -ary（形容词）
 → 反对回到原来转动的 = 反革命的
 ```
@@ -683,14 +681,14 @@ counter-（反对） + re-（回） + volut（转） + -ion（名词） + -ary�
 
 ### 1. 词根拼图法
 把单词看作拼图，每一块是一个词根/前后缀：
-```
+```text
 dis + cour + age + ment = discouragement（沮丧）
 分开 + 跑 + 状态 + 名词 = 跑散的状态
 ```
 
 ### 2. 同根对比法
 同一词根的不同组合一起记：
-```
+```text
 词根：duct（引导）
 - conduct（引导行为）
 - produce（向前引导→生产）
@@ -700,7 +698,7 @@ dis + cour + age + ment = discouragement（沮丧）
 ```
 
 ### 3. 前缀方向图
-```
+```text
 向前 ← pro-    re- → 向后/再
 向上 ← super-  sub- → 向下
 进入 ← in-     ex- → 出去
@@ -708,7 +706,7 @@ dis + cour + age + ment = discouragement（沮丧）
 ```
 
 ### 4. 后缀词性速查
-```
+```text
 名词后缀：-tion, -ment, -ness, -ity, -er, -ist
 形容词后缀：-able, -ful, -less, -ous, -ive
 动词后缀：-ize, -ify, -ate
@@ -828,7 +826,6 @@ dis + cour + age + ment = discouragement（沮丧）
 | **part**（部分） | **part**（分开） | 同源 | partner（伙伴）vs depart（离开）|
 | **pose**（放置） | **pose**（姿势） | 同源 | expose（暴露）vs posture（姿态）|
 
-
 ### ⚠️ 常见错误
 
 | 错误 | 表现 | 正确做法 |
@@ -865,7 +862,6 @@ D. 减少
 3. **B** — miss/mit=送、放出（mission=使命，commit=承诺）
 
 </details>
-
 
 ---
 
